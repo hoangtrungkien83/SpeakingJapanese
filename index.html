@@ -2592,7 +2592,7 @@ document.addEventListener('click', (e) => {
     side.classList.add('searching'); results.innerHTML=''; (function(){ var t=results.offsetTop-box.offsetHeight-4; if(side.scrollTop>t) side.scrollTop=Math.max(0,t); })();
     if(!list.length){
       countEl.textContent='';
-      results.innerHTML='<div class="srch-empty">が見つかりません。 “'+escapeHtml(raw.trim())+'”<br>より短いキーワードを試すか、ベトナム語の意味、漢字、または読み方を入力してください。</div>';
+      results.innerHTML = `<div class="srch-empty">“${escapeHtml(raw.trim())}” が見つかりません。<br>より短いキーワードを試すか、ベトナム語の意味、漢字、または読み方を入力してください。</div>`;
       return;
     }
     countEl.textContent=list.length+' 件';
