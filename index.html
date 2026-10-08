@@ -1108,6 +1108,9 @@
 :root[data-theme="dark"] .welcome h2{ font-family:"Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); }
 
 .modal-hanviet{ display:block; width:fit-content; margin-bottom:12px; }
+/* ô chữ Hán + âm Hán Việt (dùng chung kiểu với 四字熟語) trong khung so sánh / cặp từ */
+.compare-item .char-row{ margin:2px 0 12px; }
+.char-chip.inferred i{ opacity:.55; }
 .modal-meaning{ display:block; width:fit-content; max-width:100%; }
 
 /* ===== Sidebar to hơn + trang chủ trống ===== */
@@ -1790,6 +1793,79 @@ function renderItems(){
   });
 }
 
+/* Ô chữ Hán + âm Hán Việt bên dưới (cùng kiểu .char-chip của 四字熟語).
+   - Số chữ Hán == số âm tiết: ghép lần lượt.
+   - Ít âm hơn chữ Hán (ví dụ 値段が上がる có 3 chữ Hán nhưng dữ liệu chỉ ghi "trị đoạn"):
+     tìm cách ghép khớp nhất dựa trên từ điển chữ Hán -> âm học từ chính dữ liệu; chữ nào thiếu âm
+     thì điền âm đã gặp ở từ khác (hiển thị nhạt hơn), nếu chưa từng gặp thì để ô trống.
+   - Nhiều âm hơn chữ Hán: gộp thành 1 ô để không ghép sai. */
+const HV_KANJI = /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff々〆]/;
+let HV_MAP = null;
+function hvKanjiOf(word){ return Array.from(String(word || '')).filter(c => HV_KANJI.test(c)); }
+function hvSyllables(hv){ return String(hv || '').trim().split(/\s+/).filter(Boolean); }
+function hvBuildMap(){
+  const m = new Map();
+  const add = (k, h) => {
+    h = String(h || '').trim().toLowerCase();
+    if(!k || !h) return;
+    let e = m.get(k); if(!e){ e = new Map(); m.set(k, e); }
+    e.set(h, (e.get(h) || 0) + 1);
+  };
+  const addWord = (word, hv) => {
+    const k = hvKanjiOf(word), sy = hvSyllables(hv);
+    if(k.length && k.length === sy.length) k.forEach((c, i) => add(c, sy[i]));
+  };
+  if(typeof TOPICS !== 'undefined') TOPICS.forEach(t => {
+    (t.vocab || []).forEach(v => {
+      addWord(v.word, v.hanviet);
+      (v.chars || []).forEach(c => add(c.c, c.h));
+      (v.pair || []).forEach(w => addWord(w.word, w.hanviet));
+    });
+    (t.compare || []).forEach(g => (g.items || []).forEach(w => addWord(w.word, w.hanviet)));
+  });
+  return m;
+}
+function hvAlign(kanji, syl){
+  if(!HV_MAP) HV_MAP = hvBuildMap();
+  const m = kanji.length, n = syl.length, NEG = -1e9;
+  const dp = Array.from({length: m + 1}, () => new Array(n + 1).fill(NEG));
+  const back = Array.from({length: m + 1}, () => new Array(n + 1).fill(null));
+  dp[0][0] = 0;
+  for(let i = 0; i < m; i++) for(let j = 0; j <= n; j++){
+    if(dp[i][j] === NEG) continue;
+    const skip = dp[i][j] - (m - i) * 0.001;            // chữ thiếu âm: ưu tiên là chữ ở cuối
+    if(skip > dp[i + 1][j]){ dp[i + 1][j] = skip; back[i + 1][j] = 'skip'; }
+    if(j < n){
+      const e = HV_MAP.get(kanji[i]);
+      const sc = dp[i][j] + (e && e.has(syl[j].toLowerCase()) ? 1 : 0);
+      if(sc > dp[i + 1][j + 1]){ dp[i + 1][j + 1] = sc; back[i + 1][j + 1] = 'take'; }
+    }
+  }
+  const out = new Array(m);
+  let j = n;
+  for(let i = m; i > 0; i--){
+    if(back[i][j] === 'take'){ out[i - 1] = [kanji[i - 1], syl[j - 1], false]; j--; }
+    else {
+      const e = HV_MAP.get(kanji[i - 1]);
+      const fill = e ? [...e.entries()].sort((x, y) => y[1] - x[1])[0][0] : '';
+      out[i - 1] = [kanji[i - 1], fill, !!fill];
+    }
+  }
+  return out;
+}
+function hvChipsHtml(word, hanviet){
+  const hv = String(hanviet || '').trim();
+  if(!hv) return '';
+  const kanji = hvKanjiOf(word);
+  if(!kanji.length) return '';
+  const syl = hvSyllables(hv);
+  const chips = syl.length === kanji.length ? kanji.map((c, i) => [c, syl[i], false])
+              : syl.length < kanji.length ? hvAlign(kanji, syl)
+              : [[kanji.join(''), hv, false]];
+  return `<div class="char-row">${chips.map(([c, h, inf]) =>
+    `<span class="char-chip${inf ? ' inferred' : ''}"${inf ? ' title="Suy ra từ các từ khác trong dữ liệu"' : ''}><b>${escapeHtml(c)}</b><i>${h ? escapeHtml(h) : '&nbsp;'}</i></span>`).join('')}</div>`;
+}
+
 function openModal(idx){
   const item = currentTopic[currentTab][idx];
   if(item.pair){ openPairModal(item); return; }
@@ -1806,7 +1882,7 @@ function openModal(idx){
       ${badgeHtml}
       <div class="modal-headword">${escapeHtml(item.word)}</div>
       <div class="modal-reading">${escapeHtml(item.reading || '')}</div>
-            ${item.chars ? `<div class="char-row">${item.chars.map(c=>`<span class="char-chip"><b>${escapeHtml(c.c)}</b><i>${escapeHtml(c.h)}</i></span>`).join('')}</div>` : ''}
+            ${item.chars ? `<div class="char-row">${item.chars.map(c=>`<span class="char-chip"><b>${escapeHtml(c.c)}</b><i>${escapeHtml(c.h)}</i></span>`).join('')}</div>` : hvChipsHtml(item.word, item.hanviet)}
       <div class="modal-meaning">${escapeHtml(item.meaning || '')}</div>
       ${item.note ? `<div class="modal-note">💡 ${escapeHtml(item.note)}</div>` : ''}
       ${item.poem ? `<div class="poem-box"><div class="poem-label">題詠 · 詩</div><div class="poem-han">${escapeHtml(item.poem.han).replace('／','<br>')}</div><div class="poem-hv">${escapeHtml(item.poem.hv).replace(' / ','<br>')}</div><div class="poem-vi">${escapeHtml(item.poem.vi)}</div></div>` : ''}
@@ -1845,6 +1921,7 @@ function openCompareModal(idx){
         <span class="compare-word">${escapeHtml(w.word)}</span>
         <span class="compare-reading">${escapeHtml(w.reading || '')}</span>
       </div>
+      ${hvChipsHtml(w.word, w.hanviet)}
       <div class="compare-meaning">${escapeHtml(w.meaning || '')}</div>
       <div class="compare-example">
         <div class="example-jp" style="font-size:14.5px">${escapeHtml(w.example || '')}</div>
@@ -1891,6 +1968,7 @@ function openPairModal(item){
           <span class="compare-word">${escapeHtml(w.word)}</span>
           <span class="compare-reading">${escapeHtml(w.reading || '')}</span>
         </div>
+        ${hvChipsHtml(w.word, w.hanviet)}
         <div class="compare-meaning">${escapeHtml(w.meaning || '')}</div>
         ${notesHtml}
         ${examplesHtml}
