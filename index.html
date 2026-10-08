@@ -1295,6 +1295,12 @@
   .game-nums b{ font-size:22px; line-height:1.1; color:var(--ink); letter-spacing:0; }
   .game-chain{ height:min(46vh,420px); min-height:260px; overflow-y:auto; padding:18px 20px; display:flex; flex-direction:column; gap:10px; }
   .g-empty{ margin:auto; text-align:center; color:var(--ink-faint); font-size:15px; line-height:1.7; }
+  .game-chat{ position:relative; }
+  .game-over{ position:absolute; inset:0; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; padding:20px; text-align:center; pointer-events:none; background:color-mix(in srgb,var(--bg-card) 48%,transparent); }
+  .game-over[hidden]{ display:none; }
+  .game-over > *{ pointer-events:auto; }
+  .game-over .g-empty{ position:absolute; left:20px; right:20px; bottom:calc(50% + 36px); margin:0; }
+  .game-over .g-btn{ font-size:18px; padding:12px 34px; box-shadow:var(--shadow-card); }
   .g-msg{ max-width:78%; padding:10px 14px; border-radius:14px; border:1px solid var(--border); background:var(--bg-subtle); }
   .g-msg.me{ align-self:flex-end; background:var(--accent-soft); border-color:var(--accent-soft-2); }
   :root[data-theme="dark"] .g-msg.me{ background:rgba(201,169,97,.1); border-color:rgba(201,169,97,.4); }
@@ -2265,12 +2271,12 @@ document.addEventListener('click', (e) => {
    '<div class="game-board">'+
      '<div class="game-stat"><div class="game-need"><span>次の単語の最初の文字</span><span class="big" id="gNeed">—</span></div>'+
        '<div class="game-nums"><div><span>スコア</span><b id="gScore">0</b></div><div><span>ハイスコア</span><b id="gBest">0</b></div></div></div>'+
-     '<div class="game-chain" id="gChain"><div class="g-empty">「はじめる」を押してスタート。<br>最初の単語はCPUが言います。</div></div>'+
+     '<div class="game-chat"><div class="game-chain" id="gChain"></div>'+
+        '<div class="game-over" id="gOver"><div class="g-empty" id="gOverMsg">「はじめる」を押してスタート。<br>最初の単語はCPUが言います。</div><button type="button" class="g-btn primary" id="gStart">はじめる</button></div></div>'+
      '<div class="game-ctl"><form id="gForm" autocomplete="off"><input type="text" id="gInput" placeholder="単語を入力… (例: さくら / sakura)" disabled><button class="g-btn primary" id="gSend" disabled>送信</button><button type="button" class="g-btn" id="gHintBtn" disabled>ヒント</button><button type="button" class="g-btn" id="gGive" disabled>降参</button></form>'+
        '<div class="game-note" id="gNote"></div><div class="game-prev" id="gPrev"></div></div>'+
      '<div class="game-end" id="gEnd" hidden></div>'+
-   '</div>'+
-   '<div class="game-actions"><button type="button" class="g-btn primary" id="gStart">はじめる</button></div>';
+   '</div>';
   var anchor=document.getElementById('topicPanel'); wrap.insertBefore(panel,anchor);
   $('#gBest').textContent=BEST;
 
@@ -2313,7 +2319,7 @@ document.addEventListener('click', (e) => {
   selectTopic=function(id){ closeGame(); origSel(id); };
 
   /* ---------- helpers ---------- */
-  var chainEl=$('#gChain'), noteEl=$('#gNote'), prevEl=$('#gPrev'), inp=$('#gInput'), endEl=$('#gEnd');
+  var chainEl=$('#gChain'), noteEl=$('#gNote'), prevEl=$('#gPrev'), inp=$('#gInput'), endEl=$('#gEnd'), overEl=$('#gOver'), overMsg=$('#gOverMsg');
   function setNote(h,err){ noteEl.className='game-note'+(err?' err':''); noteEl.innerHTML=h||''; }
   function setNeed(c){ $('#gNeed').textContent=c||'—'; S.need=c||''; }
   function setScore(){ $('#gScore').textContent=S.score; if(S.score>BEST){ BEST=S.score; $('#gBest').textContent=BEST; try{ localStorage.setItem('shiritoriBest',String(BEST)); }catch(e){} } }
@@ -2381,7 +2387,7 @@ document.addEventListener('click', (e) => {
   /* ---------- vòng chơi ---------- */
   function start(){
     buildIdx(); S.used=new Set(); S.score=0; S.chain=[]; S.hint=0; S.pending=null; S.busy=false; S.active=true;
-    chainEl.innerHTML=''; endEl.hidden=true; setScore(); prevEl.textContent=''; setNote('');
+    chainEl.innerHTML=''; endEl.hidden=true; overEl.hidden=true; setScore(); prevEl.textContent=''; setNote('');
     $('#gStart').textContent='もう一度'; setEnabled(false);
     var firstPool=[]; for(var c in idx.v) firstPool=firstPool.concat(idx.v[c].filter(okWord));
     var w=firstPool[Math.floor(Math.random()*firstPool.length)];
@@ -2395,7 +2401,7 @@ document.addEventListener('click', (e) => {
       var x=candidates(S.need), ex=x.v.concat(x.d).sort(function(){return Math.random()-.5;}).slice(0,5);
       if(ex.length) missed='<div>使えた単語の例：<ul>'+ex.map(function(r){ var mm=meaningOf(r); return '<li>'+esc(r)+(mm?' — '+mm:'')+'</li>'; }).join('')+'</ul></div>';
     }
-    endEl.hidden=false;
+    endEl.hidden=false; overMsg.hidden=true; overEl.hidden=false;
     endEl.innerHTML='<h3>'+(win?'🎉 あなたの勝ち！':'ゲーム終了')+'</h3><div>'+reason+'</div><div>言った単語の数：<b>'+S.score+'</b>'+(S.score>=BEST&&S.score>0?' · ハイスコア更新！':'')+'</div>'+missed;
     setNote(''); chainEl.scrollTop=chainEl.scrollHeight;
   }
