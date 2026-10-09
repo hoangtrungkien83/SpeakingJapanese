@@ -6,26 +6,27 @@
  *
  *  1. MỤC LỤC  (số dòng để nhảy nhanh: Ctrl+G trong editor)
  *
- *   [01] dòng     69  1. 医療・診察  [main]  vocab 180, grammar 20  (n5:18 n4:36 n3:45 n2:40 n1:41)
- *   [02] dòng    290  2. 健康・運動  [main]  vocab 180, grammar 18  (n5:11 n4:29 n3:48 n2:49 n1:43)
- *   [03] dòng    509  3. 子育て  [main]  vocab 180, grammar 19  (n5:15 n4:35 n3:42 n2:44 n1:44)
- *   [04] dòng    729  4. 科学  [main]  vocab 180, grammar 20  (n5:5 n4:34 n3:57 n2:42 n1:42)
- *   [05] dòng    950  5. 仕事・職場  [main]  vocab 180, grammar 20  (n5:9 n4:31 n3:55 n2:40 n1:45)
- *   [06] dòng   1171  6. 買い物・消費  [main]  vocab 180, grammar 19  (n5:18 n4:28 n3:50 n2:42 n1:42)
- *   [07] dòng   1391  7. 旅行・交通  [main]  vocab 180, grammar 20  (n5:21 n4:27 n3:47 n2:43 n1:42)
- *   [08] dòng   1612  8. 天気・環境  [main]  vocab 178, grammar 19  (n5:16 n4:17 n3:53 n2:49 n1:43)
- *   [09] dòng   1830  9. 教育・学習  [main]  vocab 179, grammar 19  (n5:22 n4:37 n3:40 n2:40 n1:40)
- *   [10] dòng   2049  10. 食文化・料理  [main]  vocab 179, grammar 20  (n5:19 n4:42 n3:41 n2:36 n1:41)
- *   [11] dòng   2271  11. スラング・ネット用語  [main/slang]  vocab 129, grammar 12  (s1:26 s2:26 s3:25 s4:26 s5:26)
- *   [16] dòng   2434  16. コンビニ（アルバイト）  [main/freq]  vocab 58, grammar 9  (f0:8 f1:18 f2:18 f3:14)
- *   [12] dòng   2527  12. 自動詞・他動詞  [ref]  vocab 55, grammar 5
- *   [13] dòng   2603  13. 授受表現（あげる・もらう・くれる）  [ref]  vocab 34, grammar 50
- *   [14] dòng   2705  14. 同音異義語  [ref/compare]  compare 50 nhóm / 138 từ
- *   [15] dòng   3207  15. 紛らわしい類義語  [ref/compare]  compare 50 nhóm / 128 từ
- *   [17] dòng   3701  17. 日本のことわざ  [ref/proverb]  vocab 50, grammar 0  (p1:20 p2:20 p3:10)
- *   [18] dòng   3771  18. 古い漢字・漢文  [ref/proverb]  vocab 50, grammar 0  (p1:15 p2:21 p3:14)
- *   [19] dòng   3841  19. 慣用句  [ref/proverb]  vocab 65, grammar 0
- *   [20] dòng   3923  20. 四字熟語  [ref/proverb]  vocab 119, grammar 0
+ *   [01] dòng     74  1. 医療・診察  [main]  vocab 230, grammar 20  (n5:21 n4:43 n3:59 n2:53 n1:54)
+ *   [02] dòng    345  2. 健康・運動  [main]  vocab 230, grammar 18  (n5:14 n4:36 n3:62 n2:62 n1:56)
+ *   [03] dòng    614  3. 子育て  [main]  vocab 230, grammar 19  (n5:18 n4:42 n3:56 n2:57 n1:57)
+ *   [04] dòng    884  4. 科学  [main]  vocab 230, grammar 20  (n5:8 n4:41 n3:71 n2:55 n1:55)
+ *   [05] dòng   1155  5. 仕事・職場  [main]  vocab 230, grammar 20  (n5:12 n4:38 n3:69 n2:53 n1:58)
+ *   [06] dòng   1426  6. 買い物・消費  [main]  vocab 230, grammar 19  (n5:21 n4:35 n3:64 n2:55 n1:55)
+ *   [07] dòng   1696  7. 旅行・交通  [main]  vocab 230, grammar 20  (n5:24 n4:34 n3:61 n2:56 n1:55)
+ *   [08] dòng   1967  8. 天気・環境  [main]  vocab 228, grammar 19  (n5:19 n4:24 n3:67 n2:62 n1:56)
+ *   [09] dòng   2235  9. 教育・学習  [main]  vocab 229, grammar 19  (n5:25 n4:44 n3:54 n2:53 n1:53)
+ *   [10] dòng   2504  10. 食文化・料理  [main]  vocab 229, grammar 20  (n5:22 n4:49 n3:55 n2:49 n1:54)
+ *   [21] dòng   2774  21. 恋愛・恋人  [main]  vocab 200, grammar 24  (n5:14 n4:32 n3:50 n2:53 n1:51)
+ *   [11] dòng   3021  11. スラング・ネット用語  [main/slang]  vocab 129, grammar 12  (s1:26 s2:26 s3:25 s4:26 s5:26)
+ *   [16] dòng   3184  16. コンビニ（アルバイト）  [main/freq]  vocab 58, grammar 9  (f0:8 f1:18 f2:18 f3:14)
+ *   [12] dòng   3277  12. 自動詞・他動詞  [ref]  vocab 55, grammar 5
+ *   [13] dòng   3353  13. 授受表現（あげる・もらう・くれる）  [ref]  vocab 34, grammar 50
+ *   [14] dòng   3455  14. 同音異義語  [ref/compare]  compare 50 nhóm / 138 từ
+ *   [15] dòng   3957  15. 紛らわしい類義語  [ref/compare]  compare 50 nhóm / 128 từ
+ *   [17] dòng   4451  17. 日本のことわざ  [ref/proverb]  vocab 50, grammar 0  (p1:20 p2:20 p3:10)
+ *   [18] dòng   4521  18. 古い漢字・漢文  [ref/proverb]  vocab 50, grammar 0  (p1:15 p2:21 p3:14)
+ *   [19] dòng   4591  19. 慣用句  [ref/proverb]  vocab 65, grammar 0
+ *   [20] dòng   4673  20. 四字熟語  [ref/proverb]  vocab 119, grammar 0
  *
  *  2. CẤU TRÚC MỖI CHỦ ĐỀ
  *     id · title · icon · category ("main" | "ref") · kind (tuỳ chọn: slang | freq | compare | proverb)
@@ -35,7 +36,7 @@
  *     word, reading, meaning, hanviet ("" nếu không có), note (tuỳ chọn),
  *     example, example_reading, example_meaning, level
  *     Mục đặc biệt: pair + pair_label (chủ đề 12, 16) · chars + poem + examples (chủ đề 20)
- *     Mã level theo chủ đề: n5…n1 (1–10, 12, 13) · s1…s5 (11) · f0…f3 (16) · p1…p3 (17, 18, 19, 20)
+ *     Mã level theo chủ đề: n5…n1 (1–10, 12, 13, 21) · s1…s5 (11) · f0…f3 (16) · p1…p3 (17, 18, 19, 20)
  *
  *  4. CÁCH THÊM MỚI  — tìm dòng "▼ THÊM ... MỚI" cuối mảng tương ứng rồi dán MẪU lên trên dòng đó
  *     (dòng cuối mỗi mảng luôn có dấu phẩy, nên chỉ việc dán thêm).
@@ -54,6 +55,10 @@
  *        chỉ sửa tên trường bị gõ nhầm "exam ple_reading" → "example_reading".
  *     c) Thứ tự các chủ đề và thứ tự mục bên trong từng chủ đề giữ nguyên như file gốc; "id" không đổi
  *        (nên chủ đề 16 vẫn nằm giữa 11 và 12 theo nhóm "main").
+ *     d) 09/10/2026: thêm 50 từ vựng mới cho MỖI chủ đề chính 1–10 (tổng 500 từ), không trùng từ đã có.
+ *        Mỗi chủ đề: n5:3 · n4:7 · n3:14 · n2:13 · n1:13. Các từ mới được chèn vào cuối nhóm level tương ứng.
+ *     e) 09/10/2026: thêm chủ đề mới [21] 21. 恋愛・恋人 (tình yêu) vào nhóm "main", đặt ngay sau chủ đề 10:
+ *        vocab 200 (n5:14 n4:32 n3:50 n2:53 n1:51) · grammar 24.
  * ============================================================================ */
 
 const TOPICS = [
@@ -64,7 +69,7 @@ const TOPICS = [
   // ▓▓▓ A1 · Từ vựng theo chủ đề đời sống (1–10), xếp theo cấp độ n5 → n1
 
   // ══════════════════════════════════════════════════════════════════════
-  // [01] 1. 医療・診察  🏥  |  main  |  vocab 180 · grammar 20
+  // [01] 1. 医療・診察  🏥  |  main  |  vocab 230 · grammar 20
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "1. 医療・診察",
@@ -72,7 +77,7 @@ const TOPICS = [
     "icon": "🏥",
     "category": "main",
     "vocab": [
-      // ── n5 · 18 mục ──
+      // ── n5 · 21 mục ──
       {"word": "病院", "reading": "びょういん", "meaning": "bệnh viện", "hanviet": "bệnh viện", "example": "熱が高くて、頭も痛かったので、近くの病院へ行きました。", "example_reading": "ねつがたかくて、あたまもいたかったので、ちかくのびょういんへいきました。", "example_meaning": "Vì sốt cao và đau đầu nên tôi đã đến bệnh viện gần nhà.", "level": "n5"},
       {"word": "医者", "reading": "いしゃ", "meaning": "bác sĩ", "hanviet": "y giả", "example": "医者は私の症状を聞いてから、詳しく検査をしてくれました。", "example_reading": "いしゃはわたしのしょうじょうをきいてから、くわしくけんさをしてくれました。", "example_meaning": "Bác sĩ sau khi nghe triệu chứng của tôi đã khám xét kỹ lưỡng.", "level": "n5"},
       {"word": "熱", "reading": "ねつ", "meaning": "sốt", "hanviet": "nhiệt", "example": "子供が急に熱を出したので、夜中に救急病院へ連れて行きました。", "example_reading": "こどもがきゅうにねつをだしたので、よなかにきゅうきゅうびょういんへつれていきました。", "example_meaning": "Vì con đột nhiên bị sốt nên tôi đã đưa cháu đến bệnh viện cấp cứu lúc nửa đêm.", "level": "n5"},
@@ -91,7 +96,10 @@ const TOPICS = [
       {"word": "足", "reading": "あし", "meaning": "chân", "hanviet": "túc", "example": "転んで足をひねりました。", "example_reading": "ころんであしをひねりました。", "example_meaning": "Tôi ngã và trẹo chân.", "level": "n5"},
       {"word": "疲れる", "reading": "つかれる", "meaning": "mệt", "hanviet": "bì", "example": "最近すぐに疲れます。", "example_reading": "さいきんすぐにつかれます。", "example_meaning": "Dạo này tôi nhanh mệt.", "level": "n5"},
       {"word": "休む", "reading": "やすむ", "meaning": "nghỉ", "hanviet": "hưu", "example": "今日は仕事を休みます。", "example_reading": "きょうはしごとをやすみます。", "example_meaning": "Hôm nay tôi nghỉ làm.", "level": "n5"},
-      // ── n4 · 36 mục ──
+      {"word": "病気", "reading": "びょうき", "meaning": "bệnh", "hanviet": "bệnh khí", "example": "昨日から病気で寝ています。", "example_reading": "きのうからびょうきでねています。", "example_meaning": "Từ hôm qua tôi bị bệnh nên nằm nghỉ.", "level": "n5"},
+      {"word": "鼻", "reading": "はな", "meaning": "mũi", "hanviet": "tỵ", "example": "鼻が詰まって、よく眠れません。", "example_reading": "はながつまって、よくねむれません。", "example_meaning": "Mũi bị nghẹt nên tôi không ngủ ngon được.", "level": "n5"},
+      {"word": "口", "reading": "くち", "meaning": "miệng", "hanviet": "khẩu", "example": "口を大きく開けてください。", "example_reading": "くちをおおきくあけてください。", "example_meaning": "Xin hãy mở miệng to ra.", "level": "n5"},
+      // ── n4 · 43 mục ──
       {"word": "看護師", "reading": "かんごし", "meaning": "y tá", "hanviet": "khán hộ sư", "example": "看護師さんが優しく注射の仕方を説明してくれたので、安心できました。", "example_reading": "かんごしさんがやさしくちゅうしゃのしかたをせつめいしてくれたので、あんしんできました。", "example_meaning": "Cô y tá đã giải thích nhẹ nhàng cách tiêm nên tôi thấy yên tâm.", "level": "n4"},
       {"word": "患者", "reading": "かんじゃ", "meaning": "bệnh nhân", "hanviet": "hoạn giả", "example": "この病院は患者が多くて、いつも二時間以上待たなければなりません。", "example_reading": "このびょういんはかんじゃがおおくて、いつもにじかんいじょうまたなければなりません。", "example_meaning": "Bệnh viện này có nhiều bệnh nhân nên lúc nào cũng phải đợi hơn hai tiếng.", "level": "n4"},
       {"word": "咳", "reading": "せき", "meaning": "ho", "hanviet": "khái", "example": "咳が一週間以上続いているので、レントゲンを撮ることになりました。", "example_reading": "せきがいっしゅうかんいじょうつづいているので、れんとげんをとることになりました。", "example_meaning": "Vì ho kéo dài hơn một tuần nên tôi phải chụp X-quang.", "level": "n4"},
@@ -128,7 +136,14 @@ const TOPICS = [
       {"word": "怪我", "reading": "けが", "meaning": "chấn thương", "hanviet": "quái ngã", "example": "スポーツで怪我をしました。", "example_reading": "すぽーつでけがをしました。", "example_meaning": "Tôi bị chấn thương khi chơi thể thao.", "level": "n4"},
       {"word": "無理", "reading": "むり", "meaning": "quá sức, vô lý", "hanviet": "vô lý", "example": "無理をしないでください。", "example_reading": "むりをしないでください。", "example_meaning": "Đừng cố quá sức.", "level": "n4"},
       {"word": "くしゃみ", "reading": "くしゃみ", "meaning": "hắt hơi", "hanviet": "", "example": "朝からくしゃみが止まりません。", "example_reading": "あさからくしゃみがとまりません。", "example_meaning": "Từ sáng tôi hắt hơi không ngừng.", "level": "n4"},
-      // ── n3 · 45 mục ──
+      {"word": "体温計", "reading": "たいおんけい", "meaning": "nhiệt kế", "hanviet": "thể ôn kế", "example": "体温計で熱を測ってから学校に行きました。", "example_reading": "たいおんけいでねつをはかってからがっこうにいきました。", "example_meaning": "Tôi đo sốt bằng nhiệt kế rồi mới đến trường.", "level": "n4"},
+      {"word": "目薬", "reading": "めぐすり", "meaning": "thuốc nhỏ mắt", "hanviet": "mục dược", "example": "目が乾くので、目薬をさしました。", "example_reading": "めがかわくので、めぐすりをさしました。", "example_meaning": "Vì mắt khô nên tôi đã nhỏ thuốc nhỏ mắt.", "level": "n4"},
+      {"word": "検診", "reading": "けんしん", "meaning": "khám sức khỏe định kỳ", "hanviet": "kiểm chẩn", "example": "年に一度、会社で検診を受けます。", "example_reading": "ねんにいちど、かいしゃでけんしんをうけます。", "example_meaning": "Mỗi năm một lần tôi khám sức khỏe ở công ty.", "level": "n4"},
+      {"word": "病室", "reading": "びょうしつ", "meaning": "phòng bệnh", "hanviet": "bệnh thất", "example": "祖母の病室は三階にあります。", "example_reading": "そぼのびょうしつはさんがいにあります。", "example_meaning": "Phòng bệnh của bà tôi ở tầng ba.", "level": "n4"},
+      {"word": "風邪薬", "reading": "かぜぐすり", "meaning": "thuốc cảm", "hanviet": "phong tà dược", "example": "風邪薬を飲んで早く寝ました。", "example_reading": "かぜぐすりをのんではやくねました。", "example_meaning": "Tôi uống thuốc cảm rồi đi ngủ sớm.", "level": "n4"},
+      {"word": "虫歯", "reading": "むしば", "meaning": "sâu răng", "hanviet": "trùng xỉ", "example": "甘いものを食べすぎて虫歯になりました。", "example_reading": "あまいものをたべすぎてむしばになりました。", "example_meaning": "Vì ăn quá nhiều đồ ngọt nên tôi bị sâu răng.", "level": "n4"},
+      {"word": "心配", "reading": "しんぱい", "meaning": "lo lắng", "hanviet": "tâm phối", "example": "熱が下がらなくて、とても心配です。", "example_reading": "ねつがさがらなくて、とてもしんぱいです。", "example_meaning": "Sốt mãi không hạ nên tôi rất lo.", "level": "n4"},
+      // ── n3 · 59 mục ──
       {"word": "症状", "reading": "しょうじょう", "meaning": "triệu chứng", "hanviet": "chứng trạng", "example": "症状が軽いうちに病院で診てもらったほうがいいですよ。", "example_reading": "しょうじょうがかるいうちにびょういんでみてもらったほうがいいですよ。", "example_meaning": "Nên đi khám khi triệu chứng còn nhẹ thì tốt hơn.", "level": "n3"},
       {"word": "頭痛", "reading": "ずつう", "meaning": "đau đầu", "hanviet": "đầu thống", "example": "最近、頭痛がひどくて、仕事に集中できないことが多いです。", "example_reading": "さいきん、ずつうがひどくて、しごとにしゅうちゅうできないことがおおいです。", "example_meaning": "Gần đây tôi bị đau đầu nặng nên thường không tập trung làm việc được.", "level": "n3"},
       {"word": "診察", "reading": "しんさつ", "meaning": "khám bệnh", "hanviet": "chẩn sát", "example": "診察を受ける前に、まず受付で保険証を出してください。", "example_reading": "しんさつをうけるまえに、まずうけつけでほけんしょうをだしてください。", "example_meaning": "Trước khi khám bệnh, vui lòng xuất trình thẻ bảo hiểm tại quầy tiếp tân.", "level": "n3"},
@@ -144,7 +159,7 @@ const TOPICS = [
       {"word": "貧血", "reading": "ひんけつ", "meaning": "thiếu máu", "hanviet": "bần huyết", "example": "貧血でめまいがします。", "example_reading": "ひんけつでめまいがします。", "example_meaning": "Tôi bị chóng mặt do thiếu máu.", "level": "n3"},
       {"word": "診断書", "reading": "しんだんしょ", "meaning": "giấy chẩn đoán", "hanviet": "chẩn đoán thư", "example": "会社に診断書を提出しました。", "example_reading": "かいしゃにしんだんしょをていしゅつしました。", "example_meaning": "Tôi đã nộp giấy chẩn đoán cho công ty.", "level": "n3"},
       {"word": "健康保険", "reading": "けんこうほけん", "meaning": "bảo hiểm y tế", "hanviet": "kiện khang bảo hiểm", "example": "健康保険に加入しています。", "example_reading": "けんこうほけんにかにゅうしています。", "example_meaning": "Tôi có tham gia bảo hiểm y tế.", "level": "n3"},
-      {"word": "かかりつけ医", "reading": "かかりつけい", "meaning": "bác sĩ gia đình", "hanviet": "y", "example": "かかりつけ医に相談しました。", "example_reading": "かかりつけいにそうだんしました。", "example_meaning": "Tôi đã hỏi ý kiến bác sĩ gia đình.", "level": "n3"},
+      {"word": "かかりつけ医", "reading": "かかりつけい", "meaning": "bác sĩ gia đình", "hanviet": "", "example": "かかりつけ医に相談しました。", "example_reading": "かかりつけいにそうだんしました。", "example_meaning": "Tôi đã hỏi ý kiến bác sĩ gia đình.", "level": "n3"},
       {"word": "病状", "reading": "びょうじょう", "meaning": "tình trạng bệnh", "hanviet": "bệnh trạng", "example": "病状は安定しています。", "example_reading": "びょうじょうはあんていしています。", "example_meaning": "Tình trạng bệnh đã ổn định.", "level": "n3"},
       {"word": "応急手当", "reading": "おうきゅうてあて", "meaning": "sơ cứu", "hanviet": "ứng cấp thủ đương", "example": "けが人にすぐ応急手当をしました。", "example_reading": "けがにんにすぐおうきゅうてあてをしました。", "example_meaning": "Tôi đã sơ cứu ngay cho người bị thương.", "level": "n3"},
       {"word": "消毒", "reading": "しょうどく", "meaning": "khử trùng, sát trùng", "hanviet": "tiêu độc", "example": "傷口をきれいに消毒してください。", "example_reading": "きずぐちをきれいにしょうどくしてください。", "example_meaning": "Hãy sát trùng vết thương cho sạch.", "level": "n3"},
@@ -174,13 +189,27 @@ const TOPICS = [
       {"word": "体調不良", "reading": "たいちょうふりょう", "meaning": "không khỏe trong người", "hanviet": "thể điều bất lương", "example": "体調不良で早退しました。", "example_reading": "たいちょうふりょうでそうたいしました。", "example_meaning": "Tôi về sớm vì không khỏe.", "level": "n3"},
       {"word": "医療費", "reading": "いりょうひ", "meaning": "chi phí y tế", "hanviet": "y liệu phí", "example": "医療費が思ったより高かったです。", "example_reading": "いりょうひがおもったよりたかかったです。", "example_meaning": "Chi phí y tế cao hơn tôi nghĩ.", "level": "n3"},
       {"word": "命", "reading": "いのち", "meaning": "sinh mạng", "hanviet": "mệnh", "example": "早い手術が命を救いました。", "example_reading": "はやいしゅじゅつがいのちをすくいました。", "example_meaning": "Ca mổ kịp thời đã cứu mạng sống.", "level": "n3"},
-      // ── n2 · 40 mục ──
+      {"word": "診療所", "reading": "しんりょうじょ", "meaning": "phòng khám", "hanviet": "chẩn liệu sở", "example": "村の診療所で薬をもらいました。", "example_reading": "むらのしんりょうじょでくすりをもらいました。", "example_meaning": "Tôi lấy thuốc ở phòng khám của làng.", "level": "n3"},
+      {"word": "保健所", "reading": "ほけんじょ", "meaning": "trung tâm y tế dự phòng", "hanviet": "bảo kiện sở", "example": "保健所で予防接種の相談をしました。", "example_reading": "ほけんじょでよぼうせっしゅのそうだんをしました。", "example_meaning": "Tôi đã hỏi tư vấn về tiêm phòng ở trung tâm y tế.", "level": "n3"},
+      {"word": "捻挫", "reading": "ねんざ", "meaning": "bong gân", "hanviet": "niệp tỏa", "example": "階段で足首を捻挫してしまいました。", "example_reading": "かいだんであしくびをねんざしてしまいました。", "example_meaning": "Tôi bị bong gân cổ chân ở cầu thang.", "level": "n3"},
+      {"word": "火傷", "reading": "やけど", "meaning": "bỏng", "hanviet": "hỏa thương", "example": "料理中に手を火傷しました。", "example_reading": "りょうりちゅうにてをやけどしました。", "example_meaning": "Tôi bị bỏng tay lúc nấu ăn.", "level": "n3"},
+      {"word": "湿布", "reading": "しっぷ", "meaning": "miếng dán giảm đau", "hanviet": "thấp bố", "example": "腰が痛いので湿布を貼りました。", "example_reading": "こしがいたいのでしっぷをはりました。", "example_meaning": "Vì đau lưng nên tôi dán miếng dán giảm đau.", "level": "n3"},
+      {"word": "錠剤", "reading": "じょうざい", "meaning": "thuốc viên", "hanviet": "đĩnh tễ", "example": "この薬は錠剤なので水で飲んでください。", "example_reading": "このくすりはじょうざいなのでみずでのんでください。", "example_meaning": "Thuốc này là dạng viên nên hãy uống với nước.", "level": "n3"},
+      {"word": "市販薬", "reading": "しはんやく", "meaning": "thuốc bán không cần toa", "hanviet": "thị phiến dược", "example": "軽い頭痛なら市販薬で十分です。", "example_reading": "かるいずつうならしはんやくでじゅうぶんです。", "example_meaning": "Nếu chỉ đau đầu nhẹ thì thuốc không cần toa là đủ.", "level": "n3"},
+      {"word": "漢方", "reading": "かんぽう", "meaning": "Đông y, thuốc bắc", "hanviet": "hán phương", "example": "冷え性を治すために漢方を試しています。", "example_reading": "ひえしょうをなおすためにかんぽうをためしています。", "example_meaning": "Tôi đang thử Đông y để chữa chứng lạnh người.", "level": "n3"},
+      {"word": "解熱剤", "reading": "げねつざい", "meaning": "thuốc hạ sốt", "hanviet": "giải nhiệt tễ", "example": "熱が高いので解熱剤を飲みました。", "example_reading": "ねつがたかいのでげねつざいをのみました。", "example_meaning": "Vì sốt cao nên tôi đã uống thuốc hạ sốt.", "level": "n3"},
+      {"word": "採血", "reading": "さいけつ", "meaning": "lấy máu", "hanviet": "thái huyết", "example": "健康診断で採血をしました。", "example_reading": "けんこうしんだんでさいけつをしました。", "example_meaning": "Tôi đã được lấy máu khi khám sức khỏe.", "level": "n3"},
+      {"word": "視力", "reading": "しりょく", "meaning": "thị lực", "hanviet": "thị lực", "example": "最近、視力が落ちた気がします。", "example_reading": "さいきん、しりょくがおちたきがします。", "example_meaning": "Gần đây tôi cảm thấy thị lực giảm.", "level": "n3"},
+      {"word": "人間ドック", "reading": "にんげんドック", "meaning": "khám sức khỏe tổng quát", "hanviet": "nhân gian", "example": "父は毎年人間ドックを受けています。", "example_reading": "ちちはまいとしにんげんどっくをうけています。", "example_meaning": "Bố tôi năm nào cũng khám sức khỏe tổng quát.", "level": "n3"},
+      {"word": "脱水症状", "reading": "だっすいしょうじょう", "meaning": "triệu chứng mất nước", "hanviet": "thoát thủy chứng trạng", "example": "暑い日は脱水症状に注意してください。", "example_reading": "あついひはだっすいしょうじょうにちゅういしてください。", "example_meaning": "Ngày nóng hãy chú ý triệu chứng mất nước.", "level": "n3"},
+      {"word": "打撲", "reading": "だぼく", "meaning": "chấn thương do va đập, bầm tím", "hanviet": "đả phác", "example": "転んで膝を強く打撲しました。", "example_reading": "ころんでひざをつよくだぼくしました。", "example_meaning": "Tôi ngã và va mạnh đầu gối.", "level": "n3"},
+      // ── n2 · 53 mục ──
       {"word": "処方箋", "reading": "しょほうせん", "meaning": "đơn thuốc", "hanviet": "xử phương tiên", "example": "医者からもらった処方箋を持って、近くの薬局で薬を受け取りました。", "example_reading": "いしゃからもらったしょほうせんをもって、ちかくのやっきょくでくすりをうけとりました。", "example_meaning": "Tôi cầm đơn thuốc bác sĩ đưa đến hiệu thuốc gần đó để nhận thuốc.", "level": "n2"},
       {"word": "麻酔", "reading": "ますい", "meaning": "gây mê, gây tê", "hanviet": "ma túy", "example": "手術の前に麻酔をかけます。", "example_reading": "しゅじゅつのまえにますいをかけます。", "example_meaning": "Trước khi phẫu thuật sẽ gây mê.", "level": "n2"},
       {"word": "主治医", "reading": "しゅじい", "meaning": "bác sĩ điều trị chính", "hanviet": "chủ trị y", "example": "主治医と今後の方針を相談しました。", "example_reading": "しゅじいとこんごのほうしんをそうだんしました。", "example_meaning": "Tôi đã bàn với bác sĩ điều trị về phương hướng sắp tới.", "level": "n2"},
       {"word": "経過観察", "reading": "けいかかんさつ", "meaning": "theo dõi diễn tiến", "hanviet": "kinh quá quan sát", "example": "手術後は三か月の経過観察が必要です。", "example_reading": "しゅじゅつごはさんかげつのけいかかんさつがひつようです。", "example_meaning": "Sau phẫu thuật cần theo dõi diễn tiến ba tháng.", "level": "n2"},
       {"word": "問診票", "reading": "もんしんひょう", "meaning": "phiếu khai bệnh", "hanviet": "vấn chẩn phiếu", "example": "問診票に症状を書きます。", "example_reading": "もんしんひょうにしょうじょうをかきます。", "example_meaning": "Ghi triệu chứng vào phiếu khai bệnh.", "level": "n2"},
-      {"word": "付き添い", "reading": "つきそい", "meaning": "người đi cùng chăm sóc", "hanviet": "phó thiêm", "example": "母の付き添いで病院へ行きました。", "example_reading": "ははのつきそいでびょういんへいきました。", "example_meaning": "Tôi đi viện để chăm mẹ.", "level": "n2"},
+      {"word": "付き添い", "reading": "つきそい", "meaning": "người đi kèm chăm sóc; việc đi cùng chăm sóc", "hanviet": "phó thiêm", "example": "母の付き添いで病院へ行きました。", "example_reading": "ははのつきそいでびょういんへいきました。", "example_meaning": "Tôi đã đến bệnh viện với tư cách người đi kèm chăm sóc mẹ.", "level": "n2"},
       {"word": "再発", "reading": "さいはつ", "meaning": "tái phát", "hanviet": "tái phát", "example": "病気が再発しないか心配です。", "example_reading": "びょうきがさいはつしないかしんぱいです。", "example_meaning": "Tôi lo bệnh tái phát.", "level": "n2"},
       {"word": "副反応", "reading": "ふくはんのう", "meaning": "phản ứng phụ (sau tiêm)", "hanviet": "phó phản ứng", "example": "ワクチンの副反応で熱が出ました。", "example_reading": "わくちんのふくはんのうでねつがでました。", "example_meaning": "Tôi sốt do phản ứng phụ của vắc-xin.", "level": "n2"},
       {"word": "大病", "reading": "たいびょう", "meaning": "bệnh nặng", "hanviet": "đại bệnh", "example": "大病を乗り越えました。", "example_reading": "たいびょうをのりこえました。", "example_meaning": "Tôi đã vượt qua căn bệnh nặng.", "level": "n2"},
@@ -215,7 +244,20 @@ const TOPICS = [
       {"word": "持続", "reading": "じぞく", "meaning": "kéo dài liên tục", "hanviet": "trì tục", "example": "効果が長く持続します。", "example_reading": "こうかがながくじぞくします。", "example_meaning": "Hiệu quả kéo dài lâu.", "level": "n2"},
       {"word": "経口", "reading": "けいこう", "meaning": "đường uống", "hanviet": "kinh khẩu", "example": "経口の薬に変わりました。", "example_reading": "けいこうのくすりにかわりました。", "example_meaning": "Đã đổi sang thuốc đường uống.", "level": "n2"},
       {"word": "安静時", "reading": "あんせいじ", "meaning": "lúc nghỉ ngơi", "hanviet": "an tĩnh thời", "example": "安静時にも痛みがあります。", "example_reading": "あんせいじにもいたみがあります。", "example_meaning": "Lúc nghỉ tôi vẫn đau.", "level": "n2"},
-      // ── n1 · 41 mục ──
+      {"word": "虫垂炎", "reading": "ちゅうすいえん", "meaning": "viêm ruột thừa", "hanviet": "trùng thùy viêm", "example": "腹痛がひどく、虫垂炎と診断されました。", "example_reading": "ふくつうがひどく、ちゅうすいえんとしんだんされました。", "example_meaning": "Đau bụng dữ dội, tôi được chẩn đoán viêm ruột thừa.", "level": "n2"},
+      {"word": "糖尿病", "reading": "とうにょうびょう", "meaning": "bệnh tiểu đường", "hanviet": "đường niệu bệnh", "example": "糖尿病の予防には、食生活の改善が大切です。", "example_reading": "とうにょうびょうのよぼうには、しょくせいかつのかいぜんがたいせつです。", "example_meaning": "Để phòng bệnh tiểu đường, cải thiện chế độ ăn rất quan trọng.", "level": "n2"},
+      {"word": "高血圧", "reading": "こうけつあつ", "meaning": "huyết áp cao", "hanviet": "cao huyết áp", "example": "高血圧の人は、塩分を控えたほうがいいです。", "example_reading": "こうけつあつのひとは、えんぶんをひかえたほうがいいです。", "example_meaning": "Người huyết áp cao nên hạn chế muối.", "level": "n2"},
+      {"word": "肺炎", "reading": "はいえん", "meaning": "viêm phổi", "hanviet": "phế viêm", "example": "風邪をこじらせて、肺炎になってしまいました。", "example_reading": "かぜをこじらせて、はいえんになってしまいました。", "example_meaning": "Cảm cúm nặng thêm nên tôi bị viêm phổi.", "level": "n2"},
+      {"word": "病棟", "reading": "びょうとう", "meaning": "khu điều trị nội trú", "hanviet": "bệnh đống", "example": "看護師が夜の病棟を見回っています。", "example_reading": "かんごしがよるのびょうとうをみまわっています。", "example_meaning": "Y tá đang đi tuần tra khu bệnh vào ban đêm.", "level": "n2"},
+      {"word": "往診", "reading": "おうしん", "meaning": "bác sĩ đến khám tại nhà", "hanviet": "vãng chẩn", "example": "歩けない祖母のために、医者に往診を頼みました。", "example_reading": "あるけないそぼのために、いしゃにおうしんをたのみました。", "example_meaning": "Vì bà không đi được nên tôi nhờ bác sĩ đến khám tại nhà.", "level": "n2"},
+      {"word": "難病", "reading": "なんびょう", "meaning": "bệnh khó chữa", "hanviet": "nan bệnh", "example": "難病の治療法の研究が進められています。", "example_reading": "なんびょうのちりょうほうのけんきゅうがすすめられています。", "example_meaning": "Việc nghiên cứu phương pháp điều trị bệnh khó chữa đang được tiến hành.", "level": "n2"},
+      {"word": "容体", "reading": "ようだい", "meaning": "tình trạng bệnh", "hanviet": "dung thể", "example": "患者の容体が急に悪くなりました。", "example_reading": "かんじゃのようだいがきゅうにわるくなりました。", "example_meaning": "Tình trạng bệnh nhân đột ngột xấu đi.", "level": "n2"},
+      {"word": "発作", "reading": "ほっさ", "meaning": "cơn (hen, đau tim...)", "hanviet": "phát tác", "example": "夜中に、喘息の発作が起きました。", "example_reading": "よなかに、ぜんそくのほっさがおきました。", "example_meaning": "Nửa đêm tôi lên cơn hen.", "level": "n2"},
+      {"word": "摘出", "reading": "てきしゅつ", "meaning": "cắt bỏ, lấy ra (phẫu thuật)", "hanviet": "trích xuất", "example": "手術で、腫瘍を摘出しました。", "example_reading": "しゅじゅつで、しゅようをてきしゅつしました。", "example_meaning": "Đã cắt bỏ khối u bằng phẫu thuật.", "level": "n2"},
+      {"word": "救命", "reading": "きゅうめい", "meaning": "cứu sống", "hanviet": "cứu mệnh", "example": "救命措置が早かったので、命が助かりました。", "example_reading": "きゅうめいそちがはやかったので、いのちがたすかりました。", "example_meaning": "Nhờ sơ cứu kịp thời nên tính mạng được cứu.", "level": "n2"},
+      {"word": "手術室", "reading": "しゅじゅつしつ", "meaning": "phòng mổ", "hanviet": "thủ thuật thất", "example": "手術室の前で、家族が待っています。", "example_reading": "しゅじゅつしつのまえで、かぞくがまっています。", "example_meaning": "Gia đình đang chờ trước phòng mổ.", "level": "n2"},
+      {"word": "禁忌", "reading": "きんき", "meaning": "chống chỉ định", "hanviet": "cấm kị", "example": "この薬は、妊娠中は禁忌とされています。", "example_reading": "このくすりは、にんしんちゅうはきんきとされています。", "example_meaning": "Thuốc này được xem là chống chỉ định khi mang thai.", "level": "n2"},
+      // ── n1 · 54 mục ──
       {"word": "予後", "reading": "よご", "meaning": "tiên lượng (bệnh)", "hanviet": "dư hậu", "example": "手術後の予後は良好です。", "example_reading": "しゅじゅつごのよごはりょうこうです。", "example_meaning": "Tiên lượng sau phẫu thuật là tốt.", "level": "n1"},
       {"word": "症例", "reading": "しょうれい", "meaning": "ca bệnh, trường hợp bệnh", "hanviet": "chứng lệ", "example": "珍しい症例が報告されました。", "example_reading": "めずらしいしょうれいがほうこくされました。", "example_meaning": "Một ca bệnh hiếm gặp đã được báo cáo.", "level": "n1"},
       {"word": "既往歴", "reading": "きおうれき", "meaning": "tiền sử bệnh", "hanviet": "ký vãng lịch", "example": "既往歴を医師に伝えました。", "example_reading": "きおうれきをいしにつたえました。", "example_meaning": "Tôi đã báo tiền sử bệnh cho bác sĩ.", "level": "n1"},
@@ -257,6 +299,19 @@ const TOPICS = [
       {"word": "医療崩壊", "reading": "いりょうほうかい", "meaning": "quá tải sụp đổ hệ thống y tế", "hanviet": "y liệu băng hoại", "example": "医療崩壊が懸念されました。", "example_reading": "いりょうほうかいがけねんされました。", "example_meaning": "Người ta lo hệ thống y tế sụp đổ.", "level": "n1"},
       {"word": "後遺症", "reading": "こういしょう", "meaning": "di chứng", "hanviet": "hậu di chứng", "example": "事故の後遺症が残りました。", "example_reading": "じこのこういしょうがのこりました。", "example_meaning": "Tai nạn để lại di chứng.", "level": "n1"},
       {"word": "投与量", "reading": "とうよりょう", "meaning": "liều dùng (cho bệnh nhân)", "hanviet": "đầu dữ lượng", "example": "投与量を調整しました。", "example_reading": "とうよりょうをちょうせいしました。", "example_meaning": "Đã điều chỉnh liều dùng.", "level": "n1"},
+      {"word": "蘇生", "reading": "そせい", "meaning": "hồi sức, hồi sinh", "hanviet": "tô sinh", "example": "心臓が止まった患者に、蘇生を試みました。", "example_reading": "しんぞうがとまったかんじゃに、そせいをこころみました。", "example_meaning": "Đã cố gắng hồi sức cho bệnh nhân ngừng tim.", "level": "n1"},
+      {"word": "診療報酬", "reading": "しんりょうほうしゅう", "meaning": "phí khám chữa bệnh do bảo hiểm chi trả", "hanviet": "chẩn liệu báo thù", "example": "診療報酬の改定で、病院の経営が変わります。", "example_reading": "しんりょうほうしゅうのかいていで、びょういんのけいえいがかわります。", "example_meaning": "Việc sửa đổi phí khám chữa bệnh sẽ thay đổi cách vận hành bệnh viện.", "level": "n1"},
+      {"word": "骨粗鬆症", "reading": "こつそしょうしょう", "meaning": "loãng xương", "hanviet": "cốt thô tùng chứng", "example": "高齢の女性は、骨粗鬆症に注意が必要です。", "example_reading": "こうれいのじょせいは、こつそしょうしょうにちゅういがひつようです。", "example_meaning": "Phụ nữ cao tuổi cần chú ý bệnh loãng xương.", "level": "n1"},
+      {"word": "動脈硬化", "reading": "どうみゃくこうか", "meaning": "xơ cứng động mạch", "hanviet": "động mạch ngạnh hóa", "example": "動脈硬化を防ぐために、食事に気をつけています。", "example_reading": "どうみゃくこうかをふせぐために、しょくじにきをつけています。", "example_meaning": "Để ngăn ngừa xơ cứng động mạch, tôi chú ý ăn uống.", "level": "n1"},
+      {"word": "拒絶反応", "reading": "きょぜつはんのう", "meaning": "phản ứng thải ghép", "hanviet": "cự tuyệt phản ứng", "example": "移植後は、拒絶反応を抑える薬を飲み続けます。", "example_reading": "いしょくごは、きょぜつはんのうをおさえるくすりをのみつづけます。", "example_meaning": "Sau ghép tạng phải tiếp tục uống thuốc chống thải ghép.", "level": "n1"},
+      {"word": "陽性", "reading": "ようせい", "meaning": "dương tính", "hanviet": "dương tính", "example": "検査の結果、陽性と判定されました。", "example_reading": "けんさのけっか、ようせいとはんていされました。", "example_meaning": "Kết quả xét nghiệm được xác định là dương tính.", "level": "n1"},
+      {"word": "陰性", "reading": "いんせい", "meaning": "âm tính", "hanviet": "âm tính", "example": "再検査の結果は、陰性でした。", "example_reading": "さいけんさのけっかは、いんせいでした。", "example_meaning": "Kết quả xét nghiệm lại là âm tính.", "level": "n1"},
+      {"word": "痙攣", "reading": "けいれん", "meaning": "co giật, chuột rút", "hanviet": "kinh luyến", "example": "高熱で、子供が痙攣を起こしました。", "example_reading": "こうねつで、こどもがけいれんをおこしました。", "example_meaning": "Đứa trẻ bị co giật vì sốt cao.", "level": "n1"},
+      {"word": "失神", "reading": "しっしん", "meaning": "ngất xỉu", "hanviet": "thất thần", "example": "暑い場所に長くいて、失神しました。", "example_reading": "あついばしょにながくいて、しっしんしました。", "example_meaning": "Ở lâu chỗ nóng nên tôi ngất xỉu.", "level": "n1"},
+      {"word": "認知症", "reading": "にんちしょう", "meaning": "sa sút trí tuệ", "hanviet": "nhận tri chứng", "example": "認知症の家族を支える制度が整えられています。", "example_reading": "にんちしょうのかぞくをささえるせいどがととのえられています。", "example_meaning": "Chế độ hỗ trợ gia đình có người sa sút trí tuệ đang được hoàn thiện.", "level": "n1"},
+      {"word": "脳卒中", "reading": "のうそっちゅう", "meaning": "đột quỵ", "hanviet": "não tốt trúng", "example": "脳卒中は、早い治療が命を救います。", "example_reading": "のうそっちゅうは、はやいちりょうがいのちをすくいます。", "example_meaning": "Với đột quỵ, điều trị sớm cứu được mạng sống.", "level": "n1"},
+      {"word": "心筋梗塞", "reading": "しんきんこうそく", "meaning": "nhồi máu cơ tim", "hanviet": "tâm cân ngạnh tắc", "example": "胸の激しい痛みは、心筋梗塞の可能性があります。", "example_reading": "むねのはげしいいたみは、しんきんこうそくのかのうせいがあります。", "example_meaning": "Đau ngực dữ dội có thể là nhồi máu cơ tim.", "level": "n1"},
+      {"word": "院内感染", "reading": "いんないかんせん", "meaning": "nhiễm khuẩn bệnh viện", "hanviet": "viện nội cảm nhiễm", "example": "院内感染を防ぐため、手洗いを徹底しています。", "example_reading": "いんないかんせんをふせぐため、てあらいをてっていしています。", "example_meaning": "Để phòng nhiễm khuẩn bệnh viện, việc rửa tay được thực hiện triệt để.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [01] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -285,7 +340,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [02] 2. 健康・運動  🏃  |  main  |  vocab 180 · grammar 18
+  // [02] 2. 健康・運動  🏃  |  main  |  vocab 230 · grammar 18
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "2. 健康・運動",
@@ -293,19 +348,22 @@ const TOPICS = [
     "icon": "🏃",
     "category": "main",
     "vocab": [
-      // ── n5 · 11 mục ──
+      // ── n5 · 14 mục ──
       {"word": "健康", "reading": "けんこう", "meaning": "sức khỏe", "hanviet": "kiện khang", "example": "毎日野菜を食べるようにしているので、健康には自信があります。", "example_reading": "まいにちやさいをたべるようにしているので、けんこうにはじしんがあります。", "example_meaning": "Vì tôi luôn cố ăn rau mỗi ngày nên tôi tự tin về sức khỏe của mình.", "level": "n5"},
       {"word": "運動", "reading": "うんどう", "meaning": "vận động, thể dục", "hanviet": "vận động", "example": "忙しくても週に三回は運動する時間を作るようにしています。", "example_reading": "いそがしくてもしゅうにさんかいはうんどうするじかんをつくるようにしています。", "example_meaning": "Dù bận tôi vẫn cố sắp xếp thời gian tập thể dục ba lần một tuần.", "level": "n5"},
       {"word": "走る", "reading": "はしる", "meaning": "chạy", "hanviet": "tẩu", "example": "毎朝公園を走っています。", "example_reading": "まいあさこうえんをはしっています。", "example_meaning": "Sáng nào tôi cũng chạy ở công viên.", "level": "n5"},
       {"word": "歩く", "reading": "あるく", "meaning": "đi bộ", "hanviet": "bộ", "example": "一駅分歩くようにしています。", "example_reading": "いちえきぶんあるくようにしています。", "example_meaning": "Tôi cố đi bộ một quãng bằng một ga tàu.", "level": "n5"},
       {"word": "泳ぐ", "reading": "およぐ", "meaning": "bơi", "hanviet": "vịnh", "example": "週末はプールで泳ぎます。", "example_reading": "しゅうまつはぷーるでおよぎます。", "example_meaning": "Cuối tuần tôi bơi ở hồ bơi.", "level": "n5"},
       {"word": "野菜", "reading": "やさい", "meaning": "rau", "hanviet": "dã thái", "example": "毎食野菜をたくさん食べます。", "example_reading": "まいしょくやさいをたくさんたべます。", "example_meaning": "Bữa nào tôi cũng ăn nhiều rau.", "level": "n5"},
-      {"word": "スポーツ", "reading": "スポーツ", "meaning": "thể thao", "hanviet": "", "example": "スポーツをするのが好きです。", "example_reading": "すぽーつをするのがすきです。", "example_meaning": "Tôi thích chơi thể thao.", "level": "n5"},
+      {"word": "スポーツ", "reading": "スポーツ", "meaning": "thể thao", "hanviet": "", "example": "スポーツが好きです。", "example_reading": "すぽーつがすきです。", "example_meaning": "Tôi thích thể thao.", "level": "n5"},
       {"word": "サッカー", "reading": "サッカー", "meaning": "bóng đá", "hanviet": "", "example": "週末は友達とサッカーをします。", "example_reading": "しゅうまつはともだちとさっかーをします。", "example_meaning": "Cuối tuần tôi đá bóng với bạn.", "level": "n5"},
-      {"word": "テニス", "reading": "テニス", "meaning": "quần vợt", "hanviet": "", "example": "母はテニスを習っています。", "example_reading": "ははははてにすをならっています。", "example_meaning": "Mẹ tôi đang học quần vợt.", "level": "n5"},
+      {"word": "テニス", "reading": "テニス", "meaning": "quần vợt", "hanviet": "", "example": "母はテニスを習っています。", "example_reading": "はははてにすをならっています。", "example_meaning": "Mẹ tôi đang học quần vợt.", "level": "n5"},
       {"word": "眠い", "reading": "ねむい", "meaning": "buồn ngủ", "hanviet": "miên", "example": "午後はいつも眠くなります。", "example_reading": "ごごはいつもねむくなります。", "example_meaning": "Buổi chiều tôi luôn buồn ngủ.", "level": "n5"},
       {"word": "起きる", "reading": "おきる", "meaning": "thức dậy", "hanviet": "khởi", "example": "毎朝六時に起きます。", "example_reading": "まいあさろくじにおきます。", "example_meaning": "Sáng nào tôi cũng dậy lúc 6 giờ.", "level": "n5"},
-      // ── n4 · 29 mục ──
+      {"word": "体育", "reading": "たいいく", "meaning": "thể dục (môn học)", "hanviet": "thể dục", "example": "体育の授業でサッカーをしました。", "example_reading": "たいいくのじゅぎょうでさっかーをしました。", "example_meaning": "Trong giờ thể dục chúng tôi đã chơi bóng đá.", "level": "n5"},
+      {"word": "野球", "reading": "やきゅう", "meaning": "bóng chày", "hanviet": "dã cầu", "example": "週末は友達と野球をします。", "example_reading": "しゅうまつはともだちとやきゅうをします。", "example_meaning": "Cuối tuần tôi chơi bóng chày với bạn.", "level": "n5"},
+      {"word": "朝ご飯", "reading": "あさごはん", "meaning": "bữa sáng", "hanviet": "triêu phạn", "example": "朝ご飯を食べると、一日元気に過ごせます。", "example_reading": "あさごはんをたべると、いちにちげんきにすごせます。", "example_meaning": "Ăn sáng thì cả ngày sẽ khỏe khoắn.", "level": "n5"},
+      // ── n4 · 36 mục ──
       {"word": "体重", "reading": "たいじゅう", "meaning": "cân nặng", "hanviet": "thể trọng", "example": "ダイエットを始めてから三ヶ月で体重が五キロ減りました。", "example_reading": "だいえっとをはじめてからさんかげつでたいじゅうがごきろへりました。", "example_meaning": "Từ khi ăn kiêng, sau ba tháng cân nặng của tôi đã giảm năm ký.", "level": "n4"},
       {"word": "睡眠", "reading": "すいみん", "meaning": "giấc ngủ", "hanviet": "thụy miên", "example": "十分な睡眠を取らないと、次の日の仕事に集中できません。", "example_reading": "じゅうぶんなすいみんをとらないと、つぎのひのしごとにしゅうちゅうできません。", "example_meaning": "Nếu không ngủ đủ giấc thì hôm sau tôi không tập trung làm việc được.", "level": "n4"},
       {"word": "ダイエット", "reading": "ダイエット", "meaning": "ăn kiêng", "hanviet": "", "example": "無理なダイエットは体に良くないので、少しずつ体重を減らすことにしました。", "example_reading": "むりなだいえっとはからだによくないので、すこしずつたいじゅうをへらすことにしました。", "example_meaning": "Vì ăn kiêng quá mức không tốt cho cơ thể nên tôi quyết định giảm cân từ từ.", "level": "n4"},
@@ -316,7 +374,7 @@ const TOPICS = [
       {"word": "ジム", "reading": "ジム", "meaning": "phòng gym", "hanviet": "", "example": "毎晩ジムに通っています。", "example_reading": "まいばんじむにかよっています。", "example_meaning": "Mỗi tối tôi đều đến phòng gym.", "level": "n4"},
       {"word": "汗", "reading": "あせ", "meaning": "mồ hôi", "hanviet": "hãn", "example": "運動をすると汗をかきます。", "example_reading": "うんどうをするとあせをかきます。", "example_meaning": "Khi tập thể dục thì đổ mồ hôi.", "level": "n4"},
       {"word": "散歩", "reading": "さんぽ", "meaning": "đi dạo", "hanviet": "tán bộ", "example": "夕食後に軽く散歩します。", "example_reading": "ゆうしょくごにかるくさんぽします。", "example_meaning": "Sau bữa tối tôi đi dạo nhẹ.", "level": "n4"},
-      {"word": "体操", "reading": "たいそう", "meaning": "thể dục tay không", "hanviet": "thể thao", "example": "朝はラジオ体操をしています。", "example_reading": "あさはらじおたいそうをしています。", "example_meaning": "Buổi sáng tôi tập thể dục theo đài.", "level": "n4"},
+      {"word": "体操", "reading": "たいそう", "meaning": "thể dục, bài tập thể dục", "hanviet": "thể tháo", "example": "朝はラジオ体操をしています。", "example_reading": "あさはらじおたいそうをしています。", "example_meaning": "Buổi sáng tôi tập thể dục theo đài.", "level": "n4"},
       {"word": "準備運動", "reading": "じゅんびうんどう", "meaning": "khởi động", "hanviet": "chuẩn bị vận động", "example": "運動の前に準備運動をします。", "example_reading": "うんどうのまえにじゅんびうんどうをします。", "example_meaning": "Trước khi tập tôi khởi động.", "level": "n4"},
       {"word": "早寝早起き", "reading": "はやねはやおき", "meaning": "ngủ sớm dậy sớm", "hanviet": "tảo tẩm tảo khởi", "example": "早寝早起きを心がけています。", "example_reading": "はやねはやおきをこころがけています。", "example_meaning": "Tôi luôn chú ý ngủ sớm dậy sớm.", "level": "n4"},
       {"word": "水泳", "reading": "すいえい", "meaning": "bơi lội", "hanviet": "thủy vịnh", "example": "水泳は全身の運動になります。", "example_reading": "すいえいはぜんしんのうんどうになります。", "example_meaning": "Bơi là bài tập cho toàn thân.", "level": "n4"},
@@ -335,7 +393,14 @@ const TOPICS = [
       {"word": "休憩", "reading": "きゅうけい", "meaning": "nghỉ giải lao", "hanviet": "hưu khế", "example": "一時間ごとに休憩します。", "example_reading": "いちじかんごとにきゅうけいします。", "example_meaning": "Cứ một tiếng tôi nghỉ một lần.", "level": "n4"},
       {"word": "体調", "reading": "たいちょう", "meaning": "thể trạng", "hanviet": "thể điều", "example": "今日は体調がいいです。", "example_reading": "きょうはたいちょうがいいです。", "example_meaning": "Hôm nay thể trạng tôi tốt.", "level": "n4"},
       {"word": "マッサージ", "reading": "マッサージ", "meaning": "mát-xa", "hanviet": "", "example": "肩をマッサージしてもらいました。", "example_reading": "かたをまっさーじしてもらいました。", "example_meaning": "Tôi được mát-xa vai.", "level": "n4"},
-      // ── n3 · 48 mục ──
+      {"word": "体育館", "reading": "たいいくかん", "meaning": "nhà thi đấu, nhà thể chất", "hanviet": "thể dục quán", "example": "雨の日は体育館でバスケットをします。", "example_reading": "あめのひはたいいくかんでばすけっとをします。", "example_meaning": "Ngày mưa chúng tôi chơi bóng rổ trong nhà thi đấu.", "level": "n4"},
+      {"word": "登山", "reading": "とざん", "meaning": "leo núi", "hanviet": "đăng sơn", "example": "夏休みに家族で登山に行きました。", "example_reading": "なつやすみにかぞくでとざんにいきました。", "example_meaning": "Kỳ nghỉ hè tôi đã đi leo núi cùng gia đình.", "level": "n4"},
+      {"word": "選手", "reading": "せんしゅ", "meaning": "vận động viên, cầu thủ", "hanviet": "tuyển thủ", "example": "兄は学校の野球チームの選手です。", "example_reading": "あにはがっこうのやきゅうちーむのせんしゅです。", "example_meaning": "Anh trai tôi là cầu thủ đội bóng chày của trường.", "level": "n4"},
+      {"word": "応援", "reading": "おうえん", "meaning": "cổ vũ", "hanviet": "ứng viện", "example": "みんなで大きな声で友達を応援しました。", "example_reading": "みんなでおおきなこえでともだちをおうえんしました。", "example_meaning": "Mọi người cùng cổ vũ bạn thật to.", "level": "n4"},
+      {"word": "参加", "reading": "さんか", "meaning": "tham gia", "hanviet": "tham gia", "example": "来月のマラソン大会に参加するつもりです。", "example_reading": "らいげつのまらそんたいかいにさんかするつもりです。", "example_meaning": "Tôi định tham gia giải marathon tháng sau.", "level": "n4"},
+      {"word": "踊る", "reading": "おどる", "meaning": "nhảy múa", "hanviet": "dũng", "example": "週に一度、ダンス教室で踊っています。", "example_reading": "しゅうにいちど、だんすきょうしつでおどっています。", "example_meaning": "Mỗi tuần một lần tôi nhảy ở lớp khiêu vũ.", "level": "n4"},
+      {"word": "早起き", "reading": "はやおき", "meaning": "dậy sớm", "hanviet": "tảo khởi", "example": "早起きして公園を散歩するのが日課です。", "example_reading": "はやおきしてこうえんをさんぽするのがにっかです。", "example_meaning": "Dậy sớm đi dạo công viên là việc hằng ngày của tôi.", "level": "n4"},
+      // ── n3 · 62 mục ──
       {"word": "筋肉", "reading": "きんにく", "meaning": "cơ bắp", "hanviet": "cân nhục", "example": "ジムに通い始めてから、少しずつ筋肉がついてきました。", "example_reading": "じむにかよいはじめてから、すこしずつきんにくがついてきました。", "example_meaning": "Từ khi bắt đầu đi phòng gym, cơ bắp của tôi dần dần săn chắc lên.", "level": "n3"},
       {"word": "ストレス", "reading": "ストレス", "meaning": "căng thẳng", "hanviet": "", "example": "ストレスがたまると、頭痛や肩こりの原因になることがあります。", "example_reading": "ストレスがたまると、ずつうやかたこりのげんいんになることがあります。", "example_meaning": "Khi căng thẳng tích tụ có thể trở thành nguyên nhân gây đau đầu và mỏi vai.", "level": "n3"},
       {"word": "栄養", "reading": "えいよう", "meaning": "dinh dưỡng", "hanviet": "vinh dưỡng", "example": "栄養のバランスを考えて、毎日の食事を作るようにしています。", "example_reading": "えいようのばらんすをかんがえて、まいにちのしょくじをつくるようにしています。", "example_meaning": "Tôi luôn cân nhắc cân bằng dinh dưỡng khi nấu ăn mỗi ngày.", "level": "n3"},
@@ -382,9 +447,23 @@ const TOPICS = [
       {"word": "気晴らし", "reading": "きばらし", "meaning": "giải khuây", "hanviet": "khí tình", "example": "気晴らしに散歩します。", "example_reading": "きばらしにさんぽします。", "example_meaning": "Tôi đi dạo cho khuây khỏa.", "level": "n3"},
       {"word": "運動不足", "reading": "うんどうぶそく", "meaning": "thiếu vận động", "hanviet": "vận động bất túc", "example": "在宅勤務で運動不足です。", "example_reading": "ざいたくきんむでうんどうぶそくです。", "example_meaning": "Làm việc tại nhà nên tôi thiếu vận động.", "level": "n3"},
       {"word": "体力づくり", "reading": "たいりょくづくり", "meaning": "rèn thể lực", "hanviet": "thể lực", "example": "体力づくりのために歩いています。", "example_reading": "たいりょくづくりのためにあるいています。", "example_meaning": "Tôi đi bộ để rèn thể lực.", "level": "n3"},
-      {"word": "ジム通い", "reading": "ジムがよい", "meaning": "việc đi tập gym", "hanviet": "thông", "example": "ジム通いが続いています。", "example_reading": "じむがよいがつづいています。", "example_meaning": "Tôi vẫn duy trì việc đi gym.", "level": "n3"},
+      {"word": "ジム通い", "reading": "ジムかよい", "meaning": "việc đi tập gym", "hanviet": "thông", "example": "ジム通いが続いています。", "example_reading": "じむかよいがつづいています。", "example_meaning": "Tôi vẫn duy trì việc đi gym.", "level": "n3"},
       {"word": "柔軟", "reading": "じゅうなん", "meaning": "dẻo dai, linh hoạt", "hanviet": "nhu nhuyễn", "example": "体が柔軟になりました。", "example_reading": "からだがじゅうなんになりました。", "example_meaning": "Cơ thể tôi đã dẻo hơn.", "level": "n3"},
-      // ── n2 · 49 mục ──
+      {"word": "腕立て伏せ", "reading": "うでたてふせ", "meaning": "chống đẩy", "hanviet": "oản lập phục", "example": "毎朝、腕立て伏せを二十回しています。", "example_reading": "まいあさ、うでたてふせをにじゅっかいしています。", "example_meaning": "Mỗi sáng tôi chống đẩy hai mươi cái.", "level": "n3"},
+      {"word": "縄跳び", "reading": "なわとび", "meaning": "nhảy dây", "hanviet": "thằng khiêu", "example": "縄跳びは短時間で体力がつく運動です。", "example_reading": "なわとびはたんじかんでたいりょくがつくうんどうです。", "example_meaning": "Nhảy dây là môn vận động giúp tăng thể lực trong thời gian ngắn.", "level": "n3"},
+      {"word": "歩数", "reading": "ほすう", "meaning": "số bước chân", "hanviet": "bộ số", "example": "一日の歩数を毎日記録しています。", "example_reading": "いちにちのほすうをまいにちきろくしています。", "example_meaning": "Tôi ghi lại số bước chân mỗi ngày.", "level": "n3"},
+      {"word": "偏食", "reading": "へんしょく", "meaning": "kén ăn", "hanviet": "thiên thực", "example": "偏食をやめて、バランスよく食べるようにしています。", "example_reading": "へんしょくをやめて、ばらんすよくたべるようにしています。", "example_meaning": "Tôi bỏ thói kén ăn và cố ăn cân bằng.", "level": "n3"},
+      {"word": "日焼け", "reading": "ひやけ", "meaning": "cháy nắng", "hanviet": "nhật thiêu", "example": "海で日焼けして、背中が赤くなりました。", "example_reading": "うみでひやけして、せなかがあかくなりました。", "example_meaning": "Tôi bị cháy nắng ở biển, lưng đỏ ửng.", "level": "n3"},
+      {"word": "熟睡", "reading": "じゅくすい", "meaning": "ngủ say", "hanviet": "thục thụy", "example": "昨夜は久しぶりに熟睡できました。", "example_reading": "さくやはひさしぶりにじゅくすいできました。", "example_meaning": "Đêm qua lâu lắm rồi tôi mới ngủ say được.", "level": "n3"},
+      {"word": "睡眠時間", "reading": "すいみんじかん", "meaning": "thời gian ngủ", "hanviet": "thụy miên thời gian", "example": "最低でも七時間の睡眠時間を確保したいです。", "example_reading": "さいていでもしちじかんのすいみんじかんをかくほしたいです。", "example_meaning": "Tôi muốn đảm bảo ít nhất bảy tiếng ngủ.", "level": "n3"},
+      {"word": "スタミナ", "reading": "スタミナ", "meaning": "sức bền", "hanviet": "", "example": "毎日走っているので、スタミナには自信があります。", "example_reading": "まいにちはしっているので、すたみなにはじしんがあります。", "example_meaning": "Vì chạy mỗi ngày nên tôi tự tin về sức bền.", "level": "n3"},
+      {"word": "肌荒れ", "reading": "はだあれ", "meaning": "da bị xấu, nổi mụn", "hanviet": "cơ hoang", "example": "寝不足が続くと肌荒れしやすいです。", "example_reading": "ねぶそくがつづくとはだあれしやすいです。", "example_meaning": "Thiếu ngủ kéo dài thì da dễ bị xấu đi.", "level": "n3"},
+      {"word": "腹式呼吸", "reading": "ふくしきこきゅう", "meaning": "hít thở bằng bụng", "hanviet": "phúc thức hô hấp", "example": "寝る前に腹式呼吸をすると、心が落ち着きます。", "example_reading": "ねるまえにふくしきこきゅうをすると、こころがおちつきます。", "example_meaning": "Hít thở bằng bụng trước khi ngủ giúp tâm trạng bình tĩnh.", "level": "n3"},
+      {"word": "階段", "reading": "かいだん", "meaning": "cầu thang", "hanviet": "giai đoạn", "example": "エレベーターではなく階段を使うようにしています。", "example_reading": "えれべーたーではなくかいだんをつかうようにしています。", "example_meaning": "Tôi cố đi cầu thang bộ thay vì thang máy.", "level": "n3"},
+      {"word": "目覚め", "reading": "めざめ", "meaning": "sự thức dậy", "hanviet": "mục giác", "example": "朝日を浴びると目覚めがよくなります。", "example_reading": "あさひをあびるとめざめがよくなります。", "example_meaning": "Đón nắng sớm thì thức dậy sảng khoái hơn.", "level": "n3"},
+      {"word": "運動靴", "reading": "うんどうぐつ", "meaning": "giày thể thao", "hanviet": "vận động ngoa", "example": "新しい運動靴を買って、毎朝走り始めました。", "example_reading": "あたらしいうんどうぐつをかって、まいあさはしりはじめました。", "example_meaning": "Tôi mua giày thể thao mới và bắt đầu chạy mỗi sáng.", "level": "n3"},
+      {"word": "ストレス発散", "reading": "ストレスはっさん", "meaning": "xả stress", "hanviet": "phát tán", "example": "運動でストレス発散をするのが一番です。", "example_reading": "うんどうですとれすはっさんをするのがいちばんです。", "example_meaning": "Xả stress bằng vận động là tốt nhất.", "level": "n3"},
+      // ── n2 · 62 mục ──
       {"word": "免疫力", "reading": "めんえきりょく", "meaning": "sức đề kháng", "hanviet": "miễn dịch lực", "example": "免疫力を高めるためには、規則正しい生活が大切だと言われています。", "example_reading": "めんえきりょくをたかめるためには、きそくただしいせいかつがたいせつだといわれています。", "example_meaning": "Người ta nói rằng để tăng sức đề kháng thì lối sống điều độ rất quan trọng.", "level": "n2"},
       {"word": "生活習慣病", "reading": "せいかつしゅうかんびょう", "meaning": "bệnh do lối sống", "hanviet": "sinh hoạt tập quán bệnh", "example": "塩分の多い食事や運動不足は生活習慣病の原因になります。", "example_reading": "えんぶんのおおいしょくじやうんどうぶそくはせいかつしゅうかんびょうのげんいんになります。", "example_meaning": "Ăn nhiều muối và thiếu vận động là nguyên nhân gây ra các bệnh liên quan đến lối sống.", "level": "n2"},
       {"word": "柔軟性", "reading": "じゅうなんせい", "meaning": "độ dẻo dai", "hanviet": "nhu nhuyễn tính", "example": "ヨガで柔軟性を高めます。", "example_reading": "ようがでじゅうなんせいをたかめます。", "example_meaning": "Tập yoga để tăng độ dẻo dai.", "level": "n2"},
@@ -434,7 +513,20 @@ const TOPICS = [
       {"word": "水分不足", "reading": "すいぶんぶそく", "meaning": "thiếu nước", "hanviet": "thủy phân bất túc", "example": "水分不足に注意しましょう。", "example_reading": "すいぶんぶそくにちゅういしましょう。", "example_meaning": "Hãy chú ý tránh thiếu nước.", "level": "n2"},
       {"word": "継続的", "reading": "けいぞくてき", "meaning": "mang tính liên tục", "hanviet": "kế tục đích", "example": "継続的な運動が効果的です。", "example_reading": "けいぞくてきなうんどうがこうかてきです。", "example_meaning": "Vận động liên tục thì hiệu quả.", "level": "n2"},
       {"word": "負担軽減", "reading": "ふたんけいげん", "meaning": "giảm gánh nặng", "hanviet": "phụ đam khinh giảm", "example": "膝の負担軽減を図ります。", "example_reading": "ひざのふたんけいげんをはかります。", "example_meaning": "Tôi tìm cách giảm tải cho đầu gối.", "level": "n2"},
-      // ── n1 · 43 mục ──
+      {"word": "標準体重", "reading": "ひょうじゅんたいじゅう", "meaning": "cân nặng chuẩn", "hanviet": "tiêu chuẩn thể trọng", "example": "身長から標準体重を計算してみました。", "example_reading": "しんちょうからひょうじゅんたいじゅうをけいさんしてみました。", "example_meaning": "Tôi thử tính cân nặng chuẩn từ chiều cao.", "level": "n2"},
+      {"word": "炭水化物", "reading": "たんすいかぶつ", "meaning": "carbohydrate, tinh bột", "hanviet": "thán thủy hóa vật", "example": "運動の前には炭水化物を取るといいです。", "example_reading": "うんどうのまえにはたんすいかぶつをとるといいです。", "example_meaning": "Trước khi tập nên nạp carbohydrate.", "level": "n2"},
+      {"word": "脂質", "reading": "ししつ", "meaning": "chất béo, lipid", "hanviet": "chỉ chất", "example": "脂質を取りすぎないように気をつけています。", "example_reading": "ししつをとりすぎないようにきをつけています。", "example_meaning": "Tôi chú ý không ăn quá nhiều chất béo.", "level": "n2"},
+      {"word": "体質", "reading": "たいしつ", "meaning": "thể trạng, cơ địa", "hanviet": "thể chất", "example": "私は太りにくい体質です。", "example_reading": "わたしはふとりにくいたいしつです。", "example_meaning": "Tôi có cơ địa khó béo.", "level": "n2"},
+      {"word": "日課", "reading": "にっか", "meaning": "việc làm hằng ngày", "hanviet": "nhật khóa", "example": "夕食後の散歩が毎日の日課です。", "example_reading": "ゆうしょくごのさんぽがまいにちのにっかです。", "example_meaning": "Đi dạo sau bữa tối là việc làm hằng ngày của tôi.", "level": "n2"},
+      {"word": "瞬発力", "reading": "しゅんぱつりょく", "meaning": "sức bật", "hanviet": "thuấn phát lực", "example": "短距離走には瞬発力が必要です。", "example_reading": "たんきょりそうにはしゅんぱつりょくがひつようです。", "example_meaning": "Chạy cự ly ngắn cần có sức bật.", "level": "n2"},
+      {"word": "関節", "reading": "かんせつ", "meaning": "khớp", "hanviet": "quan tiết", "example": "膝の関節に負担がかからない運動を選びました。", "example_reading": "ひざのかんせつにふたんがかからないうんどうをえらびました。", "example_meaning": "Tôi chọn môn vận động không gây áp lực lên khớp gối.", "level": "n2"},
+      {"word": "骨格", "reading": "こっかく", "meaning": "bộ xương, khung xương", "hanviet": "cốt cách", "example": "彼は骨格がしっかりしていて、体が大きいです。", "example_reading": "かれはこっかくがしっかりしていて、からだがおおきいです。", "example_meaning": "Anh ấy có khung xương vững chắc nên thân hình to lớn.", "level": "n2"},
+      {"word": "運動神経", "reading": "うんどうしんけい", "meaning": "năng khiếu thể thao", "hanviet": "vận động thần kinh", "example": "弟は運動神経がよくて、どんなスポーツも得意です。", "example_reading": "おとうとはうんどうしんけいがよくて、どんなすぽーつもとくいです。", "example_meaning": "Em trai tôi có năng khiếu thể thao nên môn nào cũng giỏi.", "level": "n2"},
+      {"word": "腸内環境", "reading": "ちょうないかんきょう", "meaning": "môi trường đường ruột", "hanviet": "trường nội hoàn cảnh", "example": "ヨーグルトで腸内環境を整えています。", "example_reading": "よーぐるとでちょうないかんきょうをととのえています。", "example_meaning": "Tôi cải thiện môi trường đường ruột bằng sữa chua.", "level": "n2"},
+      {"word": "睡眠障害", "reading": "すいみんしょうがい", "meaning": "rối loạn giấc ngủ", "hanviet": "thụy miên chướng hại", "example": "睡眠障害が疑われる場合は、医師に相談してください。", "example_reading": "すいみんしょうがいがうたがわれるばあいは、いしにそうだんしてください。", "example_meaning": "Nếu nghi ngờ rối loạn giấc ngủ, hãy hỏi ý kiến bác sĩ.", "level": "n2"},
+      {"word": "食欲不振", "reading": "しょくよくふしん", "meaning": "chán ăn", "hanviet": "thực dục bất chấn", "example": "夏バテで食欲不振になりました。", "example_reading": "なつばてでしょくよくふしんになりました。", "example_meaning": "Tôi bị chán ăn vì mệt mỏi do nắng nóng.", "level": "n2"},
+      {"word": "疲労感", "reading": "ひろうかん", "meaning": "cảm giác mệt mỏi", "hanviet": "bì lao cảm", "example": "運動を始めてから、朝の疲労感が減りました。", "example_reading": "うんどうをはじめてから、あさのひろうかんがへりました。", "example_meaning": "Từ khi bắt đầu tập luyện, cảm giác mệt buổi sáng giảm đi.", "level": "n2"},
+      // ── n1 · 56 mục ──
       {"word": "代謝異常", "reading": "たいしゃいじょう", "meaning": "rối loạn trao đổi chất", "hanviet": "đại tạ dị thường", "example": "代謝異常が肥満の原因になることがあります。", "example_reading": "たいしゃいじょうがひまんのげんいんになることがあります。", "example_meaning": "Rối loạn trao đổi chất đôi khi là nguyên nhân gây béo phì.", "level": "n1"},
       {"word": "生体リズム", "reading": "せいたいリズム", "meaning": "nhịp sinh học", "hanviet": "sinh thể", "example": "生体リズムを整えると睡眠の質が上がります。", "example_reading": "せいたいりずむをととのえるとすいみんのしつがあがります。", "example_meaning": "Điều chỉnh nhịp sinh học giúp cải thiện chất lượng giấc ngủ.", "level": "n1"},
       {"word": "拮抗筋", "reading": "きっこうきん", "meaning": "cơ đối kháng", "hanviet": "cật kháng cân", "example": "拮抗筋を意識してトレーニングします。", "example_reading": "きっこうきんをいしきしてとれーにんぐします。", "example_meaning": "Tập luyện có ý thức về cơ đối kháng.", "level": "n1"},
@@ -478,6 +570,19 @@ const TOPICS = [
       {"word": "運動不足解消", "reading": "うんどうぶそくかいしょう", "meaning": "khắc phục thiếu vận động", "hanviet": "vận động bất túc giải tiêu", "example": "運動不足解消のため歩きます。", "example_reading": "うんどうぶそくかいしょうのためあるきます。", "example_meaning": "Tôi đi bộ để khắc phục thiếu vận động.", "level": "n1"},
       {"word": "健康増進", "reading": "けんこうぞうしん", "meaning": "tăng cường sức khỏe", "hanviet": "kiện khang tăng tiến", "example": "健康増進のプログラムです。", "example_reading": "けんこうぞうしんのぷろぐらむです。", "example_meaning": "Đây là chương trình tăng cường sức khỏe.", "level": "n1"},
       {"word": "生体機能", "reading": "せいたいきのう", "meaning": "chức năng cơ thể sống", "hanviet": "sinh thể cơ năng", "example": "生体機能を正常に保ちます。", "example_reading": "せいたいきのうをせいじょうにたもちます。", "example_meaning": "Giữ chức năng cơ thể ở mức bình thường.", "level": "n1"},
+      {"word": "靭帯", "reading": "じんたい", "meaning": "dây chằng", "hanviet": "nhận đái", "example": "サッカーの試合で膝の靭帯を痛めました。", "example_reading": "さっかーのしあいでひざのじんたいをいためました。", "example_meaning": "Tôi bị đau dây chằng đầu gối trong trận bóng đá.", "level": "n1"},
+      {"word": "腱", "reading": "けん", "meaning": "gân", "hanviet": "kiện", "example": "走りすぎてアキレス腱が痛くなりました。", "example_reading": "はしりすぎてあきれすけんがいたくなりました。", "example_meaning": "Chạy nhiều quá nên gân Achilles bị đau.", "level": "n1"},
+      {"word": "軟骨", "reading": "なんこつ", "meaning": "sụn", "hanviet": "nhuyễn cốt", "example": "加齢とともに膝の軟骨がすり減ります。", "example_reading": "かれいとともにひざのなんこつがすりへります。", "example_meaning": "Cùng với tuổi tác, sụn đầu gối bị mòn dần.", "level": "n1"},
+      {"word": "副交感神経", "reading": "ふくこうかんしんけい", "meaning": "thần kinh phó giao cảm", "hanviet": "phó giao cảm thần kinh", "example": "入浴すると副交感神経が優位になります。", "example_reading": "にゅうよくするとふくこうかんしんけいがゆういになります。", "example_meaning": "Tắm bồn làm thần kinh phó giao cảm chiếm ưu thế.", "level": "n1"},
+      {"word": "交感神経", "reading": "こうかんしんけい", "meaning": "thần kinh giao cảm", "hanviet": "giao cảm thần kinh", "example": "運動中は交感神経が活発に働きます。", "example_reading": "うんどうちゅうはこうかんしんけいがかっぱつにはたらきます。", "example_meaning": "Khi vận động, thần kinh giao cảm hoạt động mạnh.", "level": "n1"},
+      {"word": "抗酸化", "reading": "こうさんか", "meaning": "chống oxy hóa", "hanviet": "kháng toan hóa", "example": "抗酸化作用のある食品を意識的に取っています。", "example_reading": "こうさんかさようのあるしょくひんをいしきてきにとっています。", "example_meaning": "Tôi chủ động ăn thực phẩm có tác dụng chống oxy hóa.", "level": "n1"},
+      {"word": "中性脂肪", "reading": "ちゅうせいしぼう", "meaning": "triglyceride, mỡ trung tính", "hanviet": "trung tính chỉ phương", "example": "健診で中性脂肪の値が高いと言われました。", "example_reading": "けんしんでちゅうせいしぼうのあたいがたかいといわれました。", "example_meaning": "Khám sức khỏe tôi bị bảo là chỉ số mỡ trung tính cao.", "level": "n1"},
+      {"word": "内臓脂肪", "reading": "ないぞうしぼう", "meaning": "mỡ nội tạng", "hanviet": "nội tạng chỉ phương", "example": "内臓脂肪は有酸素運動で減らしやすいです。", "example_reading": "ないぞうしぼうはゆうさんそうんどうでへらしやすいです。", "example_meaning": "Mỡ nội tạng dễ giảm nhờ vận động aerobic.", "level": "n1"},
+      {"word": "骨盤", "reading": "こつばん", "meaning": "xương chậu", "hanviet": "cốt bàn", "example": "骨盤の歪みを直すストレッチを続けています。", "example_reading": "こつばんのゆがみをなおすすとれっちをつづけています。", "example_meaning": "Tôi duy trì bài giãn cơ chỉnh lệch xương chậu.", "level": "n1"},
+      {"word": "脊椎", "reading": "せきつい", "meaning": "cột sống", "hanviet": "tích chùy", "example": "長時間座ると脊椎に負担がかかります。", "example_reading": "ちょうじかんすわるとせきついにふたんがかかります。", "example_meaning": "Ngồi lâu sẽ gây áp lực lên cột sống.", "level": "n1"},
+      {"word": "体内時計", "reading": "たいないどけい", "meaning": "đồng hồ sinh học", "hanviet": "thể nội thời kế", "example": "朝日を浴びて体内時計をリセットします。", "example_reading": "あさひをあびてたいないどけいをりせっとします。", "example_meaning": "Tôi đón nắng sớm để đặt lại đồng hồ sinh học.", "level": "n1"},
+      {"word": "睡眠負債", "reading": "すいみんふさい", "meaning": "nợ ngủ", "hanviet": "thụy miên phụ trái", "example": "睡眠負債がたまると、集中力が落ちます。", "example_reading": "すいみんふさいがたまると、しゅうちゅうりょくがおちます。", "example_meaning": "Nợ ngủ tích tụ sẽ làm giảm khả năng tập trung.", "level": "n1"},
+      {"word": "コレステロール", "reading": "コレステロール", "meaning": "cholesterol", "hanviet": "", "example": "コレステロール値が気になって、食事を見直しました。", "example_reading": "これすてろーるちがきになって、しょくじをみなおしました。", "example_meaning": "Lo lắng về chỉ số cholesterol nên tôi xem lại chế độ ăn.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [02] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -504,7 +609,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [03] 3. 子育て  👶  |  main  |  vocab 180 · grammar 19
+  // [03] 3. 子育て  👶  |  main  |  vocab 230 · grammar 19
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "3. 子育て",
@@ -512,7 +617,7 @@ const TOPICS = [
     "icon": "👶",
     "category": "main",
     "vocab": [
-      // ── n5 · 15 mục ──
+      // ── n5 · 18 mục ──
       {"word": "赤ちゃん", "reading": "あかちゃん", "meaning": "em bé", "hanviet": "xích", "example": "赤ちゃんが泣いています。", "example_reading": "あかちゃんがないています。", "example_meaning": "Em bé đang khóc.", "level": "n5"},
       {"word": "絵本", "reading": "えほん", "meaning": "sách tranh", "hanviet": "hội bản", "example": "寝る前に絵本を読んであげます。", "example_reading": "ねるまえにえほんをよんであげます。", "example_meaning": "Đọc sách tranh cho con trước khi ngủ.", "level": "n5"},
       {"word": "子供", "reading": "こども", "meaning": "trẻ con", "hanviet": "tử cung", "example": "子供が三人います。", "example_reading": "こどもがさんにんいます。", "example_meaning": "Tôi có ba đứa con.", "level": "n5"},
@@ -528,7 +633,10 @@ const TOPICS = [
       {"word": "公園", "reading": "こうえん", "meaning": "công viên", "hanviet": "công viên", "example": "毎日公園で遊ばせます。", "example_reading": "まいにちこうえんであそばせます。", "example_meaning": "Ngày nào tôi cũng cho con chơi ở công viên.", "level": "n5"},
       {"word": "小さい", "reading": "ちいさい", "meaning": "nhỏ", "hanviet": "tiểu", "example": "小さい子には難しいです。", "example_reading": "ちいさいこにはむずかしいです。", "example_meaning": "Với trẻ nhỏ thì việc này khó.", "level": "n5"},
       {"word": "優しい", "reading": "やさしい", "meaning": "hiền, dịu dàng", "hanviet": "ưu", "example": "優しい子に育ってほしいです。", "example_reading": "やさしいこにそだってほしいです。", "example_meaning": "Tôi mong con lớn lên hiền hậu.", "level": "n5"},
-      // ── n4 · 35 mục ──
+      {"word": "弟", "reading": "おとうと", "meaning": "em trai", "hanviet": "đệ", "example": "弟は毎日公園でサッカーをしています。", "example_reading": "おとうとはまいにちこうえんでさっかーをしています。", "example_meaning": "Em trai tôi ngày nào cũng chơi bóng đá ở công viên.", "level": "n5"},
+      {"word": "妹", "reading": "いもうと", "meaning": "em gái", "hanviet": "muội", "example": "妹はまだ三歳で、とてもかわいいです。", "example_reading": "いもうとはまださんさいで、とてもかわいいです。", "example_meaning": "Em gái tôi mới ba tuổi và rất đáng yêu.", "level": "n5"},
+      {"word": "誕生日", "reading": "たんじょうび", "meaning": "sinh nhật", "hanviet": "đản sinh nhật", "example": "子供の誕生日にケーキを作りました。", "example_reading": "こどものたんじょうびにけーきをつくりました。", "example_meaning": "Tôi đã làm bánh cho sinh nhật của con.", "level": "n5"},
+      // ── n4 · 42 mục ──
       {"word": "子育て", "reading": "こそだて", "meaning": "nuôi dạy con", "hanviet": "tử dục", "example": "初めての子育てで分からないことが多く、先輩ママに相談しています。", "example_reading": "はじめてのこそだてでわからないことがおおく、せんぱいままにそうだんしています。", "example_meaning": "Vì lần đầu nuôi con nên có nhiều điều không hiểu nên tôi hay hỏi các mẹ đi trước.", "level": "n4"},
       {"word": "保育園", "reading": "ほいくえん", "meaning": "nhà trẻ", "hanviet": "bảo dục viên", "example": "保育園に預けている間、私は安心して仕事に集中できます。", "example_reading": "ほいくえんにあずけているあいだ、わたしはあんしんしてしごとにしゅうちゅうできます。", "example_meaning": "Trong lúc gửi con ở nhà trẻ, tôi có thể yên tâm tập trung làm việc.", "level": "n4"},
       {"word": "幼稚園", "reading": "ようちえん", "meaning": "mẫu giáo", "hanviet": "ấu trĩ viên", "example": "来年から息子が幼稚園に通うので、今から少し緊張しています。", "example_reading": "らいねんからむすこがようちえんにかようので、いまからすこしきんちょうしています。", "example_meaning": "Vì sang năm con trai tôi bắt đầu đi mẫu giáo nên từ giờ tôi đã hơi hồi hộp.", "level": "n4"},
@@ -564,7 +672,14 @@ const TOPICS = [
       {"word": "おやつ", "reading": "おやつ", "meaning": "bữa phụ", "hanviet": "", "example": "三時におやつをあげます。", "example_reading": "さんじにおやつをあげます。", "example_meaning": "Ba giờ tôi cho con ăn bữa phụ.", "level": "n4"},
       {"word": "怒る", "reading": "おこる", "meaning": "tức giận, mắng", "hanviet": "nộ", "example": "つい怒ってしまいました。", "example_reading": "ついおこってしまいました。", "example_meaning": "Tôi lỡ nổi giận mất rồi.", "level": "n4"},
       {"word": "入学", "reading": "にゅうがく", "meaning": "nhập học", "hanviet": "nhập học", "example": "来年小学校に入学します。", "example_reading": "らいねんしょうがっこうににゅうがくします。", "example_meaning": "Năm sau con vào lớp một.", "level": "n4"},
-      // ── n3 · 42 mục ──
+      {"word": "世話", "reading": "せわ", "meaning": "chăm sóc", "hanviet": "thế thoại", "example": "毎朝、子供の世話をしてから出勤します。", "example_reading": "まいあさ、こどものせわをしてからしゅっきんします。", "example_meaning": "Mỗi sáng tôi chăm con xong rồi mới đi làm.", "level": "n4"},
+      {"word": "迷子", "reading": "まいご", "meaning": "trẻ lạc", "hanviet": "mê tử", "example": "デパートで子供が迷子になって、慌てました。", "example_reading": "でぱーとでこどもがまいごになって、あわてました。", "example_meaning": "Con bị lạc ở trung tâm thương mại làm tôi hoảng hốt.", "level": "n4"},
+      {"word": "遊園地", "reading": "ゆうえんち", "meaning": "công viên giải trí", "hanviet": "du viên địa", "example": "日曜日に家族で遊園地へ行きました。", "example_reading": "にちようびにかぞくでゆうえんちへいきました。", "example_meaning": "Chủ nhật tôi đã cùng gia đình đi công viên giải trí.", "level": "n4"},
+      {"word": "抱く", "reading": "だく", "meaning": "ôm, bế", "hanviet": "bão", "example": "泣いている赤ちゃんを抱くと、すぐ静かになりました。", "example_reading": "ないているあかちゃんをだくと、すぐしずかになりました。", "example_meaning": "Bế đứa bé đang khóc thì bé im ngay.", "level": "n4"},
+      {"word": "誕生", "reading": "たんじょう", "meaning": "sự ra đời", "hanviet": "đản sinh", "example": "新しい家族の誕生を、みんなで喜びました。", "example_reading": "あたらしいかぞくのたんじょうを、みんなでよろこびました。", "example_meaning": "Mọi người cùng vui mừng vì thành viên mới ra đời.", "level": "n4"},
+      {"word": "寝顔", "reading": "ねがお", "meaning": "khuôn mặt lúc ngủ", "hanviet": "tẩm nhan", "example": "子供の寝顔を見ると、疲れが取れます。", "example_reading": "こどものねがおをみると、つかれがとれます。", "example_meaning": "Nhìn gương mặt con ngủ là hết mệt.", "level": "n4"},
+      {"word": "笑顔", "reading": "えがお", "meaning": "gương mặt tươi cười", "hanviet": "tiếu nhan", "example": "娘の笑顔が私の元気の源です。", "example_reading": "むすめのえがおがわたしのげんきのみなもとです。", "example_meaning": "Nụ cười của con gái là nguồn năng lượng của tôi.", "level": "n4"},
+      // ── n3 · 56 mục ──
       {"word": "育児", "reading": "いくじ", "meaning": "nuôi con", "hanviet": "dục nhi", "example": "育児と仕事の両立は簡単ではありませんが、夫婦で協力しています。", "example_reading": "いくじとしごとのりょうりつはかんたんではありませんが、ふうふできょうりょくしています。", "example_meaning": "Việc vừa nuôi con vừa đi làm không hề đơn giản nhưng vợ chồng tôi cùng hợp tác.", "level": "n3"},
       {"word": "しつけ", "reading": "しつけ", "meaning": "dạy dỗ, rèn luyện", "hanviet": "", "example": "子供のしつけは厳しすぎても優しすぎてもよくないと思います。", "example_reading": "こどものしつけはきびしすぎてもやさしすぎてもよくないとおもいます。", "example_meaning": "Tôi nghĩ dạy con quá nghiêm khắc hay quá dễ dãi đều không tốt.", "level": "n3"},
       {"word": "授乳", "reading": "じゅにゅう", "meaning": "cho con bú", "hanviet": "thụ nhũ", "example": "夜中の授乳が続くと、母親はどうしても寝不足になります。", "example_reading": "よなかのじゅにゅうがつづくと、ははおやはどうしてもねぶそくになります。", "example_meaning": "Nếu tiếp tục cho con bú vào ban đêm thì các bà mẹ chắc chắn sẽ thiếu ngủ.", "level": "n3"},
@@ -607,7 +722,21 @@ const TOPICS = [
       {"word": "しっかり", "reading": "しっかり", "meaning": "vững vàng, chắc chắn", "hanviet": "", "example": "しっかり自分で考えさせます。", "example_reading": "しっかりじぶんでかんがえさせます。", "example_meaning": "Tôi để con tự suy nghĩ cho vững.", "level": "n3"},
       {"word": "手がかかる", "reading": "てがかかる", "meaning": "tốn công chăm", "hanviet": "thủ", "example": "小さいうちは手がかかります。", "example_reading": "ちいさいうちはてがかかります。", "example_meaning": "Lúc còn nhỏ thì rất tốn công chăm.", "level": "n3"},
       {"word": "反省", "reading": "はんせい", "meaning": "tự nhìn lại, hối lỗi", "hanviet": "phản tỉnh", "example": "叱ったあとで反省しました。", "example_reading": "しかったあとではんせいしました。", "example_meaning": "Sau khi mắng con tôi tự nhìn lại mình.", "level": "n3"},
-      // ── n2 · 44 mục ──
+      {"word": "子守唄", "reading": "こもりうた", "meaning": "bài hát ru", "hanviet": "tử thủ ca", "example": "毎晩、子守唄を歌って赤ちゃんを寝かせます。", "example_reading": "まいばん、こもりうたをうたってあかちゃんをねかせます。", "example_meaning": "Mỗi tối tôi hát ru cho bé ngủ.", "level": "n3"},
+      {"word": "入園", "reading": "にゅうえん", "meaning": "nhập học mẫu giáo", "hanviet": "nhập viên", "example": "来月、息子が保育園に入園します。", "example_reading": "らいげつ、むすこがほいくえんににゅうえんします。", "example_meaning": "Tháng sau con trai tôi vào nhà trẻ.", "level": "n3"},
+      {"word": "卒園", "reading": "そつえん", "meaning": "tốt nghiệp mẫu giáo", "hanviet": "tốt viên", "example": "卒園式で、娘は大きな声で歌いました。", "example_reading": "そつえんしきで、むすめはおおきなこえでうたいました。", "example_meaning": "Ở lễ tốt nghiệp mẫu giáo, con gái tôi hát rất to.", "level": "n3"},
+      {"word": "出産祝い", "reading": "しゅっさんいわい", "meaning": "quà mừng sinh con", "hanviet": "xuất sản chúc", "example": "友達に出産祝いとして、ベビー服を贈りました。", "example_reading": "ともだちにしゅっさんいわいとして、べびーふくをおくりました。", "example_meaning": "Tôi tặng bạn quần áo trẻ em làm quà mừng sinh con.", "level": "n3"},
+      {"word": "妊婦", "reading": "にんぷ", "meaning": "phụ nữ mang thai", "hanviet": "nhâm phụ", "example": "電車で妊婦さんに席を譲りました。", "example_reading": "でんしゃでにんぷさんにせきをゆずりました。", "example_meaning": "Tôi nhường chỗ cho một phụ nữ mang thai trên tàu.", "level": "n3"},
+      {"word": "母乳", "reading": "ぼにゅう", "meaning": "sữa mẹ", "hanviet": "mẫu nhũ", "example": "できるだけ母乳で育てたいと思っています。", "example_reading": "できるだけぼにゅうでそだてたいとおもっています。", "example_meaning": "Tôi muốn nuôi con bằng sữa mẹ càng nhiều càng tốt.", "level": "n3"},
+      {"word": "哺乳瓶", "reading": "ほにゅうびん", "meaning": "bình sữa", "hanviet": "bộ nhũ bình", "example": "夜中に哺乳瓶でミルクをあげました。", "example_reading": "よなかにほにゅうびんでみるくをあげました。", "example_meaning": "Nửa đêm tôi cho bé uống sữa bằng bình.", "level": "n3"},
+      {"word": "ベビーカー", "reading": "ベビーカー", "meaning": "xe đẩy em bé", "hanviet": "", "example": "ベビーカーを押して買い物に行きました。", "example_reading": "べびーかーをおしてかいものにいきました。", "example_meaning": "Tôi đẩy xe em bé đi mua sắm.", "level": "n3"},
+      {"word": "歯磨き", "reading": "はみがき", "meaning": "đánh răng", "hanviet": "xỉ ma", "example": "寝る前の歯磨きを、子供に習慣づけています。", "example_reading": "ねるまえのはみがきを、こどもにしゅうかんづけています。", "example_meaning": "Tôi tập cho con thói quen đánh răng trước khi ngủ.", "level": "n3"},
+      {"word": "トイレトレーニング", "reading": "トイレトレーニング", "meaning": "tập cho bé đi vệ sinh", "hanviet": "", "example": "二歳になったので、トイレトレーニングを始めました。", "example_reading": "にさいになったので、といれとれーにんぐをはじめました。", "example_meaning": "Bé tròn hai tuổi nên tôi bắt đầu tập đi vệ sinh.", "level": "n3"},
+      {"word": "寝返り", "reading": "ねがえり", "meaning": "lật người", "hanviet": "tẩm phản", "example": "赤ちゃんが初めて寝返りをしました。", "example_reading": "あかちゃんがはじめてねがえりをしました。", "example_meaning": "Em bé lần đầu tiên biết lật.", "level": "n3"},
+      {"word": "はいはい", "reading": "はいはい", "meaning": "bò (em bé)", "hanviet": "", "example": "うちの子はもうはいはいで部屋中を動き回ります。", "example_reading": "うちのこはもうはいはいでへやじゅうをうごきまわります。", "example_meaning": "Con nhà tôi đã biết bò khắp phòng.", "level": "n3"},
+      {"word": "つかまり立ち", "reading": "つかまりだち", "meaning": "bám đứng", "hanviet": "lập", "example": "つかまり立ちができるようになって、目が離せません。", "example_reading": "つかまりだちができるようになって、めがはなせません。", "example_meaning": "Bé đã biết bám đứng nên tôi không thể rời mắt.", "level": "n3"},
+      {"word": "ミルク", "reading": "ミルク", "meaning": "sữa (cho bé)", "hanviet": "", "example": "三時間おきにミルクをあげています。", "example_reading": "さんじかんおきにみるくをあげています。", "example_meaning": "Cứ ba tiếng tôi lại cho bé uống sữa.", "level": "n3"},
+      // ── n2 · 57 mục ──
       {"word": "離乳食", "reading": "りにゅうしょく", "meaning": "ăn dặm", "hanviet": "ly nhũ thực", "example": "生後半年になったので、そろそろ離乳食を始めようと思っています。", "example_reading": "せいごはんとしになったので、そろそろりにゅうしょくをはじめようとおもっています。", "example_meaning": "Vì con đã được sáu tháng tuổi nên tôi định bắt đầu cho ăn dặm.", "level": "n2"},
       {"word": "反抗期", "reading": "はんこうき", "meaning": "tuổi nổi loạn", "hanviet": "phản kháng kỳ", "example": "二歳の反抗期は「イヤイヤ期」とも呼ばれ、多くの親が苦労します。", "example_reading": "にさいのはんこうきは「いやいやき」ともよばれ、おおくのおやがくろうします。", "example_meaning": "Giai đoạn nổi loạn tuổi lên hai còn được gọi là 'thời kỳ không thích', khiến nhiều bậc cha mẹ vất vả.", "level": "n2"},
       {"word": "兄弟げんか", "reading": "きょうだいげんか", "meaning": "anh chị em cãi nhau", "hanviet": "huynh đệ", "example": "兄弟げんかが起きたときは、どちらか一方だけを責めないようにしています。", "example_reading": "きょうだいげんかがおきたときは、どちらかいっぽうだけをせめないようにしています。", "example_meaning": "Khi anh chị em cãi nhau, tôi luôn tránh chỉ trách một bên.", "level": "n2"},
@@ -652,13 +781,26 @@ const TOPICS = [
       {"word": "しつけの悩み", "reading": "しつけのなやみ", "meaning": "trăn trở dạy con", "hanviet": "não", "example": "しつけの悩みは尽きません。", "example_reading": "しつけのなやみはつきません。", "example_meaning": "Trăn trở dạy con không bao giờ hết.", "level": "n2"},
       {"word": "生活自立", "reading": "せいかつじりつ", "meaning": "tự lập sinh hoạt", "hanviet": "sinh hoạt tự lập", "example": "生活自立を少しずつ促します。", "example_reading": "せいかつじりつをすこしずつうながします。", "example_meaning": "Tôi dần thúc đẩy con tự lập sinh hoạt.", "level": "n2"},
       {"word": "親としての成長", "reading": "おやとしてのせいちょう", "meaning": "trưởng thành với vai trò cha mẹ", "hanviet": "thành trưởng", "example": "子育ては親としての成長でもあります。", "example_reading": "こそだてはおやとしてのせいちょうでもあります。", "example_meaning": "Nuôi con cũng là sự trưởng thành của cha mẹ.", "level": "n2"},
-      // ── n1 · 44 mục ──
+      {"word": "乳児", "reading": "にゅうじ", "meaning": "trẻ sơ sinh (dưới 1 tuổi)", "hanviet": "nhũ nhi", "example": "乳児は免疫力が弱いので、人混みを避けています。", "example_reading": "にゅうじはめんえきりょくがよわいので、ひとごみをさけています。", "example_meaning": "Trẻ sơ sinh sức đề kháng yếu nên tôi tránh chỗ đông người.", "level": "n2"},
+      {"word": "幼児", "reading": "ようじ", "meaning": "trẻ nhỏ (1-6 tuổi)", "hanviet": "ấu nhi", "example": "幼児向けの絵本を図書館で借りました。", "example_reading": "ようじむけのえほんをとしょかんでかりました。", "example_meaning": "Tôi mượn sách tranh dành cho trẻ nhỏ ở thư viện.", "level": "n2"},
+      {"word": "児童", "reading": "じどう", "meaning": "nhi đồng, học sinh tiểu học", "hanviet": "nhi đồng", "example": "児童の安全を守るため、通学路に見守り隊が立っています。", "example_reading": "じどうのあんぜんをまもるため、つうがくろにみまもりたいがたっています。", "example_meaning": "Để bảo vệ an toàn cho học sinh, có đội tình nguyện đứng trên đường đến trường.", "level": "n2"},
+      {"word": "出生率", "reading": "しゅっしょうりつ", "meaning": "tỷ suất sinh", "hanviet": "xuất sinh suất", "example": "日本の出生率は年々下がっています。", "example_reading": "にほんのしゅっしょうりつはねんねんさがっています。", "example_meaning": "Tỷ suất sinh của Nhật giảm dần qua từng năm.", "level": "n2"},
+      {"word": "産休", "reading": "さんきゅう", "meaning": "nghỉ thai sản", "hanviet": "sản hưu", "example": "来月から産休に入る予定です。", "example_reading": "らいげつからさんきゅうにはいるよていです。", "example_meaning": "Tôi dự định nghỉ thai sản từ tháng sau.", "level": "n2"},
+      {"word": "授乳室", "reading": "じゅにゅうしつ", "meaning": "phòng cho con bú", "hanviet": "thụ nhũ thất", "example": "駅に授乳室があって助かりました。", "example_reading": "えきにじゅにゅうしつがあってたすかりました。", "example_meaning": "Nhà ga có phòng cho con bú nên tôi đỡ vất vả.", "level": "n2"},
+      {"word": "母子手帳", "reading": "ぼしてちょう", "meaning": "sổ sức khỏe mẹ và bé", "hanviet": "mẫu tử thủ trướng", "example": "予防接種の記録は母子手帳に書いてあります。", "example_reading": "よぼうせっしゅのきろくはぼしてちょうにかいてあります。", "example_meaning": "Hồ sơ tiêm chủng được ghi trong sổ sức khỏe mẹ và bé.", "level": "n2"},
+      {"word": "子連れ", "reading": "こづれ", "meaning": "dắt theo con nhỏ", "hanviet": "tử liên", "example": "子連れでも入りやすいレストランを探しています。", "example_reading": "こづれでもはいりやすいれすとらんをさがしています。", "example_meaning": "Tôi đang tìm nhà hàng dễ vào khi đi cùng con nhỏ.", "level": "n2"},
+      {"word": "年子", "reading": "としご", "meaning": "hai con sinh liên tiếp cách nhau một năm", "hanviet": "niên tử", "example": "うちは年子の姉妹なので、毎日にぎやかです。", "example_reading": "うちはとしごのしまいなので、まいにちにぎやかです。", "example_meaning": "Nhà tôi hai chị em sinh cách nhau một tuổi nên ngày nào cũng ồn ào.", "level": "n2"},
+      {"word": "保育所", "reading": "ほいくじょ", "meaning": "nhà trẻ, trường mầm non", "hanviet": "bảo dục sở", "example": "保育所の入所が決まって、ほっとしました。", "example_reading": "ほいくじょのにゅうしょがきまって、ほっとしました。", "example_meaning": "Việc nhập học nhà trẻ đã được xác định nên tôi thấy nhẹ nhõm.", "level": "n2"},
+      {"word": "養子", "reading": "ようし", "meaning": "con nuôi", "hanviet": "dưỡng tử", "example": "あの夫婦は養子を迎えて、三人家族になりました。", "example_reading": "あのふうふはようしをむかえて、さんにんかぞくになりました。", "example_meaning": "Cặp vợ chồng đó nhận con nuôi và thành gia đình ba người.", "level": "n2"},
+      {"word": "親離れ", "reading": "おやばなれ", "meaning": "con cái tách khỏi cha mẹ", "hanviet": "thân ly", "example": "息子もそろそろ親離れの時期です。", "example_reading": "むすこもそろそろおやばなれのじきです。", "example_meaning": "Con trai tôi cũng đến lúc tự lập khỏi bố mẹ rồi.", "level": "n2"},
+      {"word": "認可保育園", "reading": "にんかほいくえん", "meaning": "nhà trẻ được cấp phép", "hanviet": "nhận khả bảo dục viên", "example": "認可保育園は人気が高く、入るのが難しいです。", "example_reading": "にんかほいくえんはにんきがたかく、はいるのがむずかしいです。", "example_meaning": "Nhà trẻ được cấp phép rất được ưa chuộng nên khó vào.", "level": "n2"},
+      // ── n1 · 57 mục ──
       {"word": "発達障害", "reading": "はったつしょうがい", "meaning": "rối loạn phát triển", "hanviet": "phát đạt chướng hại", "example": "発達障害について専門家に相談しました。", "example_reading": "はったつしょうがいについてせんもんかにそうだんしました。", "example_meaning": "Tôi đã hỏi ý kiến chuyên gia về rối loạn phát triển.", "level": "n1"},
       {"word": "愛着形成", "reading": "あいちゃくけいせい", "meaning": "hình thành sự gắn bó", "hanviet": "ái trước hình thành", "example": "幼児期の愛着形成が重要です。", "example_reading": "ようじきのあいちゃくけいせいがじゅうようです。", "example_meaning": "Việc hình thành sự gắn bó ở tuổi ấu thơ rất quan trọng.", "level": "n1"},
       {"word": "過干渉", "reading": "かかんしょう", "meaning": "can thiệp quá mức", "hanviet": "quá can thiệp", "example": "過干渉は子供の自立を妨げます。", "example_reading": "かかんしょうはこどものじりつをさまたげます。", "example_meaning": "Can thiệp quá mức cản trở sự tự lập của trẻ.", "level": "n1"},
       {"word": "自己肯定感", "reading": "じここうていかん", "meaning": "lòng tự trọng", "hanviet": "tự kỷ khẳng định cảm", "example": "子供の自己肯定感を育てたいです。", "example_reading": "こどものじここうていかんをそだてたいです。", "example_meaning": "Tôi muốn nuôi dưỡng lòng tự trọng cho con.", "level": "n1"},
       {"word": "幼児期", "reading": "ようじき", "meaning": "thời kỳ ấu thơ", "hanviet": "ấu nhi kỳ", "example": "幼児期の教育はとても大切です。", "example_reading": "ようじきのきょういくはとてもたいせつです。", "example_meaning": "Giáo dục ở thời kỳ ấu thơ rất quan trọng.", "level": "n1"},
-      {"word": "育児ノイローゼ", "reading": "いくじノイローゼ", "meaning": "stress khi nuôi con", "hanviet": "dục nhi", "example": "育児ノイローゼにならないよう気をつけています。", "example_reading": "いくじのいろーぜにならないようきをつけています。", "example_meaning": "Tôi chú ý để không bị stress khi nuôi con.", "level": "n1"},
+      {"word": "育児ノイローゼ", "reading": "いくじノイローゼ", "meaning": "suy nhược thần kinh do nuôi con (kiệt quệ tâm lý)", "hanviet": "dục nhi", "example": "育児ノイローゼにならないよう気をつけています。", "example_reading": "いくじのいろーぜにならないようきをつけています。", "example_meaning": "Tôi chú ý để không bị suy nhược thần kinh vì nuôi con.", "level": "n1"},
       {"word": "しつけの一貫性", "reading": "しつけのいっかんせい", "meaning": "tính nhất quán trong dạy dỗ", "hanviet": "nhất quán tính", "example": "しつけの一貫性が大切だと言われています。", "example_reading": "しつけのいっかんせいがたいせつだといわれています。", "example_meaning": "Người ta nói rằng tính nhất quán trong dạy dỗ rất quan trọng.", "level": "n1"},
       {"word": "甘えん坊", "reading": "あまえんぼう", "meaning": "đứa trẻ hay nũng nịu", "hanviet": "cam phường", "example": "うちの子は甘えん坊です。", "example_reading": "うちのこはあまえんぼうです。", "example_meaning": "Con nhà tôi rất hay nũng nịu.", "level": "n1"},
       {"word": "母性本能", "reading": "ぼせいほんのう", "meaning": "bản năng làm mẹ", "hanviet": "mẫu tính bản năng", "example": "母性本能が働いたのだと思います。", "example_reading": "ぼせいほんのうがはたらいたのだとおもいます。", "example_meaning": "Tôi nghĩ đó là do bản năng làm mẹ.", "level": "n1"},
@@ -697,6 +839,19 @@ const TOPICS = [
       {"word": "放任主義", "reading": "ほうにんしゅぎ", "meaning": "chủ nghĩa buông lỏng", "hanviet": "phóng nhậm chủ nghĩa", "example": "放任主義とも違います。", "example_reading": "ほうにんしゅぎともちがいます。", "example_meaning": "Điều đó cũng khác với buông lỏng hoàn toàn.", "level": "n1"},
       {"word": "親子の距離感", "reading": "おやこのきょりかん", "meaning": "khoảng cách cha mẹ - con", "hanviet": "cự ly cảm", "example": "年齢に応じて親子の距離感を変えます。", "example_reading": "ねんれいにおうじておやこのきょりかんをかえます。", "example_meaning": "Tôi thay đổi khoảng cách với con theo tuổi.", "level": "n1"},
       {"word": "成育環境", "reading": "せいいくかんきょう", "meaning": "môi trường trưởng thành", "hanviet": "thành dục hoàn cảnh", "example": "成育環境が人格を左右します。", "example_reading": "せいいくかんきょうがじんかくをさゆうします。", "example_meaning": "Môi trường trưởng thành chi phối nhân cách.", "level": "n1"},
+      {"word": "胎児", "reading": "たいじ", "meaning": "thai nhi", "hanviet": "thai nhi", "example": "妊娠中は胎児の成長が気になります。", "example_reading": "にんしんちゅうはたいじのせいちょうがきになります。", "example_meaning": "Lúc mang thai tôi luôn quan tâm đến sự phát triển của thai nhi.", "level": "n1"},
+      {"word": "新生児", "reading": "しんせいじ", "meaning": "trẻ sơ sinh (dưới 28 ngày)", "hanviet": "tân sinh nhi", "example": "新生児は一日の大半を寝て過ごします。", "example_reading": "しんせいじはいちにちのたいはんをねてすごします。", "example_meaning": "Trẻ sơ sinh dành phần lớn thời gian trong ngày để ngủ.", "level": "n1"},
+      {"word": "早産", "reading": "そうざん", "meaning": "sinh non", "hanviet": "tảo sản", "example": "早産で生まれた子も、元気に育っています。", "example_reading": "そうざんでうまれたこも、げんきにそだっています。", "example_meaning": "Đứa trẻ sinh non cũng đang lớn lên khỏe mạnh.", "level": "n1"},
+      {"word": "帝王切開", "reading": "ていおうせっかい", "meaning": "mổ lấy thai", "hanviet": "đế vương thiết khai", "example": "帝王切開で出産したため、退院が遅れました。", "example_reading": "ていおうせっかいでしゅっさんしたため、たいいんがおくれました。", "example_meaning": "Vì sinh mổ nên tôi xuất viện muộn hơn.", "level": "n1"},
+      {"word": "周産期", "reading": "しゅうさんき", "meaning": "thời kỳ chu sinh", "hanviet": "chu sản kỳ", "example": "周産期医療の充実が求められています。", "example_reading": "しゅうさんきいりょうのじゅうじつがもとめられています。", "example_meaning": "Người ta đòi hỏi y tế chu sinh phải được nâng cao.", "level": "n1"},
+      {"word": "不妊治療", "reading": "ふにんちりょう", "meaning": "điều trị hiếm muộn", "hanviet": "bất nhâm trị liệu", "example": "不妊治療と仕事の両立は容易ではありません。", "example_reading": "ふにんちりょうとしごとのりょうりつはたやすくありません。", "example_meaning": "Cân bằng điều trị hiếm muộn và công việc không hề dễ dàng.", "level": "n1"},
+      {"word": "溺愛", "reading": "できあい", "meaning": "cưng chiều quá mức", "hanviet": "nịch ái", "example": "祖父は初孫を溺愛しています。", "example_reading": "そふははつまごをできあいしています。", "example_meaning": "Ông nội cưng chiều đứa cháu đầu lòng hết mực.", "level": "n1"},
+      {"word": "乳歯", "reading": "にゅうし", "meaning": "răng sữa", "hanviet": "nhũ xỉ", "example": "娘の乳歯が初めて抜けました。", "example_reading": "むすめのにゅうしがはじめてぬけました。", "example_meaning": "Chiếc răng sữa đầu tiên của con gái đã rụng.", "level": "n1"},
+      {"word": "育む", "reading": "はぐくむ", "meaning": "nuôi dưỡng, vun đắp", "hanviet": "dục", "example": "親は子供の個性を育むことが大切です。", "example_reading": "おやはこどものこせいをはぐくむことがたいせつです。", "example_meaning": "Cha mẹ cần nuôi dưỡng cá tính của con.", "level": "n1"},
+      {"word": "諭す", "reading": "さとす", "meaning": "khuyên bảo nhẹ nhàng", "hanviet": "dụ", "example": "母は怒らずに、静かに子供を諭しました。", "example_reading": "はははおこらずに、しずかにこどもをさとしました。", "example_meaning": "Mẹ không giận mà nhẹ nhàng khuyên bảo con.", "level": "n1"},
+      {"word": "窘める", "reading": "たしなめる", "meaning": "nhắc nhở, khiển trách nhẹ", "hanviet": "cận", "example": "行儀の悪さを父に窘められました。", "example_reading": "ぎょうぎのわるさをちちにたしなめられました。", "example_meaning": "Tôi bị bố nhắc nhở vì cư xử không phải phép.", "level": "n1"},
+      {"word": "宥める", "reading": "なだめる", "meaning": "dỗ dành, xoa dịu", "hanviet": "hựu", "example": "泣き叫ぶ子供を、優しく宥めました。", "example_reading": "なきさけぶこどもを、やさしくなだめました。", "example_meaning": "Tôi dịu dàng dỗ đứa trẻ đang gào khóc.", "level": "n1"},
+      {"word": "慈しむ", "reading": "いつくしむ", "meaning": "thương yêu, trìu mến", "hanviet": "từ", "example": "親は我が子を慈しんで育てます。", "example_reading": "おやはわがこをいつくしんでそだてます。", "example_meaning": "Cha mẹ nuôi con bằng tình thương trìu mến.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [03] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -724,7 +879,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [04] 4. 科学  🔬  |  main  |  vocab 180 · grammar 20
+  // [04] 4. 科学  🔬  |  main  |  vocab 230 · grammar 20
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "4. 科学",
@@ -732,13 +887,16 @@ const TOPICS = [
     "icon": "🔬",
     "category": "main",
     "vocab": [
-      // ── n5 · 5 mục ──
+      // ── n5 · 8 mục ──
       {"word": "星", "reading": "ほし", "meaning": "ngôi sao", "hanviet": "tinh", "example": "今夜は星がきれいに見えます。", "example_reading": "こんやはほしがきれいにみえます。", "example_meaning": "Tối nay có thể nhìn thấy sao rất đẹp.", "level": "n5"},
       {"word": "電気", "reading": "でんき", "meaning": "điện", "hanviet": "điện khí", "example": "部屋の電気を消してください。", "example_reading": "へやのでんきをけしてください。", "example_meaning": "Hãy tắt điện trong phòng.", "level": "n5"},
       {"word": "空", "reading": "そら", "meaning": "bầu trời", "hanviet": "không", "example": "夜の空を望遠鏡で見ます。", "example_reading": "よるのそらをぼうえんきょうでみます。", "example_meaning": "Tôi ngắm bầu trời đêm bằng kính viễn vọng.", "level": "n5"},
       {"word": "月", "reading": "つき", "meaning": "mặt trăng", "hanviet": "nguyệt", "example": "月には空気がありません。", "example_reading": "つきにはくうきがありません。", "example_meaning": "Trên mặt trăng không có không khí.", "level": "n5"},
       {"word": "動物", "reading": "どうぶつ", "meaning": "động vật", "hanviet": "động vật", "example": "動物の行動を研究しています。", "example_reading": "どうぶつのこうどうをけんきゅうしています。", "example_meaning": "Tôi nghiên cứu hành vi động vật.", "level": "n5"},
-      // ── n4 · 34 mục ──
+      {"word": "水", "reading": "みず", "meaning": "nước", "hanviet": "thủy", "example": "水は零度で凍ります。", "example_reading": "みずはれいどでこおります。", "example_meaning": "Nước đóng băng ở 0 độ.", "level": "n5"},
+      {"word": "火", "reading": "ひ", "meaning": "lửa", "hanviet": "hỏa", "example": "火を使う実験は、先生と一緒にしましょう。", "example_reading": "ひをつかうじっけんは、せんせいといっしょにしましょう。", "example_meaning": "Thí nghiệm dùng lửa hãy làm cùng thầy cô.", "level": "n5"},
+      {"word": "石", "reading": "いし", "meaning": "đá", "hanviet": "thạch", "example": "川で珍しい石を見つけました。", "example_reading": "かわでめずらしいいしをみつけました。", "example_meaning": "Tôi tìm thấy một viên đá hiếm ở sông.", "level": "n5"},
+      // ── n4 · 41 mục ──
       {"word": "科学", "reading": "かがく", "meaning": "khoa học", "hanviet": "khoa học", "example": "科学の進歩によって、昔は治せなかった病気も治せるようになりました。", "example_reading": "かがくのしんぽによって、むかしはなおせなかったびょうきもなおせるようになりました。", "example_meaning": "Nhờ sự tiến bộ của khoa học, những bệnh trước đây không chữa được nay đã có thể chữa được.", "level": "n4"},
       {"word": "実験", "reading": "じっけん", "meaning": "thí nghiệm", "hanviet": "thực nghiệm", "example": "学生たちは実験を通して、理論だけでは分からないことを学びます。", "example_reading": "がくせいたちはじっけんをとおして、りろんだけではわからないことをまなびます。", "example_meaning": "Thông qua thí nghiệm, sinh viên học được những điều mà chỉ lý thuyết không thể hiểu hết.", "level": "n4"},
       {"word": "研究", "reading": "けんきゅう", "meaning": "nghiên cứu", "hanviet": "nghiên cứu", "example": "彼は十年以上、がんの治療法について研究を続けています。", "example_reading": "かれはじゅうねんいじょう、がんのちりょうほうについてけんきゅうをつづけています。", "example_meaning": "Anh ấy đã tiếp tục nghiên cứu về phương pháp điều trị ung thư hơn mười năm nay.", "level": "n4"},
@@ -773,7 +931,14 @@ const TOPICS = [
       {"word": "重さ", "reading": "おもさ", "meaning": "khối lượng", "hanviet": "trọng", "example": "試料の重さを量ります。", "example_reading": "しりょうのおもさをはかります。", "example_meaning": "Cân khối lượng mẫu vật.", "level": "n4"},
       {"word": "確認", "reading": "かくにん", "meaning": "xác nhận", "hanviet": "xác nhận", "example": "もう一度確認します。", "example_reading": "もういちどかくにんします。", "example_meaning": "Tôi xác nhận lại một lần nữa.", "level": "n4"},
       {"word": "協力", "reading": "きょうりょく", "meaning": "hợp tác", "hanviet": "hiệp lực", "example": "大学と協力しています。", "example_reading": "だいがくときょうりょくしています。", "example_meaning": "Chúng tôi hợp tác với trường đại học.", "level": "n4"},
-      // ── n3 · 57 mục ──
+      {"word": "電池", "reading": "でんち", "meaning": "pin", "hanviet": "điện trì", "example": "電池を入れると、おもちゃが動きました。", "example_reading": "でんちをいれると、おもちゃがうごきました。", "example_meaning": "Lắp pin vào thì món đồ chơi chuyển động.", "level": "n4"},
+      {"word": "電波", "reading": "でんぱ", "meaning": "sóng vô tuyến", "hanviet": "điện ba", "example": "山の中は電波が弱くて、電話が通じません。", "example_reading": "やまのなかはでんぱがよわくて、でんわがつうじません。", "example_meaning": "Trong núi sóng yếu nên không gọi điện được.", "level": "n4"},
+      {"word": "虫", "reading": "むし", "meaning": "côn trùng", "hanviet": "trùng", "example": "夏休みに虫の観察をしました。", "example_reading": "なつやすみにむしのかんさつをしました。", "example_meaning": "Kỳ nghỉ hè tôi đã quan sát côn trùng.", "level": "n4"},
+      {"word": "望遠鏡", "reading": "ぼうえんきょう", "meaning": "kính viễn vọng", "hanviet": "vọng viễn kính", "example": "望遠鏡で月のクレーターを見ました。", "example_reading": "ぼうえんきょうでつきのくれーたーをみました。", "example_meaning": "Tôi đã nhìn miệng hố trên mặt trăng bằng kính viễn vọng.", "level": "n4"},
+      {"word": "科学館", "reading": "かがくかん", "meaning": "bảo tàng khoa học", "hanviet": "khoa học quán", "example": "日曜日に子供と科学館へ行きました。", "example_reading": "にちようびにこどもとかがくかんへいきました。", "example_meaning": "Chủ nhật tôi đưa con đến bảo tàng khoa học.", "level": "n4"},
+      {"word": "浮かぶ", "reading": "うかぶ", "meaning": "nổi", "hanviet": "phù", "example": "木の板は水に浮かびますが、石は沈みます。", "example_reading": "きのいたはみずにうかびますが、いしはしずみます。", "example_meaning": "Tấm gỗ nổi trên nước còn đá thì chìm.", "level": "n4"},
+      {"word": "沈む", "reading": "しずむ", "meaning": "chìm, lặn", "hanviet": "trầm", "example": "鉄のくぎは水に沈みます。", "example_reading": "てつのくぎはみずにしずみます。", "example_meaning": "Đinh sắt chìm trong nước.", "level": "n4"},
+      // ── n3 · 71 mục ──
       {"word": "進化", "reading": "しんか", "meaning": "tiến hóa", "hanviet": "tiến hóa", "example": "生物は長い時間をかけて、環境に合わせて進化してきました。", "example_reading": "せいぶつはながいじかんをかけて、かんきょうにあわせてしんかしてきました。", "example_meaning": "Sinh vật đã tiến hóa để thích nghi với môi trường qua thời gian dài.", "level": "n3"},
       {"word": "エネルギー", "reading": "エネルギー", "meaning": "năng lượng", "hanviet": "", "example": "将来のために、再生可能エネルギーの開発が急がれています。", "example_reading": "しょうらいのために、さいせいかのうえねるぎーのかいはつがいそがれています。", "example_meaning": "Vì tương lai, việc phát triển năng lượng tái tạo đang được thúc đẩy khẩn trương.", "level": "n3"},
       {"word": "人工知能", "reading": "じんこうちのう", "meaning": "trí tuệ nhân tạo (AI)", "hanviet": "nhân công tri năng", "example": "人工知能の発展によって、多くの仕事が自動化されると言われています。", "example_reading": "じんこうちのうのはってんによって、おおくのしごとがじどうかされるといわれています。", "example_meaning": "Người ta nói rằng nhờ sự phát triển của trí tuệ nhân tạo, nhiều công việc sẽ được tự động hóa.", "level": "n3"},
@@ -831,7 +996,21 @@ const TOPICS = [
       {"word": "資料収集", "reading": "しりょうしゅうしゅう", "meaning": "thu thập tài liệu", "hanviet": "tư liệu thu tập", "example": "資料収集に時間がかかります。", "example_reading": "しりょうしゅうしゅうにじかんがかかります。", "example_meaning": "Việc thu thập tài liệu tốn thời gian.", "level": "n3"},
       {"word": "実用的", "reading": "じつようてき", "meaning": "mang tính thực dụng", "hanviet": "thực dụng đích", "example": "実用的な発明です。", "example_reading": "じつようてきなはつめいです。", "example_meaning": "Đây là phát minh thực dụng.", "level": "n3"},
       {"word": "専門家", "reading": "せんもんか", "meaning": "chuyên gia", "hanviet": "chuyên môn gia", "example": "専門家に意見を聞きました。", "example_reading": "せんもんかにいけんをききました。", "example_meaning": "Tôi đã hỏi ý kiến chuyên gia.", "level": "n3"},
-      // ── n2 · 42 mục ──
+      {"word": "惑星", "reading": "わくせい", "meaning": "hành tinh", "hanviet": "hoặc tinh", "example": "太陽系には八つの惑星があります。", "example_reading": "たいようけいにはやっつのわくせいがあります。", "example_meaning": "Hệ Mặt Trời có tám hành tinh.", "level": "n3"},
+      {"word": "銀河", "reading": "ぎんが", "meaning": "dải ngân hà, thiên hà", "hanviet": "ngân hà", "example": "夜空に銀河が見えて、感動しました。", "example_reading": "よぞらにぎんががみえて、かんどうしました。", "example_meaning": "Nhìn thấy dải ngân hà trên bầu trời đêm, tôi rất xúc động.", "level": "n3"},
+      {"word": "彗星", "reading": "すいせい", "meaning": "sao chổi", "hanviet": "tuệ tinh", "example": "七十六年ごとに地球に近づく彗星があります。", "example_reading": "ななじゅうろくねんごとにちきゅうにちかづくすいせいがあります。", "example_meaning": "Có một sao chổi cứ 76 năm lại đến gần Trái Đất.", "level": "n3"},
+      {"word": "流れ星", "reading": "ながれぼし", "meaning": "sao băng", "hanviet": "lưu tinh", "example": "流れ星に願いごとをしました。", "example_reading": "ながれぼしにねがいごとをしました。", "example_meaning": "Tôi đã ước một điều khi thấy sao băng.", "level": "n3"},
+      {"word": "日食", "reading": "にっしょく", "meaning": "nhật thực", "hanviet": "nhật thực", "example": "日食のとき、昼でも辺りが暗くなります。", "example_reading": "にっしょくのとき、ひるでもあたりがくらくなります。", "example_meaning": "Khi có nhật thực, ban ngày xung quanh cũng tối đi.", "level": "n3"},
+      {"word": "月食", "reading": "げっしょく", "meaning": "nguyệt thực", "hanviet": "nguyệt thực", "example": "昨夜は月食で、月が赤く見えました。", "example_reading": "さくやはげっしょくで、つきがあかくみえました。", "example_meaning": "Đêm qua có nguyệt thực, mặt trăng trông đỏ.", "level": "n3"},
+      {"word": "化石", "reading": "かせき", "meaning": "hóa thạch", "hanviet": "hóa thạch", "example": "博物館で恐竜の化石を見ました。", "example_reading": "はくぶつかんできょうりゅうのかせきをみました。", "example_meaning": "Tôi đã xem hóa thạch khủng long ở bảo tàng.", "level": "n3"},
+      {"word": "恐竜", "reading": "きょうりゅう", "meaning": "khủng long", "hanviet": "khủng long", "example": "恐竜は約六千六百万年前に絶滅しました。", "example_reading": "きょうりゅうはやくろくせんろっぴゃくまんねんまえにぜつめつしました。", "example_meaning": "Khủng long tuyệt chủng khoảng 66 triệu năm trước.", "level": "n3"},
+      {"word": "火山", "reading": "かざん", "meaning": "núi lửa", "hanviet": "hỏa sơn", "example": "火山の噴火で、近くの町に灰が降りました。", "example_reading": "かざんのふんかで、ちかくのまちにはいがふりました。", "example_meaning": "Do núi lửa phun, tro rơi xuống thị trấn gần đó.", "level": "n3"},
+      {"word": "電流", "reading": "でんりゅう", "meaning": "dòng điện", "hanviet": "điện lưu", "example": "回路に電流を流して、豆電球をつけました。", "example_reading": "かいろにでんりゅうをながして、まめでんきゅうをつけました。", "example_meaning": "Cho dòng điện chạy qua mạch để thắp bóng đèn nhỏ.", "level": "n3"},
+      {"word": "電圧", "reading": "でんあつ", "meaning": "điện áp", "hanviet": "điện áp", "example": "日本の家庭用電圧は百ボルトです。", "example_reading": "にほんのかていようでんあつはひゃくぼるとです。", "example_meaning": "Điện áp gia đình ở Nhật là 100 vôn.", "level": "n3"},
+      {"word": "回路", "reading": "かいろ", "meaning": "mạch điện", "hanviet": "hồi lộ", "example": "電気回路を正しくつなぐ実験をしました。", "example_reading": "でんきかいろをただしくつなぐじっけんをしました。", "example_meaning": "Tôi đã làm thí nghiệm nối mạch điện đúng cách.", "level": "n3"},
+      {"word": "圧力", "reading": "あつりょく", "meaning": "áp lực, áp suất", "hanviet": "áp lực", "example": "深い海ほど水の圧力は大きくなります。", "example_reading": "ふかいうみほどみずのあつりょくはおおきくなります。", "example_meaning": "Biển càng sâu thì áp suất nước càng lớn.", "level": "n3"},
+      {"word": "振動", "reading": "しんどう", "meaning": "rung động", "hanviet": "chấn động", "example": "機械の振動が大きくて、測定が難しいです。", "example_reading": "きかいのしんどうがおおきくて、そくていがむずかしいです。", "example_meaning": "Máy rung mạnh nên việc đo đạc khó khăn.", "level": "n3"},
+      // ── n2 · 55 mục ──
       {"word": "遺伝子", "reading": "いでんし", "meaning": "gen di truyền", "hanviet": "di truyền tử", "example": "病気の一部は遺伝子によって受け継がれることが分かっています。", "example_reading": "びょうきのいちぶはいでんしによってうけつがれることがわかっています。", "example_meaning": "Người ta đã biết rằng một số bệnh được di truyền qua gen.", "level": "n2"},
       {"word": "仮説", "reading": "かせつ", "meaning": "giả thuyết", "hanviet": "giả thuyết", "example": "研究者たちはこの仮説を証明するために、様々な実験を行いました。", "example_reading": "けんきゅうしゃたちはこのかせつをしょうめいするために、さまざまなじっけんをおこないました。", "example_meaning": "Các nhà nghiên cứu đã tiến hành nhiều thí nghiệm khác nhau để chứng minh giả thuyết này.", "level": "n2"},
       {"word": "実証", "reading": "じっしょう", "meaning": "chứng minh thực tế", "hanviet": "thực chứng", "example": "理論を実証しました。", "example_reading": "りろんをじっしょうしました。", "example_meaning": "Đã chứng minh được lý thuyết.", "level": "n2"},
@@ -874,7 +1053,20 @@ const TOPICS = [
       {"word": "多角的", "reading": "たかくてき", "meaning": "đa chiều", "hanviet": "đa giác đích", "example": "多角的に検討します。", "example_reading": "たかくてきにけんとうします。", "example_meaning": "Xem xét đa chiều.", "level": "n2"},
       {"word": "因子", "reading": "いんし", "meaning": "nhân tố", "hanviet": "nhân tử", "example": "複数の因子が関係します。", "example_reading": "ふくすうのいんしがかんけいします。", "example_meaning": "Nhiều nhân tố có liên quan.", "level": "n2"},
       {"word": "寄与", "reading": "きよ", "meaning": "đóng góp", "hanviet": "ký dữ", "example": "この研究は大きく寄与しました。", "example_reading": "このけんきゅうはおおきくきよしました。", "example_meaning": "Nghiên cứu này đóng góp rất lớn.", "level": "n2"},
-      // ── n1 · 42 mục ──
+      {"word": "光合成", "reading": "こうごうせい", "meaning": "quang hợp", "hanviet": "quang hợp thành", "example": "植物は光合成で酸素を作り出します。", "example_reading": "しょくぶつはこうごうせいでさんそをつくりだします。", "example_meaning": "Thực vật tạo ra oxy nhờ quang hợp.", "level": "n2"},
+      {"word": "赤外線", "reading": "せきがいせん", "meaning": "tia hồng ngoại", "hanviet": "xích ngoại tuyến", "example": "リモコンは赤外線で信号を送ります。", "example_reading": "りもこんはせきがいせんでしんごうをおくります。", "example_meaning": "Điều khiển từ xa truyền tín hiệu bằng tia hồng ngoại.", "level": "n2"},
+      {"word": "放射線", "reading": "ほうしゃせん", "meaning": "tia phóng xạ", "hanviet": "phóng xạ tuyến", "example": "病院では放射線の量を厳しく管理しています。", "example_reading": "びょういんではほうしゃせんのりょうをきびしくかんりしています。", "example_meaning": "Bệnh viện quản lý chặt lượng phóng xạ.", "level": "n2"},
+      {"word": "半導体", "reading": "はんどうたい", "meaning": "chất bán dẫn", "hanviet": "bán đạo thể", "example": "半導体は、スマートフォンに欠かせない部品です。", "example_reading": "はんどうたいは、すまーとふぉんにかかせないぶひんです。", "example_meaning": "Chất bán dẫn là linh kiện không thể thiếu của điện thoại thông minh.", "level": "n2"},
+      {"word": "電磁波", "reading": "でんじは", "meaning": "sóng điện từ", "hanviet": "điện từ ba", "example": "電子レンジは電磁波で食べ物を温めます。", "example_reading": "でんしれんじはでんじはでたべものをあたためます。", "example_meaning": "Lò vi sóng làm nóng thức ăn bằng sóng điện từ.", "level": "n2"},
+      {"word": "抵抗", "reading": "ていこう", "meaning": "điện trở; sức cản", "hanviet": "để kháng", "example": "この回路には抵抗が三つ使われています。", "example_reading": "このかいろにはていこうがみっつつかわれています。", "example_meaning": "Mạch điện này sử dụng ba điện trở.", "level": "n2"},
+      {"word": "密度", "reading": "みつど", "meaning": "mật độ", "hanviet": "mật độ", "example": "水銀は水よりも密度が高い液体です。", "example_reading": "すいぎんはみずよりもみつどがたかいえきたいです。", "example_meaning": "Thủy ngân là chất lỏng có mật độ cao hơn nước.", "level": "n2"},
+      {"word": "質量", "reading": "しつりょう", "meaning": "khối lượng", "hanviet": "chất lượng", "example": "月の質量は地球の約八十分の一です。", "example_reading": "つきのしつりょうはちきゅうのやくはちじゅうぶんのいちです。", "example_meaning": "Khối lượng Mặt Trăng bằng khoảng 1/80 Trái Đất.", "level": "n2"},
+      {"word": "摩擦", "reading": "まさつ", "meaning": "ma sát", "hanviet": "ma sát", "example": "摩擦が大きいほど、物は動きにくくなります。", "example_reading": "まさつがおおきいほど、ものはうごきにくくなります。", "example_meaning": "Ma sát càng lớn thì vật càng khó chuyển động.", "level": "n2"},
+      {"word": "慣性", "reading": "かんせい", "meaning": "quán tính", "hanviet": "quán tính", "example": "急ブレーキをかけると、慣性で体が前に傾きます。", "example_reading": "きゅうぶれーきをかけると、かんせいでからだがまえにかたむきます。", "example_meaning": "Khi phanh gấp, cơ thể nghiêng về phía trước do quán tính.", "level": "n2"},
+      {"word": "波長", "reading": "はちょう", "meaning": "bước sóng", "hanviet": "ba trường", "example": "光の色は波長によって異なります。", "example_reading": "ひかりのいろははちょうによってことなります。", "example_meaning": "Màu của ánh sáng khác nhau tùy theo bước sóng.", "level": "n2"},
+      {"word": "周波数", "reading": "しゅうはすう", "meaning": "tần số", "hanviet": "chu ba số", "example": "このラジオは周波数を合わせると聞こえます。", "example_reading": "このらじおはしゅうはすうをあわせるときこえます。", "example_meaning": "Đài này chỉnh đúng tần số thì nghe được.", "level": "n2"},
+      {"word": "比重", "reading": "ひじゅう", "meaning": "tỷ trọng", "hanviet": "tỉ trọng", "example": "金は比重が大きいので、とても重いです。", "example_reading": "きんはひじゅうがおおきいので、とてもおもいです。", "example_meaning": "Vàng có tỷ trọng lớn nên rất nặng.", "level": "n2"},
+      // ── n1 · 55 mục ──
       {"word": "仮説検証", "reading": "かせつけんしょう", "meaning": "kiểm chứng giả thuyết", "hanviet": "giả thuyết kiểm chứng", "example": "実験を通して仮説検証を行います。", "example_reading": "じっけんをとおしてかせつけんしょうをおこないます。", "example_meaning": "Tiến hành kiểm chứng giả thuyết thông qua thí nghiệm.", "level": "n1"},
       {"word": "因果関係", "reading": "いんがかんけい", "meaning": "quan hệ nhân quả", "hanviet": "nhân quả quan hệ", "example": "二つの現象の因果関係を調べます。", "example_reading": "ふたつのげんしょうのいんがかんけいをしらべます。", "example_meaning": "Điều tra quan hệ nhân quả giữa hai hiện tượng.", "level": "n1"},
       {"word": "相関関係", "reading": "そうかんかんけい", "meaning": "quan hệ tương quan", "hanviet": "tương quan quan hệ", "example": "このデータには強い相関関係があります。", "example_reading": "このでーたにはつよいそうかんかんけいがあります。", "example_meaning": "Dữ liệu này có mối tương quan mạnh.", "level": "n1"},
@@ -917,6 +1109,19 @@ const TOPICS = [
       {"word": "産学連携", "reading": "さんがくれんけい", "meaning": "hợp tác doanh nghiệp - đại học", "hanviet": "sản học liên huề", "example": "産学連携で開発しました。", "example_reading": "さんがくれんけいでかいはつしました。", "example_meaning": "Chúng tôi phát triển qua hợp tác doanh nghiệp - đại học.", "level": "n1"},
       {"word": "特許", "reading": "とっきょ", "meaning": "bằng sáng chế", "hanviet": "đặc hứa", "example": "技術の特許を取りました。", "example_reading": "ぎじゅつのとっきょをとりました。", "example_meaning": "Chúng tôi đã lấy bằng sáng chế.", "level": "n1"},
       {"word": "科学的根拠", "reading": "かがくてきこんきょ", "meaning": "căn cứ khoa học", "hanviet": "khoa học đích căn cứ", "example": "科学的根拠が乏しいです。", "example_reading": "かがくてきこんきょがとぼしいです。", "example_meaning": "Căn cứ khoa học còn ít.", "level": "n1"},
+      {"word": "超伝導", "reading": "ちょうでんどう", "meaning": "siêu dẫn", "hanviet": "siêu truyền đạo", "example": "超伝導の技術はリニア新幹線にも使われます。", "example_reading": "ちょうでんどうのぎじゅつはりにあしんかんせんにもつかわれます。", "example_meaning": "Công nghệ siêu dẫn cũng được dùng cho tàu cao tốc từ trường.", "level": "n1"},
+      {"word": "屈折", "reading": "くっせつ", "meaning": "khúc xạ", "hanviet": "khuất triết", "example": "光が水に入るとき、屈折して進みます。", "example_reading": "ひかりがみずにはいるとき、くっせつしてすすみます。", "example_meaning": "Khi ánh sáng đi vào nước, nó bị khúc xạ khi truyền đi.", "level": "n1"},
+      {"word": "干渉", "reading": "かんしょう", "meaning": "giao thoa", "hanviet": "can thiệp", "example": "二つの波が干渉して、模様ができます。", "example_reading": "ふたつのなみがかんしょうして、もようができます。", "example_meaning": "Hai sóng giao thoa tạo ra hoa văn.", "level": "n1"},
+      {"word": "結晶", "reading": "けっしょう", "meaning": "tinh thể", "hanviet": "kết tinh", "example": "塩水を蒸発させると、塩の結晶が現れます。", "example_reading": "しおみずをじょうはつさせると、しおのけっしょうがあらわれます。", "example_meaning": "Cho nước muối bay hơi thì tinh thể muối xuất hiện.", "level": "n1"},
+      {"word": "沈殿", "reading": "ちんでん", "meaning": "kết tủa, lắng đọng", "hanviet": "trầm điện", "example": "溶液に薬品を加えると、白い沈殿ができました。", "example_reading": "ようえきにやくひんをくわえると、しろいちんでんができました。", "example_meaning": "Thêm hóa chất vào dung dịch thì xuất hiện kết tủa trắng.", "level": "n1"},
+      {"word": "中和", "reading": "ちゅうわ", "meaning": "trung hòa", "hanviet": "trung hòa", "example": "酸とアルカリを混ぜると中和が起こります。", "example_reading": "さんとあるかりをまぜるとちゅうわがおこります。", "example_meaning": "Trộn axit và kiềm sẽ xảy ra phản ứng trung hòa.", "level": "n1"},
+      {"word": "蒸留", "reading": "じょうりゅう", "meaning": "chưng cất", "hanviet": "chưng lưu", "example": "蒸留によって、海水から真水を得ることができます。", "example_reading": "じょうりゅうによって、かいすいからまみずをえることができます。", "example_meaning": "Có thể lấy nước ngọt từ nước biển bằng chưng cất.", "level": "n1"},
+      {"word": "昇華", "reading": "しょうか", "meaning": "thăng hoa", "hanviet": "thăng hoa", "example": "ドライアイスは固体から気体へ昇華します。", "example_reading": "どらいあいすはこたいからきたいへしょうかします。", "example_meaning": "Đá khô thăng hoa từ thể rắn sang thể khí.", "level": "n1"},
+      {"word": "突然変異", "reading": "とつぜんへんい", "meaning": "đột biến", "hanviet": "đột nhiên biến dị", "example": "突然変異によって新しい性質が生まれることがあります。", "example_reading": "とつぜんへんいによってあたらしいせいしつがうまれることがあります。", "example_meaning": "Đôi khi đột biến tạo ra những đặc tính mới.", "level": "n1"},
+      {"word": "光年", "reading": "こうねん", "meaning": "năm ánh sáng", "hanviet": "quang niên", "example": "この星は地球から約四光年の距離にあります。", "example_reading": "このほしはちきゅうからやくよんこうねんのきょりにあります。", "example_meaning": "Ngôi sao này cách Trái Đất khoảng 4 năm ánh sáng.", "level": "n1"},
+      {"word": "暗黒物質", "reading": "あんこくぶっしつ", "meaning": "vật chất tối", "hanviet": "ám hắc vật chất", "example": "暗黒物質の正体は、まだ解明されていません。", "example_reading": "あんこくぶっしつのしょうたいは、まだかいめいされていません。", "example_meaning": "Bản chất của vật chất tối vẫn chưa được làm sáng tỏ.", "level": "n1"},
+      {"word": "真空", "reading": "しんくう", "meaning": "chân không", "hanviet": "chân không", "example": "宇宙は、ほぼ真空の空間です。", "example_reading": "うちゅうは、ほぼしんくうのくうかんです。", "example_meaning": "Vũ trụ là không gian gần như chân không.", "level": "n1"},
+      {"word": "自然淘汰", "reading": "しぜんとうた", "meaning": "chọn lọc tự nhiên", "hanviet": "tự nhiên đào thải", "example": "ダーウィンは自然淘汰によって進化が起こると考えました。", "example_reading": "だーうぃんはしぜんとうたによってしんかがおこるとかんがえました。", "example_meaning": "Darwin cho rằng tiến hóa xảy ra nhờ chọn lọc tự nhiên.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [04] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -945,7 +1150,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [05] 5. 仕事・職場  💼  |  main  |  vocab 180 · grammar 20
+  // [05] 5. 仕事・職場  💼  |  main  |  vocab 230 · grammar 20
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "5. 仕事・職場",
@@ -953,7 +1158,7 @@ const TOPICS = [
     "icon": "💼",
     "category": "main",
     "vocab": [
-      // ── n5 · 9 mục ──
+      // ── n5 · 12 mục ──
       {"word": "会社", "reading": "かいしゃ", "meaning": "công ty", "hanviet": "hội xã", "example": "この会社に入社してから、もう五年が経ちました。", "example_reading": "このかいしゃににゅうしゃしてから、もうごねんがたちました。", "example_meaning": "Đã năm năm trôi qua kể từ khi tôi vào làm ở công ty này.", "level": "n5"},
       {"word": "仕事", "reading": "しごと", "meaning": "công việc", "hanviet": "sự sự", "example": "今日は仕事が忙しいです。", "example_reading": "きょうはしごとがいそがしいです。", "example_meaning": "Hôm nay công việc bận rộn.", "level": "n5"},
       {"word": "電話", "reading": "でんわ", "meaning": "điện thoại", "hanviet": "điện thoại", "example": "お客様に電話をかけました。", "example_reading": "おきゃくさまにでんわをかけました。", "example_meaning": "Tôi đã gọi điện cho khách hàng.", "level": "n5"},
@@ -963,7 +1168,10 @@ const TOPICS = [
       {"word": "忙しい", "reading": "いそがしい", "meaning": "bận rộn", "hanviet": "mang", "example": "今週はとても忙しいです。", "example_reading": "こんしゅうはとてもいそがしいです。", "example_meaning": "Tuần này tôi rất bận.", "level": "n5"},
       {"word": "休み", "reading": "やすみ", "meaning": "ngày nghỉ", "hanviet": "hưu", "example": "明日は休みを取ります。", "example_reading": "あしたはやすみをとります。", "example_meaning": "Mai tôi xin nghỉ.", "level": "n5"},
       {"word": "会う", "reading": "あう", "meaning": "gặp", "hanviet": "hội", "example": "午後に取引先と会います。", "example_reading": "ごごにとりひきさきとあいます。", "example_meaning": "Chiều tôi gặp đối tác.", "level": "n5"},
-      // ── n4 · 31 mục ──
+      {"word": "働く", "reading": "はたらく", "meaning": "làm việc", "hanviet": "động", "example": "父は銀行で働いています。", "example_reading": "ちちはぎんこうではたらいています。", "example_meaning": "Bố tôi làm việc ở ngân hàng.", "level": "n5"},
+      {"word": "事務所", "reading": "じむしょ", "meaning": "văn phòng", "hanviet": "sự vụ sở", "example": "新しい事務所は駅の近くにあります。", "example_reading": "あたらしいじむしょはえきのちかくにあります。", "example_meaning": "Văn phòng mới ở gần nhà ga.", "level": "n5"},
+      {"word": "手紙", "reading": "てがみ", "meaning": "thư", "hanviet": "thủ chỉ", "example": "取引先にお礼の手紙を書きました。", "example_reading": "とりひきさきにおれいのてがみをかきました。", "example_meaning": "Tôi đã viết thư cảm ơn gửi đối tác.", "level": "n5"},
+      // ── n4 · 38 mục ──
       {"word": "上司", "reading": "じょうし", "meaning": "cấp trên", "hanviet": "thượng ty", "example": "上司に相談してから、企画書を作り直すことにしました。", "example_reading": "じょうしにそうだんしてから、きかくしょをつくりなおすことにしました。", "example_meaning": "Sau khi bàn bạc với cấp trên, tôi quyết định làm lại bản kế hoạch.", "level": "n4"},
       {"word": "同僚", "reading": "どうりょう", "meaning": "đồng nghiệp", "hanviet": "đồng liêu", "example": "同僚と協力しながら、この難しいプロジェクトを進めています。", "example_reading": "どうりょうときょうりょくしながら、このむずかしいぷろじぇくとをすすめています。", "example_meaning": "Tôi đang hợp tác cùng đồng nghiệp để triển khai dự án khó khăn này.", "level": "n4"},
       {"word": "会議", "reading": "かいぎ", "meaning": "cuộc họp", "hanviet": "hội nghị", "example": "会議が長引いたせいで、予定していた仕事が終わりませんでした。", "example_reading": "かいぎがながびいたせいで、よていしていたしごとがおわりませんでした。", "example_meaning": "Vì cuộc họp kéo dài nên công việc dự định đã không hoàn thành.", "level": "n4"},
@@ -995,7 +1203,14 @@ const TOPICS = [
       {"word": "謝る", "reading": "あやまる", "meaning": "xin lỗi", "hanviet": "tạ", "example": "ミスをすぐ謝りました。", "example_reading": "みすをすぐあやまりました。", "example_meaning": "Tôi xin lỗi ngay vì sai sót.", "level": "n4"},
       {"word": "先輩", "reading": "せんぱい", "meaning": "tiền bối", "hanviet": "tiên bối", "example": "先輩に仕事を教わりました。", "example_reading": "せんぱいにしごとをおそわりました。", "example_meaning": "Tôi được tiền bối chỉ việc.", "level": "n4"},
       {"word": "後輩", "reading": "こうはい", "meaning": "hậu bối", "hanviet": "hậu bối", "example": "後輩の面倒を見ています。", "example_reading": "こうはいのめんどうをみています。", "example_meaning": "Tôi đang kèm cặp đàn em.", "level": "n4"},
-      // ── n3 · 55 mục ──
+      {"word": "工場", "reading": "こうじょう", "meaning": "nhà máy", "hanviet": "công trường", "example": "兄は車の工場で働いています。", "example_reading": "あにはくるまのこうじょうではたらいています。", "example_meaning": "Anh tôi làm việc ở nhà máy ô tô.", "level": "n4"},
+      {"word": "会社員", "reading": "かいしゃいん", "meaning": "nhân viên công ty", "hanviet": "hội xã viên", "example": "将来は普通の会社員になりたいです。", "example_reading": "しょうらいはふつうのかいしゃいんになりたいです。", "example_meaning": "Tương lai tôi muốn làm nhân viên công ty bình thường.", "level": "n4"},
+      {"word": "営業", "reading": "えいぎょう", "meaning": "kinh doanh, bán hàng", "hanviet": "doanh nghiệp", "example": "私は営業の仕事で、毎日お客様を訪問します。", "example_reading": "わたしはえいぎょうのしごとで、まいにちおきゃくさまをほうもんします。", "example_meaning": "Tôi làm kinh doanh, mỗi ngày đi thăm khách hàng.", "level": "n4"},
+      {"word": "事務", "reading": "じむ", "meaning": "công việc văn phòng", "hanviet": "sự vụ", "example": "姉は会社で事務の仕事をしています。", "example_reading": "あねはかいしゃでじむのしごとをしています。", "example_meaning": "Chị tôi làm công việc văn phòng ở công ty.", "level": "n4"},
+      {"word": "支店", "reading": "してん", "meaning": "chi nhánh", "hanviet": "chi điếm", "example": "大阪の支店に転勤することになりました。", "example_reading": "おおさかのしてんにてんきんすることになりました。", "example_meaning": "Tôi được điều chuyển đến chi nhánh Osaka.", "level": "n4"},
+      {"word": "本社", "reading": "ほんしゃ", "meaning": "trụ sở chính", "hanviet": "bản xã", "example": "来週、本社で重要な会議があります。", "example_reading": "らいしゅう、ほんしゃでじゅうようなかいぎがあります。", "example_meaning": "Tuần sau có cuộc họp quan trọng ở trụ sở chính.", "level": "n4"},
+      {"word": "勤める", "reading": "つとめる", "meaning": "làm việc (cho công ty)", "hanviet": "cần", "example": "大学を卒業してから、ずっとこの会社に勤めています。", "example_reading": "だいがくをそつぎょうしてから、ずっとこのかいしゃにつとめています。", "example_meaning": "Từ khi tốt nghiệp đại học tôi làm cho công ty này suốt.", "level": "n4"},
+      // ── n3 · 69 mục ──
       {"word": "部下", "reading": "ぶか", "meaning": "cấp dưới", "hanviet": "bộ hạ", "example": "部下の意見もしっかり聞くようにしている上司は信頼されやすいです。", "example_reading": "ぶかのいけんもしっかりきくようにしているじょうしはしんらいされやすいです。", "example_meaning": "Cấp trên luôn lắng nghe ý kiến của cấp dưới thường dễ được tin tưởng.", "level": "n3"},
       {"word": "残業", "reading": "ざんぎょう", "meaning": "làm thêm giờ", "hanviet": "tàn nghiệp", "example": "締め切りが近いので、今週は毎日残業しなければなりません。", "example_reading": "しめきりがちかいので、こんしゅうはまいにちざんぎょうしなければなりません。", "example_meaning": "Vì hạn chót đang gần nên tuần này tôi phải làm thêm giờ mỗi ngày.", "level": "n3"},
       {"word": "出張", "reading": "しゅっちょう", "meaning": "công tác", "hanviet": "xuất trương", "example": "来月、大阪へ三日間の出張に行くことになりました。", "example_reading": "らいげつ、おおさかへみっかかんのしゅっちょうにいくことになりました。", "example_meaning": "Tháng sau tôi sẽ đi công tác ba ngày ở Osaka.", "level": "n3"},
@@ -1051,7 +1266,21 @@ const TOPICS = [
       {"word": "定時", "reading": "ていじ", "meaning": "đúng giờ tan ca", "hanviet": "định thời", "example": "今日は定時で帰ります。", "example_reading": "きょうはていじでかえります。", "example_meaning": "Hôm nay tôi về đúng giờ.", "level": "n3"},
       {"word": "成果", "reading": "せいか", "meaning": "thành quả", "hanviet": "thành quả", "example": "努力の成果が出ました。", "example_reading": "どりょくのせいかがでました。", "example_meaning": "Nỗ lực đã cho thành quả.", "level": "n3"},
       {"word": "提出期限", "reading": "ていしゅつきげん", "meaning": "hạn nộp", "hanviet": "đề xuất kỳ hạn", "example": "提出期限を守ってください。", "example_reading": "ていしゅつきげんをまもってください。", "example_meaning": "Hãy tuân thủ hạn nộp.", "level": "n3"},
-      // ── n2 · 40 mục ──
+      {"word": "出世", "reading": "しゅっせ", "meaning": "thăng tiến", "hanviet": "xuất thế", "example": "彼は若くして部長に出世しました。", "example_reading": "かれはわかくしてぶちょうにしゅっせしました。", "example_meaning": "Anh ấy thăng chức trưởng phòng khi còn trẻ.", "level": "n3"},
+      {"word": "新入社員", "reading": "しんにゅうしゃいん", "meaning": "nhân viên mới", "hanviet": "tân nhập xã viên", "example": "四月に新入社員が十人入りました。", "example_reading": "しがつにしんにゅうしゃいんがじゅうにんはいりました。", "example_meaning": "Tháng Tư có mười nhân viên mới vào công ty.", "level": "n3"},
+      {"word": "勤務", "reading": "きんむ", "meaning": "làm việc, giờ làm", "hanviet": "cần vụ", "example": "勤務時間は午前九時から午後六時までです。", "example_reading": "きんむじかんはごぜんくじからごごろくじまでです。", "example_meaning": "Giờ làm việc từ 9 giờ sáng đến 6 giờ chiều.", "level": "n3"},
+      {"word": "転勤", "reading": "てんきん", "meaning": "chuyển công tác", "hanviet": "chuyển cần", "example": "来年、福岡へ転勤することが決まりました。", "example_reading": "らいねん、ふくおかへてんきんすることがきまりました。", "example_meaning": "Đã quyết định năm sau tôi chuyển công tác sang Fukuoka.", "level": "n3"},
+      {"word": "単身赴任", "reading": "たんしんふにん", "meaning": "đi làm xa nhà một mình", "hanviet": "đơn thân phó nhiệm", "example": "父は単身赴任で、月に一度しか帰ってきません。", "example_reading": "ちちはたんしんふにんで、つきにいちどしかかえってきません。", "example_meaning": "Bố đi làm xa nhà nên mỗi tháng chỉ về một lần.", "level": "n3"},
+      {"word": "取引", "reading": "とりひき", "meaning": "giao dịch", "hanviet": "thủ dẫn", "example": "この会社とは十年以上取引があります。", "example_reading": "このかいしゃとはじゅうねんいじょうとりひきがあります。", "example_meaning": "Chúng tôi giao dịch với công ty này hơn mười năm.", "level": "n3"},
+      {"word": "同期", "reading": "どうき", "meaning": "đồng nghiệp cùng đợt vào", "hanviet": "đồng kỳ", "example": "同期の仲間と、よく飲みに行きます。", "example_reading": "どうきのなかまと、よくのみにいきます。", "example_meaning": "Tôi hay đi nhậu với những người vào cùng đợt.", "level": "n3"},
+      {"word": "名刺交換", "reading": "めいしこうかん", "meaning": "trao đổi danh thiếp", "hanviet": "danh thích giao hoán", "example": "会議の前に、名刺交換をしました。", "example_reading": "かいぎのまえに、めいしこうかんをしました。", "example_meaning": "Trước cuộc họp chúng tôi đã trao đổi danh thiếp.", "level": "n3"},
+      {"word": "敬語", "reading": "けいご", "meaning": "kính ngữ", "hanviet": "kính ngữ", "example": "仕事では、正しい敬語を使うことが大切です。", "example_reading": "しごとでは、ただしいけいごをつかうことがたいせつです。", "example_meaning": "Trong công việc, dùng kính ngữ đúng rất quan trọng.", "level": "n3"},
+      {"word": "勤続", "reading": "きんぞく", "meaning": "thâm niên", "hanviet": "cần tục", "example": "父は勤続三十年で、表彰されました。", "example_reading": "ちちはきんぞくさんじゅうねんで、ひょうしょうされました。", "example_meaning": "Bố tôi được khen thưởng vì làm việc đủ ba mươi năm.", "level": "n3"},
+      {"word": "手配", "reading": "てはい", "meaning": "sắp xếp, chuẩn bị", "hanviet": "thủ phối", "example": "出張のホテルを手配しておきました。", "example_reading": "しゅっちょうのほてるをてはいしておきました。", "example_meaning": "Tôi đã đặt sẵn khách sạn cho chuyến công tác.", "level": "n3"},
+      {"word": "段取り", "reading": "だんどり", "meaning": "sắp xếp trình tự công việc", "hanviet": "đoạn thủ", "example": "仕事は段取りが大切です。", "example_reading": "しごとはだんどりがたいせつです。", "example_meaning": "Trong công việc, việc sắp xếp trình tự rất quan trọng.", "level": "n3"},
+      {"word": "責任者", "reading": "せきにんしゃ", "meaning": "người phụ trách", "hanviet": "trách nhậm giả", "example": "このプロジェクトの責任者は田中さんです。", "example_reading": "このぷろじぇくとのせきにんしゃはたなかさんです。", "example_meaning": "Người phụ trách dự án này là anh Tanaka.", "level": "n3"},
+      {"word": "就活", "reading": "しゅうかつ", "meaning": "tìm việc (sinh viên sắp tốt nghiệp)", "hanviet": "tựu hoạt", "example": "大学三年の冬から就活を始めました。", "example_reading": "だいがくさんねんのふゆからしゅうかつをはじめました。", "example_meaning": "Tôi bắt đầu tìm việc từ mùa đông năm ba đại học.", "level": "n3"},
+      // ── n2 · 53 mục ──
       {"word": "在宅勤務", "reading": "ざいたくきんむ", "meaning": "làm việc tại nhà", "hanviet": "tại trạch cần vụ", "example": "在宅勤務になってから、通勤時間がなくなって楽になりました。", "example_reading": "ざいたくきんむになってから、つうきんじかんがなくなってらくになりました。", "example_meaning": "Từ khi làm việc tại nhà, tôi không mất thời gian đi lại nên nhẹ nhõm hơn.", "level": "n2"},
       {"word": "業績", "reading": "ぎょうせき", "meaning": "thành tích kinh doanh", "hanviet": "nghiệp tích", "example": "今年度の業績が良かったため、ボーナスが増えるそうです。", "example_reading": "こんねんどのぎょうせきがよかったため、ぼーなすがふえるそうです。", "example_meaning": "Vì thành tích kinh doanh năm nay tốt nên nghe nói tiền thưởng sẽ tăng.", "level": "n2"},
       {"word": "取引先", "reading": "とりひきさき", "meaning": "đối tác kinh doanh", "hanviet": "thủ dẫn tiên", "example": "取引先との信頼関係を大切にしながら、仕事を進めています。", "example_reading": "とりひきさきとのしんらいかんけいをたいせつにしながら、しごとをすすめています。", "example_meaning": "Tôi vừa coi trọng mối quan hệ tin cậy với đối tác vừa tiến hành công việc.", "level": "n2"},
@@ -1092,7 +1321,20 @@ const TOPICS = [
       {"word": "成果主義", "reading": "せいかしゅぎ", "meaning": "chủ nghĩa thành quả", "hanviet": "thành quả chủ nghĩa", "example": "成果主義を導入しました。", "example_reading": "せいかしゅぎをどうにゅうしました。", "example_meaning": "Chúng tôi áp dụng chế độ theo thành quả.", "level": "n2"},
       {"word": "職務内容", "reading": "しょくむないよう", "meaning": "nội dung công việc", "hanviet": "chức vụ nội dung", "example": "職務内容を明確にします。", "example_reading": "しょくむないようをめいかくにします。", "example_meaning": "Làm rõ nội dung công việc.", "level": "n2"},
       {"word": "同業他社", "reading": "どうぎょうたしゃ", "meaning": "công ty cùng ngành", "hanviet": "đồng nghiệp tha xã", "example": "同業他社と比較しました。", "example_reading": "どうぎょうたしゃとひかくしました。", "example_meaning": "Tôi so sánh với công ty cùng ngành.", "level": "n2"},
-      // ── n1 · 45 mục ──
+      {"word": "雇用", "reading": "こよう", "meaning": "tuyển dụng, thuê mướn", "hanviet": "cố dụng", "example": "景気が悪くなると、雇用が不安定になります。", "example_reading": "けいきがわるくなると、こようがふあんていになります。", "example_meaning": "Khi kinh tế xấu đi, việc làm trở nên bất ổn.", "level": "n2"},
+      {"word": "解雇", "reading": "かいこ", "meaning": "sa thải", "hanviet": "giải cố", "example": "会社の都合で解雇されることになりました。", "example_reading": "かいしゃのつごうでかいこされることになりました。", "example_meaning": "Tôi bị sa thải vì lý do của công ty.", "level": "n2"},
+      {"word": "契約社員", "reading": "けいやくしゃいん", "meaning": "nhân viên hợp đồng", "hanviet": "khế ước xã viên", "example": "契約社員から正社員に登用されました。", "example_reading": "けいやくしゃいんからせいしゃいんにとうようされました。", "example_meaning": "Tôi được cất nhắc từ nhân viên hợp đồng lên nhân viên chính thức.", "level": "n2"},
+      {"word": "正社員", "reading": "せいしゃいん", "meaning": "nhân viên chính thức", "hanviet": "chính xã viên", "example": "正社員になるために、資格を取りました。", "example_reading": "せいしゃいんになるために、しかくをとりました。", "example_meaning": "Tôi lấy chứng chỉ để trở thành nhân viên chính thức.", "level": "n2"},
+      {"word": "派遣社員", "reading": "はけんしゃいん", "meaning": "nhân viên phái cử", "hanviet": "phái khiển xã viên", "example": "派遣社員として三か月働きました。", "example_reading": "はけんしゃいんとしてさんかげつはたらきました。", "example_meaning": "Tôi đã làm nhân viên phái cử ba tháng.", "level": "n2"},
+      {"word": "管理職", "reading": "かんりしょく", "meaning": "chức quản lý", "hanviet": "quản lý chức", "example": "管理職になってから、責任が重くなりました。", "example_reading": "かんりしょくになってから、せきにんがおもくなりました。", "example_meaning": "Từ khi làm quản lý, trách nhiệm nặng hơn.", "level": "n2"},
+      {"word": "経理", "reading": "けいり", "meaning": "kế toán", "hanviet": "kinh lý", "example": "経理の担当者が経費を確認します。", "example_reading": "けいりのたんとうしゃがけいひをかくにんします。", "example_meaning": "Người phụ trách kế toán sẽ xác nhận chi phí.", "level": "n2"},
+      {"word": "総務", "reading": "そうむ", "meaning": "bộ phận hành chính tổng hợp", "hanviet": "tổng vụ", "example": "備品の購入は総務に頼んでください。", "example_reading": "びひんのこうにゅうはそうむにたのんでください。", "example_meaning": "Mua thiết bị văn phòng hãy nhờ bộ phận hành chính.", "level": "n2"},
+      {"word": "人事", "reading": "じんじ", "meaning": "nhân sự", "hanviet": "nhân sự", "example": "人事部が新入社員の配属を決めます。", "example_reading": "じんじぶがしんにゅうしゃいんのはいぞくをきめます。", "example_meaning": "Phòng nhân sự quyết định bố trí nhân viên mới.", "level": "n2"},
+      {"word": "窓口", "reading": "まどぐち", "meaning": "quầy giao dịch, đầu mối liên lạc", "hanviet": "song khẩu", "example": "苦情の窓口は一階にあります。", "example_reading": "くじょうのまどぐちはいっかいにあります。", "example_meaning": "Quầy tiếp nhận khiếu nại ở tầng một.", "level": "n2"},
+      {"word": "決算", "reading": "けっさん", "meaning": "quyết toán", "hanviet": "quyết toán", "example": "三月は決算の時期で、とても忙しいです。", "example_reading": "さんがつはけっさんのじきで、とてもいそがしいです。", "example_meaning": "Tháng Ba là kỳ quyết toán nên rất bận.", "level": "n2"},
+      {"word": "業務提携", "reading": "ぎょうむていけい", "meaning": "hợp tác kinh doanh", "hanviet": "nghiệp vụ đề huề", "example": "二つの会社が業務提携を結びました。", "example_reading": "ふたつのかいしゃがぎょうむていけいをむすびました。", "example_meaning": "Hai công ty đã ký kết hợp tác kinh doanh.", "level": "n2"},
+      {"word": "下請け", "reading": "したうけ", "meaning": "nhà thầu phụ", "hanviet": "hạ thỉnh", "example": "うちは大手メーカーの下請けをしています。", "example_reading": "うちはおおてめーかーのしたうけをしています。", "example_meaning": "Công ty chúng tôi làm thầu phụ cho nhà sản xuất lớn.", "level": "n2"},
+      // ── n1 · 58 mục ──
       {"word": "労使関係", "reading": "ろうしかんけい", "meaning": "quan hệ lao động - chủ sử dụng lao động", "hanviet": "lao sứ quan hệ", "example": "良好な労使関係を築きます。", "example_reading": "りょうこうなろうしかんけいをきずきます。", "example_meaning": "Xây dựng mối quan hệ lao động tốt đẹp.", "level": "n1"},
       {"word": "人材育成", "reading": "じんざいいくせい", "meaning": "đào tạo nhân tài", "hanviet": "nhân tài dục thành", "example": "人材育成に力を入れています。", "example_reading": "じんざいいくせいにちからをいれています。", "example_meaning": "Đang chú trọng vào việc đào tạo nhân tài.", "level": "n1"},
       {"word": "組織風土", "reading": "そしきふうど", "meaning": "văn hóa tổ chức", "hanviet": "tổ chức phong thổ", "example": "組織風土を改善する必要があります。", "example_reading": "そしきふうどをかいぜんするひつようがあります。", "example_meaning": "Cần phải cải thiện văn hóa tổ chức.", "level": "n1"},
@@ -1138,6 +1380,19 @@ const TOPICS = [
       {"word": "収支報告", "reading": "しゅうしほうこく", "meaning": "báo cáo thu chi", "hanviet": "thu chi báo cáo", "example": "月末に収支報告を出します。", "example_reading": "げつまつにしゅうしほうこくをだします。", "example_meaning": "Cuối tháng tôi nộp báo cáo thu chi.", "level": "n1"},
       {"word": "事業拡大", "reading": "じぎょうかくだい", "meaning": "mở rộng kinh doanh", "hanviet": "sự nghiệp khoách đại", "example": "海外へ事業拡大します。", "example_reading": "かいがいへじぎょうかくだいします。", "example_meaning": "Mở rộng kinh doanh ra nước ngoài.", "level": "n1"},
       {"word": "撤退", "reading": "てったい", "meaning": "rút lui khỏi thị trường", "hanviet": "triệt thoái", "example": "その市場から撤退しました。", "example_reading": "そのしじょうからてったいしました。", "example_meaning": "Chúng tôi đã rút khỏi thị trường đó.", "level": "n1"},
+      {"word": "辞令", "reading": "じれい", "meaning": "quyết định bổ nhiệm, thông báo nhân sự", "hanviet": "từ lệnh", "example": "四月一日付で課長に昇進する辞令が出ました。", "example_reading": "しがつついたちづけでかちょうにしょうしんするじれいがでました。", "example_meaning": "Đã có quyết định bổ nhiệm lên trưởng nhóm từ ngày 1 tháng 4.", "level": "n1"},
+      {"word": "左遷", "reading": "させん", "meaning": "giáng chức, điều đi nơi xa", "hanviet": "tả thiên", "example": "上司に逆らって、地方に左遷されました。", "example_reading": "じょうしにさからって、ちほうにさせんされました。", "example_meaning": "Vì cãi lại cấp trên nên tôi bị giáng chức về địa phương.", "level": "n1"},
+      {"word": "抜擢", "reading": "ばってき", "meaning": "đề bạt", "hanviet": "bạt trạc", "example": "若手の社員が、大きな仕事に抜擢されました。", "example_reading": "わかてのしゃいんが、おおきなしごとにばってきされました。", "example_meaning": "Nhân viên trẻ được đề bạt vào công việc lớn.", "level": "n1"},
+      {"word": "懲戒", "reading": "ちょうかい", "meaning": "kỷ luật", "hanviet": "trừng giới", "example": "規則に違反した社員は懲戒処分を受けます。", "example_reading": "きそくにいはんしたしゃいんはちょうかいしょぶんをうけます。", "example_meaning": "Nhân viên vi phạm quy định sẽ bị xử lý kỷ luật.", "level": "n1"},
+      {"word": "出向", "reading": "しゅっこう", "meaning": "biệt phái", "hanviet": "xuất hướng", "example": "子会社へ二年間出向することになりました。", "example_reading": "こがいしゃへにねんかんしゅっこうすることになりました。", "example_meaning": "Tôi được biệt phái sang công ty con hai năm.", "level": "n1"},
+      {"word": "兼務", "reading": "けんむ", "meaning": "kiêm nhiệm", "hanviet": "kiêm vụ", "example": "人手不足で、二つの部署を兼務しています。", "example_reading": "ひとでぶそくで、ふたつのぶしょをけんむしています。", "example_meaning": "Do thiếu người nên tôi kiêm nhiệm hai bộ phận.", "level": "n1"},
+      {"word": "就任", "reading": "しゅうにん", "meaning": "nhậm chức", "hanviet": "tựu nhậm", "example": "新社長に山田氏が就任しました。", "example_reading": "しんしゃちょうにやまだしがしゅうにんしました。", "example_meaning": "Ông Yamada đã nhậm chức tân giám đốc.", "level": "n1"},
+      {"word": "辞任", "reading": "じにん", "meaning": "từ chức", "hanviet": "từ nhậm", "example": "不祥事の責任を取って、社長が辞任しました。", "example_reading": "ふしょうじのせきにんをとって、しゃちょうがじにんしました。", "example_meaning": "Giám đốc từ chức để nhận trách nhiệm về vụ bê bối.", "level": "n1"},
+      {"word": "昇格", "reading": "しょうかく", "meaning": "thăng cấp", "hanviet": "thăng cách", "example": "試験に合格して、主任に昇格しました。", "example_reading": "しけんにごうかくして、しゅにんにしょうかくしました。", "example_meaning": "Thi đỗ nên tôi được thăng cấp lên chủ nhiệm.", "level": "n1"},
+      {"word": "降格", "reading": "こうかく", "meaning": "giáng cấp", "hanviet": "hàng cách", "example": "ミスの責任で、課長から係長に降格されました。", "example_reading": "みすのせきにんで、かちょうからかかりちょうにこうかくされました。", "example_meaning": "Vì chịu trách nhiệm về sai sót, tôi bị giáng từ trưởng phòng xuống tổ trưởng.", "level": "n1"},
+      {"word": "定年", "reading": "ていねん", "meaning": "tuổi nghỉ hưu", "hanviet": "định niên", "example": "父は来年、定年を迎えます。", "example_reading": "ちちはらいねん、ていねんをむかえます。", "example_meaning": "Bố tôi sang năm đến tuổi nghỉ hưu.", "level": "n1"},
+      {"word": "退職金", "reading": "たいしょくきん", "meaning": "tiền trợ cấp thôi việc", "hanviet": "thoái chức kim", "example": "退職金の一部で、小さな店を開きました。", "example_reading": "たいしょくきんのいちぶで、ちいさなみせをひらきました。", "example_meaning": "Tôi dùng một phần tiền thôi việc để mở một cửa hàng nhỏ.", "level": "n1"},
+      {"word": "後継者", "reading": "こうけいしゃ", "meaning": "người kế nhiệm", "hanviet": "hậu kế giả", "example": "社長は後継者の育成に力を入れています。", "example_reading": "しゃちょうはこうけいしゃのいくせいにちからをいれています。", "example_meaning": "Giám đốc dồn sức vào việc đào tạo người kế nhiệm.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [05] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -1166,7 +1421,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [06] 6. 買い物・消費  🛍️  |  main  |  vocab 180 · grammar 19
+  // [06] 6. 買い物・消費  🛍️  |  main  |  vocab 230 · grammar 19
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "6. 買い物・消費",
@@ -1174,7 +1429,7 @@ const TOPICS = [
     "icon": "🛍️",
     "category": "main",
     "vocab": [
-      // ── n5 · 18 mục ──
+      // ── n5 · 21 mục ──
       {"word": "値段", "reading": "ねだん", "meaning": "giá cả", "hanviet": "trị đoạn", "example": "この店の値段は他の店より少し高いですが、品質はとてもいいです。", "example_reading": "このみせのねだんはほかのみせよりすこしたかいですが、ひんしつはとてもいいです。", "example_meaning": "Giá ở cửa hàng này hơi cao hơn nơi khác nhưng chất lượng rất tốt.", "level": "n5"},
       {"word": "店員", "reading": "てんいん", "meaning": "nhân viên bán hàng", "hanviet": "điếm viên", "example": "店員さんが親切に商品の使い方を教えてくれました。", "example_reading": "てんいんさんがしんせつにしょうひんのつかいかたをおしえてくれました。", "example_meaning": "Nhân viên bán hàng đã nhiệt tình chỉ cho tôi cách sử dụng sản phẩm.", "level": "n5"},
       {"word": "レジ", "reading": "レジ", "meaning": "quầy thu ngân", "hanviet": "", "example": "週末はレジが混んでいるので、平日に買い物することが多いです。", "example_reading": "しゅうまつはれじがこんでいるので、へいじつにかいものすることがおおいです。", "example_meaning": "Vì cuối tuần quầy thu ngân đông nên tôi thường mua sắm vào ngày thường.", "level": "n5"},
@@ -1193,7 +1448,10 @@ const TOPICS = [
       {"word": "服", "reading": "ふく", "meaning": "quần áo", "hanviet": "phục", "example": "冬用の服を探しています。", "example_reading": "ふゆようのふくをさがしています。", "example_meaning": "Tôi đang tìm quần áo mùa đông.", "level": "n5"},
       {"word": "靴", "reading": "くつ", "meaning": "giày", "hanviet": "hài", "example": "靴のサイズが合いません。", "example_reading": "くつのさいずがあいません。", "example_meaning": "Giày không vừa cỡ.", "level": "n5"},
       {"word": "欲しい", "reading": "ほしい", "meaning": "muốn có", "hanviet": "dục", "example": "新しいスマホが欲しいです。", "example_reading": "あたらしいすまほがほしいです。", "example_meaning": "Tôi muốn có điện thoại mới.", "level": "n5"},
-      // ── n4 · 28 mục ──
+      {"word": "買い物", "reading": "かいもの", "meaning": "mua sắm", "hanviet": "mãi vật", "example": "日曜日に母と買い物に行きます。", "example_reading": "にちようびにははとかいものにいきます。", "example_meaning": "Chủ nhật tôi đi mua sắm với mẹ.", "level": "n5"},
+      {"word": "円", "reading": "えん", "meaning": "yên (tiền Nhật)", "hanviet": "viên", "example": "このシャツは二千円です。", "example_reading": "このしゃつはにせんえんです。", "example_meaning": "Chiếc áo sơ mi này giá 2.000 yên.", "level": "n5"},
+      {"word": "デパート", "reading": "デパート", "meaning": "cửa hàng bách hóa", "hanviet": "", "example": "デパートで母にプレゼントを買いました。", "example_reading": "でぱーとでははにぷれぜんとをかいました。", "example_meaning": "Tôi mua quà cho mẹ ở cửa hàng bách hóa.", "level": "n5"},
+      // ── n4 · 35 mục ──
       {"word": "割引", "reading": "わりびき", "meaning": "giảm giá", "hanviet": "cát dẫn", "example": "会員になると、すべての商品が十パーセント割引になります。", "example_reading": "かいいんになると、すべてのしょうひんがじっぱーせんとわりびきになります。", "example_meaning": "Nếu trở thành hội viên thì tất cả sản phẩm được giảm giá mười phần trăm.", "level": "n4"},
       {"word": "支払う", "reading": "しはらう", "meaning": "thanh toán", "hanviet": "chi phất", "example": "クレジットカードで支払うと、ポイントが貯まってお得です。", "example_reading": "くれじっとかーどでしはらうと、ぽいんとがたまっておとくです。", "example_meaning": "Nếu thanh toán bằng thẻ tín dụng thì được tích điểm nên có lợi.", "level": "n4"},
       {"word": "交換", "reading": "こうかん", "meaning": "đổi hàng", "hanviet": "giao hoán", "example": "不良品だったので、同じ商品と交換してもらいました。", "example_reading": "ふりょうひんだったので、おなじしょうひんとこうかんしてもらいました。", "example_meaning": "Vì là hàng lỗi nên tôi đã được đổi sang sản phẩm cùng loại.", "level": "n4"},
@@ -1222,7 +1480,14 @@ const TOPICS = [
       {"word": "おつり", "reading": "おつり", "meaning": "tiền thừa", "hanviet": "", "example": "おつりをもらい忘れました。", "example_reading": "おつりをもらいわすれました。", "example_meaning": "Tôi quên lấy tiền thừa.", "level": "n4"},
       {"word": "財布", "reading": "さいふ", "meaning": "ví tiền", "hanviet": "tài bố", "example": "財布を家に忘れました。", "example_reading": "さいふをいえにわすれました。", "example_meaning": "Tôi để quên ví ở nhà.", "level": "n4"},
       {"word": "必要", "reading": "ひつよう", "meaning": "cần thiết", "hanviet": "tất yếu", "example": "本当に必要か考え直します。", "example_reading": "ほんとうにひつようかかんがえなおします。", "example_meaning": "Tôi nghĩ lại xem có thật sự cần không.", "level": "n4"},
-      // ── n3 · 50 mục ──
+      {"word": "売り場", "reading": "うりば", "meaning": "quầy hàng", "hanviet": "mại trường", "example": "くつ売り場は三階にあります。", "example_reading": "くつうりばはさんがいにあります。", "example_meaning": "Quầy giày ở tầng ba.", "level": "n4"},
+      {"word": "商店街", "reading": "しょうてんがい", "meaning": "phố mua sắm", "hanviet": "thương điếm nhai", "example": "駅前の商店街で野菜を買いました。", "example_reading": "えきまえのしょうてんがいでやさいをかいました。", "example_meaning": "Tôi mua rau ở phố mua sắm trước ga.", "level": "n4"},
+      {"word": "無料", "reading": "むりょう", "meaning": "miễn phí", "hanviet": "vô liệu", "example": "この店では、袋は無料です。", "example_reading": "このみせでは、ふくろはむりょうです。", "example_meaning": "Ở cửa hàng này túi được miễn phí.", "level": "n4"},
+      {"word": "有料", "reading": "ゆうりょう", "meaning": "mất phí", "hanviet": "hữu liệu", "example": "駐車場は有料ですが、店で買い物をすると無料になります。", "example_reading": "ちゅうしゃじょうはゆうりょうですが、みせでかいものをするとむりょうになります。", "example_meaning": "Bãi đỗ xe mất phí nhưng mua hàng ở cửa hàng thì được miễn phí.", "level": "n4"},
+      {"word": "品物", "reading": "しなもの", "meaning": "hàng hóa", "hanviet": "phẩm vật", "example": "店には新しい品物がたくさん並んでいます。", "example_reading": "みせにはあたらしいしなものがたくさんならんでいます。", "example_meaning": "Cửa hàng bày nhiều hàng mới.", "level": "n4"},
+      {"word": "贈り物", "reading": "おくりもの", "meaning": "quà tặng", "hanviet": "tặng vật", "example": "友達の結婚祝いの贈り物を選びました。", "example_reading": "ともだちのけっこんいわいのおくりものをえらびました。", "example_meaning": "Tôi đã chọn quà mừng đám cưới cho bạn.", "level": "n4"},
+      {"word": "包む", "reading": "つつむ", "meaning": "gói", "hanviet": "bao", "example": "プレゼント用に包んでいただけますか。", "example_reading": "ぷれぜんとようにつつんでいただけますか。", "example_meaning": "Xin gói giúp tôi làm quà tặng được không?", "level": "n4"},
+      // ── n3 · 64 mục ──
       {"word": "領収書", "reading": "りょうしゅうしょ", "meaning": "hóa đơn", "hanviet": "lĩnh thu thư", "example": "経費として申請するために、領収書をもらっておいてください。", "example_reading": "けいひとしてしんせいするために、りょうしゅうしょをもらっておいてください。", "example_meaning": "Để làm thủ tục thanh toán chi phí, hãy nhớ lấy hóa đơn.", "level": "n3"},
       {"word": "返品", "reading": "へんぴん", "meaning": "trả hàng", "hanviet": "phản phẩm", "example": "サイズが合わなかったので、商品を返品することにしました。", "example_reading": "さいずがあわなかったので、しょうひんをへんぴんすることにしました。", "example_meaning": "Vì không vừa cỡ nên tôi quyết định trả lại sản phẩm.", "level": "n3"},
       {"word": "試着", "reading": "しちゃく", "meaning": "mặc thử", "hanviet": "thí trước", "example": "気に入った服があったので、試着してからサイズを確認しました。", "example_reading": "きにいったふくがあったので、しちゃくしてからさいずをかくにんしました。", "example_meaning": "Vì có bộ đồ tôi thích nên tôi đã mặc thử để xác nhận cỡ.", "level": "n3"},
@@ -1273,7 +1538,21 @@ const TOPICS = [
       {"word": "ネットショップ", "reading": "ネットショップ", "meaning": "cửa hàng trực tuyến", "hanviet": "", "example": "ネットショップで買う方が安いです。", "example_reading": "ねっとしょっぷでかうほうがやすいです。", "example_meaning": "Mua ở cửa hàng online rẻ hơn.", "level": "n3"},
       {"word": "送料無料", "reading": "そうりょうむりょう", "meaning": "miễn phí vận chuyển", "hanviet": "tống liệu vô liệu", "example": "五千円以上で送料無料です。", "example_reading": "ごせんえんいじょうでそうりょうむりょうです。", "example_meaning": "Trên 5000 yên được miễn phí ship.", "level": "n3"},
       {"word": "キャンセル", "reading": "キャンセル", "meaning": "hủy đơn", "hanviet": "", "example": "注文をキャンセルしました。", "example_reading": "ちゅうもんをきゃんせるしました。", "example_meaning": "Tôi đã hủy đơn hàng.", "level": "n3"},
-      // ── n2 · 42 mục ──
+      {"word": "特価", "reading": "とっか", "meaning": "giá đặc biệt", "hanviet": "đặc giá", "example": "今日は野菜が特価で売られています。", "example_reading": "きょうはやさいがとっかでうられています。", "example_meaning": "Hôm nay rau được bán giá đặc biệt.", "level": "n3"},
+      {"word": "福袋", "reading": "ふくぶくろ", "meaning": "túi may mắn", "hanviet": "phúc đại", "example": "お正月に福袋を買うのが毎年の楽しみです。", "example_reading": "おしょうがつにふくぶくろをかうのがまいとしのたのしみです。", "example_meaning": "Mua túi may mắn dịp Tết là niềm vui hằng năm của tôi.", "level": "n3"},
+      {"word": "新品", "reading": "しんぴん", "meaning": "hàng mới", "hanviet": "tân phẩm", "example": "中古だと思ったら、新品が届きました。", "example_reading": "ちゅうこだとおもったら、しんぴんがとどきました。", "example_meaning": "Tưởng là đồ cũ nhưng hàng mới được gửi tới.", "level": "n3"},
+      {"word": "限定", "reading": "げんてい", "meaning": "giới hạn, có hạn", "hanviet": "hạn định", "example": "この店でしか買えない限定商品があります。", "example_reading": "このみせでしかかえないげんていしょうひんがあります。", "example_meaning": "Có sản phẩm giới hạn chỉ mua được ở cửa hàng này.", "level": "n3"},
+      {"word": "景品", "reading": "けいひん", "meaning": "quà tặng kèm", "hanviet": "cảnh phẩm", "example": "抽選に当たって、景品をもらいました。", "example_reading": "ちゅうせんにあたって、けいひんをもらいました。", "example_meaning": "Trúng thưởng nên tôi nhận được quà.", "level": "n3"},
+      {"word": "抽選", "reading": "ちゅうせん", "meaning": "bốc thăm", "hanviet": "trừu tuyển", "example": "買い物をすると、抽選に参加できます。", "example_reading": "かいものをすると、ちゅうせんにさんかできます。", "example_meaning": "Mua sắm thì được tham gia bốc thăm.", "level": "n3"},
+      {"word": "一括払い", "reading": "いっかつばらい", "meaning": "thanh toán một lần", "hanviet": "nhất quát phất", "example": "高い買い物なので、一括払いではなく分割にしました。", "example_reading": "たかいかいものなので、いっかつばらいではなくぶんかつにしました。", "example_meaning": "Vì món đồ đắt nên tôi trả góp thay vì thanh toán một lần.", "level": "n3"},
+      {"word": "手数料", "reading": "てすうりょう", "meaning": "phí dịch vụ", "hanviet": "thủ số liệu", "example": "振込手数料はお客様のご負担です。", "example_reading": "ふりこみてすうりょうはおきゃくさまのごふたんです。", "example_meaning": "Phí chuyển khoản do quý khách chịu.", "level": "n3"},
+      {"word": "見本", "reading": "みほん", "meaning": "hàng mẫu", "hanviet": "kiến bản", "example": "見本を見てから、買うかどうか決めます。", "example_reading": "みほんをみてから、かうかどうかきめます。", "example_meaning": "Xem hàng mẫu rồi tôi mới quyết định mua hay không.", "level": "n3"},
+      {"word": "品薄", "reading": "しなうす", "meaning": "khan hàng", "hanviet": "phẩm bạc", "example": "人気商品で、どの店も品薄です。", "example_reading": "にんきしょうひんで、どのみせもしなうすです。", "example_meaning": "Là sản phẩm được ưa chuộng nên cửa hàng nào cũng khan hàng.", "level": "n3"},
+      {"word": "売れ筋", "reading": "うれすじ", "meaning": "mặt hàng bán chạy", "hanviet": "mại cân", "example": "店員さんに売れ筋の商品を聞きました。", "example_reading": "てんいんさんにうれすじのしょうひんをききました。", "example_meaning": "Tôi hỏi nhân viên về mặt hàng bán chạy.", "level": "n3"},
+      {"word": "割引券", "reading": "わりびきけん", "meaning": "phiếu giảm giá", "hanviet": "cát dẫn khoán", "example": "この割引券を使えば、一割安くなります。", "example_reading": "このわりびきけんをつかえば、いちわりやすくなります。", "example_meaning": "Dùng phiếu giảm giá này thì rẻ hơn 10%.", "level": "n3"},
+      {"word": "営業時間", "reading": "えいぎょうじかん", "meaning": "giờ mở cửa", "hanviet": "doanh nghiệp thời gian", "example": "店の営業時間は午前十時から午後九時までです。", "example_reading": "みせのえいぎょうじかんはごぜんじゅうじからごごくじまでです。", "example_meaning": "Giờ mở cửa của cửa hàng từ 10 giờ sáng đến 9 giờ tối.", "level": "n3"},
+      {"word": "閉店", "reading": "へいてん", "meaning": "đóng cửa hàng", "hanviet": "bế điếm", "example": "この店は来月閉店するそうです。", "example_reading": "このみせはらいげつへいてんするそうです。", "example_meaning": "Nghe nói cửa hàng này tháng sau đóng cửa.", "level": "n3"},
+      // ── n2 · 55 mục ──
       {"word": "買い占める", "reading": "かいしめる", "meaning": "mua vét, gom hàng", "hanviet": "mãi chiêm", "example": "マスクを買い占める人がいました。", "example_reading": "ますくをかいしめるひとがいました。", "example_meaning": "Đã có người mua vét khẩu trang.", "level": "n2"},
       {"word": "分割払い", "reading": "ぶんかつばらい", "meaning": "trả góp", "hanviet": "phân cát phất", "example": "分割払いで購入しました。", "example_reading": "ぶんかつばらいでこうにゅうしました。", "example_meaning": "Tôi đã mua theo hình thức trả góp.", "level": "n2"},
       {"word": "品揃え", "reading": "しなぞろえ", "meaning": "sự đa dạng hàng hóa", "hanviet": "phẩm", "example": "この店は品揃えが豊富です。", "example_reading": "このみせはしなぞろえがほうふです。", "example_meaning": "Cửa hàng này hàng hóa rất phong phú.", "level": "n2"},
@@ -1316,7 +1595,20 @@ const TOPICS = [
       {"word": "支払期限", "reading": "しはらいきげん", "meaning": "hạn thanh toán", "hanviet": "chi phất kỳ hạn", "example": "支払期限は今月末です。", "example_reading": "しはらいきげんはこんげつまつです。", "example_meaning": "Hạn thanh toán là cuối tháng này.", "level": "n2"},
       {"word": "領収", "reading": "りょうしゅう", "meaning": "biên nhận", "hanviet": "lĩnh thu", "example": "領収の印をもらいました。", "example_reading": "りょうしゅうのいんをもらいました。", "example_meaning": "Tôi đã xin dấu biên nhận.", "level": "n2"},
       {"word": "配送料", "reading": "はいそうりょう", "meaning": "phí giao hàng", "hanviet": "phối tống liệu", "example": "配送料が別にかかります。", "example_reading": "はいそうりょうがべつにかかります。", "example_meaning": "Phí giao hàng tính riêng.", "level": "n2"},
-      // ── n1 · 42 mục ──
+      {"word": "値切る", "reading": "ねぎる", "meaning": "mặc cả", "hanviet": "trị thiết", "example": "市場で、店の人と値切って安く買いました。", "example_reading": "いちばで、みせのひととねぎってやすくかいました。", "example_meaning": "Ở chợ tôi mặc cả với người bán và mua được giá rẻ.", "level": "n2"},
+      {"word": "勘定", "reading": "かんじょう", "meaning": "thanh toán, hóa đơn", "hanviet": "khám định", "example": "食事のあと、勘定を済ませて店を出ました。", "example_reading": "しょくじのあと、かんじょうをすませてみせをでました。", "example_meaning": "Sau bữa ăn, tôi thanh toán rồi rời quán.", "level": "n2"},
+      {"word": "出費", "reading": "しゅっぴ", "meaning": "khoản chi tiêu", "hanviet": "xuất phí", "example": "引っ越しで、思わぬ出費がかさみました。", "example_reading": "ひっこしで、おもわぬしゅっぴがかさみました。", "example_meaning": "Chuyển nhà làm các khoản chi bất ngờ chồng chất.", "level": "n2"},
+      {"word": "倹約", "reading": "けんやく", "meaning": "tiết kiệm, thắt lưng buộc bụng", "hanviet": "kiệm ước", "example": "将来のために、倹約して暮らしています。", "example_reading": "しょうらいのために、けんやくしてくらしています。", "example_meaning": "Vì tương lai nên tôi sống tiết kiệm.", "level": "n2"},
+      {"word": "浪費", "reading": "ろうひ", "meaning": "lãng phí", "hanviet": "lãng phí", "example": "ストレスで、つい浪費してしまいます。", "example_reading": "すとれすで、ついろうひしてしまいます。", "example_meaning": "Vì căng thẳng mà tôi lỡ tiêu xài hoang phí.", "level": "n2"},
+      {"word": "贅沢", "reading": "ぜいたく", "meaning": "xa xỉ", "hanviet": "chuế trạch", "example": "今日は特別な日なので、贅沢な食事をしました。", "example_reading": "きょうはとくべつなひなので、ぜいたくなしょくじをしました。", "example_meaning": "Hôm nay là ngày đặc biệt nên tôi đã ăn một bữa thật xa xỉ.", "level": "n2"},
+      {"word": "偽物", "reading": "にせもの", "meaning": "hàng giả", "hanviet": "ngụy vật", "example": "ネットで買った時計は偽物でした。", "example_reading": "ねっとでかったとけいはにせものでした。", "example_meaning": "Chiếc đồng hồ mua trên mạng là hàng giả.", "level": "n2"},
+      {"word": "代金", "reading": "だいきん", "meaning": "tiền hàng", "hanviet": "đại kim", "example": "商品を受け取ったら、代金を支払ってください。", "example_reading": "しょうひんをうけとったら、だいきんをしはらってください。", "example_meaning": "Nhận hàng xong xin hãy thanh toán tiền hàng.", "level": "n2"},
+      {"word": "代引き", "reading": "だいびき", "meaning": "thanh toán khi nhận hàng", "hanviet": "đại dẫn", "example": "代引きだと、手数料がかかります。", "example_reading": "だいびきだと、てすうりょうがかかります。", "example_meaning": "Thanh toán khi nhận hàng sẽ mất phí.", "level": "n2"},
+      {"word": "欠陥", "reading": "けっかん", "meaning": "khiếm khuyết", "hanviet": "khiếm hãm", "example": "買った製品に欠陥があったので、交換を求めました。", "example_reading": "かったせいひんにけっかんがあったので、こうかんをもとめました。", "example_meaning": "Sản phẩm mua về có khiếm khuyết nên tôi yêu cầu đổi.", "level": "n2"},
+      {"word": "不良品", "reading": "ふりょうひん", "meaning": "hàng lỗi", "hanviet": "bất lương phẩm", "example": "不良品が届いたので、店に連絡しました。", "example_reading": "ふりょうひんがとどいたので、みせにれんらくしました。", "example_meaning": "Nhận phải hàng lỗi nên tôi đã liên lạc với cửa hàng.", "level": "n2"},
+      {"word": "苦情", "reading": "くじょう", "meaning": "khiếu nại, phàn nàn", "hanviet": "khổ tình", "example": "店員の態度について、苦情を言いました。", "example_reading": "てんいんのたいどについて、くじょうをいいました。", "example_meaning": "Tôi đã phàn nàn về thái độ của nhân viên.", "level": "n2"},
+      {"word": "正規品", "reading": "せいきひん", "meaning": "hàng chính hãng", "hanviet": "chính quy phẩm", "example": "正規品かどうか、よく確かめてから買いましょう。", "example_reading": "せいきひんかどうか、よくたしかめてからかいましょう。", "example_meaning": "Hãy kiểm tra kỹ có phải hàng chính hãng không rồi hãy mua.", "level": "n2"},
+      // ── n1 · 55 mục ──
       {"word": "消費行動", "reading": "しょうひこうどう", "meaning": "hành vi tiêu dùng", "hanviet": "tiêu phí hành động", "example": "若者の消費行動が変化しています。", "example_reading": "わかもののしょうひこうどうがへんかしています。", "example_meaning": "Hành vi tiêu dùng của giới trẻ đang thay đổi.", "level": "n1"},
       {"word": "購買意欲", "reading": "こうばいいよく", "meaning": "ý muốn mua sắm", "hanviet": "cấu mãi ý dục", "example": "セールで購買意欲が高まります。", "example_reading": "せーるでこうばいいよくがたかまります。", "example_meaning": "Ý muốn mua sắm tăng lên khi có đợt giảm giá.", "level": "n1"},
       {"word": "需要と供給", "reading": "じゅようときょうきゅう", "meaning": "cung và cầu", "hanviet": "nhu yếu cung cấp", "example": "需要と供給のバランスが崩れています。", "example_reading": "じゅようときょうきゅうのばらんすがくずれています。", "example_meaning": "Sự cân bằng cung cầu đang bị phá vỡ.", "level": "n1"},
@@ -1359,6 +1651,19 @@ const TOPICS = [
       {"word": "フードロス", "reading": "フードロス", "meaning": "lãng phí thực phẩm (bán lẻ)", "hanviet": "", "example": "フードロス削減に取り組みます。", "example_reading": "ふーどろすさくげんにとりくみます。", "example_meaning": "Chúng tôi nỗ lực giảm lãng phí thực phẩm.", "level": "n1"},
       {"word": "転売", "reading": "てんばい", "meaning": "bán lại kiếm lời", "hanviet": "chuyển mại", "example": "転売目的の購入は禁止です。", "example_reading": "てんばいもくてきのこうにゅうはきんしです。", "example_meaning": "Cấm mua nhằm mục đích bán lại.", "level": "n1"},
       {"word": "需要予測", "reading": "じゅようよそく", "meaning": "dự báo nhu cầu", "hanviet": "nhu yếu dư trắc", "example": "需要予測をもとに発注します。", "example_reading": "じゅようよそくをもとにはっちゅうします。", "example_meaning": "Đặt hàng dựa trên dự báo nhu cầu.", "level": "n1"},
+      {"word": "割賦", "reading": "かっぷ", "meaning": "trả góp", "hanviet": "cát phú", "example": "高価な家具を割賦で購入しました。", "example_reading": "こうかなかぐをかっぷでこうにゅうしました。", "example_meaning": "Tôi mua đồ nội thất đắt tiền theo hình thức trả góp.", "level": "n1"},
+      {"word": "暴利", "reading": "ぼうり", "meaning": "lợi nhuận bất chính", "hanviet": "bạo lợi", "example": "暴利をむさぼる業者には注意が必要です。", "example_reading": "ぼうりをむさぼるぎょうしゃにはちゅういがひつようです。", "example_meaning": "Cần cảnh giác với những nhà buôn kiếm lợi bất chính.", "level": "n1"},
+      {"word": "値崩れ", "reading": "ねくずれ", "meaning": "giá lao dốc", "hanviet": "trị băng", "example": "供給が増えすぎて、野菜が値崩れしました。", "example_reading": "きょうきゅうがふえすぎて、やさいがねくずれしました。", "example_meaning": "Nguồn cung tăng quá nhiều nên giá rau lao dốc.", "level": "n1"},
+      {"word": "廉価", "reading": "れんか", "meaning": "giá rẻ", "hanviet": "liêm giá", "example": "廉価版でも、機能は十分です。", "example_reading": "れんかばんでも、きのうはじゅうぶんです。", "example_meaning": "Dù là bản giá rẻ nhưng tính năng vẫn đủ dùng.", "level": "n1"},
+      {"word": "吟味", "reading": "ぎんみ", "meaning": "cân nhắc kỹ, thẩm định", "hanviet": "ngâm vị", "example": "高い買い物なので、よく吟味してから決めます。", "example_reading": "たかいかいものなので、よくぎんみしてからきめます。", "example_meaning": "Món đồ đắt tiền nên tôi cân nhắc kỹ rồi mới quyết định.", "level": "n1"},
+      {"word": "逸品", "reading": "いっぴん", "meaning": "món hàng cực phẩm", "hanviet": "dật phẩm", "example": "この店には、職人が作った逸品が揃っています。", "example_reading": "このみせには、しょくにんがつくったいっぴんがそろっています。", "example_meaning": "Cửa hàng này có đủ các sản phẩm tuyệt hảo do nghệ nhân làm.", "level": "n1"},
+      {"word": "贈答", "reading": "ぞうとう", "meaning": "tặng quà", "hanviet": "tặng đáp", "example": "お歳暮の贈答品を、デパートで選びました。", "example_reading": "おせいぼのぞうとうひんを、でぱーとでえらびました。", "example_meaning": "Tôi chọn quà biếu cuối năm ở cửa hàng bách hóa.", "level": "n1"},
+      {"word": "不況", "reading": "ふきょう", "meaning": "suy thoái kinh tế", "hanviet": "bất huống", "example": "不況の影響で、消費が冷え込んでいます。", "example_reading": "ふきょうのえいきょうで、しょうひがひえこんでいます。", "example_meaning": "Do ảnh hưởng suy thoái, tiêu dùng đang đóng băng.", "level": "n1"},
+      {"word": "質素", "reading": "しっそ", "meaning": "giản dị, đạm bạc", "hanviet": "chất tố", "example": "祖母は質素な暮らしを続けています。", "example_reading": "そぼはしっそなくらしをつづけています。", "example_meaning": "Bà tôi vẫn giữ lối sống giản dị.", "level": "n1"},
+      {"word": "掘り出し物", "reading": "ほりだしもの", "meaning": "món hời tình cờ tìm được", "hanviet": "quật xuất vật", "example": "古道具屋で、掘り出し物を見つけました。", "example_reading": "ふるどうぐやで、ほりだしものをみつけました。", "example_meaning": "Tôi tìm được một món hời ở tiệm đồ cũ.", "level": "n1"},
+      {"word": "値頃", "reading": "ねごろ", "meaning": "giá phải chăng", "hanviet": "trị khoảnh", "example": "この品質でこの値頃なら、買う価値があります。", "example_reading": "このひんしつでこのねごろなら、かうかちがあります。", "example_meaning": "Chất lượng này mà giá phải chăng thế thì đáng mua.", "level": "n1"},
+      {"word": "見切り品", "reading": "みきりひん", "meaning": "hàng xử lý giá rẻ", "hanviet": "kiến thiết phẩm", "example": "閉店前のスーパーで、見切り品を買いました。", "example_reading": "へいてんまえのすーぱーで、みきりひんをかいました。", "example_meaning": "Tôi mua hàng xử lý giá rẻ ở siêu thị trước giờ đóng cửa.", "level": "n1"},
+      {"word": "抱き合わせ", "reading": "だきあわせ", "meaning": "bán kèm (ép mua)", "hanviet": "bão hợp", "example": "人気商品を抱き合わせで売るのは問題です。", "example_reading": "にんきしょうひんをだきあわせでうるのはもんだいです。", "example_meaning": "Bán kèm hàng được ưa chuộng bắt người mua mua cả hàng khác là có vấn đề.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [06] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -1386,7 +1691,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [07] 7. 旅行・交通  ✈️  |  main  |  vocab 180 · grammar 20
+  // [07] 7. 旅行・交通  ✈️  |  main  |  vocab 230 · grammar 20
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "7. 旅行・交通",
@@ -1394,7 +1699,7 @@ const TOPICS = [
     "icon": "✈️",
     "category": "main",
     "vocab": [
-      // ── n5 · 21 mục ──
+      // ── n5 · 24 mục ──
       {"word": "旅行", "reading": "りょこう", "meaning": "du lịch", "hanviet": "lữ hành", "example": "家族旅行の計画を立てるのは大変ですが、とても楽しいです。", "example_reading": "かぞくりょこうのけいかくをたてるのはたいへんですが、とてもたのしいです。", "example_meaning": "Lập kế hoạch du lịch gia đình tuy vất vả nhưng rất vui.", "level": "n5"},
       {"word": "予約", "reading": "よやく", "meaning": "đặt trước", "hanviet": "dư ước", "example": "飛行機のチケットは早めに予約したほうが安く買えます。", "example_reading": "ひこうきのちけっとははやめによやくしたほうがやすくかえます。", "example_meaning": "Vé máy bay nên đặt trước sớm thì mua được giá rẻ hơn.", "level": "n5"},
       {"word": "空港", "reading": "くうこう", "meaning": "sân bay", "hanviet": "không cảng", "example": "国際線の場合、出発の三時間前には空港に着いたほうがいいです。", "example_reading": "こくさいせんのばあい、しゅっぱつのさんじかんまえにはくうこうについたほうがいいです。", "example_meaning": "Đối với chuyến bay quốc tế, nên đến sân bay trước giờ khởi hành ba tiếng.", "level": "n5"},
@@ -1416,7 +1721,10 @@ const TOPICS = [
       {"word": "遠い", "reading": "とおい", "meaning": "xa", "hanviet": "viễn", "example": "空港は町から遠いです。", "example_reading": "くうこうはまちからとおいです。", "example_meaning": "Sân bay xa trung tâm.", "level": "n5"},
       {"word": "乗る", "reading": "のる", "meaning": "lên xe", "hanviet": "thừa", "example": "次のバスに乗ります。", "example_reading": "つぎのばすにのります。", "example_meaning": "Tôi lên chuyến buýt kế tiếp.", "level": "n5"},
       {"word": "降りる", "reading": "おりる", "meaning": "xuống xe", "hanviet": "hàng", "example": "次の駅で降ります。", "example_reading": "つぎのえきでおります。", "example_meaning": "Tôi xuống ở ga tiếp theo.", "level": "n5"},
-      // ── n4 · 27 mục ──
+      {"word": "外国", "reading": "がいこく", "meaning": "nước ngoài", "hanviet": "ngoại quốc", "example": "いつか外国へ旅行に行きたいです。", "example_reading": "いつかがいこくへりょこうにいきたいです。", "example_meaning": "Một lúc nào đó tôi muốn đi du lịch nước ngoài.", "level": "n5"},
+      {"word": "地下鉄", "reading": "ちかてつ", "meaning": "tàu điện ngầm", "hanviet": "địa hạ thiết", "example": "地下鉄で空港まで行きます。", "example_reading": "ちかてつでくうこうまでいきます。", "example_meaning": "Tôi đi đến sân bay bằng tàu điện ngầm.", "level": "n5"},
+      {"word": "車", "reading": "くるま", "meaning": "xe ô tô", "hanviet": "xa", "example": "車で温泉へ行きました。", "example_reading": "くるまでおんせんへいきました。", "example_meaning": "Tôi đã đi suối nước nóng bằng ô tô.", "level": "n5"},
+      // ── n4 · 34 mục ──
       {"word": "パスポート", "reading": "パスポート", "meaning": "hộ chiếu", "hanviet": "", "example": "海外旅行に行くときは、パスポートの有効期限を確認してください。", "example_reading": "かいがいりょこうにいくときは、ぱすぽーとのゆうこうきげんをかくにんしてください。", "example_meaning": "Khi đi du lịch nước ngoài, hãy kiểm tra thời hạn hộ chiếu.", "level": "n4"},
       {"word": "乗り換え", "reading": "のりかえ", "meaning": "chuyển tàu/xe", "hanviet": "thừa hoán", "example": "この駅で乗り換えると、目的地まで三十分ほどで着きます。", "example_reading": "このえきでのりかえると、もくてきちまでさんじゅっぷんほどでつきます。", "example_meaning": "Nếu chuyển tàu ở ga này thì mất khoảng ba mươi phút để đến nơi.", "level": "n4"},
       {"word": "観光地", "reading": "かんこうち", "meaning": "địa điểm du lịch", "hanviet": "quan quang địa", "example": "この観光地は季節によって全く違う景色を見せてくれます。", "example_reading": "このかんこうちはきせつによってまったくちがうけしきをみせてくれます。", "example_meaning": "Địa điểm du lịch này cho thấy phong cảnh hoàn toàn khác nhau tùy theo mùa.", "level": "n4"},
@@ -1444,7 +1752,14 @@ const TOPICS = [
       {"word": "観光", "reading": "かんこう", "meaning": "tham quan", "hanviet": "quan quang", "example": "午前中は市内を観光します。", "example_reading": "ごぜんちゅうはしないをかんこうします。", "example_meaning": "Buổi sáng tôi tham quan nội thành.", "level": "n4"},
       {"word": "楽しむ", "reading": "たのしむ", "meaning": "tận hưởng", "hanviet": "lạc", "example": "地元の料理を楽しみました。", "example_reading": "じもとのりょうりをたのしみました。", "example_meaning": "Tôi đã tận hưởng món ăn địa phương.", "level": "n4"},
       {"word": "景色", "reading": "けしき", "meaning": "phong cảnh", "hanviet": "cảnh sắc", "example": "山の上から景色を眺めました。", "example_reading": "やまのうえからけしきをながめました。", "example_meaning": "Tôi ngắm cảnh từ trên núi.", "level": "n4"},
-      // ── n3 · 47 mục ──
+      {"word": "旅館", "reading": "りょかん", "meaning": "lữ quán kiểu Nhật", "hanviet": "lữ quán", "example": "京都で古い旅館に泊まりました。", "example_reading": "きょうとでふるいりょかんにとまりました。", "example_meaning": "Ở Kyoto tôi đã ở một lữ quán cổ.", "level": "n4"},
+      {"word": "運転", "reading": "うんてん", "meaning": "lái xe", "hanviet": "vận chuyển", "example": "旅行中は、父と交代で運転しました。", "example_reading": "りょこうちゅうは、ちちとこうたいでうんてんしました。", "example_meaning": "Trong chuyến đi tôi lái xe luân phiên với bố.", "level": "n4"},
+      {"word": "駐車場", "reading": "ちゅうしゃじょう", "meaning": "bãi đỗ xe", "hanviet": "trú xa trường", "example": "ホテルの駐車場は無料です。", "example_reading": "ほてるのちゅうしゃじょうはむりょうです。", "example_meaning": "Bãi đỗ xe của khách sạn miễn phí.", "level": "n4"},
+      {"word": "交差点", "reading": "こうさてん", "meaning": "ngã tư", "hanviet": "giao sai điểm", "example": "次の交差点を右に曲がってください。", "example_reading": "つぎのこうさてんをみぎにまがってください。", "example_meaning": "Hãy rẽ phải ở ngã tư tiếp theo.", "level": "n4"},
+      {"word": "信号", "reading": "しんごう", "meaning": "đèn giao thông", "hanviet": "tín hiệu", "example": "信号が赤のときは、止まらなければなりません。", "example_reading": "しんごうがあかのときは、とまらなければなりません。", "example_meaning": "Khi đèn đỏ thì phải dừng lại.", "level": "n4"},
+      {"word": "急行", "reading": "きゅうこう", "meaning": "tàu tốc hành", "hanviet": "cấp hành", "example": "急行に乗れば、三十分早く着きます。", "example_reading": "きゅうこうにのれば、さんじゅっぷんはやくつきます。", "example_meaning": "Đi tàu tốc hành thì đến sớm hơn 30 phút.", "level": "n4"},
+      {"word": "迷う", "reading": "まよう", "meaning": "lạc đường; phân vân", "hanviet": "mê", "example": "知らない町で道に迷ってしまいました。", "example_reading": "しらないまちでみちにまよってしまいました。", "example_meaning": "Tôi bị lạc đường ở một thị trấn lạ.", "level": "n4"},
+      // ── n3 · 61 mục ──
       {"word": "渋滞", "reading": "じゅうたい", "meaning": "tắc đường", "hanviet": "sáp trệ", "example": "休日の高速道路はいつも渋滞していて、なかなか進みません。", "example_reading": "きゅうじつのこうそくどうろはいつもじゅうたいしていて、なかなかすすみません。", "example_meaning": "Đường cao tốc vào ngày nghỉ lúc nào cũng tắc, khó mà di chuyển được.", "level": "n3"},
       {"word": "宿泊", "reading": "しゅくはく", "meaning": "lưu trú", "hanviet": "túc bạc", "example": "今回の旅行では、温泉旅館に二泊宿泊する予定です。", "example_reading": "こんかいのりょこうでは、おんせんりょかんににはくしゅくはくするよていです。", "example_meaning": "Chuyến đi lần này, tôi dự định lưu trú hai đêm tại một khách sạn suối nước nóng.", "level": "n3"},
       {"word": "時刻表", "reading": "じこくひょう", "meaning": "bảng giờ tàu/xe", "hanviet": "thời khắc biểu", "example": "電車の時刻表をスマホで確認してから、駅に向かいました。", "example_reading": "でんしゃのじこくひょうをすまほでかくにんしてから、えきにむかいました。", "example_meaning": "Sau khi kiểm tra bảng giờ tàu trên điện thoại, tôi đã đi ra ga.", "level": "n3"},
@@ -1492,7 +1807,21 @@ const TOPICS = [
       {"word": "旅の思い出", "reading": "たびのおもいで", "meaning": "kỷ niệm chuyến đi", "hanviet": "lữ", "example": "旅の思い出を写真に残します。", "example_reading": "たびのおもいでをしゃしんにのこします。", "example_meaning": "Tôi lưu kỷ niệm chuyến đi bằng ảnh.", "level": "n3"},
       {"word": "観光名所", "reading": "かんこうめいしょ", "meaning": "điểm tham quan nổi tiếng", "hanviet": "quan quang danh sở", "example": "観光名所を三か所回りました。", "example_reading": "かんこうめいしょをさんかしょまわりました。", "example_meaning": "Tôi đã đi ba điểm tham quan nổi tiếng.", "level": "n3"},
       {"word": "移動時間", "reading": "いどうじかん", "meaning": "thời gian di chuyển", "hanviet": "di động thời gian", "example": "移動時間が長くて疲れました。", "example_reading": "いどうじかんがながくてつかれました。", "example_meaning": "Di chuyển lâu nên tôi mệt.", "level": "n3"},
-      // ── n2 · 43 mục ──
+      {"word": "旅先", "reading": "たびさき", "meaning": "nơi đến trong chuyến đi", "hanviet": "lữ tiên", "example": "旅先で、親切な人に助けてもらいました。", "example_reading": "たびさきで、しんせつなひとにたすけてもらいました。", "example_meaning": "Ở nơi du lịch tôi được một người tử tế giúp đỡ.", "level": "n3"},
+      {"word": "宿", "reading": "やど", "meaning": "chỗ trọ", "hanviet": "túc", "example": "予約が取れず、今夜の宿が決まっていません。", "example_reading": "よやくがとれず、こんやのやどがきまっていません。", "example_meaning": "Không đặt được chỗ nên tối nay tôi chưa có chỗ ở.", "level": "n3"},
+      {"word": "運行", "reading": "うんこう", "meaning": "chạy (tàu xe), vận hành", "hanviet": "vận hành", "example": "大雪のため、電車の運行が止まっています。", "example_reading": "おおゆきのため、でんしゃのうんこうがとまっています。", "example_meaning": "Do tuyết lớn nên tàu điện ngừng chạy.", "level": "n3"},
+      {"word": "乗客", "reading": "じょうきゃく", "meaning": "hành khách", "hanviet": "thừa khách", "example": "乗客は全員、無事に降りました。", "example_reading": "じょうきゃくはぜんいん、ぶじにおりました。", "example_meaning": "Tất cả hành khách đã xuống an toàn.", "level": "n3"},
+      {"word": "車内", "reading": "しゃない", "meaning": "trong xe, toa", "hanviet": "xa nội", "example": "車内では、携帯電話をマナーモードにしてください。", "example_reading": "しゃないでは、けいたいでんわをまなーもーどにしてください。", "example_meaning": "Trong toa xin hãy để điện thoại chế độ im lặng.", "level": "n3"},
+      {"word": "車窓", "reading": "しゃそう", "meaning": "cửa sổ tàu xe", "hanviet": "xa song", "example": "車窓から見える海がとてもきれいでした。", "example_reading": "しゃそうからみえるうみがとてもきれいでした。", "example_meaning": "Biển nhìn từ cửa sổ tàu rất đẹp.", "level": "n3"},
+      {"word": "踏切", "reading": "ふみきり", "meaning": "chỗ chắn tàu", "hanviet": "đạp thiết", "example": "踏切の前で、車が止まっています。", "example_reading": "ふみきりのまえで、くるまがとまっています。", "example_meaning": "Xe ô tô đang dừng trước chỗ chắn tàu.", "level": "n3"},
+      {"word": "歩行者", "reading": "ほこうしゃ", "meaning": "người đi bộ", "hanviet": "bộ hành giả", "example": "歩行者は、信号を守って渡りましょう。", "example_reading": "ほこうしゃは、しんごうをまもってわたりましょう。", "example_meaning": "Người đi bộ hãy tuân thủ đèn tín hiệu khi sang đường.", "level": "n3"},
+      {"word": "横断歩道", "reading": "おうだんほどう", "meaning": "vạch qua đường", "hanviet": "hoành đoạn bộ đạo", "example": "横断歩道では、歩行者が優先です。", "example_reading": "おうだんほどうでは、ほこうしゃがゆうせんです。", "example_meaning": "Ở vạch qua đường, người đi bộ được ưu tiên.", "level": "n3"},
+      {"word": "方面", "reading": "ほうめん", "meaning": "hướng, khu vực", "hanviet": "phương diện", "example": "東京方面の電車は、三番線から出ます。", "example_reading": "とうきょうほうめんのでんしゃは、さんばんせんからでます。", "example_meaning": "Tàu đi hướng Tokyo khởi hành từ sân ga số 3.", "level": "n3"},
+      {"word": "回り道", "reading": "まわりみち", "meaning": "đi đường vòng", "hanviet": "hồi đạo", "example": "工事中なので、回り道をしました。", "example_reading": "こうじちゅうなので、まわりみちをしました。", "example_meaning": "Vì đang thi công nên tôi đi đường vòng.", "level": "n3"},
+      {"word": "近道", "reading": "ちかみち", "meaning": "đường tắt", "hanviet": "cận đạo", "example": "公園を通ると、駅まで近道になります。", "example_reading": "こうえんをとおると、えきまでちかみちになります。", "example_meaning": "Đi qua công viên thì là đường tắt ra ga.", "level": "n3"},
+      {"word": "運休", "reading": "うんきゅう", "meaning": "ngừng chạy", "hanviet": "vận hưu", "example": "台風の影響で、新幹線は運休になりました。", "example_reading": "たいふうのえいきょうで、しんかんせんはうんきゅうになりました。", "example_meaning": "Do ảnh hưởng của bão, tàu Shinkansen bị ngừng chạy.", "level": "n3"},
+      {"word": "乗り遅れる", "reading": "のりおくれる", "meaning": "lỡ chuyến (tàu xe)", "hanviet": "thừa trì", "example": "寝坊して、予定の電車に乗り遅れました。", "example_reading": "ねぼうして、よていのでんしゃにのりおくれました。", "example_meaning": "Ngủ quên nên tôi lỡ chuyến tàu dự định.", "level": "n3"},
+      // ── n2 · 56 mục ──
       {"word": "旅程", "reading": "りょてい", "meaning": "hành trình", "hanviet": "lữ trình", "example": "旅程を細かく決めました。", "example_reading": "りょていをこまかくきめました。", "example_meaning": "Tôi đã lên hành trình chi tiết.", "level": "n2"},
       {"word": "搭乗券", "reading": "とうじょうけん", "meaning": "thẻ lên máy bay", "hanviet": "đáp thừa khoán", "example": "搭乗券をご用意ください。", "example_reading": "とうじょうけんをごよういください。", "example_meaning": "Vui lòng chuẩn bị thẻ lên máy bay.", "level": "n2"},
       {"word": "手荷物", "reading": "てにもつ", "meaning": "hành lý xách tay", "hanviet": "thủ hà vật", "example": "手荷物は一つまでです。", "example_reading": "てにもつはひとつまでです。", "example_meaning": "Hành lý xách tay tối đa một kiện.", "level": "n2"},
@@ -1536,7 +1865,20 @@ const TOPICS = [
       {"word": "預け入れ", "reading": "あずけいれ", "meaning": "ký gửi hành lý", "hanviet": "dự nhập", "example": "預け入れの荷物は一つです。", "example_reading": "あずけいれのにもつはひとつです。", "example_meaning": "Hành lý ký gửi là một kiện.", "level": "n2"},
       {"word": "重量制限", "reading": "じゅうりょうせいげん", "meaning": "giới hạn trọng lượng", "hanviet": "trọng lượng chế hạn", "example": "重量制限を超えました。", "example_reading": "じゅうりょうせいげんをこえました。", "example_meaning": "Tôi vượt giới hạn trọng lượng.", "level": "n2"},
       {"word": "追加料金", "reading": "ついかりょうきん", "meaning": "phụ phí", "hanviet": "truy gia liệu kim", "example": "追加料金がかかりました。", "example_reading": "ついかりょうきんがかかりました。", "example_meaning": "Tôi phải trả thêm phụ phí.", "level": "n2"},
-      // ── n1 · 42 mục ──
+      {"word": "行楽", "reading": "こうらく", "meaning": "đi chơi dã ngoại", "hanviet": "hành lạc", "example": "連休は、行楽客で高速道路が混みます。", "example_reading": "れんきゅうは、こうらくきゃくでこうそくどうろがこみます。", "example_meaning": "Dịp nghỉ liên tiếp, đường cao tốc đông khách đi chơi.", "level": "n2"},
+      {"word": "離陸", "reading": "りりく", "meaning": "cất cánh", "hanviet": "ly lục", "example": "飛行機は定刻に離陸しました。", "example_reading": "ひこうきはていこくにりりくしました。", "example_meaning": "Máy bay đã cất cánh đúng giờ.", "level": "n2"},
+      {"word": "着陸", "reading": "ちゃくりく", "meaning": "hạ cánh", "hanviet": "trước lục", "example": "霧のため、飛行機は着陸できませんでした。", "example_reading": "きりのため、ひこうきはちゃくりくできませんでした。", "example_meaning": "Do sương mù nên máy bay không thể hạ cánh.", "level": "n2"},
+      {"word": "搭乗", "reading": "とうじょう", "meaning": "lên máy bay", "hanviet": "đáp thừa", "example": "搭乗は出発の三十分前から始まります。", "example_reading": "とうじょうはしゅっぱつのさんじゅっぷんまえからはじまります。", "example_meaning": "Việc lên máy bay bắt đầu từ 30 phút trước giờ khởi hành.", "level": "n2"},
+      {"word": "欠航", "reading": "けっこう", "meaning": "hủy chuyến bay/tàu", "hanviet": "khuyết hàng", "example": "台風で、すべての便が欠航になりました。", "example_reading": "たいふうで、すべてのびんがけっこうになりました。", "example_meaning": "Do bão, tất cả các chuyến bay bị hủy.", "level": "n2"},
+      {"word": "税関", "reading": "ぜいかん", "meaning": "hải quan", "hanviet": "thuế quan", "example": "税関で荷物を検査されました。", "example_reading": "ぜいかんでにもつをけんさされました。", "example_meaning": "Hành lý của tôi bị kiểm tra ở hải quan.", "level": "n2"},
+      {"word": "大使館", "reading": "たいしかん", "meaning": "đại sứ quán", "hanviet": "đại sứ quán", "example": "パスポートをなくして、大使館に相談しました。", "example_reading": "ぱすぽーとをなくして、たいしかんにそうだんしました。", "example_meaning": "Mất hộ chiếu nên tôi đã đến đại sứ quán hỏi.", "level": "n2"},
+      {"word": "停泊", "reading": "ていはく", "meaning": "neo đậu", "hanviet": "đình bạc", "example": "大きな客船が港に停泊しています。", "example_reading": "おおきなきゃくせんがみなとにていはくしています。", "example_meaning": "Con tàu khách lớn đang neo đậu ở cảng.", "level": "n2"},
+      {"word": "寄港", "reading": "きこう", "meaning": "ghé cảng", "hanviet": "ký cảng", "example": "この船は、途中で三つの港に寄港します。", "example_reading": "このふねは、とちゅうでみっつのみなとにきこうします。", "example_meaning": "Con tàu này ghé ba cảng giữa đường.", "level": "n2"},
+      {"word": "航路", "reading": "こうろ", "meaning": "tuyến hàng hải, đường bay", "hanviet": "hàng lộ", "example": "この航路は、天候によって変更されることがあります。", "example_reading": "このこうろは、てんこうによってへんこうされることがあります。", "example_meaning": "Tuyến đường này đôi khi bị thay đổi tùy thời tiết.", "level": "n2"},
+      {"word": "見物", "reading": "けんぶつ", "meaning": "tham quan, ngắm cảnh", "hanviet": "kiến vật", "example": "京都で、祭りを見物しました。", "example_reading": "きょうとで、まつりをけんぶつしました。", "example_meaning": "Tôi đã đi xem lễ hội ở Kyoto.", "level": "n2"},
+      {"word": "名物", "reading": "めいぶつ", "meaning": "đặc sản", "hanviet": "danh vật", "example": "その町の名物は、焼き饅頭です。", "example_reading": "そのまちのめいぶつは、やきまんじゅうです。", "example_meaning": "Đặc sản của thị trấn đó là bánh bao nướng.", "level": "n2"},
+      {"word": "往来", "reading": "おうらい", "meaning": "qua lại", "hanviet": "vãng lai", "example": "この道は、車の往来が激しいです。", "example_reading": "このみちは、くるまのおうらいがはげしいです。", "example_meaning": "Con đường này xe cộ qua lại nhộn nhịp.", "level": "n2"},
+      // ── n1 · 55 mục ──
       {"word": "渡航", "reading": "とこう", "meaning": "xuất ngoại, đi ra nước ngoài", "hanviet": "độ hàng", "example": "海外への渡航を計画しています。", "example_reading": "かいがいへのとこうをけいかくしています。", "example_meaning": "Tôi đang lên kế hoạch đi ra nước ngoài.", "level": "n1"},
       {"word": "入国審査", "reading": "にゅうこくしんさ", "meaning": "kiểm tra nhập cảnh", "hanviet": "nhập quốc thẩm tra", "example": "入国審査に時間がかかりました。", "example_reading": "にゅうこくしんさにじかんがかかりました。", "example_meaning": "Việc kiểm tra nhập cảnh mất khá nhiều thời gian.", "level": "n1"},
       {"word": "検疫", "reading": "けんえき", "meaning": "kiểm dịch", "hanviet": "kiểm dịch", "example": "空港で検疫を受けました。", "example_reading": "くうこうでけんえきをうけました。", "example_meaning": "Tôi đã trải qua kiểm dịch ở sân bay.", "level": "n1"},
@@ -1579,6 +1921,19 @@ const TOPICS = [
       {"word": "交通渋滞対策", "reading": "こうつうじゅうたいたいさく", "meaning": "biện pháp chống ùn tắc", "hanviet": "giao thông sáp trệ đối sách", "example": "交通渋滞対策を実施します。", "example_reading": "こうつうじゅうたいたいさくをじっしします。", "example_meaning": "Triển khai biện pháp chống ùn tắc.", "level": "n1"},
       {"word": "旅行業界", "reading": "りょこうぎょうかい", "meaning": "ngành du lịch", "hanviet": "lữ hành nghiệp giới", "example": "旅行業界は回復途上です。", "example_reading": "りょこうぎょうかいはかいふくとじょうです。", "example_meaning": "Ngành du lịch đang trên đà hồi phục.", "level": "n1"},
       {"word": "周遊", "reading": "しゅうゆう", "meaning": "đi vòng quanh nhiều điểm", "hanviet": "chu du", "example": "三県を周遊しました。", "example_reading": "さんけんをしゅうゆうしました。", "example_meaning": "Tôi đã đi vòng quanh ba tỉnh.", "level": "n1"},
+      {"word": "紀行", "reading": "きこう", "meaning": "ký sự du lịch", "hanviet": "kỷ hành", "example": "彼は旅の紀行文を雑誌に連載しています。", "example_reading": "かれはたびのきこうぶんをざっしにれんさいしています。", "example_meaning": "Anh ấy đăng nhiều kỳ bài ký sự du lịch trên tạp chí.", "level": "n1"},
+      {"word": "巡礼", "reading": "じゅんれい", "meaning": "hành hương", "hanviet": "tuần lễ", "example": "四国のお寺を巡る巡礼の旅に出ました。", "example_reading": "しこくのおてらをめぐるじゅんれいのたびにでました。", "example_meaning": "Tôi lên đường hành hương đi qua các ngôi chùa ở Shikoku.", "level": "n1"},
+      {"word": "漫遊", "reading": "まんゆう", "meaning": "du ngoạn thong dong", "hanviet": "mạn du", "example": "定年後は、夫婦で全国を漫遊するのが夢です。", "example_reading": "ていねんごは、ふうふでぜんこくをまんゆうするのがゆめです。", "example_meaning": "Ước mơ của tôi là sau khi nghỉ hưu cùng vợ/chồng du ngoạn khắp cả nước.", "level": "n1"},
+      {"word": "旅情", "reading": "りょじょう", "meaning": "cảm xúc lữ hành", "hanviet": "lữ tình", "example": "古い駅舎は、旅情を誘います。", "example_reading": "ふるいえきしゃは、りょじょうをさそいます。", "example_meaning": "Nhà ga cổ gợi lên cảm xúc lữ hành.", "level": "n1"},
+      {"word": "辺境", "reading": "へんきょう", "meaning": "vùng biên viễn", "hanviet": "biên cảnh", "example": "辺境の地を訪ねる旅に憧れています。", "example_reading": "へんきょうのちをたずねるたびにあこがれています。", "example_meaning": "Tôi khao khát chuyến đi đến những miền biên viễn.", "level": "n1"},
+      {"word": "僻地", "reading": "へきち", "meaning": "vùng hẻo lánh", "hanviet": "tịch địa", "example": "僻地にある温泉まで、バスで五時間かかりました。", "example_reading": "へきちにあるおんせんまで、ばすでごじかんかかりました。", "example_meaning": "Đi xe buýt đến suối nước nóng ở vùng hẻo lánh mất năm tiếng.", "level": "n1"},
+      {"word": "秘境", "reading": "ひきょう", "meaning": "vùng đất bí ẩn hoang sơ", "hanviet": "bí cảnh", "example": "秘境と呼ばれる渓谷を歩きました。", "example_reading": "ひきょうとよばれるけいこくをあるきました。", "example_meaning": "Tôi đã đi bộ qua thung lũng được gọi là vùng đất bí ẩn.", "level": "n1"},
+      {"word": "湯治", "reading": "とうじ", "meaning": "tắm suối nước nóng chữa bệnh", "hanviet": "thang trị", "example": "祖父は毎年、湯治に出かけます。", "example_reading": "そふはまいとし、とうじにでかけます。", "example_meaning": "Ông tôi năm nào cũng đi tắm suối nước nóng dưỡng bệnh.", "level": "n1"},
+      {"word": "逗留", "reading": "とうりゅう", "meaning": "lưu lại, ở lại", "hanviet": "đậu lưu", "example": "小さな港町に一週間逗留しました。", "example_reading": "ちいさなみなとまちにいっしゅうかんとうりゅうしました。", "example_meaning": "Tôi đã ở lại một thị trấn cảng nhỏ một tuần.", "level": "n1"},
+      {"word": "道中", "reading": "どうちゅう", "meaning": "dọc đường", "hanviet": "đạo trung", "example": "道中、何度も休憩を取りました。", "example_reading": "どうちゅう、なんどもきゅうけいをとりました。", "example_meaning": "Dọc đường chúng tôi nghỉ nhiều lần.", "level": "n1"},
+      {"word": "遊覧", "reading": "ゆうらん", "meaning": "đi ngắm cảnh", "hanviet": "du lãm", "example": "遊覧船に乗って、湖を一周しました。", "example_reading": "ゆうらんせんにのって、みずうみをいっしゅうしました。", "example_meaning": "Tôi đi tàu ngắm cảnh một vòng quanh hồ.", "level": "n1"},
+      {"word": "巡る", "reading": "めぐる", "meaning": "đi vòng quanh, thăm lần lượt", "hanviet": "tuần", "example": "京都の古いお寺を巡る旅をしました。", "example_reading": "きょうとのふるいおてらをめぐるたびをしました。", "example_meaning": "Tôi đã đi một chuyến thăm lần lượt các ngôi chùa cổ ở Kyoto.", "level": "n1"},
+      {"word": "往路", "reading": "おうろ", "meaning": "chiều đi", "hanviet": "vãng lộ", "example": "往路は新幹線、復路は飛行機にしました。", "example_reading": "おうろはしんかんせん、ふくろはひこうきにしました。", "example_meaning": "Chiều đi tôi chọn Shinkansen, chiều về chọn máy bay.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [07] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -1607,7 +1962,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [08] 8. 天気・環境  🌦️  |  main  |  vocab 178 · grammar 19
+  // [08] 8. 天気・環境  🌦️  |  main  |  vocab 228 · grammar 19
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "8. 天気・環境",
@@ -1615,7 +1970,7 @@ const TOPICS = [
     "icon": "🌦️",
     "category": "main",
     "vocab": [
-      // ── n5 · 16 mục ──
+      // ── n5 · 19 mục ──
       {"word": "天気", "reading": "てんき", "meaning": "thời tiết", "hanviet": "thiên khí", "example": "週末の天気がいいそうなので、公園にピクニックに行こうと思っています。", "example_reading": "しゅうまつのてんきがいいそうなので、こうえんにぴくにっくにいこうとおもっています。", "example_meaning": "Nghe nói cuối tuần thời tiết đẹp nên tôi định đi picnic ở công viên.", "level": "n5"},
       {"word": "雪", "reading": "ゆき", "meaning": "tuyết", "hanviet": "tuyết", "example": "冬になると雪が降ります。", "example_reading": "ふゆになるとゆきがふります。", "example_meaning": "Đến mùa đông thì tuyết rơi.", "level": "n5"},
       {"word": "雨", "reading": "あめ", "meaning": "mưa", "hanviet": "vũ", "example": "午後から雨が降ります。", "example_reading": "ごごからあめがふります。", "example_meaning": "Từ chiều trời sẽ mưa.", "level": "n5"},
@@ -1632,7 +1987,10 @@ const TOPICS = [
       {"word": "夏", "reading": "なつ", "meaning": "mùa hè", "hanviet": "hạ", "example": "夏は本当に暑いです。", "example_reading": "なつはほんとうにあついです。", "example_meaning": "Mùa hè nóng thật sự.", "level": "n5"},
       {"word": "秋", "reading": "あき", "meaning": "mùa thu", "hanviet": "thu", "example": "秋は過ごしやすいです。", "example_reading": "あきはすごしやすいです。", "example_meaning": "Mùa thu dễ chịu.", "level": "n5"},
       {"word": "冬", "reading": "ふゆ", "meaning": "mùa đông", "hanviet": "đông", "example": "冬は乾燥します。", "example_reading": "ふゆはかんそうします。", "example_meaning": "Mùa đông thì khô hanh.", "level": "n5"},
-      // ── n4 · 17 mục ──
+      {"word": "川", "reading": "かわ", "meaning": "sông", "hanviet": "xuyên", "example": "この川は夏になると水が少なくなります。", "example_reading": "このかわはなつになるとみずがすくなくなります。", "example_meaning": "Con sông này đến mùa hè thì nước cạn đi.", "level": "n5"},
+      {"word": "木", "reading": "き", "meaning": "cây", "hanviet": "mộc", "example": "公園の大きな木の下で休みました。", "example_reading": "こうえんのおおきなきのしたでやすみました。", "example_meaning": "Tôi nghỉ dưới gốc cây lớn trong công viên.", "level": "n5"},
+      {"word": "花", "reading": "はな", "meaning": "hoa", "hanviet": "hoa", "example": "春になると、いろいろな花が咲きます。", "example_reading": "はるになると、いろいろなはながさきます。", "example_meaning": "Đến mùa xuân, nhiều loài hoa nở rộ.", "level": "n5"},
+      // ── n4 · 24 mục ──
       {"word": "気温", "reading": "きおん", "meaning": "nhiệt độ", "hanviet": "khí ôn", "example": "今日は気温が三十五度まで上がるそうなので、熱中症に注意してください。", "example_reading": "きょうはきおんがさんじゅうごどまであがるそうなので、ねっちゅうしょうにちゅういしてください。", "example_meaning": "Nghe nói hôm nay nhiệt độ tăng lên tới 35 độ nên hãy chú ý say nắng.", "level": "n4"},
       {"word": "台風", "reading": "たいふう", "meaning": "bão", "hanviet": "đài phong", "example": "大型の台風が接近しているので、外出をなるべく控えてください。", "example_reading": "おおがたのたいふうがせっきんしているので、がいしゅつをなるべくひかえてください。", "example_meaning": "Vì có cơn bão lớn đang tới gần nên hãy hạn chế ra ngoài.", "level": "n4"},
       {"word": "大雨", "reading": "おおあめ", "meaning": "mưa lớn", "hanviet": "đại vũ", "example": "大雨警報が出ているので、川の近くには行かないようにしてください。", "example_reading": "おおあめけいほうがでているので、かわのちかくにはいかないようにしてください。", "example_meaning": "Vì có cảnh báo mưa lớn nên hãy tránh đến gần sông.", "level": "n4"},
@@ -1650,7 +2008,14 @@ const TOPICS = [
       {"word": "季節", "reading": "きせつ", "meaning": "mùa", "hanviet": "quý tiết", "example": "一番好きな季節は秋です。", "example_reading": "いちばんすきなきせつはあきです。", "example_meaning": "Mùa tôi thích nhất là mùa thu.", "level": "n4"},
       {"word": "曇る", "reading": "くもる", "meaning": "trời có mây", "hanviet": "đàm", "example": "午後から曇るそうです。", "example_reading": "ごごからくもるそうです。", "example_meaning": "Nghe nói từ chiều trời nhiều mây.", "level": "n4"},
       {"word": "晴れる", "reading": "はれる", "meaning": "trời quang", "hanviet": "tình", "example": "明日は晴れるでしょう。", "example_reading": "あしたははれるでしょう。", "example_meaning": "Ngày mai chắc trời quang.", "level": "n4"},
-      // ── n3 · 53 mục ──
+      {"word": "空気", "reading": "くうき", "meaning": "không khí", "hanviet": "không khí", "example": "山の空気はおいしくて、気持ちがいいです。", "example_reading": "やまのくうきはおいしくて、きもちがいいです。", "example_meaning": "Không khí trên núi trong lành, thật dễ chịu.", "level": "n4"},
+      {"word": "森", "reading": "もり", "meaning": "rừng", "hanviet": "sâm", "example": "森の中を歩くと、鳥の声が聞こえます。", "example_reading": "もりのなかをあるくと、とりのこえがきこえます。", "example_meaning": "Đi trong rừng thì nghe tiếng chim hót.", "level": "n4"},
+      {"word": "湖", "reading": "みずうみ", "meaning": "hồ", "hanviet": "hồ", "example": "朝の湖は、とても静かで美しいです。", "example_reading": "あさのみずうみは、とてもしずかでうつくしいです。", "example_meaning": "Hồ buổi sáng rất tĩnh lặng và đẹp.", "level": "n4"},
+      {"word": "島", "reading": "しま", "meaning": "đảo", "hanviet": "đảo", "example": "夏休みに小さな島へ遊びに行きました。", "example_reading": "なつやすみにちいさなしまへあそびにいきました。", "example_meaning": "Kỳ nghỉ hè tôi đã đi chơi ở một hòn đảo nhỏ.", "level": "n4"},
+      {"word": "波", "reading": "なみ", "meaning": "sóng", "hanviet": "ba", "example": "今日は波が高いので、海で泳げません。", "example_reading": "きょうはなみがたかいので、うみでおよげません。", "example_meaning": "Hôm nay sóng cao nên không bơi ở biển được.", "level": "n4"},
+      {"word": "雲", "reading": "くも", "meaning": "mây", "hanviet": "vân", "example": "空に白い雲がゆっくり流れています。", "example_reading": "そらにしろいくもがゆっくりながれています。", "example_meaning": "Những đám mây trắng trôi chậm trên bầu trời.", "level": "n4"},
+      {"word": "氷", "reading": "こおり", "meaning": "băng, đá", "hanviet": "băng", "example": "冬になると、池に氷が張ります。", "example_reading": "ふゆになると、いけにこおりがはります。", "example_meaning": "Đến mùa đông, mặt ao đóng băng.", "level": "n4"},
+      // ── n3 · 67 mục ──
       {"word": "湿度", "reading": "しつど", "meaning": "độ ẩm", "hanviet": "thấp độ", "example": "梅雨の時期は湿度が高くて、洗濯物がなかなか乾きません。", "example_reading": "つゆのじきはしつどがたかくて、せんたくものがなかなかかわきません。", "example_meaning": "Vào mùa mưa độ ẩm cao nên quần áo giặt rất khó khô.", "level": "n3"},
       {"word": "梅雨", "reading": "つゆ", "meaning": "mùa mưa (mai vũ)", "hanviet": "mai vũ", "example": "梅雨の間は雨が続くので、洗濯物を部屋の中に干すことが多くなります。", "example_reading": "つゆのあいだはあめがつづくので、せんたくものをへやのなかにほすことがおおくなります。", "example_meaning": "Trong mùa mưa vì mưa liên tục nên tôi thường phơi đồ trong nhà nhiều hơn.", "level": "n3"},
       {"word": "洪水", "reading": "こうずい", "meaning": "lũ lụt", "hanviet": "hồng thủy", "example": "去年の台風で洪水が起き、多くの家が被害を受けました。", "example_reading": "きょねんのたいふうでこうずいがおき、おおくのいえがひがいをうけました。", "example_meaning": "Năm ngoái do bão gây ra lũ lụt, nhiều nhà đã bị thiệt hại.", "level": "n3"},
@@ -1704,7 +2069,21 @@ const TOPICS = [
       {"word": "環境に優しい", "reading": "かんきょうにやさしい", "meaning": "thân thiện môi trường", "hanviet": "hoàn cảnh", "example": "環境に優しい製品を選びます。", "example_reading": "かんきょうにやさしいせいひんをえらびます。", "example_meaning": "Tôi chọn sản phẩm thân thiện môi trường.", "level": "n3"},
       {"word": "自然保護", "reading": "しぜんほご", "meaning": "bảo tồn thiên nhiên", "hanviet": "tự nhiên bảo hộ", "example": "自然保護の活動に参加します。", "example_reading": "しぜんほごのかつどうにさんかします。", "example_meaning": "Tôi tham gia hoạt động bảo tồn thiên nhiên.", "level": "n3"},
       {"word": "気象情報", "reading": "きしょうじょうほう", "meaning": "thông tin khí tượng", "hanviet": "khí tượng tình báo", "example": "気象情報をこまめに確認します。", "example_reading": "きしょうじょうほうをこまめにかくにんします。", "example_meaning": "Tôi kiểm tra thông tin khí tượng thường xuyên.", "level": "n3"},
-      // ── n2 · 49 mục ──
+      {"word": "日の出", "reading": "ひので", "meaning": "bình minh", "hanviet": "nhật xuất", "example": "山頂で、美しい日の出を見ました。", "example_reading": "さんちょうで、うつくしいひのでをみました。", "example_meaning": "Tôi đã ngắm bình minh tuyệt đẹp trên đỉnh núi.", "level": "n3"},
+      {"word": "日の入り", "reading": "ひのいり", "meaning": "hoàng hôn, lúc mặt trời lặn", "hanviet": "nhật nhập", "example": "夏は、日の入りが遅いです。", "example_reading": "なつは、ひのいりがおそいです。", "example_meaning": "Mùa hè mặt trời lặn muộn.", "level": "n3"},
+      {"word": "夕焼け", "reading": "ゆうやけ", "meaning": "ráng chiều", "hanviet": "tịch thiêu", "example": "空が真っ赤な夕焼けに染まりました。", "example_reading": "そらがまっかなゆうやけにそまりました。", "example_meaning": "Bầu trời nhuộm đỏ rực ráng chiều.", "level": "n3"},
+      {"word": "寒波", "reading": "かんぱ", "meaning": "đợt rét", "hanviet": "hàn ba", "example": "強い寒波で、各地で雪が降っています。", "example_reading": "つよいかんぱで、かくちでゆきがふっています。", "example_meaning": "Do đợt rét mạnh, nhiều nơi có tuyết rơi.", "level": "n3"},
+      {"word": "熱波", "reading": "ねっぱ", "meaning": "đợt nắng nóng", "hanviet": "nhiệt ba", "example": "ヨーロッパは熱波に襲われています。", "example_reading": "よーろっぱはねっぱにおそわれています。", "example_meaning": "Châu Âu đang bị đợt nắng nóng tấn công.", "level": "n3"},
+      {"word": "大雪", "reading": "おおゆき", "meaning": "tuyết lớn", "hanviet": "đại tuyết", "example": "大雪のため、電車が止まりました。", "example_reading": "おおゆきのため、でんしゃがとまりました。", "example_meaning": "Do tuyết lớn nên tàu điện bị dừng.", "level": "n3"},
+      {"word": "吹雪", "reading": "ふぶき", "meaning": "bão tuyết", "hanviet": "xuy tuyết", "example": "吹雪の中、車を運転するのは危険です。", "example_reading": "ふぶきのなか、くるまをうんてんするのはきけんです。", "example_meaning": "Lái xe trong bão tuyết rất nguy hiểm.", "level": "n3"},
+      {"word": "霜", "reading": "しも", "meaning": "sương giá", "hanviet": "sương", "example": "朝、畑に霜が降りていました。", "example_reading": "あさ、はたけにしもがおりていました。", "example_meaning": "Sáng ra ruộng phủ sương giá.", "level": "n3"},
+      {"word": "突風", "reading": "とっぷう", "meaning": "cơn gió giật", "hanviet": "đột phong", "example": "突風で、傘が壊れてしまいました。", "example_reading": "とっぷうで、かさがこわれてしまいました。", "example_meaning": "Gió giật làm ô của tôi hỏng mất.", "level": "n3"},
+      {"word": "竜巻", "reading": "たつまき", "meaning": "lốc xoáy", "hanviet": "long quyển", "example": "竜巻で、家の屋根が飛ばされました。", "example_reading": "たつまきで、いえのやねがとばされました。", "example_meaning": "Lốc xoáy làm tốc mái nhà.", "level": "n3"},
+      {"word": "落雷", "reading": "らくらい", "meaning": "sét đánh", "hanviet": "lạc lôi", "example": "落雷で、近所が停電しました。", "example_reading": "らくらいで、きんじょがていでんしました。", "example_meaning": "Sét đánh khiến khu phố mất điện.", "level": "n3"},
+      {"word": "雨漏り", "reading": "あまもり", "meaning": "dột mưa", "hanviet": "vũ lậu", "example": "古い家なので、大雨のたびに雨漏りがします。", "example_reading": "ふるいいえなので、おおあめのたびにあまもりがします。", "example_meaning": "Nhà cũ nên mỗi lần mưa lớn lại dột.", "level": "n3"},
+      {"word": "梅雨明け", "reading": "つゆあけ", "meaning": "hết mùa mưa", "hanviet": "mai vũ minh", "example": "梅雨明けと同時に、猛暑が始まりました。", "example_reading": "つゆあけとどうじに、もうしょがはじまりました。", "example_meaning": "Ngay khi mùa mưa kết thúc, nắng nóng gay gắt bắt đầu.", "level": "n3"},
+      {"word": "真夏日", "reading": "まなつび", "meaning": "ngày nóng (trên 30°C)", "hanviet": "chân hạ nhật", "example": "今年の七月は、真夏日が続きました。", "example_reading": "ことしのしちがつは、まなつびがつづきました。", "example_meaning": "Tháng Bảy năm nay liên tục là ngày nắng nóng.", "level": "n3"},
+      // ── n2 · 62 mục ──
       {"word": "生態系", "reading": "せいたいけい", "meaning": "hệ sinh thái", "hanviet": "sinh thái hệ", "example": "森林伐採は生態系のバランスを壊す大きな原因の一つです。", "example_reading": "しんりんばっさいはせいたいけいのばらんすをこわすおおきなげんいんのひとつです。", "example_meaning": "Việc chặt phá rừng là một trong những nguyên nhân lớn phá vỡ cân bằng hệ sinh thái.", "level": "n2"},
       {"word": "絶滅危惧種", "reading": "ぜつめつきぐしゅ", "meaning": "loài có nguy cơ tuyệt chủng", "hanviet": "tuyệt diệt nguy cụ chủng", "example": "開発が進むにつれて、絶滅危惧種の数が増え続けています。", "example_reading": "かいはつがすすむにつれて、ぜつめつきぐしゅのかずがふえつづけています。", "example_meaning": "Cùng với sự phát triển, số lượng loài có nguy cơ tuyệt chủng vẫn tiếp tục tăng.", "level": "n2"},
       {"word": "再生可能エネルギー", "reading": "さいせいかのうエネルギー", "meaning": "năng lượng tái tạo", "hanviet": "tái sinh khả năng", "example": "太陽光や風力などの再生可能エネルギーへの関心が高まっています。", "example_reading": "たいようこうやふうりょくなどのさいせいかのうえねるぎーへのかんしんがたかまっています。", "example_meaning": "Sự quan tâm đến năng lượng tái tạo như năng lượng mặt trời và gió đang tăng lên.", "level": "n2"},
@@ -1754,7 +2133,20 @@ const TOPICS = [
       {"word": "農作物", "reading": "のうさくぶつ", "meaning": "nông sản", "hanviet": "nông tác vật", "example": "天候不順で農作物が不作です。", "example_reading": "てんこうふじゅんでのうさくぶつがふさくです。", "example_meaning": "Thời tiết thất thường làm nông sản mất mùa.", "level": "n2"},
       {"word": "天候不順", "reading": "てんこうふじゅん", "meaning": "thời tiết thất thường", "hanviet": "thiên hậu bất thuận", "example": "天候不順が続いています。", "example_reading": "てんこうふじゅんがつづいています。", "example_meaning": "Thời tiết thất thường kéo dài.", "level": "n2"},
       {"word": "影響評価", "reading": "えいきょうひょうか", "meaning": "đánh giá tác động", "hanviet": "ảnh hưởng bình giá", "example": "環境への影響評価を行います。", "example_reading": "かんきょうへのえいきょうひょうかをおこないます。", "example_meaning": "Thực hiện đánh giá tác động môi trường.", "level": "n2"},
-      // ── n1 · 43 mục ──
+      {"word": "気象", "reading": "きしょう", "meaning": "khí tượng", "hanviet": "khí tượng", "example": "気象の変化に注意して、出かけましょう。", "example_reading": "きしょうのへんかにちゅういして、でかけましょう。", "example_meaning": "Hãy chú ý thay đổi khí tượng khi ra ngoài.", "level": "n2"},
+      {"word": "低気圧", "reading": "ていきあつ", "meaning": "áp thấp", "hanviet": "đê khí áp", "example": "低気圧が近づいて、天気が崩れてきました。", "example_reading": "ていきあつがちかづいて、てんきがくずれてきました。", "example_meaning": "Áp thấp đến gần, thời tiết bắt đầu xấu đi.", "level": "n2"},
+      {"word": "高気圧", "reading": "こうきあつ", "meaning": "áp cao", "hanviet": "cao khí áp", "example": "高気圧に覆われて、全国的に晴れるでしょう。", "example_reading": "こうきあつにおおわれて、ぜんこくてきにはれるでしょう。", "example_meaning": "Nhờ áp cao bao phủ, trên toàn quốc trời sẽ nắng.", "level": "n2"},
+      {"word": "前線", "reading": "ぜんせん", "meaning": "front thời tiết", "hanviet": "tiền tuyến", "example": "前線の影響で、各地で雨が降ります。", "example_reading": "ぜんせんのえいきょうで、かくちであめがふります。", "example_meaning": "Do ảnh hưởng front thời tiết, nhiều nơi có mưa.", "level": "n2"},
+      {"word": "季節風", "reading": "きせつふう", "meaning": "gió mùa", "hanviet": "quý tiết phong", "example": "冬には、大陸から冷たい季節風が吹きます。", "example_reading": "ふゆには、たいりくからつめたいきせつふうがふきます。", "example_meaning": "Mùa đông gió mùa lạnh từ lục địa thổi tới.", "level": "n2"},
+      {"word": "降雪", "reading": "こうせつ", "meaning": "tuyết rơi", "hanviet": "giáng tuyết", "example": "山沿いでは、明日の朝まで降雪が続きます。", "example_reading": "やまぞいでは、あしたのあさまでこうせつがつづきます。", "example_meaning": "Ở vùng gần núi tuyết sẽ rơi đến sáng mai.", "level": "n2"},
+      {"word": "積雪", "reading": "せきせつ", "meaning": "tuyết tích tụ", "hanviet": "tích tuyết", "example": "山では、積雪が一メートルを超えました。", "example_reading": "やまでは、せきせつがいちめーとるをこえました。", "example_meaning": "Trên núi tuyết tích đã vượt quá một mét.", "level": "n2"},
+      {"word": "噴火", "reading": "ふんか", "meaning": "núi lửa phun trào", "hanviet": "phún hỏa", "example": "火山が噴火して、空が灰色になりました。", "example_reading": "かざんがふんかして、そらがはいいろになりました。", "example_meaning": "Núi lửa phun trào, bầu trời xám xịt.", "level": "n2"},
+      {"word": "土壌", "reading": "どじょう", "meaning": "đất trồng, thổ nhưỡng", "hanviet": "thổ nhưỡng", "example": "工場の排水で、土壌が汚染されました。", "example_reading": "こうじょうのはいすいで、どじょうがおせんされました。", "example_meaning": "Đất bị ô nhiễm do nước thải nhà máy.", "level": "n2"},
+      {"word": "焼却", "reading": "しょうきゃく", "meaning": "thiêu hủy", "hanviet": "thiêu khước", "example": "燃えるごみは、焼却場で処理されます。", "example_reading": "もえるごみは、しょうきゃくじょうでしょりされます。", "example_meaning": "Rác cháy được xử lý ở nhà máy đốt rác.", "level": "n2"},
+      {"word": "埋め立て", "reading": "うめたて", "meaning": "lấp đất, san lấp", "hanviet": "mai lập", "example": "海を埋め立てて、新しい空港が作られました。", "example_reading": "うみをうめたてて、あたらしいくうこうがつくられました。", "example_meaning": "Người ta san lấp biển để xây sân bay mới.", "level": "n2"},
+      {"word": "有害", "reading": "ゆうがい", "meaning": "có hại", "hanviet": "hữu hại", "example": "工場から有害な物質が排出されていました。", "example_reading": "こうじょうからゆうがいなぶっしつがはいしゅつされていました。", "example_meaning": "Chất độc hại bị thải ra từ nhà máy.", "level": "n2"},
+      {"word": "河川", "reading": "かせん", "meaning": "sông ngòi", "hanviet": "hà xuyên", "example": "大雨で、河川の水位が上がっています。", "example_reading": "おおあめで、かせんのすいいがあがっています。", "example_meaning": "Do mưa lớn, mực nước sông ngòi đang dâng.", "level": "n2"},
+      // ── n1 · 56 mục ──
       {"word": "気候危機", "reading": "きこうきき", "meaning": "khủng hoảng khí hậu", "hanviet": "khí hậu nguy cơ", "example": "気候危機への対応が急がれています。", "example_reading": "きこうききへのたいおうがいそがれています。", "example_meaning": "Việc ứng phó với khủng hoảng khí hậu đang được đẩy nhanh.", "level": "n1"},
       {"word": "生物多様性", "reading": "せいぶつたようせい", "meaning": "đa dạng sinh học", "hanviet": "sinh vật đa dạng tính", "example": "生物多様性を守る活動に参加しました。", "example_reading": "せいぶつたようせいをまもるかつどうにさんかしました。", "example_meaning": "Tôi đã tham gia hoạt động bảo vệ đa dạng sinh học.", "level": "n1"},
       {"word": "脱炭素", "reading": "だつたんそ", "meaning": "khử carbon", "hanviet": "thoát thán tố", "example": "脱炭素社会を目指しています。", "example_reading": "だつたんそしゃかいをめざしています。", "example_meaning": "Đang hướng tới xã hội khử carbon.", "level": "n1"},
@@ -1798,6 +2190,19 @@ const TOPICS = [
       {"word": "集中豪雨", "reading": "しゅうちゅうごうう", "meaning": "mưa lớn cục bộ", "hanviet": "tập trung hào vũ", "example": "集中豪雨に警戒してください。", "example_reading": "しゅうちゅうごううにけいかいしてください。", "example_meaning": "Hãy cảnh giác mưa lớn cục bộ.", "level": "n1"},
       {"word": "線状降水帯", "reading": "せんじょうこうすいたい", "meaning": "dải mây gây mưa kéo dài", "hanviet": "tuyến trạng giáng thủy đới", "example": "線状降水帯が発生しました。", "example_reading": "せんじょうこうすいたいがはっせいしました。", "example_meaning": "Đã hình thành dải mây gây mưa kéo dài.", "level": "n1"},
       {"word": "防災意識", "reading": "ぼうさいいしき", "meaning": "ý thức phòng chống thiên tai", "hanviet": "phòng tai ý thức", "example": "防災意識を高めます。", "example_reading": "ぼうさいいしきをたかめます。", "example_meaning": "Nâng cao ý thức phòng chống thiên tai.", "level": "n1"},
+      {"word": "凍結", "reading": "とうけつ", "meaning": "đóng băng", "hanviet": "đống kết", "example": "道路が凍結して、車が滑りやすくなっています。", "example_reading": "どうろがとうけつして、くるまがすべりやすくなっています。", "example_meaning": "Đường bị đóng băng nên xe dễ trượt.", "level": "n1"},
+      {"word": "震源", "reading": "しんげん", "meaning": "tâm chấn", "hanviet": "chấn nguyên", "example": "地震の震源は、海の深い場所でした。", "example_reading": "じしんのしんげんは、うみのふかいばしょでした。", "example_meaning": "Tâm chấn của trận động đất ở nơi sâu dưới biển.", "level": "n1"},
+      {"word": "震度", "reading": "しんど", "meaning": "cường độ rung (thang Nhật)", "hanviet": "chấn độ", "example": "この地域では、震度五の揺れを観測しました。", "example_reading": "このちいきでは、しんどごのゆれをかんそくしました。", "example_meaning": "Ở khu vực này đã ghi nhận chấn động cường độ 5.", "level": "n1"},
+      {"word": "火砕流", "reading": "かさいりゅう", "meaning": "dòng chảy mảnh vụn núi lửa", "hanviet": "hỏa toái lưu", "example": "火砕流の危険があるため、避難指示が出ました。", "example_reading": "かさいりゅうのきけんがあるため、ひなんしじがでました。", "example_meaning": "Vì có nguy cơ dòng mảnh vụn núi lửa nên có lệnh sơ tán.", "level": "n1"},
+      {"word": "高潮", "reading": "たかしお", "meaning": "triều cường", "hanviet": "cao triều", "example": "台風による高潮で、海沿いの町が浸水しました。", "example_reading": "たいふうによるたかしおで、うみぞいのまちがしんすいしました。", "example_meaning": "Triều cường do bão làm thị trấn ven biển bị ngập.", "level": "n1"},
+      {"word": "渇水", "reading": "かっすい", "meaning": "hạn hán, cạn nguồn nước", "hanviet": "khát thủy", "example": "渇水のため、ダムの水が減っています。", "example_reading": "かっすいのため、だむのみずがへっています。", "example_meaning": "Do hạn hán nên nước đập đang cạn dần.", "level": "n1"},
+      {"word": "荒廃", "reading": "こうはい", "meaning": "hoang tàn, xuống cấp", "hanviet": "hoang phế", "example": "森林の荒廃が、洪水の原因になることもあります。", "example_reading": "しんりんのこうはいが、こうずいのげんいんになることもあります。", "example_meaning": "Rừng suy thoái đôi khi cũng là nguyên nhân gây lũ lụt.", "level": "n1"},
+      {"word": "乱獲", "reading": "らんかく", "meaning": "đánh bắt săn bắn bừa bãi", "hanviet": "loạn hoạch", "example": "魚の乱獲で、漁獲量が大きく減りました。", "example_reading": "さかなのらんかくで、ぎょかくりょうがおおきくへりました。", "example_meaning": "Do đánh bắt bừa bãi, sản lượng cá giảm mạnh.", "level": "n1"},
+      {"word": "外来種", "reading": "がいらいしゅ", "meaning": "loài ngoại lai", "hanviet": "ngoại lai chủng", "example": "外来種が増えて、在来の生き物が減っています。", "example_reading": "がいらいしゅがふえて、ざいらいのいきものがへっています。", "example_meaning": "Loài ngoại lai tăng lên làm sinh vật bản địa giảm đi.", "level": "n1"},
+      {"word": "砂漠化", "reading": "さばくか", "meaning": "sa mạc hóa", "hanviet": "sa mạc hóa", "example": "過度な放牧が、砂漠化を進めています。", "example_reading": "かどなほうぼくが、さばくかをすすめています。", "example_meaning": "Chăn thả quá mức đang thúc đẩy sa mạc hóa.", "level": "n1"},
+      {"word": "氷河", "reading": "ひょうが", "meaning": "sông băng", "hanviet": "băng hà", "example": "温暖化で、氷河が急速に溶けています。", "example_reading": "おんだんかで、ひょうがきゅうそくにとけています。", "example_meaning": "Do nóng lên toàn cầu, sông băng tan nhanh chóng.", "level": "n1"},
+      {"word": "永久凍土", "reading": "えいきゅうとうど", "meaning": "băng vĩnh cửu", "hanviet": "vĩnh cửu đống thổ", "example": "永久凍土が溶けると、大量のガスが出ます。", "example_reading": "えいきゅうとうどがとけると、たいりょうのがすがでます。", "example_meaning": "Khi băng vĩnh cửu tan, một lượng lớn khí thải ra.", "level": "n1"},
+      {"word": "里山", "reading": "さとやま", "meaning": "rừng núi gần làng", "hanviet": "lý sơn", "example": "里山の保全には、地域の人々の協力が欠かせません。", "example_reading": "さとやまのほぜんには、ちいきのひとびとのきょうりょくがかかせません。", "example_meaning": "Bảo tồn rừng núi gần làng không thể thiếu sự hợp tác của người dân địa phương.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [08] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -1825,7 +2230,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [09] 9. 教育・学習  📚  |  main  |  vocab 179 · grammar 19
+  // [09] 9. 教育・学習  📚  |  main  |  vocab 229 · grammar 19
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "9. 教育・学習",
@@ -1833,7 +2238,7 @@ const TOPICS = [
     "icon": "📚",
     "category": "main",
     "vocab": [
-      // ── n5 · 22 mục ──
+      // ── n5 · 25 mục ──
       {"word": "授業", "reading": "じゅぎょう", "meaning": "tiết học", "hanviet": "thụ nghiệp", "example": "今日の授業は難しかったので、家に帰ってからもう一度復習しました。", "example_reading": "きょうのじゅぎょうはむずかしかったので、いえにかえってからもういちどふくしゅうしました。", "example_meaning": "Vì tiết học hôm nay khó nên sau khi về nhà tôi đã ôn lại một lần nữa.", "level": "n5"},
       {"word": "宿題", "reading": "しゅくだい", "meaning": "bài tập về nhà", "hanviet": "túc đề", "example": "宿題が多すぎて、寝る時間が遅くなってしまいました。", "example_reading": "しゅくだいがおおすぎて、ねるじかんがおそくなってしまいました。", "example_meaning": "Vì bài tập về nhà quá nhiều nên giờ ngủ của tôi bị muộn.", "level": "n5"},
       {"word": "試験", "reading": "しけん", "meaning": "kỳ thi", "hanviet": "thí nghiệm", "example": "来週の試験に向けて、図書館で毎日勉強しています。", "example_reading": "らいしゅうのしけんにむけて、としょかんでまいにちべんきょうしています。", "example_meaning": "Để chuẩn bị cho kỳ thi tuần sau, tôi học ở thư viện mỗi ngày.", "level": "n5"},
@@ -1856,7 +2261,10 @@ const TOPICS = [
       {"word": "難しい", "reading": "むずかしい", "meaning": "khó", "hanviet": "nan", "example": "この問題はとても難しいです。", "example_reading": "このもんだいはとてもむずかしいです。", "example_meaning": "Bài này rất khó.", "level": "n5"},
       {"word": "簡単", "reading": "かんたん", "meaning": "dễ, đơn giản", "hanviet": "giản đơn", "example": "説明は簡単で分かりやすいです。", "example_reading": "せつめいはかんたんでわかりやすいです。", "example_meaning": "Giải thích đơn giản dễ hiểu.", "level": "n5"},
       {"word": "教える", "reading": "おしえる", "meaning": "dạy", "hanviet": "giáo", "example": "友達に文法を教えました。", "example_reading": "ともだちにぶんぽうをおしえました。", "example_meaning": "Tôi dạy ngữ pháp cho bạn.", "level": "n5"},
-      // ── n4 · 37 mục ──
+      {"word": "学生", "reading": "がくせい", "meaning": "sinh viên", "hanviet": "học sinh", "example": "兄は大学の学生です。", "example_reading": "あにはだいがくのがくせいです。", "example_meaning": "Anh tôi là sinh viên đại học.", "level": "n5"},
+      {"word": "生徒", "reading": "せいと", "meaning": "học sinh", "hanviet": "sinh đồ", "example": "この学校は、生徒が三百人います。", "example_reading": "このがっこうは、せいとがさんびゃくにんいます。", "example_meaning": "Trường này có ba trăm học sinh.", "level": "n5"},
+      {"word": "英語", "reading": "えいご", "meaning": "tiếng Anh", "hanviet": "anh ngữ", "example": "毎日、英語を勉強しています。", "example_reading": "まいにち、えいごをべんきょうしています。", "example_meaning": "Mỗi ngày tôi học tiếng Anh.", "level": "n5"},
+      // ── n4 · 44 mục ──
       {"word": "成績", "reading": "せいせき", "meaning": "thành tích học tập", "hanviet": "thành tích", "example": "努力のおかげで、今学期の成績がかなり上がりました。", "example_reading": "どりょくのおかげで、こんがっきのせいせきがかなりあがりました。", "example_meaning": "Nhờ nỗ lực mà thành tích học kỳ này đã tăng lên đáng kể.", "level": "n4"},
       {"word": "留学", "reading": "りゅうがく", "meaning": "du học", "hanviet": "lưu học", "example": "大学卒業後、アメリカに留学して経済学を学ぶつもりです。", "example_reading": "だいがくそつぎょうご、あめりかにりゅうがくしてけいざいがくをまなぶつもりです。", "example_meaning": "Sau khi tốt nghiệp đại học, tôi dự định du học Mỹ để học kinh tế học.", "level": "n4"},
       {"word": "予習", "reading": "よしゅう", "meaning": "học trước bài", "hanviet": "dư tập", "example": "予習をしてから授業に参加すると、内容がよく理解できます。", "example_reading": "よしゅうをしてからじゅぎょうにさんかすると、ないようがよくりかいできます。", "example_meaning": "Nếu học trước rồi mới tham gia tiết học thì có thể hiểu nội dung rõ hơn.", "level": "n4"},
@@ -1894,7 +2302,14 @@ const TOPICS = [
       {"word": "辞書を引く", "reading": "じしょをひく", "meaning": "tra từ điển", "hanviet": "từ thư", "example": "知らない語は辞書を引きます。", "example_reading": "しらないごはじしょをひきます。", "example_meaning": "Từ không biết thì tôi tra từ điển.", "level": "n4"},
       {"word": "図書館", "reading": "としょかん", "meaning": "thư viện", "hanviet": "đồ thư quán", "example": "図書館は静かで集中できます。", "example_reading": "としょかんはしずかでしゅうちゅうできます。", "example_meaning": "Thư viện yên tĩnh dễ tập trung.", "level": "n4"},
       {"word": "学ぶ", "reading": "まなぶ", "meaning": "học hỏi", "hanviet": "học", "example": "失敗からも学びます。", "example_reading": "しっぱいからもまなびます。", "example_meaning": "Tôi học cả từ thất bại.", "level": "n4"},
-      // ── n3 · 40 mục ──
+      {"word": "入学", "reading": "にゅうがく", "meaning": "nhập học", "hanviet": "nhập học", "example": "四月に大学へ入学します。", "example_reading": "しがつにだいがくへにゅうがくします。", "example_meaning": "Tháng Tư tôi nhập học đại học.", "level": "n4"},
+      {"word": "卒業", "reading": "そつぎょう", "meaning": "tốt nghiệp", "hanviet": "tốt nghiệp", "example": "来年の三月に、大学を卒業します。", "example_reading": "らいねんのさんがつに、だいがくをそつぎょうします。", "example_meaning": "Tháng Ba năm sau tôi tốt nghiệp đại học.", "level": "n4"},
+      {"word": "教育", "reading": "きょういく", "meaning": "giáo dục", "hanviet": "giáo dục", "example": "この国は、教育に力を入れています。", "example_reading": "このくには、きょういくにちからをいれています。", "example_meaning": "Nước này chú trọng giáo dục.", "level": "n4"},
+      {"word": "科目", "reading": "かもく", "meaning": "môn học", "hanviet": "khoa mục", "example": "好きな科目は、数学と理科です。", "example_reading": "すきなかもくは、すうがくとりかです。", "example_meaning": "Môn học tôi thích là toán và khoa học.", "level": "n4"},
+      {"word": "算数", "reading": "さんすう", "meaning": "toán (tiểu học)", "hanviet": "toán số", "example": "小学校の算数は、足し算から始まります。", "example_reading": "しょうがっこうのさんすうは、たしざんからはじまります。", "example_meaning": "Toán tiểu học bắt đầu từ phép cộng.", "level": "n4"},
+      {"word": "数学", "reading": "すうがく", "meaning": "toán học", "hanviet": "số học", "example": "数学の宿題が難しくて、時間がかかりました。", "example_reading": "すうがくのしゅくだいがむずかしくて、じかんがかかりました。", "example_meaning": "Bài tập toán khó nên tôi mất nhiều thời gian.", "level": "n4"},
+      {"word": "制服", "reading": "せいふく", "meaning": "đồng phục", "hanviet": "chế phục", "example": "高校では、制服を着て通学します。", "example_reading": "こうこうでは、せいふくをきてつうがくします。", "example_meaning": "Ở cấp ba tôi mặc đồng phục đến trường.", "level": "n4"},
+      // ── n3 · 54 mục ──
       {"word": "入試", "reading": "にゅうし", "meaning": "kỳ thi tuyển sinh", "hanviet": "nhập thí", "example": "入試に合格するために、毎晩遅くまで勉強を続けています。", "example_reading": "にゅうしにごうかくするために、まいばんおそくまでべんきょうをつづけています。", "example_meaning": "Để đỗ kỳ thi tuyển sinh, tôi tiếp tục học đến khuya mỗi tối.", "level": "n3"},
       {"word": "奨学金", "reading": "しょうがくきん", "meaning": "học bổng", "hanviet": "tưởng học kim", "example": "経済的な理由で、奨学金を申請することにしました。", "example_reading": "けいざいてきなりゆうで、しょうがくきんをしんせいすることにしました。", "example_meaning": "Vì lý do kinh tế, tôi quyết định xin học bổng.", "level": "n3"},
       {"word": "暗記", "reading": "あんき", "meaning": "học thuộc lòng", "hanviet": "ám ký", "example": "単語を暗記するのは苦手なので、何度も繰り返して覚えています。", "example_reading": "たんごをあんきするのはにがてなので、なんどもくりかえしておぼえています。", "example_meaning": "Vì không giỏi học thuộc từ vựng nên tôi phải lặp lại nhiều lần để nhớ.", "level": "n3"},
@@ -1935,7 +2350,21 @@ const TOPICS = [
       {"word": "能力", "reading": "のうりょく", "meaning": "năng lực", "hanviet": "năng lực", "example": "自分の能力を伸ばしたいです。", "example_reading": "じぶんののうりょくをのばしたいです。", "example_meaning": "Tôi muốn phát triển năng lực bản thân.", "level": "n3"},
       {"word": "実力", "reading": "じつりょく", "meaning": "thực lực", "hanviet": "thực lực", "example": "実力はすぐには付きません。", "example_reading": "じつりょくはすぐにはつきません。", "example_meaning": "Thực lực không thể có ngay.", "level": "n3"},
       {"word": "苦労", "reading": "くろう", "meaning": "vất vả", "hanviet": "khổ lao", "example": "漢字にはずいぶん苦労しました。", "example_reading": "かんじにはずいぶんくろうしました。", "example_meaning": "Tôi khá vất vả với chữ Hán.", "level": "n3"},
-      // ── n2 · 40 mục ──
+      {"word": "校則", "reading": "こうそく", "meaning": "nội quy trường", "hanviet": "hiệu tắc", "example": "この学校は校則が厳しいです。", "example_reading": "このがっこうはこうそくがきびしいです。", "example_meaning": "Trường này nội quy nghiêm khắc.", "level": "n3"},
+      {"word": "校長", "reading": "こうちょう", "meaning": "hiệu trưởng", "hanviet": "hiệu trưởng", "example": "朝礼で、校長先生の話を聞きました。", "example_reading": "ちょうれいで、こうちょうせんせいのはなしをききました。", "example_meaning": "Trong buổi chào cờ buổi sáng, chúng tôi nghe hiệu trưởng nói.", "level": "n3"},
+      {"word": "担任", "reading": "たんにん", "meaning": "giáo viên chủ nhiệm", "hanviet": "đảm nhậm", "example": "担任の先生に、進路の相談をしました。", "example_reading": "たんにんのせんせいに、しんろのそうだんをしました。", "example_meaning": "Tôi trao đổi với giáo viên chủ nhiệm về hướng đi sau này.", "level": "n3"},
+      {"word": "同級生", "reading": "どうきゅうせい", "meaning": "bạn cùng lớp", "hanviet": "đồng cấp sinh", "example": "同級生と、久しぶりに会いました。", "example_reading": "どうきゅうせいと、ひさしぶりにあいました。", "example_meaning": "Lâu rồi tôi mới gặp lại bạn cùng lớp.", "level": "n3"},
+      {"word": "上級生", "reading": "じょうきゅうせい", "meaning": "học sinh lớp trên", "hanviet": "thượng cấp sinh", "example": "上級生は、新入生に優しく教えてくれました。", "example_reading": "じょうきゅうせいは、しんにゅうせいにやさしくおしえてくれました。", "example_meaning": "Học sinh lớp trên đã dạy cho học sinh mới rất nhiệt tình.", "level": "n3"},
+      {"word": "下級生", "reading": "かきゅうせい", "meaning": "học sinh lớp dưới", "hanviet": "hạ cấp sinh", "example": "部活では、下級生の面倒を見ています。", "example_reading": "ぶかつでは、かきゅうせいのめんどうをみています。", "example_meaning": "Ở câu lạc bộ tôi chăm sóc các bạn lớp dưới.", "level": "n3"},
+      {"word": "時間割", "reading": "じかんわり", "meaning": "thời khóa biểu", "hanviet": "thời gian cát", "example": "明日の時間割を確認して、かばんに教科書を入れました。", "example_reading": "あしたのじかんわりをかくにんして、かばんにきょうかしょをいれました。", "example_meaning": "Tôi kiểm tra thời khóa biểu ngày mai rồi bỏ sách giáo khoa vào cặp.", "level": "n3"},
+      {"word": "学年", "reading": "がくねん", "meaning": "năm học, khối lớp", "hanviet": "học niên", "example": "弟は私より二学年下です。", "example_reading": "おとうとはわたしよりにがくねんしたです。", "example_meaning": "Em trai tôi học dưới tôi hai khóa.", "level": "n3"},
+      {"word": "進級", "reading": "しんきゅう", "meaning": "lên lớp", "hanviet": "tiến cấp", "example": "試験に合格して、無事に進級しました。", "example_reading": "しけんにごうかくして、ぶじにしんきゅうしました。", "example_meaning": "Thi đỗ nên tôi đã lên lớp suôn sẻ.", "level": "n3"},
+      {"word": "補習", "reading": "ほしゅう", "meaning": "học bù", "hanviet": "bổ tập", "example": "成績が悪かったので、放課後に補習を受けました。", "example_reading": "せいせきがわるかったので、ほうかごにほしゅうをうけました。", "example_meaning": "Vì điểm kém nên tôi phải học bù sau giờ học.", "level": "n3"},
+      {"word": "追試", "reading": "ついし", "meaning": "thi bổ sung", "hanviet": "truy thí", "example": "病気で試験を休んだので、追試を受けました。", "example_reading": "びょうきでしけんをやすんだので、ついしをうけました。", "example_meaning": "Vì ốm nghỉ thi nên tôi đã thi bổ sung.", "level": "n3"},
+      {"word": "遠足", "reading": "えんそく", "meaning": "chuyến dã ngoại", "hanviet": "viễn túc", "example": "明日は小学校の遠足で、動物園に行きます。", "example_reading": "あしたはしょうがっこうのえんそくで、どうぶつえんにいきます。", "example_meaning": "Ngày mai là chuyến dã ngoại trường tiểu học, chúng tôi đi sở thú.", "level": "n3"},
+      {"word": "修学旅行", "reading": "しゅうがくりょこう", "meaning": "chuyến tham quan học tập", "hanviet": "tu học lữ hành", "example": "高校の修学旅行で、京都と奈良へ行きました。", "example_reading": "こうこうのしゅうがくりょこうで、きょうととならへいきました。", "example_meaning": "Trong chuyến tham quan học tập cấp ba tôi đã đến Kyoto và Nara.", "level": "n3"},
+      {"word": "文化祭", "reading": "ぶんかさい", "meaning": "lễ hội văn hóa trường", "hanviet": "văn hóa tế", "example": "文化祭で、クラスの友達と劇をしました。", "example_reading": "ぶんかさいで、くらすのともだちとげきをしました。", "example_meaning": "Ở lễ hội văn hóa tôi diễn kịch cùng các bạn trong lớp.", "level": "n3"},
+      // ── n2 · 53 mục ──
       {"word": "奨励", "reading": "しょうれい", "meaning": "khuyến khích", "hanviet": "tưởng lệ", "example": "この学校は生徒の自主学習を奨励する方針をとっています。", "example_reading": "このがっこうはせいとのじしゅがくしゅうをしょうれいするほうしんをとっています。", "example_meaning": "Trường này có chính sách khuyến khích học sinh tự học.", "level": "n2"},
       {"word": "学習意欲", "reading": "がくしゅういよく", "meaning": "động lực học tập", "hanviet": "học tập ý dục", "example": "学習意欲を保つのが難しいです。", "example_reading": "がくしゅういよくをたもつのがむずかしいです。", "example_meaning": "Giữ được động lực học tập rất khó.", "level": "n2"},
       {"word": "添削", "reading": "てんさく", "meaning": "chữa bài, sửa bài", "hanviet": "thiêm tước", "example": "先生に作文を添削してもらいました。", "example_reading": "せんせいにさくぶんをてんさくしてもらいました。", "example_meaning": "Tôi được thầy sửa bài văn.", "level": "n2"},
@@ -1976,7 +2405,20 @@ const TOPICS = [
       {"word": "学歴", "reading": "がくれき", "meaning": "học vấn, bằng cấp", "hanviet": "học lịch", "example": "学歴だけでは決まりません。", "example_reading": "がくれきだけではきまりません。", "example_meaning": "Không phải chỉ bằng cấp là quyết định.", "level": "n2"},
       {"word": "学位", "reading": "がくい", "meaning": "học vị", "hanviet": "học vị", "example": "修士の学位を取りました。", "example_reading": "しゅうしのがくいをとりました。", "example_meaning": "Tôi đã lấy học vị thạc sĩ.", "level": "n2"},
       {"word": "研究室", "reading": "けんきゅうしつ", "meaning": "phòng nghiên cứu (lab)", "hanviet": "nghiên cứu thất", "example": "研究室に配属されました。", "example_reading": "けんきゅうしつにはいぞくされました。", "example_meaning": "Tôi được phân vào phòng nghiên cứu.", "level": "n2"},
-      // ── n1 · 40 mục ──
+      {"word": "教員", "reading": "きょういん", "meaning": "giáo viên, nhà giáo", "hanviet": "giáo viên", "example": "私は将来、小学校の教員になりたいです。", "example_reading": "わたしはしょうらい、しょうがっこうのきょういんになりたいです。", "example_meaning": "Tương lai tôi muốn trở thành giáo viên tiểu học.", "level": "n2"},
+      {"word": "教授", "reading": "きょうじゅ", "meaning": "giáo sư", "hanviet": "giáo thụ", "example": "教授の研究室で、論文の指導を受けました。", "example_reading": "きょうじゅのけんきゅうしつで、ろんぶんのしどうをうけました。", "example_meaning": "Tôi được hướng dẫn luận văn tại phòng nghiên cứu của giáo sư.", "level": "n2"},
+      {"word": "講師", "reading": "こうし", "meaning": "giảng viên, báo cáo viên", "hanviet": "giảng sư", "example": "予備校の講師として、数学を教えています。", "example_reading": "よびこうのこうしとして、すうがくをおしえています。", "example_meaning": "Tôi dạy toán với tư cách giảng viên ở trung tâm luyện thi.", "level": "n2"},
+      {"word": "学長", "reading": "がくちょう", "meaning": "hiệu trưởng đại học", "hanviet": "học trưởng", "example": "入学式で、学長が挨拶をしました。", "example_reading": "にゅうがくしきで、がくちょうがあいさつをしました。", "example_meaning": "Hiệu trưởng đại học phát biểu ở lễ nhập học.", "level": "n2"},
+      {"word": "入学金", "reading": "にゅうがくきん", "meaning": "phí nhập học", "hanviet": "nhập học kim", "example": "入学金は、合格発表の後に払います。", "example_reading": "にゅうがくきんは、ごうかくはっぴょうののちにはらいます。", "example_meaning": "Phí nhập học thanh toán sau khi có kết quả đỗ.", "level": "n2"},
+      {"word": "授業料", "reading": "じゅぎょうりょう", "meaning": "học phí", "hanviet": "thụ nghiệp liệu", "example": "授業料が高くて、アルバイトをしています。", "example_reading": "じゅぎょうりょうがたかくて、あるばいとをしています。", "example_meaning": "Học phí cao nên tôi đi làm thêm.", "level": "n2"},
+      {"word": "指導", "reading": "しどう", "meaning": "hướng dẫn, chỉ đạo", "hanviet": "chỉ đạo", "example": "先生の丁寧な指導のおかげで、成績が上がりました。", "example_reading": "せんせいのていねいなしどうのおかげで、せいせきがあがりました。", "example_meaning": "Nhờ sự hướng dẫn tận tình của thầy mà điểm tôi tăng lên.", "level": "n2"},
+      {"word": "修了", "reading": "しゅうりょう", "meaning": "hoàn thành (khóa học)", "hanviet": "tu liễu", "example": "三か月の研修を修了しました。", "example_reading": "さんかげつのけんしゅうをしゅうりょうしました。", "example_meaning": "Tôi đã hoàn thành khóa tập huấn ba tháng.", "level": "n2"},
+      {"word": "休学", "reading": "きゅうがく", "meaning": "bảo lưu, nghỉ học tạm thời", "hanviet": "hưu học", "example": "留学のために、一年間大学を休学します。", "example_reading": "りゅうがくのために、いちねんかんだいがくをきゅうがくします。", "example_meaning": "Để đi du học tôi bảo lưu đại học một năm.", "level": "n2"},
+      {"word": "退学", "reading": "たいがく", "meaning": "thôi học", "hanviet": "thoái học", "example": "経済的な理由で、退学を考える学生もいます。", "example_reading": "けいざいてきなりゆうで、たいがくをかんがえるがくせいもいます。", "example_meaning": "Cũng có sinh viên nghĩ đến thôi học vì lý do kinh tế.", "level": "n2"},
+      {"word": "編入", "reading": "へんにゅう", "meaning": "chuyển vào học giữa chừng", "hanviet": "biên nhập", "example": "短大から大学に編入しました。", "example_reading": "たんだいからだいがくにへんにゅうしました。", "example_meaning": "Tôi đã chuyển từ cao đẳng ngắn hạn sang đại học.", "level": "n2"},
+      {"word": "志願", "reading": "しがん", "meaning": "đăng ký nguyện vọng", "hanviet": "chí nguyện", "example": "第一志望の大学に志願しました。", "example_reading": "だいいちしぼうのだいがくにしがんしました。", "example_meaning": "Tôi đã đăng ký vào trường đại học nguyện vọng một.", "level": "n2"},
+      {"word": "評定", "reading": "ひょうてい", "meaning": "điểm đánh giá học tập", "hanviet": "bình định", "example": "推薦入試では、高校の評定も重要です。", "example_reading": "すいせんにゅうしでは、こうこうのひょうていもじゅうようです。", "example_meaning": "Ở kỳ thi tuyển thẳng, điểm đánh giá cấp ba cũng quan trọng.", "level": "n2"},
+      // ── n1 · 53 mục ──
       {"word": "学習指導要領", "reading": "がくしゅうしどうようりょう", "meaning": "chương trình khung giáo dục", "hanviet": "học tập chỉ đạo yếu lĩnh", "example": "学習指導要領が改訂されました。", "example_reading": "がくしゅうしどうようりょうがかいていされました。", "example_meaning": "Chương trình khung giáo dục đã được sửa đổi.", "level": "n1"},
       {"word": "教育格差", "reading": "きょういくかくさ", "meaning": "bất bình đẳng giáo dục", "hanviet": "giáo dục cách sai", "example": "地域間の教育格差が問題です。", "example_reading": "ちいきかんのきょういくかくさがもんだいです。", "example_meaning": "Bất bình đẳng giáo dục giữa các vùng là một vấn đề.", "level": "n1"},
       {"word": "主体的学習", "reading": "しゅたいてきがくしゅう", "meaning": "học tập chủ động", "hanviet": "chủ thể đích học tập", "example": "主体的学習を重視しています。", "example_reading": "しゅたいてきがくしゅうをじゅうししています。", "example_meaning": "Coi trọng việc học tập chủ động.", "level": "n1"},
@@ -2017,6 +2459,19 @@ const TOPICS = [
       {"word": "学術研究", "reading": "がくじゅつけんきゅう", "meaning": "nghiên cứu học thuật", "hanviet": "học thuật nghiên cứu", "example": "学術研究に従事しています。", "example_reading": "がくじゅつけんきゅうにじゅうじしています。", "example_meaning": "Tôi làm nghiên cứu học thuật.", "level": "n1"},
       {"word": "知的好奇心", "reading": "ちてきこうきしん", "meaning": "tính ham tìm hiểu", "hanviet": "tri đích hiếu kỳ tâm", "example": "知的好奇心を大切にします。", "example_reading": "ちてきこうきしんをたいせつにします。", "example_meaning": "Tôi trân trọng tính ham tìm hiểu.", "level": "n1"},
       {"word": "学びの姿勢", "reading": "まなびのしせい", "meaning": "thái độ học tập", "hanviet": "học tư thế", "example": "学びの姿勢が結果を決めます。", "example_reading": "まなびのしせいがけっかをきめます。", "example_meaning": "Thái độ học tập quyết định kết quả.", "level": "n1"},
+      {"word": "師事", "reading": "しじ", "meaning": "theo học (một người thầy)", "hanviet": "sư sự", "example": "彼は有名な作曲家に師事しました。", "example_reading": "かれはゆうめいなさっきょくかにしじしました。", "example_meaning": "Anh ấy đã theo học một nhà soạn nhạc nổi tiếng.", "level": "n1"},
+      {"word": "恩師", "reading": "おんし", "meaning": "thầy ân sư", "hanviet": "ân sư", "example": "恩師の教えは、今でも心に残っています。", "example_reading": "おんしのおしえは、いまでもこころにのこっています。", "example_meaning": "Lời dạy của ân sư đến nay vẫn còn in trong lòng tôi.", "level": "n1"},
+      {"word": "教鞭", "reading": "きょうべん", "meaning": "việc đứng lớp giảng dạy", "hanviet": "giáo tiên", "example": "彼は三十年間、大学で教鞭を執りました。", "example_reading": "かれはさんじゅうねんかん、だいがくできょうべんをとりました。", "example_meaning": "Ông đã đứng lớp ở đại học suốt ba mươi năm.", "level": "n1"},
+      {"word": "薫陶", "reading": "くんとう", "meaning": "sự giáo dục, dìu dắt", "hanviet": "huân đào", "example": "先生の薫陶を受けて、私は成長しました。", "example_reading": "せんせいのくんとうをうけて、わたしはせいちょうしました。", "example_meaning": "Nhờ được thầy giáo dục và dìu dắt, tôi đã trưởng thành.", "level": "n1"},
+      {"word": "研鑽", "reading": "けんさん", "meaning": "trau dồi, nghiên cứu kỹ", "hanviet": "nghiên toản", "example": "医師として、日々研鑽を積んでいます。", "example_reading": "いしとして、ひびけんさんをつんでいます。", "example_meaning": "Là bác sĩ, tôi ngày ngày trau dồi chuyên môn.", "level": "n1"},
+      {"word": "切磋琢磨", "reading": "せっさたくま", "meaning": "cùng nhau thi đua tiến bộ", "hanviet": "thiết tha trác ma", "example": "仲間と切磋琢磨しながら、勉強しています。", "example_reading": "なかまとせっさたくましながら、べんきょうしています。", "example_meaning": "Tôi học tập trong khi cùng bạn bè thi đua tiến bộ.", "level": "n1"},
+      {"word": "習熟", "reading": "しゅうじゅく", "meaning": "thành thạo", "hanviet": "tập thục", "example": "新しい機械の操作に習熟するまで、時間がかかりました。", "example_reading": "あたらしいきかいのそうさにしゅうじゅくするまで、じかんがかかりました。", "example_meaning": "Tôi mất nhiều thời gian đến khi thành thạo thao tác máy mới.", "level": "n1"},
+      {"word": "博識", "reading": "はくしき", "meaning": "uyên bác", "hanviet": "bác thức", "example": "祖父は歴史に詳しい博識な人です。", "example_reading": "そふはれきしにくわしいはくしきなひとです。", "example_meaning": "Ông tôi là người uyên bác, am hiểu lịch sử.", "level": "n1"},
+      {"word": "造詣", "reading": "ぞうけい", "meaning": "trình độ hiểu biết sâu", "hanviet": "tạo nghệ", "example": "彼は音楽に造詣が深いです。", "example_reading": "かれはおんがくにぞうけいがふかいです。", "example_meaning": "Anh ấy có kiến thức sâu rộng về âm nhạc.", "level": "n1"},
+      {"word": "素養", "reading": "そよう", "meaning": "kiến thức nền, tố chất", "hanviet": "tố dưỡng", "example": "翻訳者には、幅広い教養と語学の素養が必要です。", "example_reading": "ほんやくしゃには、はばひろいきょうようとごがくのそようがひつようです。", "example_meaning": "Dịch giả cần có kiến thức rộng và nền tảng ngoại ngữ.", "level": "n1"},
+      {"word": "向学心", "reading": "こうがくしん", "meaning": "tinh thần ham học", "hanviet": "hướng học tâm", "example": "彼女は向学心が強く、夜間大学に通っています。", "example_reading": "かのじょはこうがくしんがつよく、やかんだいがくにかよっています。", "example_meaning": "Cô ấy ham học nên đang theo học đại học ban đêm.", "level": "n1"},
+      {"word": "勤勉", "reading": "きんべん", "meaning": "chăm chỉ, cần cù", "hanviet": "cần miễn", "example": "日本人は勤勉だとよく言われます。", "example_reading": "にほんじんはきんべんだとよくいわれます。", "example_meaning": "Người Nhật thường được nói là cần cù.", "level": "n1"},
+      {"word": "怠ける", "reading": "なまける", "meaning": "lười biếng", "hanviet": "đãi", "example": "怠けていると、試験で苦労しますよ。", "example_reading": "なまけていると、しけんでくろうしますよ。", "example_meaning": "Lười biếng thì sẽ vất vả khi thi đấy.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [09] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -2044,7 +2499,7 @@ const TOPICS = [
   },
 
   // ══════════════════════════════════════════════════════════════════════
-  // [10] 10. 食文化・料理  🍳  |  main  |  vocab 179 · grammar 20
+  // [10] 10. 食文化・料理  🍳  |  main  |  vocab 229 · grammar 20
   // ══════════════════════════════════════════════════════════════════════
   {
     "id": "10. 食文化・料理",
@@ -2052,7 +2507,7 @@ const TOPICS = [
     "icon": "🍳",
     "category": "main",
     "vocab": [
-      // ── n5 · 19 mục ──
+      // ── n5 · 22 mục ──
       {"word": "料理", "reading": "りょうり", "meaning": "món ăn, nấu ăn", "hanviet": "liệu lý", "example": "休みの日は、時間をかけて手の込んだ料理を作るのが楽しみです。", "example_reading": "やすみのひは、じかんをかけててのこんだりょうりをつくるのがたのしみです。", "example_meaning": "Vào ngày nghỉ, niềm vui của tôi là dành thời gian nấu những món ăn công phu.", "level": "n5"},
       {"word": "材料", "reading": "ざいりょう", "meaning": "nguyên liệu", "hanviet": "tài liệu", "example": "この料理の材料はスーパーで簡単に手に入るものばかりです。", "example_reading": "このりょうりのざいりょうはすーぱーでかんたんにてにはいるものばかりです。", "example_meaning": "Nguyên liệu của món này toàn là thứ dễ dàng mua được ở siêu thị.", "level": "n5"},
       {"word": "焼く", "reading": "やく", "meaning": "nướng", "hanviet": "thiêu", "example": "魚は焼きすぎると硬くなるので、火加減に注意しています。", "example_reading": "さかなはやきすぎるとかたくなるので、ひかげんにちゅういしています。", "example_meaning": "Vì cá nướng quá sẽ bị dai nên tôi luôn chú ý điều chỉnh lửa.", "level": "n5"},
@@ -2072,7 +2527,10 @@ const TOPICS = [
       {"word": "お茶", "reading": "おちゃ", "meaning": "trà", "hanviet": "trà", "example": "食後にお茶を飲みます。", "example_reading": "しょくごにおちゃをのみます。", "example_meaning": "Sau bữa ăn tôi uống trà.", "level": "n5"},
       {"word": "切る", "reading": "きる", "meaning": "cắt", "hanviet": "thiết", "example": "野菜を細かく切ります。", "example_reading": "やさいをこまかくきります。", "example_meaning": "Cắt rau thật nhỏ.", "level": "n5"},
       {"word": "作る", "reading": "つくる", "meaning": "làm, nấu", "hanviet": "tác", "example": "週末に作り置きを作ります。", "example_reading": "しゅうまつにつくりおきをつくります。", "example_meaning": "Cuối tuần tôi nấu sẵn đồ ăn.", "level": "n5"},
-      // ── n4 · 42 mục ──
+      {"word": "牛乳", "reading": "ぎゅうにゅう", "meaning": "sữa bò", "hanviet": "ngưu nhũ", "example": "毎朝、牛乳を一杯飲みます。", "example_reading": "まいあさ、ぎゅうにゅうをいっぱいのみます。", "example_meaning": "Mỗi sáng tôi uống một ly sữa.", "level": "n5"},
+      {"word": "飲み物", "reading": "のみもの", "meaning": "đồ uống", "hanviet": "ẩm vật", "example": "何か冷たい飲み物はありますか。", "example_reading": "なにかつめたいのみものはありますか。", "example_meaning": "Có đồ uống lạnh nào không?", "level": "n5"},
+      {"word": "食べ物", "reading": "たべもの", "meaning": "đồ ăn", "hanviet": "thực vật", "example": "日本の食べ物の中で、何が一番好きですか。", "example_reading": "にほんのたべもののなかで、なにがいちばんすきですか。", "example_meaning": "Trong các món ăn Nhật, bạn thích món nào nhất?", "level": "n5"},
+      // ── n4 · 49 mục ──
       {"word": "調味料", "reading": "ちょうみりょう", "meaning": "gia vị", "hanviet": "điều vị liệu", "example": "調味料の量を少し変えるだけで、味が大きく変わります。", "example_reading": "ちょうみりょうのりょうをすこしかえるだけで、あじがおおきくかわります。", "example_meaning": "Chỉ cần thay đổi một chút lượng gia vị thì hương vị sẽ thay đổi rất nhiều.", "level": "n4"},
       {"word": "食材", "reading": "しょくざい", "meaning": "thực phẩm", "hanviet": "thực tài", "example": "新鮮な食材を使うだけで、料理の味は格段によくなります。", "example_reading": "しんせんなしょくざいをつかうだけで、りょうりのあじはかくだんによくなります。", "example_meaning": "Chỉ cần dùng thực phẩm tươi thì hương vị món ăn sẽ ngon hơn hẳn.", "level": "n4"},
       {"word": "レシピ", "reading": "レシピ", "meaning": "công thức nấu ăn", "hanviet": "", "example": "インターネットで見つけたレシピを参考にして、初めてケーキを作りました。", "example_reading": "いんたーねっとでみつけたれしぴをさんこうにして、はじめてけーきをつくりました。", "example_meaning": "Tôi đã tham khảo công thức tìm thấy trên mạng và lần đầu tiên làm bánh.", "level": "n4"},
@@ -2115,7 +2573,14 @@ const TOPICS = [
       {"word": "予約する", "reading": "よやくする", "meaning": "đặt bàn", "hanviet": "dư ước", "example": "レストランを予約しました。", "example_reading": "れすとらんをよやくしました。", "example_meaning": "Tôi đã đặt bàn nhà hàng.", "level": "n4"},
       {"word": "注文する", "reading": "ちゅうもんする", "meaning": "gọi món", "hanviet": "chú văn", "example": "おすすめを注文しました。", "example_reading": "おすすめをちゅうもんしました。", "example_meaning": "Tôi gọi món được gợi ý.", "level": "n4"},
       {"word": "おすすめ", "reading": "おすすめ", "meaning": "món gợi ý", "hanviet": "", "example": "今日のおすすめは何ですか。", "example_reading": "きょうのおすすめはなんですか。", "example_meaning": "Hôm nay có món gì đáng thử?", "level": "n4"},
-      // ── n3 · 41 mục ──
+      {"word": "夕飯", "reading": "ゆうはん", "meaning": "bữa tối", "hanviet": "tịch phạn", "example": "今日の夕飯は、カレーにしましょう。", "example_reading": "きょうのゆうはんは、かれーにしましょう。", "example_meaning": "Bữa tối hôm nay ăn cà ri nhé.", "level": "n4"},
+      {"word": "麺", "reading": "めん", "meaning": "mì, sợi mì", "hanviet": "miến", "example": "この店の麺は、自分で作っています。", "example_reading": "このみせのめんは、じぶんでつくっています。", "example_meaning": "Mì ở quán này do tự làm.", "level": "n4"},
+      {"word": "米", "reading": "こめ", "meaning": "gạo", "hanviet": "mễ", "example": "新潟のお米は、おいしいことで有名です。", "example_reading": "にいがたのおこめは、おいしいことでゆうめいです。", "example_meaning": "Gạo Niigata nổi tiếng vì ngon.", "level": "n4"},
+      {"word": "箸", "reading": "はし", "meaning": "đũa", "hanviet": "trợ", "example": "日本では、箸でご飯を食べます。", "example_reading": "にほんでは、はしでごはんをたべます。", "example_meaning": "Ở Nhật người ta ăn cơm bằng đũa.", "level": "n4"},
+      {"word": "茶碗", "reading": "ちゃわん", "meaning": "bát cơm, chén", "hanviet": "trà uyển", "example": "お茶碗にご飯をよそいました。", "example_reading": "おちゃわんにごはんをよそいました。", "example_meaning": "Tôi xới cơm vào bát.", "level": "n4"},
+      {"word": "沸かす", "reading": "わかす", "meaning": "đun sôi", "hanviet": "phí", "example": "やかんでお湯を沸かして、お茶をいれました。", "example_reading": "やかんでおゆをわかして、おちゃをいれました。", "example_meaning": "Tôi đun nước sôi bằng ấm rồi pha trà.", "level": "n4"},
+      {"word": "冷める", "reading": "さめる", "meaning": "nguội", "hanviet": "lãnh", "example": "スープが冷めないうちに、飲んでください。", "example_reading": "すーぷがさめないうちに、のんでください。", "example_meaning": "Hãy uống khi súp còn chưa nguội.", "level": "n4"},
+      // ── n3 · 55 mục ──
       {"word": "味付け", "reading": "あじつけ", "meaning": "nêm nếm", "hanviet": "vị phó", "example": "味付けを濃くしすぎたので、もう少し水を足すことにしました。", "example_reading": "あじつけをこくしすぎたので、もうすこしみずをたすことにしました。", "example_meaning": "Vì nêm quá đậm nên tôi quyết định thêm một chút nước.", "level": "n3"},
       {"word": "刻む", "reading": "きざむ", "meaning": "thái nhỏ, băm", "hanviet": "khắc", "example": "にんにくを細かく刻んでから、油で香りを出すように炒めます。", "example_reading": "にんにくをこまかくきざんでから、あぶらでかおりをだすようにいためます。", "example_meaning": "Sau khi băm nhỏ tỏi, tôi xào với dầu để dậy mùi thơm.", "level": "n3"},
       {"word": "賞味期限", "reading": "しょうみきげん", "meaning": "hạn dùng ngon nhất", "hanviet": "thưởng vị kỳ hạn", "example": "冷蔵庫を整理していたら、賞味期限が切れた食品がいくつも出てきました。", "example_reading": "れいぞうこをせいりしていたら、しょうみきげんがきれたしょくひんがいくつもでてきました。", "example_meaning": "Khi dọn tủ lạnh, tôi phát hiện có nhiều thực phẩm đã hết hạn sử dụng.", "level": "n3"},
@@ -2157,7 +2622,21 @@ const TOPICS = [
       {"word": "持ち帰り", "reading": "もちかえり", "meaning": "mang về", "hanviet": "trì quy", "example": "持ち帰りにしてください。", "example_reading": "もちかえりにしてください。", "example_meaning": "Cho tôi mang về nhé.", "level": "n3"},
       {"word": "出前", "reading": "でまえ", "meaning": "giao đồ ăn tận nhà", "hanviet": "xuất tiền", "example": "雨の日は出前を頼みます。", "example_reading": "あめのひはでまえをたのみます。", "example_meaning": "Ngày mưa tôi gọi đồ ăn về.", "level": "n3"},
       {"word": "会計", "reading": "かいけい", "meaning": "tính tiền", "hanviet": "hội kế", "example": "会計は別々にお願いします。", "example_reading": "かいけいはべつべつにおねがいします。", "example_meaning": "Cho tôi tính tiền riêng nhé.", "level": "n3"},
-      // ── n2 · 36 mục ──
+      {"word": "煮物", "reading": "にもの", "meaning": "món kho, hầm", "hanviet": "chử vật", "example": "母が作る煮物は、優しい味がします。", "example_reading": "ははがつくるにものは、やさしいあじがします。", "example_meaning": "Món kho mẹ nấu có vị dịu dàng.", "level": "n3"},
+      {"word": "焼き魚", "reading": "やきざかな", "meaning": "cá nướng", "hanviet": "thiêu ngư", "example": "朝ご飯は、焼き魚と味噌汁です。", "example_reading": "あさごはんは、やきざかなとみそしるです。", "example_meaning": "Bữa sáng là cá nướng và canh miso.", "level": "n3"},
+      {"word": "刺身", "reading": "さしみ", "meaning": "sashimi", "hanviet": "thích thân", "example": "新鮮な刺身は、醤油とわさびで食べます。", "example_reading": "しんせんなさしみは、しょうゆとわさびでたべます。", "example_meaning": "Sashimi tươi ăn với nước tương và wasabi.", "level": "n3"},
+      {"word": "漬物", "reading": "つけもの", "meaning": "đồ muối chua", "hanviet": "tí vật", "example": "ご飯に漬物があると、よく食べられます。", "example_reading": "ごはんにつけものがあると、よくたべられます。", "example_meaning": "Có đồ muối ăn kèm thì tôi ăn cơm ngon miệng hơn.", "level": "n3"},
+      {"word": "納豆", "reading": "なっとう", "meaning": "natto", "hanviet": "nạp đậu", "example": "納豆は匂いが苦手な人もいます。", "example_reading": "なっとうはにおいがにがてなひともいます。", "example_meaning": "Có người không quen mùi natto.", "level": "n3"},
+      {"word": "豆腐", "reading": "とうふ", "meaning": "đậu phụ", "hanviet": "đậu hủ", "example": "冷たい豆腐に、ねぎと生姜をのせて食べました。", "example_reading": "つめたいとうふに、ねぎとしょうがをのせてたべました。", "example_meaning": "Tôi ăn đậu phụ lạnh với hành lá và gừng.", "level": "n3"},
+      {"word": "海苔", "reading": "のり", "meaning": "rong biển khô", "hanviet": "hải đài", "example": "おにぎりに海苔を巻いて食べます。", "example_reading": "おにぎりにのりをまいてたべます。", "example_meaning": "Tôi quấn rong biển quanh nắm cơm rồi ăn.", "level": "n3"},
+      {"word": "具", "reading": "ぐ", "meaning": "nhân, nguyên liệu bên trong", "hanviet": "cụ", "example": "味噌汁の具は、豆腐とわかめです。", "example_reading": "みそしるのぐは、とうふとわかめです。", "example_meaning": "Nguyên liệu trong canh miso là đậu phụ và rong biển.", "level": "n3"},
+      {"word": "薬味", "reading": "やくみ", "meaning": "gia vị ăn kèm (hành, gừng...)", "hanviet": "dược vị", "example": "そばに薬味のねぎを入れました。", "example_reading": "そばにやくみのねぎをいれました。", "example_meaning": "Tôi cho hành lá làm gia vị ăn kèm vào mì soba.", "level": "n3"},
+      {"word": "割り箸", "reading": "わりばし", "meaning": "đũa dùng một lần", "hanviet": "cát trợ", "example": "お弁当に割り箸をつけてもらいました。", "example_reading": "おべんとうにわりばしをつけてもらいました。", "example_meaning": "Tôi được kèm đũa dùng một lần vào hộp cơm.", "level": "n3"},
+      {"word": "食卓", "reading": "しょくたく", "meaning": "bàn ăn", "hanviet": "thực trác", "example": "家族で食卓を囲む時間を大切にしています。", "example_reading": "かぞくでしょくたくをかこむじかんをたいせつにしています。", "example_meaning": "Tôi trân trọng thời gian cả nhà quây quần bên bàn ăn.", "level": "n3"},
+      {"word": "天ぷら", "reading": "てんぷら", "meaning": "tempura", "hanviet": "", "example": "揚げたての天ぷらは、さくさくしておいしいです。", "example_reading": "あげたてのてんぷらは、さくさくしておいしいです。", "example_meaning": "Tempura mới chiên giòn rụm và ngon.", "level": "n3"},
+      {"word": "寿司", "reading": "すし", "meaning": "sushi", "hanviet": "thọ ty", "example": "回転寿司で、お寿司をたくさん食べました。", "example_reading": "かいてんずしで、おすしをたくさんたべました。", "example_meaning": "Tôi đã ăn nhiều sushi ở quán sushi băng chuyền.", "level": "n3"},
+      {"word": "味噌", "reading": "みそ", "meaning": "tương miso", "hanviet": "vị tăng", "example": "味噌は、日本料理に欠かせない調味料です。", "example_reading": "みそは、にほんりょうりにかかせないちょうみりょうです。", "example_meaning": "Miso là gia vị không thể thiếu trong ẩm thực Nhật.", "level": "n3"},
+      // ── n2 · 49 mục ──
       {"word": "香辛料", "reading": "こうしんりょう", "meaning": "gia vị thơm, hương liệu", "hanviet": "hương tân liệu", "example": "香辛料をたっぷり使います。", "example_reading": "こうしんりょうをたっぷりつかいます。", "example_meaning": "Dùng nhiều gia vị thơm.", "level": "n2"},
       {"word": "食品ロス", "reading": "しょくひんロス", "meaning": "lãng phí thực phẩm", "hanviet": "thực phẩm", "example": "食品ロスを減らす工夫をします。", "example_reading": "しょくひんろすをへらすくふうをします。", "example_meaning": "Tìm cách giảm lãng phí thực phẩm.", "level": "n2"},
       {"word": "行きつけ", "reading": "いきつけ", "meaning": "quán quen", "hanviet": "hành phó", "example": "ここは行きつけの店です。", "example_reading": "ここはいきつけのみせです。", "example_meaning": "Đây là quán quen của tôi.", "level": "n2"},
@@ -2194,7 +2673,20 @@ const TOPICS = [
       {"word": "冷凍保存", "reading": "れいとうほぞん", "meaning": "bảo quản đông lạnh", "hanviet": "lãnh đông bảo tồn", "example": "小分けにして冷凍保存します。", "example_reading": "こわけにしてれいとうほぞんします。", "example_meaning": "Tôi chia nhỏ rồi trữ đông.", "level": "n2"},
       {"word": "常温", "reading": "じょうおん", "meaning": "nhiệt độ thường", "hanviet": "thường ôn", "example": "常温で保存できます。", "example_reading": "じょうおんでほぞんできます。", "example_meaning": "Có thể bảo quản ở nhiệt độ thường.", "level": "n2"},
       {"word": "解凍", "reading": "かいとう", "meaning": "rã đông", "hanviet": "giải đông", "example": "冷蔵庫でゆっくり解凍します。", "example_reading": "れいぞうこでゆっくりかいとうします。", "example_meaning": "Rã đông từ từ trong tủ lạnh.", "level": "n2"},
-      // ── n1 · 41 mục ──
+      {"word": "酢", "reading": "す", "meaning": "giấm", "hanviet": "thố", "example": "酢を入れると、さっぱりした味になります。", "example_reading": "すをいれると、さっぱりしたあじになります。", "example_meaning": "Cho giấm vào thì vị trở nên thanh mát.", "level": "n2"},
+      {"word": "惣菜", "reading": "そうざい", "meaning": "món ăn làm sẵn", "hanviet": "tổng thái", "example": "忙しい日は、スーパーで惣菜を買って帰ります。", "example_reading": "いそがしいひは、すーぱーでそうざいをかってかえります。", "example_meaning": "Ngày bận tôi mua đồ ăn làm sẵn ở siêu thị rồi về.", "level": "n2"},
+      {"word": "盛る", "reading": "もる", "meaning": "bới, xếp thức ăn lên đĩa", "hanviet": "thịnh", "example": "料理を皿に盛ると、見た目が華やかになります。", "example_reading": "りょうりをさらにもると、みためがはなやかになります。", "example_meaning": "Xếp món ăn lên đĩa thì trông thêm lộng lẫy.", "level": "n2"},
+      {"word": "味わう", "reading": "あじわう", "meaning": "thưởng thức, nếm trải", "hanviet": "vị", "example": "旬の食材を、ゆっくり味わって食べました。", "example_reading": "しゅんのしょくざいを、ゆっくりあじわってたべました。", "example_meaning": "Tôi thong thả thưởng thức nguyên liệu đúng mùa.", "level": "n2"},
+      {"word": "薄味", "reading": "うすあじ", "meaning": "vị nhạt", "hanviet": "bạc vị", "example": "健康のために、薄味の料理を心がけています。", "example_reading": "けんこうのために、うすあじのりょうりをこころがけています。", "example_meaning": "Vì sức khỏe tôi cố gắng nấu món vị nhạt.", "level": "n2"},
+      {"word": "濃厚", "reading": "のうこう", "meaning": "đậm đà", "hanviet": "nùng hậu", "example": "このラーメンは、濃厚なスープが特徴です。", "example_reading": "このらーめんは、のうこうなすーぷがとくちょうです。", "example_meaning": "Mì ramen này đặc trưng bởi nước dùng đậm đà.", "level": "n2"},
+      {"word": "淡白", "reading": "たんぱく", "meaning": "thanh đạm, nhạt", "hanviet": "đạm bạch", "example": "鶏のむね肉は淡白な味です。", "example_reading": "とりのむねにくはたんぱくなあじです。", "example_meaning": "Thịt ức gà có vị thanh đạm.", "level": "n2"},
+      {"word": "香ばしい", "reading": "こうばしい", "meaning": "thơm lừng (mùi nướng, rang)", "hanviet": "hương", "example": "パンの香ばしい匂いがしてきました。", "example_reading": "ぱんのこうばしいにおいがしてきました。", "example_meaning": "Mùi bánh mì nướng thơm lừng bay tới.", "level": "n2"},
+      {"word": "食後", "reading": "しょくご", "meaning": "sau bữa ăn", "hanviet": "thực hậu", "example": "食後に、コーヒーを飲みます。", "example_reading": "しょくごに、こーひーをのみます。", "example_meaning": "Sau bữa ăn tôi uống cà phê.", "level": "n2"},
+      {"word": "食前", "reading": "しょくぜん", "meaning": "trước bữa ăn", "hanviet": "thực tiền", "example": "この薬は、食前に飲んでください。", "example_reading": "このくすりは、しょくぜんにのんでください。", "example_meaning": "Thuốc này xin hãy uống trước bữa ăn.", "level": "n2"},
+      {"word": "一品料理", "reading": "いっぴんりょうり", "meaning": "món gọi lẻ", "hanviet": "nhất phẩm liệu lý", "example": "この店では、一品料理も注文できます。", "example_reading": "このみせでは、いっぴんりょうりもちゅうもんできます。", "example_meaning": "Ở quán này cũng có thể gọi món lẻ.", "level": "n2"},
+      {"word": "加熱", "reading": "かねつ", "meaning": "đun nóng, nấu chín", "hanviet": "gia nhiệt", "example": "生で食べずに、十分に加熱してください。", "example_reading": "なまでたべずに、じゅうぶんにかねつしてください。", "example_meaning": "Đừng ăn sống mà hãy nấu chín kỹ.", "level": "n2"},
+      {"word": "彩り", "reading": "いろどり", "meaning": "màu sắc, sự phối màu", "hanviet": "thái", "example": "野菜を使って、料理に彩りを添えました。", "example_reading": "やさいをつかって、りょうりにいろどりをそえました。", "example_meaning": "Tôi dùng rau để thêm màu sắc cho món ăn.", "level": "n2"},
+      // ── n1 · 54 mục ──
       {"word": "火加減", "reading": "ひかげん", "meaning": "độ lửa (khi nấu)", "hanviet": "hỏa gia giảm", "example": "火加減を調節してください。", "example_reading": "ひかげんをちょうせつしてください。", "example_meaning": "Hãy điều chỉnh độ lửa.", "level": "n1"},
       {"word": "旨味", "reading": "うまみ", "meaning": "vị umami", "hanviet": "chỉ vị", "example": "この出汁は旨味が強いです。", "example_reading": "このだしはうまみがつよいです。", "example_meaning": "Nước dùng này có vị umami đậm.", "level": "n1"},
       {"word": "味覚障害", "reading": "みかくしょうがい", "meaning": "rối loạn vị giác", "hanviet": "vị giác chướng hại", "example": "風邪で味覚障害になりました。", "example_reading": "かぜでみかくしょうがいになりました。", "example_meaning": "Tôi bị rối loạn vị giác do cảm cúm.", "level": "n1"},
@@ -2236,6 +2728,19 @@ const TOPICS = [
       {"word": "残飯", "reading": "ざんぱん", "meaning": "cơm thừa canh cặn", "hanviet": "tàn phạn", "example": "残飯を減らす工夫をします。", "example_reading": "ざんぱんをへらすくふうをします。", "example_meaning": "Tôi tìm cách giảm đồ ăn thừa.", "level": "n1"},
       {"word": "食糧問題", "reading": "しょくりょうもんだい", "meaning": "vấn đề lương thực", "hanviet": "thực lương vấn đề", "example": "世界の食糧問題は深刻です。", "example_reading": "せかいのしょくりょうもんだいはしんこくです。", "example_meaning": "Vấn đề lương thực thế giới rất nghiêm trọng.", "level": "n1"},
       {"word": "味覚の発達", "reading": "みかくのはったつ", "meaning": "sự phát triển vị giác", "hanviet": "vị giác phát đạt", "example": "子どもの味覚の発達は大切です。", "example_reading": "こどものみかくのはったつはたいせつです。", "example_meaning": "Sự phát triển vị giác của trẻ rất quan trọng.", "level": "n1"},
+      {"word": "懐石", "reading": "かいせき", "meaning": "bữa ăn kaiseki", "hanviet": "hoài thạch", "example": "京都で本格的な懐石料理をいただきました。", "example_reading": "きょうとでほんかくてきなかいせきりょうりをいただきました。", "example_meaning": "Ở Kyoto tôi đã thưởng thức bữa kaiseki chính thống.", "level": "n1"},
+      {"word": "精進料理", "reading": "しょうじんりょうり", "meaning": "món chay kiểu chùa", "hanviet": "tinh tiến liệu lý", "example": "お寺で、精進料理を体験しました。", "example_reading": "おてらで、しょうじんりょうりをたいけんしました。", "example_meaning": "Tôi đã trải nghiệm món chay ở chùa.", "level": "n1"},
+      {"word": "醸造", "reading": "じょうぞう", "meaning": "ủ, nấu (rượu, tương)", "hanviet": "nhưỡng tạo", "example": "この蔵では、昔ながらの方法で醤油を醸造しています。", "example_reading": "このくらでは、むかしながらのほうほうでしょうゆをじょうぞうしています。", "example_meaning": "Nhà kho này ủ nước tương theo cách truyền thống.", "level": "n1"},
+      {"word": "炙る", "reading": "あぶる", "meaning": "nướng sơ trên lửa", "hanviet": "chá", "example": "魚の表面を軽く炙ると、香りがよくなります。", "example_reading": "さかなのひょうめんをかるくあぶると、かおりがよくなります。", "example_meaning": "Nướng sơ mặt cá thì hương thơm tăng lên.", "level": "n1"},
+      {"word": "燻製", "reading": "くんせい", "meaning": "đồ hun khói", "hanviet": "huân chế", "example": "自家製の燻製を、ワインと一緒に楽しみました。", "example_reading": "じかせいのくんせいを、わいんといっしょにたのしみました。", "example_meaning": "Tôi thưởng thức đồ hun khói tự làm cùng rượu vang.", "level": "n1"},
+      {"word": "糠漬け", "reading": "ぬかづけ", "meaning": "dưa muối cám gạo", "hanviet": "khang tí", "example": "祖母は毎日、糠漬けをかき混ぜています。", "example_reading": "そぼはまいにち、ぬかづけをかきまぜています。", "example_meaning": "Bà tôi mỗi ngày đều đảo hũ dưa muối cám.", "level": "n1"},
+      {"word": "珍味", "reading": "ちんみ", "meaning": "món ăn quý hiếm, lạ miệng", "hanviet": "trân vị", "example": "からすみは、酒に合う珍味として知られています。", "example_reading": "からすみは、さけにあうちんみとしてしられています。", "example_meaning": "Karasumi nổi tiếng là món lạ miệng hợp với rượu.", "level": "n1"},
+      {"word": "食通", "reading": "しょくつう", "meaning": "người sành ăn", "hanviet": "thực thông", "example": "彼は食通で、おいしい店をよく知っています。", "example_reading": "かれはしょくつうで、おいしいみせをよくしっています。", "example_meaning": "Anh ấy sành ăn nên biết nhiều quán ngon.", "level": "n1"},
+      {"word": "賄い", "reading": "まかない", "meaning": "bữa ăn của nhân viên quán", "hanviet": "hối", "example": "閉店後、店の賄いを食べるのが楽しみです。", "example_reading": "へいてんご、みせのまかないをたべるのがたのしみです。", "example_meaning": "Tôi mong chờ được ăn bữa ăn nhân viên sau khi đóng cửa.", "level": "n1"},
+      {"word": "咀嚼", "reading": "そしゃく", "meaning": "nhai", "hanviet": "trớ tước", "example": "よく咀嚼して食べると、消化にいいです。", "example_reading": "よくそしゃくしてたべると、しょうかにいいです。", "example_meaning": "Nhai kỹ khi ăn thì tốt cho tiêu hóa.", "level": "n1"},
+      {"word": "飽食", "reading": "ほうしょく", "meaning": "ăn no đủ, dư thừa thức ăn", "hanviet": "bão thực", "example": "飽食の時代と言われる現代でも、飢えに苦しむ人がいます。", "example_reading": "ほうしょくのじだいといわれるげんだいでも、うえにくるしむひとがいます。", "example_meaning": "Ngay cả thời hiện đại được gọi là thời no đủ, vẫn có người chịu đói.", "level": "n1"},
+      {"word": "粗食", "reading": "そしょく", "meaning": "bữa ăn đạm bạc", "hanviet": "thô thực", "example": "医者に、しばらく粗食を続けるように言われました。", "example_reading": "いしゃに、しばらくそしょくをつづけるようにいわれました。", "example_meaning": "Bác sĩ dặn tôi ăn uống đạm bạc một thời gian.", "level": "n1"},
+      {"word": "喉越し", "reading": "のどごし", "meaning": "cảm giác khi nuốt", "hanviet": "hầu việt", "example": "冷たいそうめんは、喉越しがよくて食べやすいです。", "example_reading": "つめたいそうめんは、のどごしがよくてたべやすいです。", "example_meaning": "Mì somen lạnh trôi tuột dễ ăn.", "level": "n1"},
       // ▼ THÊM TỪ MỚI — [10] vocab (nhớ đúng "level" của chủ đề này)
     ],
     "grammar": [
@@ -2260,6 +2765,251 @@ const TOPICS = [
       {"pattern": "～に比べると", "usage": "nếu so với", "example": "外食に比べると自炊は安いです。", "example_reading": "がいしょくにくらべるとじすいはやすいです。", "example_meaning": "So với ăn ngoài thì tự nấu rẻ hơn."},
       {"pattern": "～たものだ", "usage": "ngày xưa thường hay", "example": "子どもの頃よく作ったものです。", "example_reading": "こどものころよくつくったものです。", "example_meaning": "Hồi nhỏ tôi hay làm món này lắm."},
       // ▼ THÊM NGỮ PHÁP MỚI — [10] grammar
+    ],
+  },
+
+  // ══════════════════════════════════════════════════════════════════════
+  // [21] 21. 恋愛・恋人  💕  |  main  |  vocab 200 · grammar 24
+  // ══════════════════════════════════════════════════════════════════════
+  {
+    "id": "21. 恋愛・恋人",
+    "title": "恋愛・恋人",
+    "icon": "💕",
+    "category": "main",
+    "vocab": [
+      // ── n5 · 14 mục ──
+      {"word": "好き", "reading": "すき", "meaning": "thích, yêu thích", "hanviet": "hảo", "example": "私は優しい人が好きです。", "example_reading": "わたしはやさしいひとがすきです。", "example_meaning": "Tôi thích người hiền lành.", "level": "n5"},
+      {"word": "大好き", "reading": "だいすき", "meaning": "rất thích, cực kỳ thích", "hanviet": "đại hảo", "note": "Dùng cả cho người lẫn đồ vật; nói với người yêu thì rất ngọt ngào.", "example": "あなたのことが大好きです。", "example_reading": "あなたのことがだいすきです。", "example_meaning": "Anh/em rất thích em/anh.", "level": "n5"},
+      {"word": "友達", "reading": "ともだち", "meaning": "bạn bè", "hanviet": "hữu đạt", "example": "最初は友達でしたが、今は恋人です。", "example_reading": "さいしょはともだちでしたが、いまはこいびとです。", "example_meaning": "Lúc đầu là bạn bè nhưng bây giờ là người yêu.", "level": "n5"},
+      {"word": "会う", "reading": "あう", "meaning": "gặp", "hanviet": "hội", "example": "週末に彼女に会います。", "example_reading": "しゅうまつにかのじょにあいます。", "example_meaning": "Cuối tuần tôi gặp bạn gái.", "level": "n5"},
+      {"word": "一緒", "reading": "いっしょ", "meaning": "cùng nhau", "hanviet": "nhất tự", "example": "明日、一緒に映画を見ませんか。", "example_reading": "あした、いっしょにえいがをみませんか。", "example_meaning": "Ngày mai mình cùng xem phim nhé?", "level": "n5"},
+      {"word": "結婚", "reading": "けっこん", "meaning": "kết hôn", "hanviet": "kết hôn", "example": "二人は来年結婚します。", "example_reading": "ふたりはらいねんけっこんします。", "example_meaning": "Hai người sẽ kết hôn vào năm sau.", "level": "n5"},
+      {"word": "彼女", "reading": "かのじょ", "meaning": "cô ấy; bạn gái", "hanviet": "bỉ nữ", "note": "Nghĩa \"bạn gái\" tuỳ ngữ cảnh. Với người ngoài, hay nói 「彼女がいる」 để chỉ có người yêu.", "example": "彼女は笑うととてもかわいいです。", "example_reading": "かのじょはわらうととてもかわいいです。", "example_meaning": "Cô ấy cười lên trông rất dễ thương.", "level": "n5"},
+      {"word": "彼", "reading": "かれ", "meaning": "anh ấy; bạn trai", "hanviet": "bỉ", "note": "Nghĩa \"bạn trai\" tuỳ ngữ cảnh.", "example": "彼は毎日メールをくれます。", "example_reading": "かれはまいにちメールをくれます。", "example_meaning": "Anh ấy ngày nào cũng nhắn tin cho tôi.", "level": "n5"},
+      {"word": "手紙", "reading": "てがみ", "meaning": "thư", "hanviet": "thủ chỉ", "example": "彼に手紙を書きました。", "example_reading": "かれにてがみをかきました。", "example_meaning": "Tôi đã viết thư cho anh ấy.", "level": "n5"},
+      {"word": "プレゼント", "reading": "プレゼント", "meaning": "quà tặng", "hanviet": "", "example": "誕生日に彼女へプレゼントをあげました。", "example_reading": "たんじょうびにかのじょへプレゼントをあげました。", "example_meaning": "Sinh nhật tôi đã tặng quà cho bạn gái.", "level": "n5"},
+      {"word": "誕生日", "reading": "たんじょうび", "meaning": "sinh nhật", "hanviet": "đản sinh nhật", "example": "彼の誕生日は三月五日です。", "example_reading": "かれのたんじょうびはさんがついつかです。", "example_meaning": "Sinh nhật anh ấy là ngày 5 tháng 3.", "level": "n5"},
+      {"word": "花", "reading": "はな", "meaning": "hoa", "hanviet": "hoa", "example": "赤い花を買って、彼女にあげました。", "example_reading": "あかいはなをかって、かのじょにあげました。", "example_meaning": "Tôi mua hoa đỏ tặng bạn gái.", "level": "n5"},
+      {"word": "電話", "reading": "でんわ", "meaning": "điện thoại; gọi điện", "hanviet": "điện thoại", "example": "夜、彼氏から電話がありました。", "example_reading": "よる、かれしからでんわがありました。", "example_meaning": "Buổi tối bạn trai đã gọi điện cho tôi.", "level": "n5"},
+      {"word": "優しい", "reading": "やさしい", "meaning": "hiền, dịu dàng", "hanviet": "ưu", "example": "彼は誰にでも優しいです。", "example_reading": "かれはだれにでもやさしいです。", "example_meaning": "Anh ấy hiền với bất kỳ ai.", "level": "n5"},
+      // ── n4 · 32 mục ──
+      {"word": "恋人", "reading": "こいびと", "meaning": "người yêu", "hanviet": "luyến nhân", "example": "恋人と海へ旅行に行きました。", "example_reading": "こいびととうみへりょこうにいきました。", "example_meaning": "Tôi đã đi du lịch biển với người yêu.", "level": "n4"},
+      {"word": "彼氏", "reading": "かれし", "meaning": "bạn trai", "hanviet": "bỉ thị", "note": "Khẩu ngữ. Ngược lại là 彼女 (bạn gái).", "example": "彼氏は仕事が忙しくて、なかなか会えません。", "example_reading": "かれしはしごとがいそがしくて、なかなかあえません。", "example_meaning": "Bạn trai tôi bận việc nên mãi chẳng gặp được.", "level": "n4"},
+      {"word": "恋", "reading": "こい", "meaning": "tình yêu (đang yêu), mối tình", "hanviet": "luyến", "note": "Thiên về cảm xúc rung động, khác với 愛.", "example": "彼女に会ってから、恋が始まりました。", "example_reading": "かのじょにあってから、こいがはじまりました。", "example_meaning": "Từ khi gặp cô ấy, mối tình đã bắt đầu.", "level": "n4"},
+      {"word": "愛", "reading": "あい", "meaning": "tình yêu thương, tình thương", "hanviet": "ái", "note": "Tình cảm sâu, bền; khác với 恋 (rung động).", "example": "親の愛はとても深いです。", "example_reading": "おやのあいはとてもふかいです。", "example_meaning": "Tình thương của cha mẹ rất sâu đậm.", "level": "n4"},
+      {"word": "愛する", "reading": "あいする", "meaning": "yêu thương", "hanviet": "ái", "note": "Trang trọng, ít dùng trong hội thoại thường ngày; thay bằng 「好き」.", "example": "彼は妻を心から愛しています。", "example_reading": "かれはつまをこころからあいしています。", "example_meaning": "Anh ấy yêu vợ từ tận đáy lòng.", "level": "n4"},
+      {"word": "告白", "reading": "こくはく", "meaning": "tỏ tình; thú nhận", "hanviet": "cáo bạch", "example": "卒業式の日に、彼に告白しました。", "example_reading": "そつぎょうしきのひに、かれにこくはくしました。", "example_meaning": "Vào ngày tốt nghiệp, tôi đã tỏ tình với anh ấy.", "level": "n4"},
+      {"word": "付き合う", "reading": "つきあう", "meaning": "hẹn hò, quen nhau; đi cùng", "hanviet": "phó hợp", "note": "Ở Nhật, sau khi 告白 và được đồng ý mới chính thức 付き合う.", "example": "私たちは三年前から付き合っています。", "example_reading": "わたしたちはさんねんまえからつきあっています。", "example_meaning": "Chúng tôi quen nhau từ ba năm trước.", "level": "n4"},
+      {"word": "約束", "reading": "やくそく", "meaning": "lời hẹn, lời hứa", "hanviet": "ước thúc", "example": "日曜日に会う約束をしました。", "example_reading": "にちようびにあうやくそくをしました。", "example_meaning": "Chúng tôi đã hẹn gặp nhau vào Chủ nhật.", "level": "n4"},
+      {"word": "デート", "reading": "デート", "meaning": "buổi hẹn hò", "hanviet": "", "example": "今日は彼女と初めてのデートです。", "example_reading": "きょうはかのじょとはじめてのデートです。", "example_meaning": "Hôm nay là buổi hẹn hò đầu tiên với bạn gái.", "level": "n4"},
+      {"word": "心配", "reading": "しんぱい", "meaning": "lo lắng", "hanviet": "tâm phối", "example": "返事が来ないので、彼のことが心配です。", "example_reading": "へんじがこないので、かれのことがしんぱいです。", "example_meaning": "Vì không thấy hồi âm nên tôi lo cho anh ấy.", "level": "n4"},
+      {"word": "寂しい", "reading": "さびしい", "meaning": "cô đơn, buồn tẻ", "hanviet": "tịch", "example": "彼に会えない日は寂しいです。", "example_reading": "かれにあえないひはさびしいです。", "example_meaning": "Những ngày không gặp được anh ấy tôi thấy cô đơn.", "level": "n4"},
+      {"word": "嬉しい", "reading": "うれしい", "meaning": "vui, mừng", "hanviet": "hỉ", "example": "「好きだよ」と言われて、とても嬉しかったです。", "example_reading": "「すきだよ」といわれて、とてもうれしかったです。", "example_meaning": "Được nói \"anh thích em\", tôi đã rất vui.", "level": "n4"},
+      {"word": "別れる", "reading": "わかれる", "meaning": "chia tay, chia ly", "hanviet": "biệt", "example": "二人は去年の秋に別れました。", "example_reading": "ふたりはきょねんのあきにわかれました。", "example_meaning": "Hai người đã chia tay vào mùa thu năm ngoái.", "level": "n4"},
+      {"word": "喧嘩", "reading": "けんか", "meaning": "cãi nhau, đánh nhau", "hanviet": "huyên hoa", "example": "つまらないことで彼氏と喧嘩しました。", "example_reading": "つまらないことでかれしとけんかしました。", "example_meaning": "Tôi đã cãi nhau với bạn trai vì chuyện vặt.", "level": "n4"},
+      {"word": "謝る", "reading": "あやまる", "meaning": "xin lỗi", "hanviet": "tạ", "example": "喧嘩のあとは、自分から謝ります。", "example_reading": "けんかのあとは、じぶんからあやまります。", "example_meaning": "Sau khi cãi nhau, tôi chủ động xin lỗi.", "level": "n4"},
+      {"word": "許す", "reading": "ゆるす", "meaning": "tha thứ, cho phép", "hanviet": "hứa", "example": "彼は私の失敗を許してくれました。", "example_reading": "かれはわたしのしっぱいをゆるしてくれました。", "example_meaning": "Anh ấy đã tha thứ cho lỗi lầm của tôi.", "level": "n4"},
+      {"word": "笑顔", "reading": "えがお", "meaning": "nụ cười, gương mặt tươi cười", "hanviet": "tiếu nhan", "example": "彼女の笑顔を見ると、元気になります。", "example_reading": "かのじょのえがおをみると、げんきになります。", "example_meaning": "Cứ thấy nụ cười của cô ấy là tôi lại khoẻ khoắn hẳn.", "level": "n4"},
+      {"word": "紹介", "reading": "しょうかい", "meaning": "giới thiệu", "hanviet": "thiệu giới", "example": "友達が彼女を紹介してくれました。", "example_reading": "ともだちがかのじょをしょうかいしてくれました。", "example_meaning": "Bạn bè đã giới thiệu cô ấy cho tôi.", "level": "n4"},
+      {"word": "結婚式", "reading": "けっこんしき", "meaning": "đám cưới, lễ cưới", "hanviet": "kết hôn thức", "example": "来月、友達の結婚式に出席します。", "example_reading": "らいげつ、ともだちのけっこんしきにしゅっせきします。", "example_meaning": "Tháng sau tôi sẽ dự đám cưới của bạn.", "level": "n4"},
+      {"word": "指輪", "reading": "ゆびわ", "meaning": "nhẫn", "hanviet": "chỉ luân", "example": "彼は私に婚約指輪をくれました。", "example_reading": "かれはわたしにこんやくゆびわをくれました。", "example_meaning": "Anh ấy đã tặng tôi chiếc nhẫn đính hôn.", "level": "n4"},
+      {"word": "夫婦", "reading": "ふうふ", "meaning": "vợ chồng", "hanviet": "phu phụ", "example": "あの二人は仲のいい夫婦です。", "example_reading": "あのふたりはなかのいいふうふです。", "example_meaning": "Hai người đó là một cặp vợ chồng hoà thuận.", "level": "n4"},
+      {"word": "夫", "reading": "おっと", "meaning": "chồng (của mình)", "hanviet": "phu", "note": "Nói về chồng mình. Chồng người khác: 「ご主人」.", "example": "夫は毎朝、コーヒーを入れてくれます。", "example_reading": "おっとはまいあさ、コーヒーをいれてくれます。", "example_meaning": "Chồng tôi sáng nào cũng pha cà phê cho tôi.", "level": "n4"},
+      {"word": "妻", "reading": "つま", "meaning": "vợ (của mình)", "hanviet": "thê", "note": "Nói về vợ mình. Vợ người khác: 「奥さん」.", "example": "妻の料理はとてもおいしいです。", "example_reading": "つまのりょうりはとてもおいしいです。", "example_meaning": "Món ăn vợ tôi nấu rất ngon.", "level": "n4"},
+      {"word": "恥ずかしい", "reading": "はずかしい", "meaning": "xấu hổ, ngượng", "hanviet": "sỉ", "example": "みんなの前で告白されて、恥ずかしかったです。", "example_reading": "みんなのまえでこくはくされて、はずかしかったです。", "example_meaning": "Bị tỏ tình trước mặt mọi người, tôi đã rất ngượng.", "level": "n4"},
+      {"word": "緊張", "reading": "きんちょう", "meaning": "căng thẳng, hồi hộp", "hanviet": "khẩn trương", "example": "初めてのデートで、とても緊張しました。", "example_reading": "はじめてのデートで、とてもきんちょうしました。", "example_meaning": "Buổi hẹn hò đầu tiên nên tôi rất hồi hộp.", "level": "n4"},
+      {"word": "気持ち", "reading": "きもち", "meaning": "cảm xúc, tâm trạng", "hanviet": "khí trì", "example": "自分の気持ちを正直に伝えました。", "example_reading": "じぶんのきもちをしょうじきにつたえました。", "example_meaning": "Tôi đã nói thật lòng cảm xúc của mình.", "level": "n4"},
+      {"word": "相手", "reading": "あいて", "meaning": "đối phương, người kia", "hanviet": "tương thủ", "example": "結婚相手は、性格で選びたいです。", "example_reading": "けっこんあいては、せいかくでえらびたいです。", "example_meaning": "Tôi muốn chọn người bạn đời dựa trên tính cách.", "level": "n4"},
+      {"word": "理想", "reading": "りそう", "meaning": "lý tưởng", "hanviet": "lý tưởng", "example": "理想の恋人は、よく笑う人です。", "example_reading": "りそうのこいびとは、よくわらうひとです。", "example_meaning": "Người yêu lý tưởng của tôi là người hay cười.", "level": "n4"},
+      {"word": "思い出", "reading": "おもいで", "meaning": "kỷ niệm", "hanviet": "tư xuất", "example": "彼との思い出は、一生忘れません。", "example_reading": "かれとのおもいでは、いっしょうわすれません。", "example_meaning": "Tôi sẽ không bao giờ quên kỷ niệm với anh ấy.", "level": "n4"},
+      {"word": "泣く", "reading": "なく", "meaning": "khóc", "hanviet": "khấp", "example": "映画を見て、彼女は泣きました。", "example_reading": "えいがをみて、かのじょはなきました。", "example_meaning": "Xem phim xong cô ấy đã khóc.", "level": "n4"},
+      {"word": "誘う", "reading": "さそう", "meaning": "rủ, mời", "hanviet": "dụ", "example": "思い切って、彼女を食事に誘いました。", "example_reading": "おもいきって、かのじょをしょくじにさそいました。", "example_meaning": "Tôi đã mạnh dạn rủ cô ấy đi ăn.", "level": "n4"},
+      {"word": "信じる", "reading": "しんじる", "meaning": "tin, tin tưởng", "hanviet": "tín", "example": "私は彼の言葉を信じています。", "example_reading": "わたしはかれのことばをしんじています。", "example_meaning": "Tôi tin lời anh ấy.", "level": "n4"},
+      // ── n3 · 50 mục ──
+      {"word": "片思い", "reading": "かたおもい", "meaning": "yêu đơn phương", "hanviet": "phiến tư", "example": "高校のとき、先輩に片思いをしていました。", "example_reading": "こうこうのとき、せんぱいにかたおもいをしていました。", "example_meaning": "Hồi cấp ba, tôi đã yêu đơn phương một anh khoá trên.", "level": "n3"},
+      {"word": "両思い", "reading": "りょうおもい", "meaning": "yêu nhau (hai bên đều thích)", "hanviet": "lưỡng tư", "example": "両思いだと分かったときは、夢のようでした。", "example_reading": "りょうおもいだとわかったときは、ゆめのようでした。", "example_meaning": "Lúc biết hai bên đều thích nhau, tôi cứ như đang mơ.", "level": "n3"},
+      {"word": "一目惚れ", "reading": "ひとめぼれ", "meaning": "yêu từ cái nhìn đầu tiên", "hanviet": "nhất mục", "example": "彼女に一目惚れして、すぐ連絡先を聞きました。", "example_reading": "かのじょにひとめぼれして、すぐれんらくさきをききました。", "example_meaning": "Tôi phải lòng cô ấy ngay từ cái nhìn đầu nên hỏi liên lạc luôn.", "level": "n3"},
+      {"word": "惚れる", "reading": "ほれる", "meaning": "phải lòng, mê", "hanviet": "hốt", "note": "Khẩu ngữ, hơi mạnh hơn 好きになる.", "example": "彼の優しさに惚れました。", "example_reading": "かれのやさしさにほれました。", "example_meaning": "Tôi đã mê sự dịu dàng của anh ấy.", "level": "n3"},
+      {"word": "振る", "reading": "ふる", "meaning": "đá, bỏ (người yêu)", "hanviet": "chấn", "note": "Chủ động đá người khác. Bị đá là 振られる.", "example": "彼は半年付き合った彼女を振りました。", "example_reading": "かれははんとしつきあったかのじょをふりました。", "example_meaning": "Anh ấy đã đá cô bạn gái quen được nửa năm.", "level": "n3"},
+      {"word": "振られる", "reading": "ふられる", "meaning": "bị đá, bị từ chối", "hanviet": "chấn", "note": "Dạng bị động của 振る; cũng dùng khi tỏ tình bị từ chối.", "example": "告白したけれど、振られてしまいました。", "example_reading": "こくはくしたけれど、ふられてしまいました。", "example_meaning": "Tôi đã tỏ tình nhưng bị từ chối mất rồi.", "level": "n3"},
+      {"word": "浮気", "reading": "うわき", "meaning": "ngoại tình, léng phéng", "hanviet": "phù khí", "note": "Chỉ việc có người khác khi đang có người yêu/vợ chồng.", "example": "彼の浮気が原因で、別れました。", "example_reading": "かれのうわきがげんいんで、わかれました。", "example_meaning": "Chúng tôi chia tay vì anh ấy ngoại tình.", "level": "n3"},
+      {"word": "初恋", "reading": "はつこい", "meaning": "mối tình đầu", "hanviet": "sơ luyến", "example": "初恋の人とは、今でも友達です。", "example_reading": "はつこいのひととは、いまでもともだちです。", "example_meaning": "Tôi vẫn là bạn với người yêu đầu của mình.", "level": "n3"},
+      {"word": "恋愛", "reading": "れんあい", "meaning": "tình yêu, chuyện yêu đương", "hanviet": "luyến ái", "example": "私は仕事が忙しくて、恋愛をする時間がありません。", "example_reading": "わたしはしごとがいそがしくて、れんあいをするじかんがありません。", "example_meaning": "Tôi bận việc nên không có thời gian yêu đương.", "level": "n3"},
+      {"word": "失恋", "reading": "しつれん", "meaning": "thất tình", "hanviet": "thất luyến", "example": "失恋したときは、友達が励ましてくれました。", "example_reading": "しつれんしたときは、ともだちがはげましてくれました。", "example_meaning": "Lúc thất tình, bạn bè đã động viên tôi.", "level": "n3"},
+      {"word": "遠距離恋愛", "reading": "えんきょりれんあい", "meaning": "yêu xa", "hanviet": "viễn cự ly luyến ái", "note": "Hay viết tắt 「遠恋」.", "example": "私たちは遠距離恋愛をしています。", "example_reading": "わたしたちはえんきょりれんあいをしています。", "example_meaning": "Chúng tôi đang yêu xa.", "level": "n3"},
+      {"word": "婚約", "reading": "こんやく", "meaning": "đính hôn", "hanviet": "hôn ước", "example": "二人は先月婚約しました。", "example_reading": "ふたりはせんげつこんやくしました。", "example_meaning": "Hai người đã đính hôn vào tháng trước.", "level": "n3"},
+      {"word": "同棲", "reading": "どうせい", "meaning": "sống thử, sống chung (chưa cưới)", "hanviet": "đồng thê", "example": "結婚の前に、半年ほど同棲しました。", "example_reading": "けっこんのまえに、はんとしほどどうせいしました。", "example_meaning": "Trước khi cưới, chúng tôi đã sống chung khoảng nửa năm.", "level": "n3"},
+      {"word": "交際", "reading": "こうさい", "meaning": "giao thiệp, quen nhau (trang trọng)", "hanviet": "giao tế", "note": "Trang trọng hơn 付き合う, hay thấy trong 「交際を申し込む」.", "example": "交際を始めて、一年がたちました。", "example_reading": "こうさいをはじめて、いちねんがたちました。", "example_meaning": "Đã một năm kể từ khi chúng tôi bắt đầu quen nhau.", "level": "n3"},
+      {"word": "タイプ", "reading": "タイプ", "meaning": "mẫu người, kiểu", "hanviet": "", "example": "あなたの好きなタイプは、どんな人ですか。", "example_reading": "あなたのすきなタイプは、どんなひとですか。", "example_meaning": "Mẫu người bạn thích là kiểu thế nào?", "level": "n3"},
+      {"word": "性格", "reading": "せいかく", "meaning": "tính cách", "hanviet": "tính cách", "example": "性格が合うかどうかが、いちばん大切です。", "example_reading": "せいかくがあうかどうかが、いちばんたいせつです。", "example_meaning": "Điều quan trọng nhất là tính cách có hợp nhau hay không.", "level": "n3"},
+      {"word": "魅力", "reading": "みりょく", "meaning": "sức hút, nét quyến rũ", "hanviet": "mị lực", "example": "彼の魅力は、いつも前向きなところです。", "example_reading": "かれのみりょくは、いつもまえむきなところです。", "example_meaning": "Điểm hấp dẫn của anh ấy là luôn tích cực.", "level": "n3"},
+      {"word": "魅力的", "reading": "みりょくてき", "meaning": "hấp dẫn, quyến rũ", "hanviet": "mị lực đích", "example": "彼女は笑顔が魅力的な人です。", "example_reading": "かのじょはえがおがみりょくてきなひとです。", "example_meaning": "Cô ấy là người có nụ cười rất cuốn hút.", "level": "n3"},
+      {"word": "積極的", "reading": "せっきょくてき", "meaning": "chủ động, tích cực", "hanviet": "tích cực đích", "example": "彼女のほうから、積極的に話しかけてきました。", "example_reading": "かのじょのほうから、せっきょくてきにはなしかけてきました。", "example_meaning": "Chính cô ấy chủ động bắt chuyện với tôi.", "level": "n3"},
+      {"word": "素直", "reading": "すなお", "meaning": "thẳng thắn, ngoan ngoãn, thật thà", "hanviet": "tố trực", "example": "素直に「ごめんね」と言えば、仲直りできます。", "example_reading": "すなおに「ごめんね」といえば、なかなおりできます。", "example_meaning": "Cứ thẳng thắn nói \"xin lỗi nhé\" thì sẽ làm lành được.", "level": "n3"},
+      {"word": "誠実", "reading": "せいじつ", "meaning": "thành thật, chân thành", "hanviet": "thành thật", "example": "結婚するなら、誠実な人がいいです。", "example_reading": "けっこんするなら、せいじつなひとがいいです。", "example_meaning": "Nếu kết hôn thì tôi muốn chọn người chân thành.", "level": "n3"},
+      {"word": "我慢", "reading": "がまん", "meaning": "chịu đựng, nhẫn nại", "hanviet": "ngã mạn", "example": "言いたいことを我慢すると、あとで喧嘩になります。", "example_reading": "いいたいことをがまんすると、あとでけんかになります。", "example_meaning": "Nếu nín nhịn điều muốn nói thì sau này sẽ cãi nhau.", "level": "n3"},
+      {"word": "信頼", "reading": "しんらい", "meaning": "tin cậy, tín nhiệm", "hanviet": "tín lại", "example": "恋愛には、お互いの信頼が必要です。", "example_reading": "れんあいには、おたがいのしんらいがひつようです。", "example_meaning": "Tình yêu cần có sự tin cậy lẫn nhau.", "level": "n3"},
+      {"word": "関係", "reading": "かんけい", "meaning": "mối quan hệ", "hanviet": "quan hệ", "example": "二人の関係は、とても順調です。", "example_reading": "ふたりのかんけいは、とてもじゅんちょうです。", "example_meaning": "Mối quan hệ của hai người rất suôn sẻ.", "level": "n3"},
+      {"word": "距離", "reading": "きょり", "meaning": "khoảng cách", "hanviet": "cự ly", "example": "二人の距離が、少しずつ近づいてきました。", "example_reading": "ふたりのきょりが、すこしずつちかづいてきました。", "example_meaning": "Khoảng cách giữa hai người dần dần gần lại.", "level": "n3"},
+      {"word": "連絡", "reading": "れんらく", "meaning": "liên lạc", "hanviet": "liên lạc", "example": "忙しくても、毎日連絡を取り合っています。", "example_reading": "いそがしくても、まいにちれんらくをとりあっています。", "example_meaning": "Dù bận, chúng tôi vẫn liên lạc với nhau mỗi ngày.", "level": "n3"},
+      {"word": "既読", "reading": "きどく", "meaning": "đã đọc (tin nhắn)", "hanviet": "ký độc", "note": "Dấu \"đã xem\" trên LINE. 「既読スルー」 = đọc rồi mà không trả lời.", "example": "既読がついたのに、返事が来ません。", "example_reading": "きどくがついたのに、へんじがきません。", "example_meaning": "Tin nhắn hiện đã đọc rồi mà vẫn chưa thấy trả lời.", "level": "n3"},
+      {"word": "待ち合わせ", "reading": "まちあわせ", "meaning": "hẹn gặp (tại một điểm)", "hanviet": "đãi hợp", "example": "駅の前で待ち合わせをしました。", "example_reading": "えきのまえでまちあわせをしました。", "example_meaning": "Chúng tôi hẹn gặp nhau trước ga.", "level": "n3"},
+      {"word": "記念日", "reading": "きねんび", "meaning": "ngày kỷ niệm", "hanviet": "ký niệm nhật", "example": "付き合って一年の記念日に、レストランへ行きました。", "example_reading": "つきあっていちねんのきねんびに、レストランへいきました。", "example_meaning": "Vào ngày kỷ niệm một năm quen nhau, chúng tôi đã đi nhà hàng.", "level": "n3"},
+      {"word": "花束", "reading": "はなたば", "meaning": "bó hoa", "hanviet": "hoa thúc", "example": "彼は大きな花束を持って来てくれました。", "example_reading": "かれはおおきなはなたばをもってきてくれました。", "example_meaning": "Anh ấy đã mang đến một bó hoa lớn.", "level": "n3"},
+      {"word": "夜景", "reading": "やけい", "meaning": "cảnh đêm", "hanviet": "dạ cảnh", "example": "二人で夜景を見ながら、食事をしました。", "example_reading": "ふたりでやけいをみながら、しょくじをしました。", "example_meaning": "Hai đứa vừa ăn vừa ngắm cảnh đêm.", "level": "n3"},
+      {"word": "手をつなぐ", "reading": "てをつなぐ", "meaning": "nắm tay", "hanviet": "thủ", "example": "散歩しながら、手をつなぎました。", "example_reading": "さんぽしながら、てをつなぎました。", "example_meaning": "Chúng tôi vừa đi dạo vừa nắm tay nhau.", "level": "n3"},
+      {"word": "キス", "reading": "キス", "meaning": "hôn", "hanviet": "", "example": "別れるとき、彼は私の頬にキスをしました。", "example_reading": "わかれるとき、かれはわたしのほおにキスをしました。", "example_meaning": "Lúc chia tay, anh ấy đã hôn lên má tôi.", "level": "n3"},
+      {"word": "抱きしめる", "reading": "だきしめる", "meaning": "ôm chặt", "hanviet": "bão", "example": "彼は泣いている私を、強く抱きしめました。", "example_reading": "かれはないているわたしを、つよくだきしめました。", "example_meaning": "Anh ấy ôm chặt tôi đang khóc.", "level": "n3"},
+      {"word": "プロポーズ", "reading": "プロポーズ", "meaning": "cầu hôn", "hanviet": "", "example": "夜景のきれいな場所で、プロポーズされました。", "example_reading": "やけいのきれいなばしょで、プロポーズされました。", "example_meaning": "Tôi đã được cầu hôn ở một nơi có cảnh đêm đẹp.", "level": "n3"},
+      {"word": "独身", "reading": "どくしん", "meaning": "độc thân", "hanviet": "độc thân", "example": "彼はまだ独身で、恋人もいません。", "example_reading": "かれはまだどくしんで、こいびともいません。", "example_meaning": "Anh ấy vẫn độc thân và cũng chưa có người yêu.", "level": "n3"},
+      {"word": "離婚", "reading": "りこん", "meaning": "ly hôn", "hanviet": "ly hôn", "example": "二人は性格の不一致で離婚しました。", "example_reading": "ふたりはせいかくのふいっちでりこんしました。", "example_meaning": "Hai người đã ly hôn vì không hợp tính cách.", "level": "n3"},
+      {"word": "再婚", "reading": "さいこん", "meaning": "tái hôn", "hanviet": "tái hôn", "example": "彼は三年前に再婚して、今は幸せです。", "example_reading": "かれはさんねんまえにさいこんして、いまはしあわせです。", "example_meaning": "Anh ấy tái hôn ba năm trước và hiện đang hạnh phúc.", "level": "n3"},
+      {"word": "合コン", "reading": "ごうコン", "meaning": "buổi giao lưu làm quen nam nữ", "hanviet": "hợp", "note": "Viết tắt của 合同コンパ. Nhóm nam và nhóm nữ cùng đi ăn uống để làm quen.", "example": "友達に誘われて、初めて合コンに行きました。", "example_reading": "ともだちにさそわれて、はじめてごうコンにいきました。", "example_meaning": "Được bạn rủ, lần đầu tôi đi buổi giao lưu làm quen.", "level": "n3"},
+      {"word": "出会い", "reading": "であい", "meaning": "cuộc gặp gỡ, cơ duyên gặp", "hanviet": "xuất hội", "example": "二人の出会いは、大学のサークルでした。", "example_reading": "ふたりのであいは、だいがくのサークルでした。", "example_meaning": "Hai người gặp nhau ở câu lạc bộ đại học.", "level": "n3"},
+      {"word": "出会う", "reading": "であう", "meaning": "tình cờ gặp, gặp gỡ", "hanviet": "xuất hội", "example": "彼とは旅行先で出会いました。", "example_reading": "かれとはりょこうさきでであいました。", "example_meaning": "Tôi đã gặp anh ấy ở nơi đi du lịch.", "level": "n3"},
+      {"word": "気になる", "reading": "きになる", "meaning": "để ý, bận tâm, có cảm tình", "hanviet": "", "note": "Cách nói hay dùng khi mới thấy thích ai đó.", "example": "最近、同じ職場の人が気になっています。", "example_reading": "さいきん、おなじしょくばのひとがきになっています。", "example_meaning": "Dạo này tôi để ý một người cùng chỗ làm.", "level": "n3"},
+      {"word": "照れる", "reading": "てれる", "meaning": "ngượng ngùng, e thẹn", "hanviet": "", "note": "Khi được khen hoặc được thể hiện tình cảm.", "example": "「かわいいね」と言うと、彼女は照れて下を向きました。", "example_reading": "「かわいいね」というと、かのじょはてれてしたをむきました。", "example_meaning": "Tôi nói \"dễ thương nhỉ\", cô ấy ngượng cúi xuống.", "level": "n3"},
+      {"word": "ドキドキ", "reading": "ドキドキ", "meaning": "hồi hộp, tim đập thình thịch", "hanviet": "", "example": "彼に手をつながれて、胸がドキドキしました。", "example_reading": "かれにてをつながれて、むねがドキドキしました。", "example_meaning": "Bị anh ấy nắm tay, tim tôi đập thình thịch.", "level": "n3"},
+      {"word": "憧れる", "reading": "あこがれる", "meaning": "ngưỡng mộ, mơ ước", "hanviet": "chung", "example": "私は昔から、素敵な結婚式に憧れています。", "example_reading": "わたしはむかしから、すてきなけっこんしきにあこがれています。", "example_meaning": "Từ lâu tôi đã mơ về một đám cưới đẹp.", "level": "n3"},
+      {"word": "励ます", "reading": "はげます", "meaning": "động viên", "hanviet": "lệ", "example": "失恋した友達を、みんなで励ましました。", "example_reading": "しつれんしたともだちを、みんなではげましました。", "example_meaning": "Chúng tôi cùng nhau động viên người bạn bị thất tình.", "level": "n3"},
+      {"word": "慰める", "reading": "なぐさめる", "meaning": "an ủi", "hanviet": "uý", "example": "泣いている彼女を、優しく慰めました。", "example_reading": "ないているかのじょを、やさしくなぐさめました。", "example_meaning": "Tôi dịu dàng an ủi cô ấy đang khóc.", "level": "n3"},
+      {"word": "甘える", "reading": "あまえる", "meaning": "nũng nịu, nhõng nhẽo, dựa dẫm", "hanviet": "cam", "example": "彼女は二人きりのときだけ、私に甘えます。", "example_reading": "かのじょはふたりきりのときだけ、わたしにあまえます。", "example_meaning": "Cô ấy chỉ nhõng nhẽo với tôi khi hai đứa riêng với nhau.", "level": "n3"},
+      {"word": "束縛", "reading": "そくばく", "meaning": "trói buộc, kiểm soát", "hanviet": "thúc phược", "note": "Trong tình yêu: quản lý, theo dõi người kia quá mức.", "example": "彼の束縛が強すぎて、疲れてしまいました。", "example_reading": "かれのそくばくがつよすぎて、つかれてしまいました。", "example_meaning": "Anh ấy kiểm soát quá nhiều khiến tôi mệt mỏi.", "level": "n3"},
+      {"word": "本音", "reading": "ほんね", "meaning": "lòng thật, suy nghĩ thật", "hanviet": "bản âm", "note": "Trái nghĩa: 建前 (lời nói bên ngoài).", "example": "二人きりになって、やっと本音を話せました。", "example_reading": "ふたりきりになって、やっとほんねをはなせました。", "example_meaning": "Khi chỉ còn hai người, cuối cùng tôi mới nói được lòng thật.", "level": "n3"},
+      // ── n2 · 53 mục ──
+      {"word": "嫉妬", "reading": "しっと", "meaning": "ghen tuông, đố kỵ", "hanviet": "tật đố", "example": "彼が他の女性と話していると、つい嫉妬してしまいます。", "example_reading": "かれがほかのじょせいとはなしていると、ついしっとしてしまいます。", "example_meaning": "Hễ anh ấy nói chuyện với phụ nữ khác là tôi lại ghen.", "level": "n2"},
+      {"word": "愛情", "reading": "あいじょう", "meaning": "tình cảm, tình thương", "hanviet": "ái tình", "example": "彼は言葉だけでなく、行動でも愛情を示してくれます。", "example_reading": "かれはことばだけでなく、こうどうでもあいじょうをしめしてくれます。", "example_meaning": "Anh ấy không chỉ bằng lời mà còn bằng hành động để thể hiện tình cảm.", "level": "n2"},
+      {"word": "愛着", "reading": "あいちゃく", "meaning": "sự gắn bó, quyến luyến", "hanviet": "ái trước", "example": "長く付き合ううちに、お互いへの愛着が深まりました。", "example_reading": "ながくつきあううちに、おたがいへのあいちゃくがふかまりました。", "example_meaning": "Quen nhau lâu, sự gắn bó với nhau ngày càng sâu.", "level": "n2"},
+      {"word": "恋しい", "reading": "こいしい", "meaning": "nhớ nhung, thương nhớ", "hanviet": "luyến", "example": "遠くにいる彼が恋しくてたまりません。", "example_reading": "とおくにいるかれがこいしくてたまりません。", "example_meaning": "Tôi nhớ anh ấy ở xa đến mức không chịu nổi.", "level": "n2"},
+      {"word": "切ない", "reading": "せつない", "meaning": "xót xa, quặn lòng", "hanviet": "thiết", "example": "彼の背中を見送るのが、切なかったです。", "example_reading": "かれのせなかをみおくるのが、せつなかったです。", "example_meaning": "Nhìn theo bóng lưng anh ấy khiến lòng tôi quặn thắt.", "level": "n2"},
+      {"word": "惹かれる", "reading": "ひかれる", "meaning": "bị cuốn hút", "hanviet": "nhạ", "note": "Thường dùng cho sức hút nội tâm, không chỉ vẻ ngoài.", "example": "私は彼の穏やかな雰囲気に惹かれました。", "example_reading": "わたしはかれのおだやかなふんいきにひかれました。", "example_meaning": "Tôi bị cuốn hút bởi vẻ điềm đạm của anh ấy.", "level": "n2"},
+      {"word": "打ち明ける", "reading": "うちあける", "meaning": "thổ lộ, bộc bạch", "hanviet": "đả minh", "example": "勇気を出して、本当の気持ちを打ち明けました。", "example_reading": "ゆうきをだして、ほんとうのきもちをうちあけました。", "example_meaning": "Tôi lấy hết can đảm thổ lộ tình cảm thật của mình.", "level": "n2"},
+      {"word": "相性", "reading": "あいしょう", "meaning": "độ hợp nhau, hợp tính", "hanviet": "tương tính", "example": "二人は相性がいいので、喧嘩をほとんどしません。", "example_reading": "ふたりはあいしょうがいいので、けんかをほとんどしません。", "example_meaning": "Hai người rất hợp nhau nên hầu như không cãi nhau.", "level": "n2"},
+      {"word": "運命", "reading": "うんめい", "meaning": "định mệnh, số phận", "hanviet": "vận mệnh", "example": "彼と出会ったのは、運命だったと思います。", "example_reading": "かれとであったのは、うんめいだったとおもいます。", "example_meaning": "Tôi nghĩ việc gặp anh ấy là định mệnh.", "level": "n2"},
+      {"word": "縁", "reading": "えん", "meaning": "duyên, mối liên hệ", "hanviet": "duyên", "note": "Hay đi với 「ご縁がある」 (có duyên) và 「縁を切る」 (cắt đứt quan hệ).", "example": "何かの縁で、二人は再会しました。", "example_reading": "なにかのえんで、ふたりはさいかいしました。", "example_meaning": "Nhờ một chút duyên nào đó, hai người đã gặp lại nhau.", "level": "n2"},
+      {"word": "婚活", "reading": "こんかつ", "meaning": "hoạt động tìm bạn đời", "hanviet": "hôn hoạt", "note": "Viết tắt của 結婚活動.", "example": "三十歳になって、本格的に婚活を始めました。", "example_reading": "さんじゅっさいになって、ほんかくてきにこんかつをはじめました。", "example_meaning": "Đến tuổi ba mươi, tôi bắt đầu nghiêm túc tìm bạn đời.", "level": "n2"},
+      {"word": "見合い", "reading": "みあい", "meaning": "xem mắt", "hanviet": "kiến hợp", "example": "親の勧めで、お見合いをしました。", "example_reading": "おやのすすめで、おみあいをしました。", "example_meaning": "Theo lời cha mẹ khuyên, tôi đã đi xem mắt.", "level": "n2"},
+      {"word": "仲直り", "reading": "なかなおり", "meaning": "làm lành", "hanviet": "trọng trực", "example": "喧嘩のあと、すぐに仲直りしました。", "example_reading": "けんかのあと、すぐになかなおりしました。", "example_meaning": "Sau khi cãi nhau, chúng tôi làm lành ngay.", "level": "n2"},
+      {"word": "気まずい", "reading": "きまずい", "meaning": "ngượng nghịu, khó xử", "hanviet": "khí", "example": "別れたあとに会うと、気まずい雰囲気になります。", "example_reading": "わかれたあとにあうと、きまずいふんいきになります。", "example_meaning": "Gặp nhau sau khi chia tay thì không khí rất khó xử.", "level": "n2"},
+      {"word": "距離を置く", "reading": "きょりをおく", "meaning": "giữ khoảng cách, tạm xa nhau", "hanviet": "cự ly trí", "example": "お互いに冷静になるため、しばらく距離を置きました。", "example_reading": "おたがいにれいせいになるため、しばらくきょりをおきました。", "example_meaning": "Để cả hai bình tĩnh lại, chúng tôi tạm giữ khoảng cách một thời gian.", "level": "n2"},
+      {"word": "駆け引き", "reading": "かけひき", "meaning": "mặc cả, thủ đoạn (trong tình yêu: chơi chiêu)", "hanviet": "khu dẫn", "example": "恋の駆け引きは苦手なので、正直に伝えます。", "example_reading": "こいのかけひきはにがてなので、しょうじきにつたえます。", "example_meaning": "Tôi dở khoản chơi chiêu trong tình yêu nên cứ nói thẳng.", "level": "n2"},
+      {"word": "誤解", "reading": "ごかい", "meaning": "hiểu lầm", "hanviet": "ngộ giải", "example": "小さな誤解から、二人の仲が悪くなりました。", "example_reading": "ちいさなごかいから、ふたりのなかがわるくなりました。", "example_meaning": "Từ một sự hiểu lầm nhỏ, quan hệ hai người trở nên xấu đi.", "level": "n2"},
+      {"word": "疑う", "reading": "うたがう", "meaning": "nghi ngờ", "hanviet": "nghi", "example": "彼の言葉を疑ったことは、一度もありません。", "example_reading": "かれのことばをうたがったことは、いちどもありません。", "example_meaning": "Tôi chưa từng một lần nghi ngờ lời anh ấy.", "level": "n2"},
+      {"word": "裏切る", "reading": "うらぎる", "meaning": "phản bội", "hanviet": "lý thiết", "example": "信頼していた人に裏切られて、深く傷つきました。", "example_reading": "しんらいしていたひとにうらぎられて、ふかくきずつきました。", "example_meaning": "Bị người mình tin tưởng phản bội, tôi đau lòng sâu sắc.", "level": "n2"},
+      {"word": "本気", "reading": "ほんき", "meaning": "nghiêm túc, thật lòng", "hanviet": "bản khí", "example": "遊びではなく、本気で君が好きなんだ。", "example_reading": "あそびではなく、ほんきできみがすきなんだ。", "example_meaning": "Không phải đùa đâu, anh thật lòng thích em.", "level": "n2"},
+      {"word": "真剣", "reading": "しんけん", "meaning": "nghiêm túc, chân thành", "hanviet": "chân kiếm", "example": "彼は結婚を真剣に考えてくれています。", "example_reading": "かれはけっこんをしんけんにかんがえてくれています。", "example_meaning": "Anh ấy đang nghiêm túc suy nghĩ chuyện kết hôn.", "level": "n2"},
+      {"word": "純粋", "reading": "じゅんすい", "meaning": "trong sáng, thuần khiết", "hanviet": "thuần tuý", "example": "彼女の純粋な心に、私は心を打たれました。", "example_reading": "かのじょのじゅんすいなこころに、わたしはこころをうたれました。", "example_meaning": "Tôi cảm động trước tấm lòng trong sáng của cô ấy.", "level": "n2"},
+      {"word": "情熱", "reading": "じょうねつ", "meaning": "nhiệt huyết, đam mê", "hanviet": "tình nhiệt", "example": "若いころは、情熱的な恋をしました。", "example_reading": "わかいころは、じょうねつてきなこいをしました。", "example_meaning": "Hồi trẻ tôi đã có một mối tình nồng cháy.", "level": "n2"},
+      {"word": "夢中", "reading": "むちゅう", "meaning": "mê mẩn, say mê", "hanviet": "mộng trung", "example": "最初は、彼に夢中になっていました。", "example_reading": "さいしょは、かれにむちゅうになっていました。", "example_meaning": "Lúc đầu, tôi đã mê mẩn anh ấy.", "level": "n2"},
+      {"word": "一途", "reading": "いちず", "meaning": "một lòng, chung thuỷ", "hanviet": "nhất đồ", "example": "彼は十年間、一途に彼女を愛し続けました。", "example_reading": "かれはじゅうねんかん、いちずにかのじょをあいしつづけました。", "example_meaning": "Anh ấy đã một lòng yêu cô ấy suốt mười năm.", "level": "n2"},
+      {"word": "気が合う", "reading": "きがあう", "meaning": "hợp tính, hợp cạ", "hanviet": "khí hợp", "example": "彼とは、話していても気が合います。", "example_reading": "かれとは、はなしていてもきがあいます。", "example_meaning": "Nói chuyện với anh ấy tôi thấy rất hợp.", "level": "n2"},
+      {"word": "価値観", "reading": "かちかん", "meaning": "giá trị quan, quan điểm sống", "hanviet": "giá trị quan", "example": "結婚するなら、価値観が似ている人がいいです。", "example_reading": "けっこんするなら、かちかんがにているひとがいいです。", "example_meaning": "Nếu cưới thì tôi muốn chọn người có quan điểm sống giống mình.", "level": "n2"},
+      {"word": "家庭", "reading": "かてい", "meaning": "gia đình, tổ ấm", "hanviet": "gia đình", "example": "彼女と温かい家庭を築きたいと思っています。", "example_reading": "かのじょとあたたかいかていをきずきたいとおもっています。", "example_meaning": "Tôi muốn cùng cô ấy xây dựng một tổ ấm.", "level": "n2"},
+      {"word": "新婚", "reading": "しんこん", "meaning": "mới cưới, tân hôn", "hanviet": "tân hôn", "example": "新婚旅行で、ハワイへ行きました。", "example_reading": "しんこんりょこうで、ハワイへいきました。", "example_meaning": "Chúng tôi đã đi Hawaii trong chuyến tuần trăng mật.", "level": "n2"},
+      {"word": "披露宴", "reading": "ひろうえん", "meaning": "tiệc cưới", "hanviet": "phi lộ yến", "example": "披露宴には、親戚や友人など百人が出席しました。", "example_reading": "ひろうえんには、しんせきやゆうじんなどひゃくにんがしゅっせきしました。", "example_meaning": "Có một trăm người gồm họ hàng và bạn bè dự tiệc cưới.", "level": "n2"},
+      {"word": "誓う", "reading": "ちかう", "meaning": "thề, nguyện", "hanviet": "thệ", "example": "二人は、一生愛し合うと誓いました。", "example_reading": "ふたりは、いっしょうあいしあうとちかいました。", "example_meaning": "Hai người đã thề sẽ yêu nhau trọn đời.", "level": "n2"},
+      {"word": "永遠", "reading": "えいえん", "meaning": "vĩnh viễn, mãi mãi", "hanviet": "vĩnh viễn", "example": "永遠の愛を信じていますか。", "example_reading": "えいえんのあいをしんじていますか。", "example_meaning": "Bạn có tin vào tình yêu vĩnh cửu không?", "level": "n2"},
+      {"word": "孤独", "reading": "こどく", "meaning": "cô độc", "hanviet": "cô độc", "example": "恋人と別れた夜は、孤独を感じました。", "example_reading": "こいびととわかれたよるは、こどくをかんじました。", "example_meaning": "Đêm chia tay người yêu, tôi cảm thấy cô độc.", "level": "n2"},
+      {"word": "未練", "reading": "みれん", "meaning": "lưu luyến, chưa dứt", "hanviet": "vị luyến", "example": "別れて一年たちますが、まだ未練があります。", "example_reading": "わかれていちねんたちますが、まだみれんがあります。", "example_meaning": "Chia tay đã một năm mà tôi vẫn còn lưu luyến.", "level": "n2"},
+      {"word": "吹っ切れる", "reading": "ふっきれる", "meaning": "dứt khoát buông bỏ, nhẹ lòng", "hanviet": "xuý thiết", "note": "Hay dùng khi thoát khỏi nỗi buồn, sự do dự.", "example": "泣いたら、少し吹っ切れました。", "example_reading": "ないたら、すこしふっきれました。", "example_meaning": "Khóc xong tôi thấy nhẹ lòng đi một chút.", "level": "n2"},
+      {"word": "立ち直る", "reading": "たちなおる", "meaning": "hồi phục tinh thần, đứng dậy", "hanviet": "lập trực", "example": "失恋から立ち直るのに、半年かかりました。", "example_reading": "しつれんからたちなおるのに、はんとしかかりました。", "example_meaning": "Tôi mất nửa năm để hồi phục sau cú thất tình.", "level": "n2"},
+      {"word": "傷つく", "reading": "きずつく", "meaning": "bị tổn thương", "hanviet": "thương", "example": "彼のひとことで、深く傷つきました。", "example_reading": "かれのひとことで、ふかくきずつきました。", "example_meaning": "Chỉ một câu của anh ấy cũng làm tôi tổn thương sâu sắc.", "level": "n2"},
+      {"word": "諦める", "reading": "あきらめる", "meaning": "từ bỏ", "hanviet": "đế", "example": "彼のことは、もう諦めることにしました。", "example_reading": "かれのことは、もうあきらめることにしました。", "example_meaning": "Tôi đã quyết định bỏ cuộc với anh ấy.", "level": "n2"},
+      {"word": "思いやり", "reading": "おもいやり", "meaning": "sự quan tâm, biết nghĩ cho người", "hanviet": "tư", "example": "恋愛には、相手への思いやりが欠かせません。", "example_reading": "れんあいには、あいてへのおもいやりがかかせません。", "example_meaning": "Trong tình yêu, không thể thiếu sự quan tâm dành cho đối phương.", "level": "n2"},
+      {"word": "気配り", "reading": "きくばり", "meaning": "sự chu đáo, để ý", "hanviet": "khí phối", "example": "彼は小さなことにも気配りができる人です。", "example_reading": "かれはちいさなことにもきくばりができるひとです。", "example_meaning": "Anh ấy là người chu đáo cả những chuyện nhỏ.", "level": "n2"},
+      {"word": "気遣い", "reading": "きづかい", "meaning": "sự quan tâm, ân cần", "hanviet": "khí khiển", "example": "彼の気遣いが、とても嬉しかったです。", "example_reading": "かれのきづかいが、とてもうれしかったです。", "example_meaning": "Tôi rất vui trước sự ân cần của anh ấy.", "level": "n2"},
+      {"word": "尊重", "reading": "そんちょう", "meaning": "tôn trọng", "hanviet": "tôn trọng", "example": "お互いの意見を尊重することが大切です。", "example_reading": "おたがいのいけんをそんちょうすることがたいせつです。", "example_meaning": "Việc tôn trọng ý kiến của nhau là rất quan trọng.", "level": "n2"},
+      {"word": "共感", "reading": "きょうかん", "meaning": "đồng cảm", "hanviet": "cộng cảm", "example": "彼は私の悩みに、いつも共感してくれます。", "example_reading": "かれはわたしのなやみに、いつもきょうかんしてくれます。", "example_meaning": "Anh ấy luôn đồng cảm với nỗi phiền muộn của tôi.", "level": "n2"},
+      {"word": "依存", "reading": "いそん", "meaning": "phụ thuộc, dựa dẫm", "hanviet": "ỷ tồn", "example": "彼に依存しすぎて、自分を見失いました。", "example_reading": "かれにいそんしすぎて、じぶんをみうしないました。", "example_meaning": "Tôi dựa dẫm quá nhiều vào anh ấy đến mức đánh mất chính mình.", "level": "n2"},
+      {"word": "自立", "reading": "じりつ", "meaning": "tự lập", "hanviet": "tự lập", "example": "経済的に自立してから、結婚したいです。", "example_reading": "けいざいてきにじりつしてから、けっこんしたいです。", "example_meaning": "Tôi muốn cưới sau khi đã độc lập về kinh tế.", "level": "n2"},
+      {"word": "将来", "reading": "しょうらい", "meaning": "tương lai", "hanviet": "tương lai", "example": "二人の将来について、じっくり話し合いました。", "example_reading": "ふたりのしょうらいについて、じっくりはなしあいました。", "example_meaning": "Chúng tôi đã bàn bạc kỹ về tương lai của hai người.", "level": "n2"},
+      {"word": "覚悟", "reading": "かくご", "meaning": "quyết tâm, sẵn sàng tinh thần", "hanviet": "giác ngộ", "example": "彼女と結婚する覚悟は、もうできています。", "example_reading": "かのじょとけっこんするかくごは、もうできています。", "example_meaning": "Tôi đã sẵn sàng tinh thần để cưới cô ấy.", "level": "n2"},
+      {"word": "責任", "reading": "せきにん", "meaning": "trách nhiệm", "hanviet": "trách nhiệm", "example": "結婚は、責任の重い約束です。", "example_reading": "けっこんは、せきにんのおもいやくそくです。", "example_meaning": "Kết hôn là một lời hứa nặng trách nhiệm.", "level": "n2"},
+      {"word": "妥協", "reading": "だきょう", "meaning": "thoả hiệp", "hanviet": "thoả hiệp", "example": "お互いに少しずつ妥協することも必要です。", "example_reading": "おたがいにすこしずつだきょうすることもひつようです。", "example_meaning": "Cả hai cũng cần nhượng bộ nhau một chút.", "level": "n2"},
+      {"word": "譲る", "reading": "ゆずる", "meaning": "nhường, nhượng bộ", "hanviet": "nhượng", "example": "意見が合わないときは、お互いに譲り合います。", "example_reading": "いけんがあわないときは、おたがいにゆずりあいます。", "example_meaning": "Khi ý kiến khác nhau, chúng tôi nhường nhịn lẫn nhau.", "level": "n2"},
+      {"word": "受け入れる", "reading": "うけいれる", "meaning": "chấp nhận, tiếp nhận", "hanviet": "thụ nhập", "example": "彼は私の欠点も、すべて受け入れてくれました。", "example_reading": "かれはわたしのけってんも、すべてうけいれてくれました。", "example_meaning": "Anh ấy đã chấp nhận cả những khuyết điểm của tôi.", "level": "n2"},
+      {"word": "支える", "reading": "ささえる", "meaning": "nâng đỡ, hậu thuẫn", "hanviet": "chi", "example": "病気のときも、彼女がずっと支えてくれました。", "example_reading": "びょうきのときも、かのじょがずっとささえてくれました。", "example_meaning": "Cả lúc bệnh, cô ấy cũng luôn ở bên nâng đỡ tôi.", "level": "n2"},
+      {"word": "寄り添う", "reading": "よりそう", "meaning": "kề cạnh, ở bên nhau", "hanviet": "ký", "example": "二人は寄り添って、静かに夕日を眺めていました。", "example_reading": "ふたりはよりそって、しずかにゆうひをながめていました。", "example_meaning": "Hai người kề sát bên nhau, lặng lẽ ngắm hoàng hôn.", "level": "n2"},
+      // ── n1 · 51 mục ──
+      {"word": "恋い焦がれる", "reading": "こいこがれる", "meaning": "khao khát yêu, mong nhớ da diết", "hanviet": "luyến tiêu", "example": "遠い国にいる人に、恋い焦がれていました。", "example_reading": "とおいくににいるひとに、こいこがれていました。", "example_meaning": "Tôi đã nhớ nhung da diết người ở một đất nước xa xôi.", "level": "n1"},
+      {"word": "慕う", "reading": "したう", "meaning": "ngưỡng mộ, quý mến, nhớ thương", "hanviet": "mộ", "note": "Có thể là tình cảm kính yêu, không nhất thiết là tình yêu đôi lứa.", "example": "彼は後輩たちから慕われる、頼れる先輩です。", "example_reading": "かれはこうはいたちからしたわれる、たよれるせんぱいです。", "example_meaning": "Anh ấy là đàn anh đáng tin cậy được các đàn em quý mến.", "level": "n1"},
+      {"word": "愛おしい", "reading": "いとおしい", "meaning": "đáng yêu, thương mến", "hanviet": "ái", "example": "寝顔を見ていると、彼女が愛おしくなります。", "example_reading": "ねがおをみていると、かのじょがいとおしくなります。", "example_meaning": "Nhìn gương mặt cô ấy lúc ngủ, tôi thấy thương cô ấy vô cùng.", "level": "n1"},
+      {"word": "溺愛", "reading": "できあい", "meaning": "yêu chiều quá mức, cưng chiều", "hanviet": "nịch ái", "example": "彼は一人娘を溺愛しています。", "example_reading": "かれはひとりむすめをできあいしています。", "example_meaning": "Ông ấy cưng chiều con gái một hết mực.", "level": "n1"},
+      {"word": "純愛", "reading": "じゅんあい", "meaning": "tình yêu trong sáng, thuần khiết", "hanviet": "thuần ái", "example": "彼女は、純愛を描いた小説が好きです。", "example_reading": "かのじょは、じゅんあいをえがいたしょうせつがすきです。", "example_meaning": "Cô ấy thích tiểu thuyết kể về tình yêu trong sáng.", "level": "n1"},
+      {"word": "不倫", "reading": "ふりん", "meaning": "ngoại tình (người đã có gia đình)", "hanviet": "bất luân", "note": "Nặng hơn 浮気; thường chỉ quan hệ tình cảm ngoài hôn nhân.", "example": "不倫が発覚して、二人は離婚しました。", "example_reading": "ふりんがはっかくして、ふたりはりこんしました。", "example_meaning": "Chuyện ngoại tình bị lộ nên hai người đã ly hôn.", "level": "n1"},
+      {"word": "逢瀬", "reading": "おうせ", "meaning": "cuộc hẹn hò lén, giờ phút gặp gỡ", "hanviet": "phùng lại", "note": "Từ mang sắc thái văn chương.", "example": "限られた時間の中での逢瀬は、とても切なかったです。", "example_reading": "かぎられたじかんのなかでのおうせは、とてもせつなかったです。", "example_meaning": "Những giờ gặp nhau ngắn ngủi khiến lòng tôi vô cùng xót xa.", "level": "n1"},
+      {"word": "仲睦まじい", "reading": "なかむつまじい", "meaning": "thân thiết, hoà thuận (vợ chồng, đôi lứa)", "hanviet": "trọng mục", "example": "あの老夫婦は、いつも仲睦まじく散歩しています。", "example_reading": "あのろうふうふは、いつもなかむつまじくさんぽしています。", "example_meaning": "Đôi vợ chồng già đó lúc nào cũng thân mật đi dạo bên nhau.", "level": "n1"},
+      {"word": "相思相愛", "reading": "そうしそうあい", "meaning": "yêu nhau thắm thiết, đôi bên cùng yêu", "hanviet": "tương tư tương ái", "note": "Thành ngữ bốn chữ.", "example": "二人は相思相愛で、周りもうらやむほどです。", "example_reading": "ふたりはそうしそうあいで、まわりもうらやむほどです。", "example_meaning": "Hai người yêu nhau thắm thiết đến mức ai cũng ghen tị.", "level": "n1"},
+      {"word": "添い遂げる", "reading": "そいとげる", "meaning": "gắn bó đến cuối đời", "hanviet": "thiêm toại", "example": "私たちは、死ぬまで添い遂げると約束しました。", "example_reading": "わたしたちは、しぬまでそいとげるとやくそくしました。", "example_meaning": "Chúng tôi đã hứa sẽ ở bên nhau đến hết đời.", "level": "n1"},
+      {"word": "縁談", "reading": "えんだん", "meaning": "chuyện mai mối, đám hỏi", "hanviet": "duyên đàm", "example": "祖母が縁談を持って来ましたが、断りました。", "example_reading": "そぼがえんだんをもってきましたが、ことわりました。", "example_meaning": "Bà tôi mang chuyện mai mối đến nhưng tôi đã từ chối.", "level": "n1"},
+      {"word": "嫁ぐ", "reading": "とつぐ", "meaning": "về nhà chồng, đi lấy chồng", "hanviet": "giá", "example": "彼女は来春、遠い町に嫁ぐ予定です。", "example_reading": "かのじょはらいしゅん、とおいまちにとつぐよていです。", "example_meaning": "Mùa xuân năm sau cô ấy dự định đi lấy chồng ở một thị trấn xa.", "level": "n1"},
+      {"word": "花嫁", "reading": "はなよめ", "meaning": "cô dâu", "hanviet": "hoa giá", "example": "白いドレスを着た花嫁は、とても美しかったです。", "example_reading": "しろいドレスをきたはなよめは、とてもうつくしかったです。", "example_meaning": "Cô dâu mặc váy trắng thật đẹp.", "level": "n1"},
+      {"word": "花婿", "reading": "はなむこ", "meaning": "chú rể", "hanviet": "hoa tế", "example": "花婿は、緊張した顔で花嫁を待っていました。", "example_reading": "はなむこは、きんちょうしたかおではなよめをまっていました。", "example_meaning": "Chú rể với gương mặt hồi hộp đang đợi cô dâu.", "level": "n1"},
+      {"word": "挙式", "reading": "きょしき", "meaning": "tổ chức lễ cưới", "hanviet": "cử thức", "example": "挙式は、海の見える教会で行います。", "example_reading": "きょしきは、うみのみえるきょうかいでおこないます。", "example_meaning": "Lễ cưới sẽ tổ chức ở nhà thờ nhìn ra biển.", "level": "n1"},
+      {"word": "離縁", "reading": "りえん", "meaning": "ly hôn, cắt đứt quan hệ (văn cổ)", "hanviet": "ly duyên", "example": "昔は、夫から一方的に離縁されることもありました。", "example_reading": "むかしは、おっとからいっぽうてきにりえんされることもありました。", "example_meaning": "Ngày xưa có khi người vợ bị chồng đơn phương bỏ.", "level": "n1"},
+      {"word": "破局", "reading": "はきょく", "meaning": "tan vỡ (mối quan hệ)", "hanviet": "phá cục", "example": "長年の恋人と、ついに破局を迎えました。", "example_reading": "ながねんのこいびとと、ついにはきょくをむかえました。", "example_meaning": "Cuối cùng tôi cũng đã chia tay với người yêu lâu năm.", "level": "n1"},
+      {"word": "疎遠", "reading": "そえん", "meaning": "xa cách, lâu không liên lạc", "hanviet": "sơ viễn", "example": "喧嘩をしてから、彼とは疎遠になってしまいました。", "example_reading": "けんかをしてから、かれとはそえんになってしまいました。", "example_meaning": "Từ sau lần cãi nhau, tôi và anh ấy trở nên xa cách.", "level": "n1"},
+      {"word": "絶縁", "reading": "ぜつえん", "meaning": "đoạn tuyệt, cắt đứt quan hệ", "hanviet": "tuyệt duyên", "example": "彼とは絶縁して、もう二度と会いません。", "example_reading": "かれとはぜつえんして、もうにどとあいません。", "example_meaning": "Tôi đã đoạn tuyệt với anh ta, sẽ không gặp lại nữa.", "level": "n1"},
+      {"word": "冷める", "reading": "さめる", "meaning": "nguội lạnh, phai nhạt", "hanviet": "lãnh", "example": "時間がたつにつれて、二人の愛は冷めていきました。", "example_reading": "じかんがたつにつれて、ふたりのあいはさめていきました。", "example_meaning": "Thời gian trôi qua, tình yêu của hai người dần nguội lạnh.", "level": "n1"},
+      {"word": "熱愛", "reading": "ねつあい", "meaning": "yêu cuồng nhiệt, tình yêu nồng cháy", "hanviet": "nhiệt ái", "note": "Hay thấy trong tin showbiz: 「熱愛報道」.", "example": "その俳優の熱愛が、ニュースになりました。", "example_reading": "そのはいゆうのねつあいが、ニュースになりました。", "example_meaning": "Chuyện tình nồng cháy của nam diễn viên đó lên báo.", "level": "n1"},
+      {"word": "邂逅", "reading": "かいこう", "meaning": "cuộc tình cờ gặp lại, hội ngộ", "hanviet": "giải cấu", "note": "Văn chương, trang trọng.", "example": "十年ぶりの邂逅に、二人は言葉を失いました。", "example_reading": "じゅうねんぶりのかいこうに、ふたりはことばをうしないました。", "example_meaning": "Cuộc tái ngộ sau mười năm khiến hai người lặng đi không nói nên lời.", "level": "n1"},
+      {"word": "巡り会う", "reading": "めぐりあう", "meaning": "tình cờ gặp được", "hanviet": "tuần hội", "example": "ようやく、運命の人に巡り会えました。", "example_reading": "ようやく、うんめいのひとにめぐりあえました。", "example_meaning": "Cuối cùng tôi cũng gặp được người định mệnh.", "level": "n1"},
+      {"word": "切望", "reading": "せつぼう", "meaning": "khát khao, mong mỏi tha thiết", "hanviet": "thiết vọng", "example": "私は彼との再会を切望しています。", "example_reading": "わたしはかれとのさいかいをせつぼうしています。", "example_meaning": "Tôi khao khát được gặp lại anh ấy.", "level": "n1"},
+      {"word": "渇望", "reading": "かつぼう", "meaning": "khát khao cháy bỏng", "hanviet": "khát vọng", "example": "彼女は、誰かに愛されることを渇望していました。", "example_reading": "かのじょは、だれかにあいされることをかつぼうしていました。", "example_meaning": "Cô ấy khát khao được ai đó yêu thương.", "level": "n1"},
+      {"word": "陶酔", "reading": "とうすい", "meaning": "say đắm, ngây ngất", "hanviet": "đào tuý", "example": "初めての恋に陶酔して、周りが見えなくなりました。", "example_reading": "はじめてのこいにとうすいして、まわりがみえなくなりました。", "example_meaning": "Say đắm mối tình đầu, tôi không còn thấy gì xung quanh.", "level": "n1"},
+      {"word": "蜜月", "reading": "みつげつ", "meaning": "tuần trăng mật, thời kỳ ngọt ngào", "hanviet": "mật nguyệt", "example": "結婚して一年は、蜜月のような日々でした。", "example_reading": "けっこんしていちねんは、みつげつのようなひびでした。", "example_meaning": "Năm đầu sau cưới là những ngày ngọt ngào như tuần trăng mật.", "level": "n1"},
+      {"word": "ときめく", "reading": "ときめく", "meaning": "rung động, xao xuyến", "hanviet": "", "example": "久しぶりに、胸がときめくのを感じました。", "example_reading": "ひさしぶりに、むねがときめくのをかんじました。", "example_meaning": "Lâu lắm rồi tôi mới thấy tim mình xao xuyến.", "level": "n1"},
+      {"word": "憂い", "reading": "うれい", "meaning": "nỗi lo âu, nỗi sầu", "hanviet": "ưu", "example": "彼女の横顔には、どこか憂いがありました。", "example_reading": "かのじょのよこがおには、どこかうれいがありました。", "example_meaning": "Gương mặt nghiêng của cô ấy phảng phất nét sầu.", "level": "n1"},
+      {"word": "煩悶", "reading": "はんもん", "meaning": "day dứt, trăn trở", "hanviet": "phiền muộn", "example": "彼は、彼女への気持ちに煩悶していました。", "example_reading": "かれは、かのじょへのきもちにはんもんしていました。", "example_meaning": "Anh ấy day dứt với tình cảm dành cho cô ấy.", "level": "n1"},
+      {"word": "妬む", "reading": "ねたむ", "meaning": "ghen ghét, đố kỵ", "hanviet": "đố", "example": "友達の幸せな結婚を、つい妬んでしまいました。", "example_reading": "ともだちのしあわせなけっこんを、ついねたんでしまいました。", "example_meaning": "Tôi lỡ ghen tị với cuộc hôn nhân hạnh phúc của bạn.", "level": "n1"},
+      {"word": "執着", "reading": "しゅうちゃく", "meaning": "chấp niệm, bám víu", "hanviet": "chấp trước", "example": "彼女は、別れた恋人に執着しすぎています。", "example_reading": "かのじょは、わかれたこいびとにしゅうちゃくしすぎています。", "example_meaning": "Cô ấy quá bám víu người yêu cũ.", "level": "n1"},
+      {"word": "献身", "reading": "けんしん", "meaning": "hiến thân, tận tuỵ", "hanviet": "hiến thân", "example": "彼女の献身的な看病に、彼は心から感謝しました。", "example_reading": "かのじょのけんしんてきなかんびょうに、かれはこころからかんしゃしました。", "example_meaning": "Anh ấy chân thành biết ơn sự chăm sóc tận tình của cô ấy.", "level": "n1"},
+      {"word": "悲恋", "reading": "ひれん", "meaning": "mối tình bi thương", "hanviet": "bi luyến", "example": "この小説は、身分の違う二人の悲恋を描いています。", "example_reading": "このしょうせつは、みぶんのちがうふたりのひれんをえがいています。", "example_meaning": "Cuốn tiểu thuyết này kể về mối tình bi thương của hai người khác địa vị.", "level": "n1"},
+      {"word": "恋敵", "reading": "こいがたき", "meaning": "tình địch", "hanviet": "luyến địch", "example": "学生時代、親友が恋敵になってしまいました。", "example_reading": "がくせいじだい、しんゆうがこいがたきになってしまいました。", "example_meaning": "Hồi đi học, bạn thân của tôi lại trở thành tình địch.", "level": "n1"},
+      {"word": "痴話喧嘩", "reading": "ちわげんか", "meaning": "cãi nhau vặt của đôi lứa", "hanviet": "si thoại huyên hoa", "example": "あの二人の痴話喧嘩は、いつものことです。", "example_reading": "あのふたりのちわげんかは、いつものことです。", "example_meaning": "Chuyện hai người đó cãi vặt là chuyện thường ngày.", "level": "n1"},
+      {"word": "駆け落ち", "reading": "かけおち", "meaning": "bỏ trốn cùng nhau", "hanviet": "khu lạc", "example": "二人は親に反対されて、駆け落ちしました。", "example_reading": "ふたりはおやにはんたいされて、かけおちしました。", "example_meaning": "Bị cha mẹ phản đối, hai người đã bỏ trốn cùng nhau.", "level": "n1"},
+      {"word": "掛け替えのない", "reading": "かけがえのない", "meaning": "không gì thay thế được, vô giá", "hanviet": "quải thế", "example": "彼は私にとって、掛け替えのない存在です。", "example_reading": "かれはわたしにとって、かけがえのないそんざいです。", "example_meaning": "Anh ấy là người không gì thay thế được đối với tôi.", "level": "n1"},
+      {"word": "面影", "reading": "おもかげ", "meaning": "hình bóng, dáng dấp", "hanviet": "diện ảnh", "example": "彼女の顔には、昔の恋人の面影がありました。", "example_reading": "かのじょのかおには、むかしのこいびとのおもかげがありました。", "example_meaning": "Gương mặt cô ấy phảng phất hình bóng người yêu cũ.", "level": "n1"},
+      {"word": "余韻", "reading": "よいん", "meaning": "dư âm, vấn vương", "hanviet": "dư vận", "example": "別れたあとも、彼の声の余韻が耳に残っています。", "example_reading": "わかれたあとも、かれのこえのよいんがみみにのこっています。", "example_meaning": "Sau khi chia tay, dư âm giọng anh ấy vẫn còn vương bên tai.", "level": "n1"},
+      {"word": "惚気る", "reading": "のろける", "meaning": "khoe khoang chuyện tình (kiểu \"tự sướng\")", "hanviet": "hốt khí", "note": "Khẩu ngữ, thường mang sắc thái trêu.", "example": "彼女は友達に、彼氏のことを惚気ています。", "example_reading": "かのじょはともだちに、かれしのことをのろけています。", "example_meaning": "Cô ấy đang khoe bạn trai với bạn bè.", "level": "n1"},
+      {"word": "口説く", "reading": "くどく", "meaning": "tán tỉnh, thuyết phục (làm quen)", "hanviet": "khẩu thuyết", "example": "彼は、会ったばかりの女性を口説いていました。", "example_reading": "かれは、あったばかりのじょせいをくどいていました。", "example_meaning": "Anh ta đang tán tỉnh cô gái mới quen.", "level": "n1"},
+      {"word": "色恋", "reading": "いろこい", "meaning": "chuyện tình ái", "hanviet": "sắc luyến", "note": "Thường mang sắc thái hơi tiêu cực hoặc thoáng qua.", "example": "仕事に色恋を持ち込むのは、よくありません。", "example_reading": "しごとにいろこいをもちこむのは、よくありません。", "example_meaning": "Mang chuyện tình ái vào công việc thì không tốt.", "level": "n1"},
+      {"word": "玉の輿", "reading": "たまのこし", "meaning": "lấy chồng giàu (lên xe hoa với người giàu có)", "hanviet": "ngọc dư", "note": "Nghĩa gốc: kiệu bằng ngọc.", "example": "彼女は、社長と結婚して玉の輿に乗りました。", "example_reading": "かのじょは、しゃちょうとけっこんしてたまのこしにのりました。", "example_meaning": "Cô ấy kết hôn với giám đốc và \"đổi đời\" nhờ lấy chồng giàu.", "level": "n1"},
+      {"word": "尽くす", "reading": "つくす", "meaning": "hết lòng vì, tận tâm phục vụ", "hanviet": "tận", "example": "彼女は、恋人のために尽くすタイプです。", "example_reading": "かのじょは、こいびとのためにつくすタイプです。", "example_meaning": "Cô ấy là kiểu người hết lòng vì người yêu.", "level": "n1"},
+      {"word": "想いを寄せる", "reading": "おもいをよせる", "meaning": "thầm thương, đem lòng yêu", "hanviet": "tưởng ký", "example": "彼は同じクラスの女の子に、想いを寄せていました。", "example_reading": "かれはおなじクラスのおんなのこに、おもいをよせていました。", "example_meaning": "Anh ấy đã thầm thương một cô bạn cùng lớp.", "level": "n1"},
+      {"word": "心変わり", "reading": "こころがわり", "meaning": "đổi lòng, thay lòng", "hanviet": "tâm biến", "example": "彼の心変わりが、いちばん悲しかったです。", "example_reading": "かれのこころがわりが、いちばんかなしかったです。", "example_meaning": "Việc anh ấy đổi lòng là điều khiến tôi buồn nhất.", "level": "n1"},
+      {"word": "愛想を尽かす", "reading": "あいそをつかす", "meaning": "chán ngán, không còn thiện cảm", "hanviet": "ái tưởng tận", "example": "彼女はついに、彼のだらしなさに愛想を尽かしました。", "example_reading": "かのじょはついに、かれのだらしなさにあいそをつかしました。", "example_meaning": "Cuối cùng cô ấy cũng chán ngán sự luộm thuộm của anh ta.", "level": "n1"},
+      {"word": "縒りを戻す", "reading": "よりをもどす", "meaning": "quay lại với nhau (người yêu cũ)", "hanviet": "tư lệ", "note": "Hay viết 「よりを戻す」.", "example": "別れた二人は、一年後に縒りを戻しました。", "example_reading": "わかれたふたりは、いちねんごによりをもどしました。", "example_meaning": "Hai người đã chia tay, một năm sau lại quay lại với nhau.", "level": "n1"},
+      {"word": "見初める", "reading": "みそめる", "meaning": "phải lòng ngay lần gặp đầu", "hanviet": "kiến sơ", "example": "彼は、祭りで彼女を見初めました。", "example_reading": "かれは、まつりでかのじょをみそめました。", "example_meaning": "Anh ấy đã phải lòng cô ấy ngay lần đầu thấy ở lễ hội.", "level": "n1"},
+      {"word": "結ばれる", "reading": "むすばれる", "meaning": "nên duyên, được kết thành đôi", "hanviet": "kết", "example": "長い年月を経て、二人はようやく結ばれました。", "example_reading": "ながいねんげつをへて、ふたりはようやくむすばれました。", "example_meaning": "Sau nhiều năm tháng, hai người rốt cuộc cũng nên duyên.", "level": "n1"},
+      // ▼ THÊM TỪ MỚI — [21] vocab (nhớ đúng "level" của chủ đề này)
+    ],
+    "grammar": [
+      {"pattern": "～たい", "usage": "muốn ~ (nguyện vọng của mình)", "example": "もっとあなたのことを知りたいです。", "example_reading": "もっとあなたのことをしりたいです。", "example_meaning": "Em muốn biết thêm về anh."},
+      {"pattern": "～てほしい", "usage": "muốn (ai đó) làm ~ cho mình", "example": "毎日、「おはよう」とメッセージを送ってほしいです。", "example_reading": "まいにち、「おはよう」とメッセージをおくってほしいです。", "example_meaning": "Em muốn ngày nào anh cũng nhắn \"chào buổi sáng\" cho em."},
+      {"pattern": "～ませんか", "usage": "~ nhé? (lời mời lịch sự)", "example": "今度の日曜日、一緒に映画を見に行きませんか。", "example_reading": "こんどのにちようび、いっしょにえいがをみにいきませんか。", "example_meaning": "Chủ nhật tới mình cùng đi xem phim nhé?"},
+      {"pattern": "～たことがある", "usage": "đã từng ~", "example": "外国人と付き合ったことがありますか。", "example_reading": "がいこくじんとつきあったことがありますか。", "example_meaning": "Bạn đã từng hẹn hò với người nước ngoài chưa?"},
+      {"pattern": "～てくれる", "usage": "(ai đó) làm ~ cho mình", "example": "彼は、私の誕生日にサプライズをしてくれました。", "example_reading": "かれは、わたしのたんじょうびにサプライズをしてくれました。", "example_meaning": "Anh ấy đã làm điều bất ngờ cho sinh nhật tôi."},
+      {"pattern": "～ようと思う", "usage": "định làm ~ (ý chí)", "example": "来年、彼女にプロポーズしようと思っています。", "example_reading": "らいねん、かのじょにプロポーズしようとおもっています。", "example_meaning": "Tôi định cầu hôn cô ấy vào năm sau."},
+      {"pattern": "～ことにする", "usage": "quyết định làm ~", "example": "悩んだ末、彼に気持ちを伝えることにしました。", "example_reading": "なやんだすえ、かれにきもちをつたえることにしました。", "example_meaning": "Sau khi băn khoăn, tôi đã quyết định nói tình cảm của mình cho anh ấy."},
+      {"pattern": "～そうだ（様態）", "usage": "trông có vẻ ~", "example": "彼女は、とても幸せそうです。", "example_reading": "かのじょは、とてもしあわせそうです。", "example_meaning": "Cô ấy trông có vẻ rất hạnh phúc."},
+      {"pattern": "～らしい", "usage": "có vẻ như, nghe nói ~", "example": "二人は、付き合っているらしいですよ。", "example_reading": "ふたりは、つきあっているらしいですよ。", "example_meaning": "Nghe nói hai người đó đang hẹn hò đấy."},
+      {"pattern": "～ば～ほど", "usage": "càng ~ càng ~", "example": "彼と話せば話すほど、好きになっていきます。", "example_reading": "かれとはなせばはなすほど、すきになっていきます。", "example_meaning": "Càng nói chuyện với anh ấy tôi càng thích anh ấy hơn."},
+      {"pattern": "～わけではない", "usage": "không hẳn là ~", "example": "彼のことが嫌いなわけではありません。", "example_reading": "かれのことがきらいなわけではありません。", "example_meaning": "Không phải là tôi ghét anh ấy."},
+      {"pattern": "～ようになる", "usage": "trở nên (có thể / đã bắt đầu) ~", "example": "付き合ってから、彼は毎日連絡をくれるようになりました。", "example_reading": "つきあってから、かれはまいにちれんらくをくれるようになりました。", "example_meaning": "Từ khi quen nhau, anh ấy đã bắt đầu liên lạc với tôi mỗi ngày."},
+      {"pattern": "～てしまう", "usage": "lỡ ~, ~ mất rồi", "example": "大事な記念日を忘れてしまいました。", "example_reading": "だいじなきねんびをわすれてしまいました。", "example_meaning": "Tôi lỡ quên mất ngày kỷ niệm quan trọng."},
+      {"pattern": "～に違いない", "usage": "chắc chắn là ~", "example": "彼は私のことが好きに違いありません。", "example_reading": "かれはわたしのことがすきにちがいありません。", "example_meaning": "Chắc chắn là anh ấy thích tôi."},
+      {"pattern": "～に対して", "usage": "đối với ~ (đối tượng)", "example": "彼は誰に対しても優しいので、不安になります。", "example_reading": "かれはだれにたいしてもやさしいので、ふあんになります。", "example_meaning": "Anh ấy đối với ai cũng dịu dàng nên tôi thấy bất an."},
+      {"pattern": "～ずにはいられない", "usage": "không thể không ~", "example": "彼のことを考えずにはいられません。", "example_reading": "かれのことをかんがえずにはいられません。", "example_meaning": "Tôi không thể không nghĩ về anh ấy."},
+      {"pattern": "～ものだから", "usage": "vì ~ mà (lời giải thích, bào chữa)", "example": "仕事が忙しかったものだから、連絡できなかったんだ。", "example_reading": "しごとがいそがしかったものだから、れんらくできなかったんだ。", "example_meaning": "Tại công việc bận quá nên anh không liên lạc được."},
+      {"pattern": "～さえ～ば", "usage": "chỉ cần ~ là ~", "example": "あなたさえいれば、他に何もいりません。", "example_reading": "あなたさえいれば、ほかになにもいりません。", "example_meaning": "Chỉ cần có anh, em không cần gì khác nữa."},
+      {"pattern": "～てたまらない", "usage": "~ không chịu nổi, vô cùng ~", "example": "彼に会いたくてたまりません。", "example_reading": "かれにあいたくてたまりません。", "example_meaning": "Tôi muốn gặp anh ấy không chịu nổi."},
+      {"pattern": "～というより", "usage": "nói đúng hơn là ~, hơn là ~", "example": "彼は恋人というより、親友のような存在です。", "example_reading": "かれはこいびとというより、しんゆうのようなそんざいです。", "example_meaning": "Anh ấy giống một người bạn thân hơn là người yêu."},
+      {"pattern": "～たところで", "usage": "dù có ~ cũng (vô ích)", "example": "今さら謝ったところで、彼女は許してくれないでしょう。", "example_reading": "いまさらあやまったところで、かのじょはゆるしてくれないでしょう。", "example_meaning": "Bây giờ có xin lỗi thì cô ấy cũng sẽ không tha thứ."},
+      {"pattern": "～ざるを得ない", "usage": "đành phải ~, không thể không ~", "example": "家族の反対で、別れざるを得ませんでした。", "example_reading": "かぞくのはんたいで、わかれざるをえませんでした。", "example_meaning": "Vì gia đình phản đối nên đành phải chia tay."},
+      {"pattern": "～ながらも", "usage": "tuy ~ nhưng (dù đang ~)", "example": "彼女は迷いながらも、プロポーズを受けました。", "example_reading": "かのじょはまよいながらも、プロポーズをうけました。", "example_meaning": "Dù còn băn khoăn, cô ấy vẫn nhận lời cầu hôn."},
+      {"pattern": "～てやまない", "usage": "không ngừng ~ (tình cảm kéo dài)", "example": "私は彼女を愛してやみません。", "example_reading": "わたしはかのじょをあいしてやみません。", "example_meaning": "Tôi yêu cô ấy khôn nguôi."},
+      // ▼ THÊM NGỮ PHÁP MỚI — [21] grammar
     ],
   },
 
