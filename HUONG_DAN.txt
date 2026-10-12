@@ -1,0 +1,116 @@
+扶桑言葉磨 — HƯỚNG DẪN NGƯỜI DÙNG & CỐT TRUYỆN
+==============================================
+
+Cấu trúc thư mục (đặt cạnh nhau, cùng cấp với data/, img/ của bạn):
+
+  index.html          <- file chính (thay file cũ)
+  story/
+    Airi.js           <- cốt truyện của Airi
+    Ryosuke.js        <- cốt truyện của Ryosuke
+    _template.js      <- mẫu để viết truyện cho người mới
+  img/ui/
+    Airi.jpg          <- ảnh con dấu (bạn đã có)
+    Ryosuke.jpg
+    Airi1.jpg ...     <- (tùy chọn) ảnh dấu cho Airi1..Airi5; chưa có thì hiện chữ cái đầu
+
+
+A. THÊM NGƯỜI DÙNG MỚI
+----------------------
+1) Bỏ ảnh con dấu vào img/ui/ với tên  <Tên>.jpg   (đúng hoa/thường, ví dụ Hana.jpg)
+2) Mở index.html, tìm dòng chữ:   DANH SÁCH NGƯỜI DÙNG
+   (nằm ngay sau thẻ <body>, trong khối <script> đăng nhập). Bên dưới có  var USERS = { ... }
+   Thêm một dòng:
+        'Hana': {},
+   Hoặc có lời chào riêng:
+        'Hana': { greet:'Hế luuuuu {name} ~', sub:'Lời nhắn riêng', alias:['ハナ'] },
+   (Có sẵn dòng mẫu đang bị comment — bỏ  //  ở đầu dòng rồi đổi 'TenMoi' thành tên.)
+3) Cốt truyện (chọn 1 trong 2):
+   - Viết riêng: copy story/_template.js thành story/Hana.js, sửa nội dung,
+     và đổi "TênMới" ở dòng window.FUSOU_STORY["TênMới"] thành "Hana".
+   - Dùng chung truyện có sẵn: thêm  story:'Airi'  vào dòng USERS, ví dụ
+        'Hana': { story:'Airi' },
+   Không có file truyện vẫn chơi được — game chỉ hiện bản đồ không có cốt truyện.
+
+   Lưu ý: dấu phẩy ở cuối mỗi dòng trong USERS.
+
+
+B. ĐỔI TÊN MỘT NGƯỜI DÙNG (ví dụ Airi3 -> Hana)
+-----------------------------------------------
+1) Trong USERS: đổi khóa  'Airi3'  thành  'Hana'
+2) Đổi tên ảnh   img/ui/Airi3.jpg  ->  img/ui/Hana.jpg
+3) Nếu có truyện riêng: đổi tên  story/Airi3.js -> story/Hana.js
+   và sửa dòng  window.FUSOU_STORY["Airi3"]  thành  ["Hana"].
+   (Nếu dùng chung truyện qua  story:'Airi'  thì giữ nguyên.)
+Lưu ý: tiến độ game lưu theo tên đăng nhập, nên đổi tên = bắt đầu lại tiến độ mới.
+Người cũ có thể gõ tên cũ nếu bạn thêm vào alias:['Airi3'] (chỉ để đăng nhập, tiến độ vẫn là của tên mới).
+
+
+C. CÁC TÙY CHỌN (ngay dưới USERS)
+---------------------------------
+REMEMBER_LOGIN = false   true: nhớ tên trên máy đó, lần sau vào thẳng
+AUTO_ENTER_MS  = 3800    thời gian tự vào web sau lời chào (0 = chỉ vào khi bấm nút)
+IMG_DIR / IMG_EXT        thư mục và đuôi ảnh con dấu mặc định
+STORY_DIR                thư mục chứa cốt truyện (mặc định story/)
+Cấu hình game (tìm dòng  COLLECT_NEED  trong index.html, ngay đầu module game):
+  COLLECT_NEED = 1    tỉ lệ từ phải thu thập để mở Boss của chủ đề (1 = đủ 100%, 0.8 = 80%)
+  SEC_PER_Q    = 12   giây cho mỗi câu Boss (12 giây = số câu / 5 phút; 50 câu = 10 phút)
+  MIN_SEC      = 60   thời gian tối thiểu một trận Boss
+  BATCH        = 10   số từ tối đa cho mỗi lượt thu thập
+  MAP_LOCK     = true phải qua chặng trước mới mở chặng sau (false = mở sẵn tất cả)
+
+
+D. CHỈNH CON DẤU MỜ Ở GÓC PHẢI
+------------------------------
+Tìm  --lg-corner-o  (độ đậm: 0.42 sáng / 0.55 tối) và  --lg-corner-size  (kích thước 84px) trong CSS.
+
+
+E. CẤU TRÚC FILE CỐT TRUYỆN
+---------------------------
+Mở story/Airi.js: phần chú thích đầu file giải thích từng trường (title, tagline, intro,
+bosses.n5..n1 với setup / resolve / moral / duel / train / lose, và ending).
+- setup  : luôn hiện khi mở chặng
+- resolve + moral : chỉ hiện sau khi thắng boss (tránh lộ truyện)
+- ending : mở khi đủ 5 dấu son
+
+
+F. LOGIC GAME (bản mới, 2 chế độ)
+--------------------------------
+Mỗi cấp N5…N1 là một CHẶNG trên bản đồ. Trong chặng có nhiều "trạm" = mỗi chủ đề có từ ở cấp đó.
+1) 収集 THU THẬP (từng chủ đề): mỗi lượt tối đa 10 từ chưa thu thập. Mỗi từ phải đúng 2 yêu cầu liên tiếp:
+     Bước 1: điền từ vào chỗ trống của câu ví dụ (nếu từ không có ví dụ chứa nó thì thay bằng câu hỏi nghĩa)
+     Bước 2: câu hỏi chọn đáp án như cũ (chữ -> nghĩa hoặc nghĩa -> chữ)
+   Đúng cả hai -> từ được thu thập (+10 XP). Sai bước nào thì từ đó chưa thu thập, sẽ gặp lại ở lượt sau.
+2) 挑戦 THÁCH ĐẤU BOSS (từng chủ đề): mở khi thu thập đủ từ của chủ đề.
+   Phải vượt qua TOÀN BỘ từ của chủ đề (mỗi từ một câu) trong thời gian = số câu x 12 giây
+   (50 câu = 10 phút), có đồng hồ đếm ngược. Trả lời sai thì từ đó quay lại cuối hàng, phải trả lời lại.
+   Hết giờ trước khi xong = thua, thử lại. Thắng = nhận ẤN của chủ đề (+50 XP).
+3) QUA CHẶNG: có đủ ấn của mọi chủ đề ở cấp đó -> nhận DẤU SON, đọc phần diễn biến + câu chốt của truyện,
+   mở chặng kế tiếp. Đủ 5 dấu son -> mở đoạn kết 終章.
+Các tab: 地図 Hành trình (bản đồ + chặng), 朱印 Sổ ấn (ấn các chủ đề + dấu son + huy hiệu),
+         図鑑 Từ vựng (các từ đã thu thập), 保存 Lưu (sao lưu tiến độ).
+Từ đã "thuộc" ở phiên bản cũ vẫn được tính là đã thu thập; ấn cũ vẫn giữ.
+
+G. Cập nhật thu thập: mỗi từ chỉ xuất hiện 1 lần trong một bộ đề.
+   Lượt 1 của từ = điền vào chỗ trống (câu ví dụ tiếng Nhật, không hiện nghĩa Việt);
+   lượt sau (bộ đề khác) = trắc nghiệm -> mới tính là đã thu thập.
+
+H. Cập nhật Boss
+   - Nút Boss hiện ngay ở đầu mỗi chủ đề, không cần thu thập trước. Tất cả chặng mở sẵn (MAP_LOCK=false).
+   - Vượt Boss = nhận ấn chủ đề + toàn bộ từ của chủ đề vào sổ từ vựng (full ấn).
+   - Sai 1 câu là thua và bị loại ngay (WRONG_MAX=1 trong code; đặt 2,3... nếu muốn cho phép sai ít).
+   - Thắng: báo thời gian hoàn thành, lưu kỷ lục kèm tên người giữ (key localStorage "fusou_records_v1",
+     chung cho mọi tài khoản trên cùng trình duyệt/máy). Kỷ lục cá nhân lưu riêng từng người.
+
+I. Màn 閻魔 Diêm Ma — màn TUỲ CHỌN sau 終章 (hành trình kết thúc ở N1, ai muốn thì thách thức)
+   - Lấy đề từ 3 chủ đề có tên chứa 四字熟語 / ことわざ(諺) / 慣用句 (khai báo ở FIN_CFG trong code;
+     nếu tên chủ đề của bạn khác thì sửa regex ở đó). Mỗi chủ đề bốc ngẫu nhiên ~33% (33 + 33 + 34 = 100 câu).
+   - Thời gian = số câu x 12 giây (100 câu = 20 phút), sai 1 câu là thua, có kỷ lục + tên người giữ.
+   - Mở khi xong N5–N1 (FIN_LOCK=true; false = mở sẵn). 終章 mở ngay sau N1 (END_NEEDS_FIN=false; true = phải thắng Diêm Ma mới mở 終章). FIN_N = số câu (mặc định 100).
+   - Tuỳ chọn trong file story: thêm "finale": {"name":"...","setup":[...],"resolve":[...]} để có cốt truyện riêng cho màn này.
+   - Thắng Diêm Ma: danh hiệu 唯我独尊 (Duy ngã độc tôn) + lời kết trong story/<Tên>.js, mục "finale" -> "resolve".
+
+J. Ảnh dấu ấn từng chặng (thư mục data/ui/)
+   Thắng một chặng (đủ ấn các chủ đề của cấp đó) -> nhận dấu ấn minh hoạ:
+     N5 tanuki.png · N4 kappa.png · N3 tengu.png · N2 oni.png · N1 ryu.png · Diêm Ma enma.png
+   Chép 6 file trong data/ui/ của gói này vào thư mục data/ui/ của bạn (PNG nền trong suốt, mực đỏ).
+   Đổi thư mục/tên file ở STAMP_DIR và STAMP_F trong code. Thiếu ảnh thì tự dùng con dấu vẽ sẵn.
