@@ -1947,8 +1947,43 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
 .kg-rt-leg{position:absolute;left:50%;top:86.5%;transform:translateX(-50%);z-index:2;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;width:max-content;max-width:84%;padding:5px 12px;background:var(--bg-card);border:1px solid var(--edge);box-shadow:2px 2px 0 var(--edge);font-size:12px;font-weight:800}
 .kg-rt-leg span{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .kg-rt-leg i{display:inline-block;width:18px;height:0;border-top:4px solid var(--accent)}
-.kg-rt-leg i.b{width:10px;height:10px;border:2px solid #C25A34;transform:rotate(45deg)}
+.kg-rt-leg i.b{width:12px;height:12px;border:2px solid #C25A34;border-radius:50%;box-shadow:0 0 0 2px #FBF6E9,0 0 0 4px #C25A34;margin:0 4px}
 @media (prefers-reduced-motion:reduce){.kg-pt.cur .kg-mp-med{animation:none}}
+/* ===== quái thú: huy hiệu tròn trên bản đồ + khung tranh ===== */
+.kg-pt .kg-mp-med{position:relative;border-radius:50%;background:var(--cf,var(--bg-card))}
+.kg-mp-phw{position:absolute;inset:0;border-radius:50%;overflow:hidden;z-index:1;display:block}
+.kg-pt .kg-mp-med .kg-mp-ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.kg-pt .kg-mp-ok,.kg-pt .kg-mp-lk{z-index:3}
+.kg-pt .kg-mp-med:has(.kg-mp-ph) b{opacity:0}
+.kg-pt:not(.sp) .kg-mp-med,.kg-pt.sp.ch .kg-mp-med{width:68px;height:68px}
+.kg-pt{width:68px;height:68px}
+.kg-pt .kg-mp-med{box-shadow:0 0 0 3px #FBF6E9,0 0 0 5px var(--c),3px 5px 10px rgba(30,18,6,.45)}
+.kg-pt.ch{width:78px;height:78px}
+.kg-pt.ch .kg-mp-med{width:78px;height:78px;border-radius:50%;transform:none;box-shadow:0 0 0 3px #FBF6E9,0 0 0 6px var(--c),0 0 0 9px #FBF6E9,0 0 0 11px var(--c),3px 6px 14px rgba(30,18,6,.5)}
+.kg-pt.ch .kg-mp-med b{transform:none}
+.kg-pt.ch:hover .kg-mp-med{transform:scale(1.1)}
+.kg-pt.ch .kg-mp-ok,.kg-pt.ch .kg-mp-lk{transform:none}
+.kg-pt.ch .kg-mp-lab{top:calc(100% + 16px)}
+.kg-pt.lock .kg-mp-med .kg-mp-ph{filter:grayscale(1) brightness(.8)}
+.kg-pt.cur .kg-mp-med .kg-mp-ph{animation:kgbreath 3.2s ease-in-out infinite}
+@keyframes kgbreath{50%{filter:brightness(1.12) saturate(1.15)}}
+.kg-pt.done .kg-mp-med .kg-mp-ph{filter:saturate(1.05)}
+@media (max-width:560px){.kg-pt:not(.sp) .kg-mp-med,.kg-pt.sp.ch .kg-mp-med{width:46px;height:46px}.kg-pt{width:46px;height:46px}.kg-pt .kg-mp-med{box-shadow:0 0 0 2px #FBF6E9,0 0 0 4px var(--c),2px 3px 6px rgba(30,18,6,.45)}
+.kg-pt.ch,.kg-pt.ch .kg-mp-med{width:52px;height:52px}.kg-pt.ch .kg-mp-med{box-shadow:0 0 0 2px #FBF6E9,0 0 0 4px var(--c),0 0 0 6px #FBF6E9,0 0 0 8px var(--c),2px 4px 8px rgba(30,18,6,.5)}.kg-pt.ch .kg-mp-lab{top:calc(100% + 12px)}}
+.kg-pic{margin:0 auto 18px;max-width:min(100%,440px);padding:10px 10px 8px;background:linear-gradient(135deg,#F6ECD2,#EAD9B0);border:2px solid #3b2a17;outline:3px double var(--c);outline-offset:-8px;box-shadow:6px 6px 0 rgba(43,29,16,.35);position:relative;text-align:center}
+.kg-pic::before,.kg-pic::after{content:"";position:absolute;top:50%;width:10px;height:70%;transform:translateY(-50%);background:#3b2a17;border-radius:5px}
+.kg-pic::before{left:-14px}.kg-pic::after{right:-14px}
+.kg-pic-b{display:block;width:100%;padding:0;border:0;background:#1c130a;cursor:zoom-in;overflow:hidden}
+.kg-pic img{display:block;width:100%;max-height:440px;object-fit:contain;margin:0 auto;transition:transform .5s}
+.kg-pic-b:hover img{transform:scale(1.04)}
+.kg-pic figcaption{margin-top:8px;font-weight:800;letter-spacing:.12em;font-size:14px;color:#3b2a17}
+:root[data-theme="dark"] .kg-pic{background:linear-gradient(135deg,#2a2015,#1d160e)}
+:root[data-theme="dark"] .kg-pic figcaption{color:#E8D9B8}
+.kg-zoom{position:fixed;inset:0;z-index:9999;background:rgba(8,6,4,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px;cursor:zoom-out}
+.kg-zoom img{max-width:100%;max-height:86vh;border:3px solid #F6ECD2;box-shadow:0 10px 40px #000}
+.kg-zoom small{color:#F6ECD2;font-weight:700}
+@media (prefers-reduced-motion:reduce){.kg-pt.cur .kg-mp-med .kg-mp-ph{animation:none}}
+
 @media (max-width:560px){
 .kg-pt{width:44px;height:44px}.kg-pt .kg-mp-med{width:44px;height:44px;border-width:3px}.kg-pt .kg-mp-med b{font-size:21px}.kg-pt.kl2 .kg-mp-med b{font-size:15px}
 .kg-pt.ch,.kg-pt.ch .kg-mp-med{width:38px;height:38px}.kg-pt.ch .kg-mp-med b{font-size:13px}
@@ -3568,7 +3603,7 @@ var K0='fusou_game_v1',K=K0,root=document.getElementById('kgRoot'),V=document.ge
 var LV={n5:['狸','Tanuki'],n4:['河童','Kappa'],n3:['天狗','Tengu'],n2:['鬼','Oni'],n1:['龍','Rồng']};
 var LC={n5:'#3F8F5F',n4:'#2E7FA6',n3:'#C08A22',n2:'#C25A34',n1:'#8B5CB8'},LS=['n5','n4','n3','n2','n1'];
 var RK=[[0,'見習い','Tập sự'],[150,'旅人','Lữ khách'],[500,'武士','Võ sĩ'],[1200,'師範','Sư phụ'],[3000,'名人','Danh nhân']];
-var BG=[['c1','初収','Thu thập từ đầu tiên'],['c50','収集家','Thu thập 50 từ'],['st','朱印','Nhận ấn đầu tiên'],['clr','突破','Qua một chặng'],['k7','七日','Học 7 ngày liền'],['n1','極','Ấn N1'],['fin','唯我独尊','Khuất phục Diêm Ma'],['hak','白澤','Khuất phục Bạch Trạch']];
+var BG=[['c1','初収','Thu thập từ đầu tiên'],['c50','収集家','Thu thập 50 từ'],['st','朱印','Nhận ấn đầu tiên'],['clr','突破','Qua một chặng'],['k7','七日','Học 7 ngày liền'],['n1','極','Ấn N1'],['fin','九尾調伏','Khuất phục Cửu Vĩ Hồ'],['hak','白澤','Khuất phục Bạch Trạch']];
 var KJ=['一','二','三','四','五'],ORD=['đầu tiên','thứ hai','thứ ba','thứ tư','thứ năm'],RH=150;
 var ALL=[],TP=[],S,view='map',nd=null,zt=0,sel=null,B=null,mapMsg='';
 
@@ -3598,7 +3633,7 @@ document.getElementById('kgXb').style.width=(n?(S.xp-r[0])/(n[0]-r[0])*100:100)+
 /* ---------- dữ liệu từ vựng: chủ đề × cấp độ = một "trạm" ---------- */
 function build(){ALL=[];TP=[];FIN=FIN_CFG.map(function(c){return{c:c,a:[]}});if(typeof TOPICS==='undefined')return;
 TOPICS.forEach(function(t){var isRef=t.category==='ref',key=(t.title||'')+' '+t.id,fis=FIN.filter(function(f){return f.c.re.test(key)});
-if(isRef&&!fis.length)return; /* chủ đề tham khảo chỉ được dùng cho màn Diêm Ma */
+if(isRef&&!fis.length)return; /* chủ đề tham khảo chỉ được dùng cho màn Cửu Vĩ Hồ */
 var tt={id:t.id,title:t.title||String(t.id).replace(/^\d+\.\s*/,''),icon:t.icon||'印',a:[]};
 (t.vocab||[]).forEach(function(v){if(!v.word||!v.meaning)return;
 var m=isRef?String(v.meaning).split('\n')[0].trim():v.meaning; /* ref: chỉ lấy dòng nghĩa chính */
@@ -3611,11 +3646,16 @@ function col(a){return!!(S.c[a.k]||(S.w[a.k]&&S.w[a.k].s>=3))}  /* từ cũ đã
 function colN(o){return o.a.filter(col).length}
 function got(t,l){return!!S.st[t.id+'|'+l]}
 function canBoss(o){return o.a.length>0}  /* Boss luôn mở: dành cho người đã giỏi cấp này */
-var FIN_N=100;       /* số câu của màn Diêm Ma */
-var END_NEEDS_FIN=false; /* false: 終章 mở ngay khi xong N1 (Diêm Ma chỉ là màn tuỳ chọn) · true: phải thắng Diêm Ma mới mở 終章 */
-var STAMP_DIR='img/ui/'; /* thư mục ảnh dấu ấn (png) */
-var STAMP_F={n5:'tanuki',n4:'kappa',n3:'tengu',n2:'oni',n1:'ryu',fin:'enma',hak:'hakutaku'}; /* tên file theo từng chặng */
-var FIN_LOCK=false;  /* false: Diêm Ma luôn mở sẵn, ai cũng có thể khiêu chiến bất cứ lúc nào · true: phải qua đủ N5–N1 mới mở */
+var FIN_N=100;       /* số câu của màn Cửu Vĩ Hồ */
+var END_NEEDS_FIN=false; /* false: 終章 mở ngay khi xong N1 (Cửu Vĩ Hồ chỉ là màn tuỳ chọn) · true: phải thắng Cửu Vĩ Hồ mới mở 終章 */
+var STAMP_DIR='img/game/'; /* thư mục ảnh dấu ấn (png) — nếu thiếu sẽ thử img/ui/ rồi dấu SVG */
+var IMG_DIR='img/game/'; /* ảnh quái thú hiện trên bản đồ / trang chặng: <tên>1.jpg */
+var IMG_F={n5:'tanuki1',n4:'kappa1',n3:'tengu1',n2:'oni1',n1:'ryu1',fin:'kitsune1',hak:'hakutaku1'};
+/* tiêu điểm cắt tròn trên bản đồ: [x%, y%, phóng to] */
+var IMG_FOC={n5:[78,24,1.9],n4:[36,12,1.7],n3:[50,42,1.7],n2:[48,26,1.6],n1:[16,12,1.6],fin:[82,58,2.6],hak:[58,56,1.8]};
+var IMG_CAP={n5:'狸 · Tanuki',n4:'河童 · Kappa',n3:'天狗 · Tengu',n2:'鬼 · Oni',n1:'龍 · Rồng',fin:'九尾の狐 · Cửu Vĩ Hồ',hak:'白澤 · Bạch Trạch'};
+var STAMP_F={n5:'tanuki',n4:'kappa',n3:'tengu',n2:'oni',n1:'ryu',fin:'kitsune',hak:'hakutaku'}; /* tên file theo từng chặng */
+var FIN_LOCK=false;  /* false: Cửu Vĩ Hồ luôn mở sẵn, ai cũng có thể khiêu chiến bất cứ lúc nào · true: phải qua đủ N5–N1 mới mở */
 var FIN_CFG=[{re:/四字熟語/,k:'四',n:'四字熟語'},{re:/ことわざ|諺/,k:'諺',n:'ことわざ'},{re:/慣用句/,k:'慣',n:'慣用句'}]; /* 3 chủ đề lấy đề, mỗi chủ đề ~33% */
 var FIN=[];
 var WRONG_MAX=1; /* số câu sai tối đa cho phép + 1: =1 nghĩa là sai 1 câu là thua, bị loại ngay */
@@ -3663,14 +3703,14 @@ cn=ss.reduce(function(m,x){return m+colN(x)},0),tn=ss.reduce(function(m,x){retur
 a.push({id:l,k:LV[l][0],n:b.name,t:b.title,p:b.place,lv:l,st:lvDone(l)?'done':openL(i)?'open':'lock',lab:l.toUpperCase()+' · 第'+KJ[i]+'章',
 pg:ss.length?'ấn '+g+' / '+ss.length+' · từ '+cn+' / '+tn:'Chưa có từ vựng'})});
 a.push({id:'end',k:'終',n:'Cuối hành trình',t:'Đoạn kết',p:'',st:endOpen()?'open':'lock',lab:'終章'});
-a.push({id:'fin',k:'閻魔',n:'Diêm Ma',t:'四字熟語 · ことわざ · 慣用句',p:'',c:'var(--accent)',st:S.st['fin|fin']?'done':'open',lab:'任意 · Quyết đấu',pg:Math.min(FIN_N,finTotal())+' câu · sai 1 câu là thua'});
+a.push({id:'fin',k:'九尾',n:'Cửu Vĩ Hồ',t:'四字熟語 · ことわざ · 慣用句',p:'',c:'var(--accent)',st:S.st['fin|fin']?'done':'open',lab:'任意 · Quyết đấu',pg:Math.min(FIN_N,finTotal())+' câu · sai 1 câu là thua'});
 a.push({id:'hak',k:'白澤',n:'Bạch Trạch',t:'漢字 · On · Kun · Hán Việt',p:'',c:HK_COL,st:S.st['hak|hak']?'done':'open',lab:'最終 · Ấn cuối',pg:'Tháp '+HK_WIN+' tầng · thuộc '+hkMastN()+' / '+KJD.length+' chữ'});
 return a}
 function pacts(){return LS.map(function(l){var g=lvDone(l);return'<div class="kg-pact-i"><div class="kg-sealbox'+(g?' got':'')+'">'+(g?lvSeal(l):ghost(LV[l][0],l))+'</div><b>'+esc(bossInfo(l).name)+'</b></div>'}).join('')}
 function mapv(){var a=nodes(),s=STY(),n=7,cu=-1,nd5=LS.filter(lvDone).length;
 a.slice(0,n).forEach(function(x,i){if(cu<0&&x.st=='open')cu=i});
-/* vị trí (x%, y%) trên ảnh map.jpg: 7 điểm lộ trình lần lượt nằm trên các đảo, 2 điểm cuối (閻魔, 白澤) nằm trên đảo thử thách bên phải */
-var P=[[22,22],[52,11],[76,12],[60,32],[41,47],[26,73],[70,72],[69,45],[86,51]];
+/* vị trí (x%, y%) trên ảnh map.jpg: 7 điểm lộ trình lần lượt nằm trên các đảo, 2 điểm cuối (九尾の狐, 白澤) nằm trên đảo thử thách bên phải */
+var P=[[22,22],[52,11],[76,12],[60,32],[41,47],[26,73],[70,72],[63,46],[85,57]];
 var o=(mapMsg?'<div class="kg-note">'+esc(mapMsg)+'</div>':'');mapMsg='';
 o+='<div class="kg-mp-head"><h2>地図 · '+esc(s&&s.title||'Hành trình tới Fusō')+'</h2><p>'+esc(s&&s.tagline||(s?'':'Tài khoản này chưa có file cốt truyện — vẫn chơi bình thường. Xem story/_template.js.'))+'</p><div class="kg-mp-prog"><span>五つの誓い</span><i><s style="width:'+nd5*20+'%"></s></i><b>'+nd5+' / 5</b></div></div>';
 o+='<div class="kg-map kg-route"><svg class="kg-mp-path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">';
@@ -3680,14 +3720,20 @@ for(var i=0;i<n-1;i++)o+='<path d="'+seg(i,i+1)+'"'+(a[i].st=='done'?' class="on
 o+='<path class="ch" d="M'+P[7][0]+' '+P[7][1]+' Q'+(P[7][0]+10)+' '+(P[7][1]+9)+' '+P[8][0]+' '+P[8][1]+'"/></svg>';
 a.forEach(function(x,i){var ch=i>=n;
 o+='<button class="kg-pt '+x.st+(ch?' ch':'')+(i==cu?' cur':'')+(x.lv?'':' sp')+(x.k.length>1?' kl2':'')+'" data-nd="'+x.id+'" style="left:'+P[i][0]+'%;top:'+P[i][1]+'%;--c:'+(x.lv?LC[x.lv]:(x.c||'var(--ink)'))+'">'
-+'<span class="kg-mp-med"><b>'+esc(x.k)+'</b>'+(x.st=='done'?'<i class="kg-mp-ok">印</i>':x.st=='lock'?'<i class="kg-mp-lk">鎖</i>':'')+'</span>'
++'<span class="kg-mp-med"><b>'+esc(x.k)+'</b>'+medImg(x)+(x.st=='done'?'<i class="kg-mp-ok">印</i>':x.st=='lock'?'<i class="kg-mp-lk">鎖</i>':'')+'</span>'
 +'<span class="kg-mp-lab"><small>'+esc(x.lab)+'</small>'+(i==cu?'<span class="kg-here">▶ Đang ở đây</span>':'')+'<strong>'+esc(x.n)+'</strong>'
 +(x.pg?'<span class="kg-mp-pg">'+esc(x.pg)+'</span>':'')+'</span></button>'});
 o+='<div class="kg-rt-leg"><span><i class="a"></i>Lộ trình chính</span><span><i class="b"></i>Đảo thử thách · tuỳ chọn</span></div>';
 return o+'</div>'}
+function medImg(x){var l=x.lv||x.id,f=IMG_F[l],c=IMG_FOC[l]||[50,30,1.5];if(!f)return'';return'<span class="kg-mp-phw"><img class="kg-mp-ph" src="'+IMG_DIR+f+'.jpg" alt="" loading="lazy" style="object-position:'+c[0]+'% '+c[1]+'%;transform-origin:'+c[0]+'% '+c[1]+'%;transform:scale('+c[2]+')" onerror="this.parentNode.remove()"></span>'}
 function openNode(id){var a=nodes(),x=a.filter(function(n){return n.id==id})[0];if(!x)return;
-if(x.st=='lock'){var pl=LS[LS.indexOf(id)-1];mapMsg=id=='end'?(allDone()?'Hãy khuất phục Diêm Ma trước khi tới đoạn kết.':'Hãy qua đủ 5 chặng trước khi tới đoạn kết.'):id=='fin'?'Diêm Ma đang chờ.':'Hãy qua chặng '+bossInfo(pl).name+' ('+pl.toUpperCase()+') trước.';draw();return}
-abort();nd=id;mapMsg='';if(LV[id]){S.lv=id;save()}draw();root.scrollTop=0}
+if(x.st=='lock'){var pl=LS[LS.indexOf(id)-1];mapMsg=id=='end'?(allDone()?'Hãy khuất phục Cửu Vĩ Hồ trước khi tới đoạn kết.':'Hãy qua đủ 5 chặng trước khi tới đoạn kết.'):id=='fin'?'Cửu Vĩ Hồ đang chờ.':'Hãy qua chặng '+bossInfo(pl).name+' ('+pl.toUpperCase()+') trước.';draw();return}
+abort();nd=id;mapMsg='';if(LV[id]){S.lv=id;save()}draw();root.scrollTop=0;focusPic()}
+/* mở chặng → tự lướt để ảnh quái thú + lời giới thiệu nằm giữa màn hình */
+function focusPic(){var go=function(){var f=V.querySelector('.kg-pic'),st=V.querySelector('.kg-story');if(!f)return;
+var rr=root.getBoundingClientRect(),fr=f.getBoundingClientRect(),end=(st?st.getBoundingClientRect().bottom:fr.bottom),top=fr.top-rr.top+root.scrollTop,bot=end-rr.top+root.scrollTop,h=root.clientHeight,t=(top+bot)/2-h/2;
+t=Math.min(t,top-12);root.scrollTo({top:Math.max(0,t),behavior:'smooth'})};
+requestAnimationFrame(go);var im=V.querySelector('.kg-pic img');if(im&&!im.complete)im.addEventListener('load',go,{once:true})}
 
 /* ---------- trang một chặng: truyện + danh sách chủ đề ---------- */
 function back(){return'<button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'}
@@ -3698,10 +3744,10 @@ return'<div class="kg-sx'+(g?' got':'')+'" style="--c:'+LC[l]+'"><div class="kg-
 +'<button class="kg-btn ghost" data-act="col" data-s="'+si+'"'+(c>=n?' disabled':'')+'>'+(c>=n?'✔ Đã đủ từ':'収集 Thu thập · '+c+'/'+n)+'</button></div></div>'}
 function chapter(){if(nd=='hak')return hakChapter();if(nd=='fin')return finChapter();if(nd=='pro')return prologue();if(nd=='end')return epilogue();
 var l=nd,i=LS.indexOf(l),b=bossInfo(l),ss=stations(l),done=lvDone(l),g=ss.filter(function(x){return got(x.t,l)}).length;
-var o=back()+'<div class="kg-ch" style="--c:'+LC[l]+'"><div class="kg-ch-head"><div class="kg-mk'+(LV[l][0].length>1?' k2':'')+'"><b>'+LV[l][0]+'</b></div><div><small>第'+KJ[i]+'章 · '+l.toUpperCase()+'</small><h2>'+esc(b.name)+'</h2>'+(b.title?'<p class="kg-ch-ti">'+esc(b.title)+'</p>':'')+(b.place?'<span class="kg-mp-pl">'+esc(b.place)+'</span>':'')+'</div></div>';
+var o=back()+'<div class="kg-ch" style="--c:'+LC[l]+'"><div class="kg-ch-head"><div class="kg-mk'+(LV[l][0].length>1?' k2':'')+'"><b>'+LV[l][0]+'</b></div><div><small>第'+KJ[i]+'章 · '+l.toUpperCase()+'</small><h2>'+esc(b.name)+'</h2>'+(b.title?'<p class="kg-ch-ti">'+esc(b.title)+'</p>':'')+(b.place?'<span class="kg-mp-pl">'+esc(b.place)+'</span>':'')+'</div></div>'+picOf(l);
+if(b.setup)o+='<div class="kg-story">'+paras(b.setup)+'</div>';
 o+='<h3 class="kg-h kg-qh">Các chủ đề · '+l.toUpperCase()+' <small style="font-weight:700;color:var(--ink-soft);font-size:13px">Ấn '+g+' / '+ss.length+'</small></h3>';
 o+=ss.length?ss.map(function(x,si){return stCard(x,l,si)}).join(''):'<p class="kg-sub">Chưa có từ vựng cấp '+l.toUpperCase()+'.</p>';
-if(b.setup)o+='<div class="kg-story">'+paras(b.setup)+'</div>';
 if(done){if(b.resolve)o+='<div class="kg-story kg-story2">'+paras(b.resolve)+'</div>';if(b.moral)o+='<div class="kg-pact"><b>誓</b><span>'+esc(b.moral)+'</span></div>';
 o+='<div class="kg-sealrow"><div class="kg-sealbox got">'+lvSeal(l)+'</div><div><b>Dấu son '+ORD[i]+'</b><small>Thỏa ước đã đóng ấn</small></div></div>'}
 else if(b.resolve)o+='<p class="kg-tease">… Chuyện gì xảy ra tiếp theo? Thu đủ ấn của chặng này để biết.</p>';
@@ -3715,7 +3761,7 @@ return back()+'<div class="kg-ch" style="--c:var(--ink)"><div class="kg-ch-head"
 +'<button class="kg-btn" data-act="pro">'+(S.pro?'Về bản đồ':'Bắt đầu hành trình →')+'</button></div>'}
 function epilogue(){var s=STY();
 return back()+'<div class="kg-ch" style="--c:var(--accent)"><div class="kg-ch-head"><div class="kg-mk"><b>終</b></div><div><small>終章 · Cuối hành trình</small><h2>Năm dấu son đã trọn</h2></div></div><div class="kg-pacts">'+pacts()+'</div>'
-+(s&&s.ending?'<div class="kg-story kg-story2">'+paras(s.ending)+'</div>':'')+'<div class="kg-pact"><b>閻</b><span>Hành trình khép lại ở đây. Nhưng ai muốn thử sức với người đứng trên cả rồng thì Diêm Ma vẫn đang chờ — phần thưởng là 唯我独尊.</span></div>'+'<button class="kg-btn" data-nd="fin">閻魔 Thách thức Diêm Ma →</button>'+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>'}
++(s&&s.ending?'<div class="kg-story kg-story2">'+paras(s.ending)+'</div>':'')+'<div class="kg-pact"><b>狐</b><span>Hành trình khép lại ở đây. Nhưng trên đỉnh núi cuối cùng, chín chiếc đuôi vẫn đang khẽ lay — ai dám thử sức thì Cửu Vĩ Hồ vẫn đang chờ, phần thưởng là 九尾調伏.</span></div>'+'<button class="kg-btn" data-nd="fin">九尾 Thách thức Cửu Vĩ Hồ →</button>'+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>'}
 
 /* ================= LƯỢT CHƠI: câu hỏi ================= */
 function hasCz(a){return!!a.e&&a.e.indexOf(a.w)>=0}
@@ -3799,7 +3845,7 @@ if(win){var was=cleared(B.l),key=B.t.id+'|'+B.l;B.first=!got(B.t,B.l);S.st[key]=
  B.newClear=!was&&cleared(B.l);award();save();head()}}
 function playBoss(){if(!B.fin&&!B.pauseAt&&Date.now()>=B.dl)endBoss(false);if(B.fin)return bossEnd();
 var left=Math.max(0,(B.dl-(B.pauseAt||Date.now()))/1000),pct=left/B.sec*100,c=B.q[B.i];
-return'<div class="kg-bh"><span class="kg-bn">'+(B.l=='fin'?'閻魔':LV[B.l][0])+' '+esc(B.t.title)+'</span><div class="kg-tmw'+(pct<20?' low':'')+'" id="kgTmw"><b id="kgTm">'+fmt(left)+'</b></div></div>'
+return'<div class="kg-bh"><span class="kg-bn">'+(B.l=='fin'?'九尾':LV[B.l][0])+' '+esc(B.t.title)+'</span><div class="kg-tmw'+(pct<20?' low':'')+'" id="kgTmw"><b id="kgTm">'+fmt(left)+'</b></div></div>'
 +'<div class="kg-tbar"><i id="kgTb" style="width:'+pct+'%"></i></div><div class="kg-bs">Câu <b>'+(B.ans!=null?B.done:B.done+1)+'</b> / '+B.n+' · sai '+B.wr+' / '+B.lim+' ('+(B.lim==1?'sai 1 câu là thua':'sai '+B.lim+' câu là thua')+')</div>'
 +'<div class="kg-panel'+(B.ok===false?' kg-shake':'')+'">'+mcq(c)+(B.ans!=null&&!B.fin?fbBox(c.a,B.opt&&B.opt[B.ans])+'<button class="kg-btn" data-act="next" style="margin-top:12px">次へ → <small>hoặc nhấn Space · đồng hồ đang tạm dừng</small></button>':'')+'</div>'}
 function timeBox(){var h='<div class="kg-tbx"><span>⏱ Hoàn thành trong <strong>'+fmt(B.el)+'</strong> / '+fmt(B.sec)+' · trung bình <strong>'+avg(B.el,B.n)+'</strong> giây/câu<br>';
@@ -3817,8 +3863,12 @@ else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-b
  +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> / '+B.n+' câu — sai 1 câu là thua, dừng ở câu '+B.done+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Còn <b>'+(B.n-B.done)+'</b> / '+B.n+' câu chưa làm.</p>')+'<p>Thời gian: '+fmt(B.el)+' / '+fmt(B.sec)+'</p><p>'+esc(b.lose)+'</p><button class="kg-btn" data-act="boss" data-s="'+B.si+'">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về chặng</button></div>';
 return o}
 /* ================= MÀN HUỶ DIỆT · 四字熟語 + ことわざ + 慣用句 ================= */
-function stImg(l){var f=STAMP_F[l];if(!f)return'';return'<img class="kg-stimg" src="'+STAMP_DIR+f+'.png" alt="" onerror="this.outerHTML=window.__kgSeal(\''+l+'\')">'}
-window.__kgSeal=function(l){return l=='hak'?seal('白澤','n1').replace('>N1</text>','>瑞</text>'):l=='fin'?seal('閻魔','n1').replace('>N1</text>','>極</text>'):seal(LV[l][0],l)};
+function stImg(l){var f=STAMP_F[l];if(!f)return'';return'<img class="kg-stimg" src="'+STAMP_DIR+f+'.png" alt="" data-l="'+l+'" data-t="0" onerror="window.__kgStErr(this)">'}
+window.__kgStErr=function(im){var l=im.dataset.l,f=STAMP_F[l],t=+im.dataset.t+1,c=[STAMP_DIR+f+'.jpg','img/ui/'+f+'.png'];im.dataset.t=t;if(t<=c.length){im.src=c[t-1]}else{im.outerHTML=window.__kgSeal(l)}};
+/* ảnh quái thú: khung tranh cuộn, bấm để phóng to */
+function picOf(l){var f=IMG_F[l];if(!f)return'';return'<figure class="kg-pic" style="--c:'+(l=='hak'?HK_COL:l=='fin'?'var(--accent)':LC[l])+'"><button type="button" class="kg-pic-b" data-zoom="'+l+'" aria-label="Phóng to ảnh"><img src="'+IMG_DIR+f+'.jpg" alt="'+esc(IMG_CAP[l]||'')+'" onerror="this.closest(\'figure\').remove()"></button><figcaption>'+esc(IMG_CAP[l]||'')+'</figcaption></figure>'}
+function zoomPic(l){var f=IMG_F[l];if(!f)return;var d=document.createElement('div');d.className='kg-zoom';d.innerHTML='<img src="'+IMG_DIR+f+'.jpg" alt=""><small>'+esc(IMG_CAP[l]||'')+' · bấm để đóng</small>';d.onclick=function(){d.remove()};document.addEventListener('keydown',function k(e){if(e.key=='Escape'){d.remove();document.removeEventListener('keydown',k)}});document.body.appendChild(d)}
+window.__kgSeal=function(l){return l=='hak'?seal('白澤','n1').replace('>N1</text>','>瑞</text>'):l=='fin'?seal('九尾','n1').replace('>N1</text>','>妖</text>'):seal(LV[l][0],l)};
 function lvSeal(l){return stImg(l)}
 function endOpen(){return allDone()&&(!END_NEEDS_FIN||!!S.st['fin|fin'])}
 function finTotal(){return FIN.reduce(function(m,f){return m+f.a.length},0)}
@@ -3829,21 +3879,27 @@ if(out.length<N){var rest=[];gs.forEach(function(f){f.a.forEach(function(a){if(!
 return out.sort(rnd)}
 function finSeal(){return stImg('fin')}
 function startFin(){if(!finTotal())return;abort();var pool=finPick(),n=pool.length,sec=bossSec(n);
-runBoss({kind:'boss',l:'fin',si:0,t:{id:'fin',title:'Diêm Ma'},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:sec,dl:Date.now()+sec*1000,fin:0,over:null,gain:0})}
-function finChapter(){var s=STY(),f=s&&s.finale||{},tot=finTotal(),n=Math.min(FIN_N,tot),sec=bossSec(n),g=!!S.st['fin|fin'],r=recGet({id:'fin'},'fin'),pb=S.pb['fin|fin'];
-var o=back()+'<div class="kg-ch" style="--c:var(--accent)"><div class="kg-ch-head"><div class="kg-mk k2"><b>閻魔</b></div><div><small>任意 · Quyết đấu</small><h2>'+esc(f.name||'Diêm Ma')+'</h2><p class="kg-ch-ti">四字熟語 · ことわざ · 慣用句</p></div></div>';
-o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:var(--accent)"><div class="kg-sx-seal">'+(g?'<div class="kg-sealbox got">'+finSeal()+'</div>':'<div class="kg-ghost"><span>閻魔</span><small>極</small></div>')+'</div>'
+runBoss({kind:'boss',l:'fin',si:0,t:{id:'fin',title:'Cửu Vĩ Hồ'},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:sec,dl:Date.now()+sec*1000,fin:0,over:null,gain:0})}
+/* câu chuyện 九尾の狐 — dùng chung cho mọi tài khoản (Airi, Ryosuke…), tự gọi tên người chơi */
+function kfin(){var u=window.FUSOU_USER,nm=(u&&u.name)||'lữ khách',k=/airi/i.test(nm)?'a':/ryosuke/i.test(nm)?'r':'';
+var tail=k=='a'?'Giữa ngọn lửa xanh, ngươi thấy mình đang mỉm cười — như người vừa nhớ ra mình đã đi xa đến đâu.':k=='r'?'Ngươi chỉ gật đầu, rất khẽ, như người đã đi đủ xa để không cần phải nói gì thêm.':'Gió đỉnh núi thổi qua, và lần đầu tiên nó nghe như một lời chào.';
+return{name:'Cửu Vĩ Hồ',
+setup:['Trên đỉnh núi cuối cùng của Fusō, nơi sương chưa từng tan, có chín chiếc đuôi đang khẽ lay giữa tàn tro của những ngôi đền cổ. Người ta gọi nó là 九尾の狐 — Cửu Vĩ Hồ, con hồ ly đã sống qua một nghìn năm, nghe đủ mọi lời thề của loài người và nhớ từng lời thất hứa.','Nó không chặn đường ai. Không cần qua chặng nào, ai cũng có thể tới. Nó chỉ hỏi về những lời nói cũ — tứ tự thành ngữ, tục ngữ, quán dụng ngữ — thứ hồ ly dùng để mê hoặc, và loài người dùng để hiểu nhau.',nm+', nếu ngươi dám: 100 lời thử, mỗi chiếc đuôi một ảo ảnh, và chỉ cần sai một câu, sương sẽ nuốt lấy ngươi. Phần thưởng là danh hiệu 九尾調伏 — người đã khuất phục chín đuôi.'],
+resolve:['Chiếc đuôi cuối cùng rũ xuống. Cửu Vĩ Hồ nhìn '+nm+' rất lâu, rồi cười — lần đầu tiên sau một nghìn năm không phải bằng ảo ảnh.',{q:'Ngươi nhớ đúng từng lời. Vậy thì ta tin.'},'Chín chiếc đuôi tan thành chín đốm lửa xanh, bay lên thắp sáng cả đỉnh núi, và để lại một dấu son cuối cùng. '+tail]}}
+function finChapter(){var s=STY(),f=kfin(),tot=finTotal(),n=Math.min(FIN_N,tot),sec=bossSec(n),g=!!S.st['fin|fin'],r=recGet({id:'fin'},'fin'),pb=S.pb['fin|fin'];
+var o=back()+'<div class="kg-ch" style="--c:var(--accent)"><div class="kg-ch-head"><div class="kg-mk k2"><b>九尾</b></div><div><small>任意 · Quyết đấu</small><h2>'+esc(f.name||'Cửu Vĩ Hồ')+'</h2><p class="kg-ch-ti">四字熟語 · ことわざ · 慣用句</p></div></div>'+picOf('fin');
+o+='<div class="kg-story">'+paras(f.setup||['Cửu Vĩ Hồ là màn thử thách dành cho những ai muốn thử sức — không cần qua chặng nào trước, ai cũng có thể khiêu chiến bất cứ lúc nào. Ngồi trên cả quỷ và rồng là vị vua phán xét, và ông không hỏi bạn đã học tới đâu.','Ai dám thách thức uy quyền của ông sẽ phải vượt 100 cụm từ — tứ tự thành ngữ, tục ngữ, quán dụng ngữ — mà không được sai một câu. Phần thưởng là vô giá: danh hiệu 九尾調伏, duy ngã độc tôn.'])+'</div>';
+if(g&&f.resolve)o+='<div class="kg-story kg-story2">'+paras(f.resolve)+'</div>';
+o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:var(--accent)"><div class="kg-sx-seal">'+(g?'<div class="kg-sealbox got">'+finSeal()+'</div>':'<div class="kg-ghost"><span>九尾</span><small>妖</small></div>')+'</div>'
 +'<div class="kg-sx-main"><b>'+n+' câu · '+fmt(sec)+'</b><small>Bốc ngẫu nhiên ~33% mỗi chủ đề · sai 1 câu là thua'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
 +'<div class="kg-sx-act"><button class="kg-btn" data-act="fin"'+(tot?'':' disabled')+'>'+(g?'再決闘 Quyết đấu lại':'決闘 Quyết đấu')+'<small>'+n+' câu · '+fmt(sec)+'</small></button></div></div>';
-o+='<div class="kg-story">'+paras(f.setup||['Diêm Ma là màn thử thách dành cho những ai muốn thử sức — không cần qua chặng nào trước, ai cũng có thể khiêu chiến bất cứ lúc nào. Ngồi trên cả quỷ và rồng là vị vua phán xét, và ông không hỏi bạn đã học tới đâu.','Ai dám thách thức uy quyền của ông sẽ phải vượt 100 cụm từ — tứ tự thành ngữ, tục ngữ, quán dụng ngữ — mà không được sai một câu. Phần thưởng là vô giá: danh hiệu 唯我独尊, duy ngã độc tôn.'])+'</div>';
-if(g&&f.resolve)o+='<div class="kg-story kg-story2">'+paras(f.resolve)+'</div>';
 o+='<h3 class="kg-h kg-qh">Nguồn đề</h3><ul class="kg-wl">'+FIN.map(function(x){return'<li><span class="'+(x.a.length?'y':'n')+'">'+(x.a.length?'✔':'✘')+'</span><b class="jp">'+esc(x.c.n)+'</b><span>'+(x.a.length?x.a.length+' từ trong kho · bốc ~'+Math.round(n/Math.max(1,FIN.filter(function(y){return y.a.length}).length))+' câu':'chưa tìm thấy chủ đề này trong dữ liệu')+'</span></li>'}).join('')+'</ul>';
 if(!tot)o+='<p class="kg-sub">Không tìm thấy chủ đề 四字熟語 / ことわざ / 慣用句 trong dữ liệu — kiểm tra tên chủ đề (FIN_CFG).</p>';
 return o+'</div>'}
 function finEnd(){var o;
-if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:var(--accent)">唯我独尊</div><p class="kg-sub" style="text-align:center;margin-top:0">Duy ngã độc tôn · Diêm Ma đã khuất phục</p><div class="kg-sealbox big got">'+finSeal()+'</div><p><b>Danh hiệu vô giá</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()+((STY()&&STY().finale&&STY().finale.resolve)?'<div class="kg-story kg-story2" style="text-align:left">'+paras(STY().finale.resolve)+'</div>':'')+'<button class="kg-btn" data-act="menu">Về Diêm Ma</button><button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
+if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:var(--accent)">九尾調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">Cửu vĩ điều phục · Cửu Vĩ Hồ đã khuất phục</p><div class="kg-sealbox big got">'+finSeal()+'</div><p><b>Danh hiệu vô giá</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()+'<div class="kg-story kg-story2" style="text-align:left">'+paras(kfin().resolve)+'</div>'+'<button class="kg-btn" data-act="menu">Về Cửu Vĩ Hồ</button><button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
 else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-big" style="color:var(--accent)">'+(B.over=='wrong'?'失敗 · Bị loại':'時間切れ · Hết giờ')+'</div>'
- +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Còn <b>'+(B.n-B.done)+'</b> / '+B.n+' câu chưa làm.</p>')+'<p>Thời gian: '+fmt(B.el)+' / '+fmt(B.sec)+'</p><p>Cánh cổng vẫn đóng. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="fin">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về Diêm Ma</button></div>';
+ +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Còn <b>'+(B.n-B.done)+'</b> / '+B.n+' câu chưa làm.</p>')+'<p>Thời gian: '+fmt(B.el)+' / '+fmt(B.sec)+'</p><p>Cánh cổng vẫn đóng. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="fin">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về Cửu Vĩ Hồ</button></div>';
 return o}
 /* ================= 白澤 · BẠCH TRẠCH — hán tự: On · Kun · Hán Việt (Tháp 10 tầng + Luyện tập) ================= */
 var HK_SEC=10,     /* giây cho mỗi câu của Tháp */
@@ -3979,11 +4035,11 @@ return'<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-bi
 function hkSeg(key,arr,cur){return'<div class="hk-seg">'+arr.map(function(a){return'<button class="'+(cur==a[0]?'on':'')+'" data-hk="'+key+':'+a[0]+'">'+a[1]+'</button>'}).join('')+'</div>'}
 function hakChapter(){var g=!!S.st['hak|hak'],r=recGet({id:'hak'},'hak'),m=hkMastN(),tot=KJD.length,H=S.hkc,hs=S.hs,weak=hkWeak().length,cnt=hkCount(H.k,H.l);
 var ac=function(k){var s=hs[k];return s&&s[1]?Math.round(s[0]/s[1]*100)+'%':'–'};
-var o=back()+'<div class="kg-ch" style="--c:'+HK_COL+'"><div class="kg-ch-head"><div class="kg-mk k2"><b>白澤</b></div><div><small>最終 · Ấn cuối</small><h2>Bạch Trạch</h2><p class="kg-ch-ti">漢字 · On · Kun · Hán Việt</p></div></div>';
+var o=back()+'<div class="kg-ch" style="--c:'+HK_COL+'"><div class="kg-ch-head"><div class="kg-mk k2"><b>白澤</b></div><div><small>最終 · Ấn cuối</small><h2>Bạch Trạch</h2><p class="kg-ch-ti">漢字 · On · Kun · Hán Việt</p></div></div>'+picOf('hak');
+o+='<div class="kg-story"><p>Bạch Trạch — thần thú mình rồng đầu người, biết tên của mọi yêu quái và mọi con chữ trên đời. Muốn nhận ấn cuối, bạn phải leo hết '+HK_WIN+' tầng tháp của ông.</p><p>Tầng thấp chỉ có chữ N5–N4. Mỗi câu chỉ có '+HK_SEC+' giây (đồng hồ tạm dừng khi bạn xem lại đáp án). Càng lên cao chữ càng khó: đáp án nhiễu càng gần giống, từ tầng 7 có tới 6 lựa chọn, và có cả câu đảo chiều — cho âm đọc, chọn đúng mặt chữ. Qua mỗi tầng được hồi 1 mạng.</p></div>';
 o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:'+HK_COL+'"><div class="kg-sx-seal">'+(g?'<div class="kg-sealbox got">'+hkSeal()+'</div>':'<div class="kg-ghost"><span>白澤</span><small>瑞</small></div>')+'</div>'
 +'<div class="kg-sx-main"><b>Tháp '+HK_WIN+' tầng · '+HK_LIVES+' mạng</b><small>Mỗi tầng '+HK_FLOOR+' chữ · On, Kun, Hán Việt xen kẽ · từ N5 lên N1'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(S.hkb?'Tầng cao nhất: '+S.hkb:'Chưa leo tháp')+' · '+(r?recTxt(r,r.n):'🏆 Chưa có kỷ lục')+'</small></div>'
 +'<div class="kg-sx-act"><button class="kg-btn" data-act="hakt">挑戦 Leo tháp<small>'+HK_LIVES+' mạng · '+HK_SEC+' giây / câu</small></button></div></div>';
-o+='<div class="kg-story"><p>Bạch Trạch — thần thú mình rồng đầu người, biết tên của mọi yêu quái và mọi con chữ trên đời. Muốn nhận ấn cuối, bạn phải leo hết '+HK_WIN+' tầng tháp của ông.</p><p>Tầng thấp chỉ có chữ N5–N4. Mỗi câu chỉ có '+HK_SEC+' giây (đồng hồ tạm dừng khi bạn xem lại đáp án). Càng lên cao chữ càng khó: đáp án nhiễu càng gần giống, từ tầng 7 có tới 6 lựa chọn, và có cả câu đảo chiều — cho âm đọc, chọn đúng mặt chữ. Qua mỗi tầng được hồi 1 mạng.</p></div>';
 o+='<h3 class="kg-h kg-qh">Tiến độ hán tự</h3><p class="kg-sub">Đã thuộc <b>'+m+' / '+tot+'</b> chữ (đúng cả On, Kun, Hán Việt ở 2 lượt chơi khác nhau).</p><div class="hk-prog"><i style="width:'+(tot?m/tot*100:0)+'%"></i></div><p class="kg-sub">Tỉ lệ đúng · On '+ac('o')+' · Kun '+ac('k')+' · Hán Việt '+ac('v')+'</p>';
 o+='<h3 class="kg-h kg-qh">練習 Luyện tập</h3><p class="kg-sub">Không giới hạn mạng, không đồng hồ. Câu sai sẽ quay lại sau vài câu. Chữ hay sai được ưu tiên.</p>'
 +hkSeg('k',[['mix','Hỗn hợp'],['o','On 音'],['k','Kun 訓'],['v','Hán Việt']],H.k)
@@ -3999,7 +4055,7 @@ function shuin(){var o='<h2 class="kg-h">朱印 · Sổ ấn</h2><p class="kg-su
 LS.forEach(function(l){var ss=stations(l);if(!ss.length)return;var g=ss.filter(function(x){return got(x.t,l)}).length;
 o+='<h3 class="kg-h kg-lh" style="--c:'+LC[l]+'"><span>'+LV[l][0]+'</span>'+l.toUpperCase()+' · '+esc(bossInfo(l).name)+'<small>'+g+' / '+ss.length+' ấn</small></h3><div class="kg-stamps">'
 +ss.map(function(x){var gt=got(x.t,l);return'<div class="kg-book"><div class="kg-sealbox'+(gt?' got':'')+'">'+(gt?seal(ch(x.t),l):ghost(ch(x.t),l))+'</div><b>'+esc(x.t.title)+'</b><div class="kg-sub" style="margin:4px 0 0">'+colN(x)+' / '+x.a.length+' từ'+(gt?' · ✔':'')+'</div><div class="kg-sub" style="margin:2px 0 0;font-size:12px">'+recLine(x.t,l,x.a.length)+'</div></div>'}).join('')+'</div>'});
-var fg=!!S.st['fin|fin'],fr=recGet({id:'fin'},'fin');o+='<h3 class="kg-h kg-lh" style="--c:var(--accent)"><span>閻魔</span>任意 · Quyết đấu Diêm Ma<small>'+(fg?'✔':'chưa')+'</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(fg?' got':'')+'">'+(fg?finSeal():'<div class="kg-ghost"><span>閻魔</span><small>極</small></div>')+'</div><b>四字熟語・ことわざ・慣用句</b><div class="kg-sub" style="margin:2px 0 0;font-size:12px">'+(fr?recTxt(fr,Math.min(FIN_N,finTotal())):'🏆 Chưa có kỷ lục')+'</div></div></div>';
+var fg=!!S.st['fin|fin'],fr=recGet({id:'fin'},'fin');o+='<h3 class="kg-h kg-lh" style="--c:var(--accent)"><span>九尾</span>任意 · Quyết đấu Cửu Vĩ Hồ<small>'+(fg?'✔':'chưa')+'</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(fg?' got':'')+'">'+(fg?finSeal():'<div class="kg-ghost"><span>九尾</span><small>妖</small></div>')+'</div><b>四字熟語・ことわざ・慣用句</b><div class="kg-sub" style="margin:2px 0 0;font-size:12px">'+(fr?recTxt(fr,Math.min(FIN_N,finTotal())):'🏆 Chưa có kỷ lục')+'</div></div></div>';
 o+=hkShuin();return o+'<h3 class="kg-h kg-lh" style="--c:var(--ink)">称号 · Huy hiệu</h3><div class="kg-badges">'+BG.map(function(b){return'<span class="kg-bd'+(S.b[b[0]]?' on':'')+'">'+b[1]+' · '+b[2]+'</span>'}).join('')+'</div>'}
 
 /* ================= TAB 3 · TỪ VỰNG (đã thu thập) ================= */
@@ -4049,7 +4105,8 @@ else if(d.act=='hnext'){hakNext();draw();root.scrollTop=0}
 else if(d.act=='hend'){if(B&&B.kind=='hak'){hkEnd('done');draw();root.scrollTop=0}}
 else if(d.act=='hcont'){if(B&&B.kind=='hak'&&B.over=='win'){B.over=null;hkQ();draw();root.scrollTop=0}}
 else if(d.o!=null&&B&&B.kind=='hak'){hakAns(+d.o);draw()}
-else if(d.act=='map'){if(B&&B.kind=='boss'&&B.newClear){var ni=LS.indexOf(B.l)+1;mapMsg=ni<5?'Chặng mới đã mở: '+bossInfo(LS[ni]).name+' ('+LS[ni].toUpperCase()+')':'Năm dấu son đã đủ — 終章 đã mở. Diêm Ma vẫn luôn chờ kẻ dám thách thức!'}abort();nd=null;draw();root.scrollTop=0}
+else if(d.zoom){zoomPic(d.zoom)}
+else if(d.act=='map'){if(B&&B.kind=='boss'&&B.newClear){var ni=LS.indexOf(B.l)+1;mapMsg=ni<5?'Chặng mới đã mở: '+bossInfo(LS[ni]).name+' ('+LS[ni].toUpperCase()+')':'Năm dấu son đã đủ — 終章 đã mở. Cửu Vĩ Hồ vẫn luôn chờ kẻ dám thách thức!'}abort();nd=null;draw();root.scrollTop=0}
 else if(d.act=='pro'){S.pro=1;save();abort();nd=null;draw();root.scrollTop=0}
 else if(d.act=='menu'){abort();draw();root.scrollTop=0}
 else if(d.act=='col'){startCol(+d.s);draw();root.scrollTop=0}
