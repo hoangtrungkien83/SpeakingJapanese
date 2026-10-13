@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -214,7 +215,7 @@
   .topic-icon{ display:none; }
   .topic-header h2{
     margin: 0 0 4px;
-    font-family: 'Zen Maru Gothic', -apple-system, "Hiragino Sans", sans-serif;
+    font-family: 'Inter','Zen Maru Gothic', -apple-system, "Hiragino Sans", sans-serif;
     font-size: 30px;
     font-weight: 900;
     letter-spacing: -0.01em;
@@ -409,7 +410,7 @@
   }
   .tc-title{
     margin: 0 0 10px;
-    font-family: 'Zen Maru Gothic', -apple-system, "Hiragino Sans", sans-serif;
+    font-family: 'Inter','Zen Maru Gothic', -apple-system, "Hiragino Sans", sans-serif;
     font-size: 25px;
     font-weight: 900;
     letter-spacing: -0.01em;
@@ -979,7 +980,7 @@
 :root[data-theme="dark"] .item-card .jp,
 :root[data-theme="dark"] .item-card.lv .jp,
 :root[data-theme="dark"] .item-card.advanced .jp{
-  font-family:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN",serif; color:var(--gold-hi); font-weight:600;
+  font-family:"Noto Serif","Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN",serif; color:var(--gold-hi); font-weight:600;
 }
 :root[data-theme="dark"] .item-card .reading{ color:var(--ink-soft); }
 /* khung giải thích: viền kép kiểu khung tranh */
@@ -992,7 +993,7 @@
   outline:1px solid rgba(201,169,97,.28); outline-offset:-9px;
 }
 :root[data-theme="dark"] .modal-headword{
-  font-family:"Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); text-shadow:0 0 28px rgba(235,213,155,.35);
+  font-family:"Noto Serif","Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); text-shadow:0 0 28px rgba(235,213,155,.35);
 }
 :root[data-theme="dark"] .modal-reading{ color:var(--ink-soft); letter-spacing:.06em; }
 :root[data-theme="dark"] .modal .modal-meaning,
@@ -1105,7 +1106,7 @@
 :root[data-theme="dark"] .side-ctrl{ border-left-color:rgba(201,169,97,.3); }
 :root[data-theme="dark"] .side-ctrl .tab-btn.active{ border-left-color:var(--gold); background:rgba(201,169,97,.08); }
 :root[data-theme="dark"] .side-foot{ border-top-color:rgba(201,169,97,.3); }
-:root[data-theme="dark"] .welcome h2{ font-family:"Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); }
+:root[data-theme="dark"] .welcome h2{ font-family:"Noto Serif","Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); }
 
 .modal-hanviet{ display:block; width:fit-content; margin-bottom:12px; }
 /* ô chữ Hán + âm Hán Việt (dùng chung kiểu với 四字熟語) trong khung so sánh / cặp từ */
@@ -1199,7 +1200,7 @@
   .side .brand-mark img{ width:70%; height:70%; object-fit:contain; display:block; }
   .side .brand-text{ display:flex; flex-direction:column; align-items:center; }
   .side .brand-text h1{
-    font-family:"Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN",serif;
+    font-family:"Noto Serif","Shippori Mincho","Noto Serif JP","Hiragino Mincho ProN",serif;
     font-size:30px; font-weight:700; line-height:1.2; letter-spacing:.32em; padding-left:.32em; margin:0;
     background:var(--ti); -webkit-background-clip:text; background-clip:text; color:transparent; -webkit-text-fill-color:transparent;
   }
@@ -1276,7 +1277,7 @@
   .side-item.game-btn .n{ font-size:18px; min-width:26px; }
   :root[data-theme="dark"] .side-item.game-btn{ color:var(--gold-hi); }
   .game-head h2{ margin:0 0 6px; font-size:28px; font-weight:700; }
-  :root[data-theme="dark"] .game-head h2{ font-family:"Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); }
+  :root[data-theme="dark"] .game-head h2{ font-family:"Noto Serif","Shippori Mincho","Noto Serif JP",serif; color:var(--gold-hi); }
   .game-head p{ margin:0 0 18px; color:var(--ink-soft); font-size:15px; line-height:1.65; }
   .game-set{ display:flex; flex-wrap:wrap; gap:14px 22px; align-items:center; padding:14px 16px; margin-bottom:16px; background:var(--bg-card); border:1px solid var(--border); border-radius:14px; }
   .game-set .gs{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:13.5px; color:var(--ink-soft); }
@@ -1291,7 +1292,7 @@
   .game-board{ background:var(--bg-card); border:1px solid var(--border); border-radius:18px; overflow:hidden; box-shadow:var(--shadow-card); }
   .game-stat{ display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:16px 20px; border-bottom:1px solid var(--border); background:var(--bg-subtle); }
   .game-need{ display:flex; align-items:center; gap:12px; font-size:13.5px; color:var(--ink-soft); }
-  .game-need .big{ min-width:54px; height:54px; padding:0 10px; display:inline-flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; font-family:"Shippori Mincho","Noto Serif JP",serif; color:var(--accent); background:var(--bg-card); border:2px solid var(--accent); border-radius:14px; }
+  .game-need .big{ min-width:54px; height:54px; padding:0 10px; display:inline-flex; align-items:center; justify-content:center; font-size:30px; font-weight:700; font-family:"Noto Serif","Shippori Mincho","Noto Serif JP",serif; color:var(--accent); background:var(--bg-card); border:2px solid var(--accent); border-radius:14px; }
   :root[data-theme="dark"] .game-need .big{ color:var(--gold-hi); border-color:var(--gold); }
   .game-nums{ display:flex; gap:20px; font-size:12px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.06em; }
   .game-nums div{ display:flex; flex-direction:column; align-items:flex-end; }
@@ -1479,7 +1480,7 @@
   .kj-panel{ display:none; position:fixed; inset:0; z-index:9000; background:var(--bg); color:var(--ink); flex-direction:column; }
   .kj-panel.show{ display:flex; }
   .kj-bar{ flex:0 0 auto; display:flex; align-items:center; gap:10px; padding:8px 14px; border-bottom:1px solid var(--border); background:var(--bg-card); }
-  .kj-bar h2{ margin:0 6px 0 0; font-size:20px; font-weight:700; font-family:"Shippori Mincho","Noto Serif JP",serif; }
+  .kj-bar h2{ margin:0 6px 0 0; font-size:20px; font-weight:700; font-family:"Noto Serif","Shippori Mincho","Noto Serif JP",serif; }
   :root[data-theme="dark"] .kj-bar h2{ color:var(--gold-hi); }
   .kj-sp{ flex:1; }
   .kj-b{ font:inherit; font-size:14px; font-weight:600; padding:6px 14px; border-radius:999px; cursor:pointer; color:var(--ink); background:var(--bg-subtle); border:1px solid var(--border); }
@@ -1515,7 +1516,7 @@
     box-shadow:0 0 0 1.5px color-mix(in srgb,var(--lv,var(--accent)) 60%,transparent), 0 0 22px -2px color-mix(in srgb,var(--lv,var(--accent)) 70%,transparent), 0 10px 22px rgba(0,0,0,.5); }
   .kj-bk{ transform:rotateY(180deg); display:grid; grid-template-columns:auto 1fr; grid-template-rows:1fr auto; column-gap:.5vw; padding:.4vh .6vw .5vh; background:color-mix(in srgb,var(--accent) 8%,var(--bg)); }
   .kj-bk .kj-k{ grid-row:1; grid-column:1; align-self:center; }
-  .kj-k{ font-family:"Shippori Mincho","Noto Serif JP","Noto Serif CJK JP",serif; font-size:clamp(22px,min(5.9vh,4vw),67px); line-height:1.05; color:var(--ink); }
+  .kj-k{ font-family:"Noto Serif","Shippori Mincho","Noto Serif JP","Noto Serif CJK JP",serif; font-size:clamp(22px,min(5.9vh,4vw),67px); line-height:1.05; color:var(--ink); }
   :root[data-theme="dark"] .kj-k{ color:var(--gold-hi,var(--ink)); }
   .kj-r{ grid-row:1; grid-column:2; display:flex; flex-direction:column; justify-content:space-between; align-items:flex-end; text-align:right; min-width:0; padding:.3vh 0; font-size:clamp(9px,1.3vh,13px); line-height:1.25; color:var(--ink-soft); overflow:hidden; }
   .kj-r .on{ color:var(--ink-soft); } .kj-r .kun{ color:var(--ink-faint); }
@@ -1534,7 +1535,7 @@
 :root[data-theme="dark"]{--bg:#171310;--bg-card:#211C17;--bg-subtle:#1C1813;--card-top:#251F1A;--ink:#D8CEB9;--ink-soft:#9A8F79;--ink-faint:#7A705E;--accent:#C24A38;--accent-dark:#E0A090;--accent-soft:#33211C;--accent-soft-2:#42291F;--border:#342C24;--border-soft:#2A231D;--btn-border:#6A5F4F;--edge:#6A5F4F;--sidebg:#1B1612;--shadow-card:3px 3px 0 #0C0A08;--shadow-modal:8px 8px 0 rgba(0,0,0,.5);--kg-gold:#B8963F;--kg-ok:#5FA37B;--gold:#B08D52;--gold-hi:#D8CEB9}
 :root[data-theme="dark"][data-contrast="mid"]{--bg:#1A1613;--bg-card:#241F19;--bg-subtle:#1F1A16;--card-top:#29231D;--ink:#E4DAC6;--ink-soft:#A89D86;--ink-faint:#867C69;--accent:#D0523F;--accent-dark:#EBA797;--accent-soft:#382420;--accent-soft-2:#472C23;--border:#3A3128;--border-soft:#2E2720;--btn-border:#857A66;--edge:#857A66;--sidebg:#1E1914;--shadow-card:3px 3px 0 #0E0C0A;--shadow-modal:8px 8px 0 rgba(0,0,0,.55);--kg-gold:#C6A144;--kg-ok:#68AB84;--gold:#BE9855;--gold-hi:#E4DAC6}
 :root[data-theme="dark"][data-contrast="hi"]{--bg:#1B1713;--bg-card:#26211B;--bg-subtle:#211C17;--card-top:#2B251E;--ink:#F0E7D4;--ink-soft:#B3A78F;--ink-faint:#8A7F6B;--accent:#E0604A;--accent-dark:#F4A596;--accent-soft:#3A2520;--accent-soft-2:#4A2D26;--border:#3E352B;--border-soft:#2F2820;--btn-border:#A39579;--edge:#A39579;--sidebg:#1F1A15;--shadow-card:3px 3px 0 #0F0D0B;--shadow-modal:8px 8px 0 rgba(0,0,0,.55);--kg-gold:#D2A94B;--kg-ok:#6DB58A;--gold:#C8A15A;--gold-hi:#F0E7D4}
-body *{font-family:"Shippori Mincho","Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif!important}
+body *{font-family:"Noto Serif","Shippori Mincho","Noto Serif JP","Yu Mincho","Hiragino Mincho ProN",serif!important}
 body{background-color:var(--bg)}
 header{border-bottom:2px solid var(--edge)!important}
 .brand-text h1{font-weight:800!important;letter-spacing:.16em}
