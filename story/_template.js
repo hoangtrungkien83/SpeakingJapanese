@@ -15,6 +15,12 @@
        lose   câu hiện khi thua
    ending   : đoạn kết 終章, mở khi đủ 5 dấu son (mảng đoạn văn)
    finale   : (tuỳ chọn) màn Quyết đấu Diêm Ma sau N1 — name, setup (lời dẫn), resolve (lời kết khi thắng)
+   yokai    : (tuỳ chọn) 四妖 — thẻ lớn 4 yêu quái hiện ra khi bấm vào ảnh Cửu Vĩ Hồ.
+       title, tagline, intro (mảng đoạn như intro ở trên)
+       monsters: { rokurokubi | jorogumo | aoandon | karakasaobake : { title, place, setup, resolve, moral } }
+       setup luôn hiện; resolve + moral CHỈ hiện sau khi đã khuất phục Cửu Vĩ Hồ.
+       Ảnh:  img/game/<id>.jpg   Dấu: img/game/<id>1.png   (id = tên bên trên)
+   hak      : (tuỳ chọn) truyện Bạch Trạch — title, place, setup, resolve (hiện khi đã có ấn), moral
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
 window.FUSOU_STORY["TênMới"]={
@@ -113,6 +119,24 @@ window.FUSOU_STORY["TênMới"]={
       ],
       "lose": "Câu hiện khi thua, rồi nhắc ôn lại."
     }
+  },
+  "yokai": {
+    "title": "Tiêu đề thẻ 四妖",
+    "tagline": "Câu dẫn ngắn dưới tiêu đề thẻ…",
+    "intro": ["Đoạn mở đầu của thẻ…", {"q": "« Một đoạn trích dẫn… »"}],
+    "monsters": {
+      "rokurokubi":    {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["Đoạn dẫn — luôn hiện…"], "resolve": ["Diễn biến — chỉ hiện sau khi khuất phục Cửu Vĩ Hồ…"], "moral": "Câu chốt."},
+      "jorogumo":      {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""},
+      "aoandon":       {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""},
+      "karakasaobake": {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""}
+    }
+  },
+  "hak": {
+    "title": "Danh hiệu Bạch Trạch",
+    "place": "Địa điểm",
+    "setup": ["Đoạn dẫn — luôn hiện…"],
+    "resolve": ["Diễn biến — hiện khi đã nhận ấn Bạch Trạch…"],
+    "moral": "Câu chốt."
   },
   "ending": [
     "Đoạn kết khi đủ 5 dấu son…"
