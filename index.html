@@ -2001,6 +2001,13 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
 .fsw .fsl button{min-width:40px;padding:4px 6px 3px;border:1px solid var(--border,#ccc);background:none;color:var(--ink,#222);cursor:pointer;font-family:'EB Garamond',serif!important;line-height:1.1;border-radius:2px!important}
 .fsw .fsl button small{display:block;font:600 9px Inter,sans-serif!important;opacity:.7}
 .fsw .fsl button.on{background:var(--accent,#c0392b);color:#fff;border-color:var(--accent,#c0392b)}
+/* Chọn bộ ảnh nền: thanh dọc, nằm ngay trên nút Aa */
+.bgsw{position:fixed;right:10px;bottom:calc(52px + 38px + 10px + env(safe-area-inset-bottom,0px));z-index:10000;display:flex;flex-direction:column;width:38px;border:1px solid var(--edge,#3b2a17);background:var(--bg-card,#fff);box-shadow:2px 2px 0 var(--edge,#3b2a17);border-radius:19px;overflow:hidden}
+.bgsw button{appearance:none;border:0;margin:0;background:none;color:var(--ink,#222);cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;letter-spacing:.12em;font:700 13px/1 'Noto Sans JP','Hiragino Sans','Yu Gothic',sans-serif;padding:10px 0;width:100%;transition:background .2s,color .2s}
+.bgsw button+button{border-top:1px solid var(--border,#ccc)}
+.bgsw button:hover{background:color-mix(in srgb,var(--accent,#c0392b) 12%,transparent)}
+.bgsw button.on{background:var(--accent,#c0392b);color:#fff}
+.bgsw button:focus-visible{outline:2px solid var(--accent,#c0392b);outline-offset:-2px}
 </style>
 <script>
 (function(){var r=document.documentElement,t='light';try{t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}}catch(e){t='light';}r.setAttribute('data-theme',t);})();
@@ -2214,6 +2221,10 @@ else{
       </div>
   </div></div>
 
+<div class="bgsw" id="bgsw" role="radiogroup" aria-label="Bộ ảnh nền">
+  <button type="button" role="radio" data-bgset="1" aria-checked="true" title="Bộ ảnh 一ノ瀬">一ノ瀬</button>
+  <button type="button" role="radio" data-bgset="2" aria-checked="false" title="Bộ ảnh 涼介">涼介</button>
+</div>
 <div class="fsw" id="fsw"><div class="fsl" id="fsl"></div><button type="button" id="fsb" aria-label="Cỡ chữ" title="Cỡ chữ">Aa</button></div>
 <script>
 /* 5 cỡ chữ: 100% (gốc) + 4 mức lớn dần. Chỉ đổi cỡ chữ (biến --fs nhân vào mọi font-size), KHÔNG phóng to giao diện */
@@ -2273,7 +2284,7 @@ var i=0;try{i=+localStorage.getItem(k)||0}catch(e){}ap(Math.min(4,Math.max(0,i))
 
 <div class="credit">Made by <b id="creditName">Park Trung Kien</b></div>
 <div class="credit-bubble" id="creditBubble">こんにちは！一緒に楽しく、効率よく勉強しましょう。キエンです、これからよろしくね🦊</div>
-<script src="speaking_data.js" charset="utf-8"></script>
+<script src="data/speaking_data.js" charset="utf-8"></script>
 <script>
 
 
@@ -2788,7 +2799,8 @@ document.addEventListener('click', (e) => {
     'dark/4':{x:0.5,y:0.42,pw:0.85,w:780,h:1040,t:0,l:0.04,r:0.98,b:1}
   };
   var DEFAULT_FOCUS={x:0.5,y:0.5,pw:0.9,t:0,l:0,r:1,b:1};
-  var EXTS=['webp','jpg','jpeg','png','avif','gif'], DIRS={l:'img/light',d:'img/dark'}, CACHE={};
+  var EXTS=['webp','jpg','jpeg','png','avif','gif'], CACHE={}, SET=(function(){ try{ return localStorage.getItem('fusou_bgset')==='2'?'2':'1'; }catch(e){ return '1'; } })();
+  function dirOf(m){ return 'img/background'+SET+'/'+(m==='d'?'dark':'light'); }
   function loadImg(u){ return new Promise(function(res,rej){ var im=new Image(); im.onload=function(){res(im);}; im.onerror=rej; im.src=u; }); }
   /* 1) đọc danh sách thư mục (Live Server, nginx autoindex, python -m http.server...) */
   function listDir(dir){
@@ -2814,7 +2826,8 @@ document.addEventListener('click', (e) => {
     return tryNum(1,0);
   }
   function getList(mode){
-    return CACHE[mode]||(CACHE[mode]=listDir(DIRS[mode]).catch(function(){ return probeDir(DIRS[mode]); }));
+    var dir=dirOf(mode);
+    return CACHE[dir]||(CACHE[dir]=listDir(dir).catch(function(){ return probeDir(dir); }));
   }
   var FADES={};
   ['L','R','T','B'].forEach(function(k){ var d=document.createElement('div'); d.style.cssText='position:fixed;z-index:-1;pointer-events:none;display:none'; document.body.appendChild(d); FADES[k]=d; });
@@ -2840,12 +2853,13 @@ document.addEventListener('click', (e) => {
   function theme(){ return document.documentElement.getAttribute('data-theme')==='dark'?'d':'l'; }
   var curMode='', busy=false;
   function focusOf(u,im){
-    var key=u.replace(/^img\//,'').replace(/\.[^.]+$/,'');
+    /* bố cục đã khai báo ở trên thuộc bộ 一ノ瀬 (background1) -> bỏ tiền tố để khớp khoá 'light/1'... ; bộ 涼介 dùng khoá 'background2/light/ten-file' nếu cần */
+    var key=u.replace(/^img\//,'').replace(/^background1\//,'').replace(/\.[^.]+$/,'');
     var f=Object.assign({},DEFAULT_FOCUS,FOCUS[key]||{});
     f.w=im.naturalWidth; f.h=im.naturalHeight; return f;
   }
   function show(){
-    var t=theme(); if(busy&&curMode===t) return; busy=true; curMode=t;
+    var t=theme(), st=SET; if(busy&&curMode===t) return; busy=true; curMode=t;
     getList(t).then(function(list){
       var pool=list.filter(function(u){ return u!==cur; });
       if(!pool.length) pool=list;
@@ -2853,7 +2867,7 @@ document.addEventListener('click', (e) => {
       var u=pool[Math.floor(Math.random()*pool.length)];
       return loadImg(u).then(function(im){
         return (im.decode?im.decode():Promise.resolve()).catch(function(){}).then(function(){
-          if(theme()!==t) return;
+          if(theme()!==t||SET!==st) return;
           cur=u; var f=focusOf(u,im), back=(front===A)?B:A;
           back.style.backgroundImage='url("'+u+'")'; place(back,f); curF=f;
           back.className='bg-layer on'+(t==='l'?' sketch':'');
@@ -2863,6 +2877,16 @@ document.addEventListener('click', (e) => {
     }).catch(function(){}).then(function(){ busy=false; });
   }
   new MutationObserver(function(){ if(cur && curMode!==theme()) show(); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+  /* nút chọn bộ ảnh: 一ノ瀬 (background1) / 涼介 (background2) */
+  var bgsw=document.getElementById('bgsw');
+  function markSet(){ [].forEach.call(bgsw.querySelectorAll('button'),function(b){ var on=b.getAttribute('data-bgset')===SET; b.classList.toggle('on',on); b.setAttribute('aria-checked',on); }); }
+  bgsw.addEventListener('click',function(e){
+    var b=e.target.closest('button[data-bgset]'); if(!b) return;
+    var s=b.getAttribute('data-bgset'); if(s===SET) return;
+    SET=s; try{ localStorage.setItem('fusou_bgset',SET); }catch(_){}
+    markSet(); cur=''; busy=false; curMode=''; show();
+  });
+  markSet();
   show();
   setInterval(function(){ if(Date.now()-last>=INTERVAL) show(); },30000);
 })();
@@ -3613,7 +3637,7 @@ document.addEventListener('click', (e) => {
 (function(){
 /* ============ CẤU HÌNH (chỉnh ở đây) ============ */
 var COLLECT_NEED=1;  /* tỉ lệ từ phải thu thập để mở Boss của chủ đề (1 = đủ 100%, 0.8 = 80%) */
-var SEC_PER_Q=10;    /* giây cho mỗi câu của Boss: 10 giây/câu. 50 câu → 500 giây */
+var SEC_PER_Q=10;    /* Boss / Cửu Vĩ Hồ: MỖI CÂU có 10 giây đếm ngược; hết 10 giây chưa trả lời là thua. Trả lời xong thì đồng hồ dừng, thời gian được cộng dồn; bấm Space sang câu sau thì reset lại 10 giây */
 var MIN_SEC=60;      /* thời gian tối thiểu của một trận Boss */
 var BATCH=10;        /* mỗi lượt thu thập tối đa bấy nhiêu từ */
 var MAP_LOCK=false;   /* true: phải qua chặng trước mới mở chặng sau · false: mở sẵn tất cả */
@@ -3758,8 +3782,8 @@ requestAnimationFrame(go);var im=V.querySelector('.kg-pic img');if(im&&!im.compl
 function back(){return'<button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'}
 function stCard(o,l,si){var t=o.t,n=o.a.length,c=colN(o),g=got(t,l),sec=bossSec(n),lim=wrongLim(n),pb=S.pb[t.id+'|'+l];
 return'<div class="kg-sx'+(g?' got':'')+'" style="--c:'+LC[l]+'"><div class="kg-sx-seal">'+(g?seal(ch(t),l):ghost(ch(t),l))+'</div>'
-+'<div class="kg-sx-main"><b>'+esc(t.title)+'</b><div class="kg-sx-bar"><i style="width:'+(c/n*100)+'%"></i></div><small>'+n+' từ · '+fmt(sec)+' · sai 1 câu là thua'+(g?' · ✔ đã có ấn':'')+'</small><small>'+recLine(t,l,n)+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
-+'<div class="kg-sx-act"><button class="kg-btn" data-act="boss" data-s="'+si+'">'+(g?'再挑戦 Thách lại':'挑戦 Thách đấu Boss')+'<small>'+n+' câu · '+fmt(sec)+'</small></button>'
++'<div class="kg-sx-main"><b>'+esc(t.title)+'</b><div class="kg-sx-bar"><i style="width:'+(c/n*100)+'%"></i></div><small>'+n+' từ · '+SEC_PER_Q+' giây/câu · sai 1 câu là thua'+(g?' · ✔ đã có ấn':'')+'</small><small>'+recLine(t,l,n)+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
++'<div class="kg-sx-act"><button class="kg-btn" data-act="boss" data-s="'+si+'">'+(g?'再挑戦 Thách lại':'挑戦 Thách đấu Boss')+'<small>'+n+' câu · '+SEC_PER_Q+' giây/câu</small></button>'
 +'<button class="kg-btn ghost" data-act="col" data-s="'+si+'"'+(c>=n?' disabled':'')+'>'+(c>=n?'✔ Đã đủ từ':'収集 Thu thập · '+c+'/'+n)+'</button></div></div>'}
 function chapter(){if(nd=='hak')return hakChapter();if(nd=='fin')return finChapter();if(nd=='pro')return prologue();if(nd=='end')return epilogue();
 var l=nd,i=LS.indexOf(l),b=bossInfo(l),ss=stations(l),done=lvDone(l),g=ss.filter(function(x){return got(x.t,l)}).length;
@@ -3810,17 +3834,17 @@ var o='<div class="kg-sub">Điền từ thích hợp vào chỗ trống</div><di
 if(fin&&B.ok)o+='<div class="kg-rd">'+esc(a.r)+(a.h?' · '+esc(a.h):'')+' — '+esc(a.m)+'</div>';
 o+='<div class="kg-opts">'+B.opt.map(function(x,j){var k='';if(fin){if(x.k==a.k)k='ok';else if(j==B.ans)k='bad'}
 return'<button class="'+k+'" data-o="'+j+'"'+(fin?' disabled':'')+'>'+optJp(x)+'</button>'}).join('')+'</div>';return o}
-function nxt(){if(B.pauseAt){var d=Date.now()-B.pauseAt;B.dl+=d;B.paused=(B.paused||0)+d;B.pauseAt=0}B.i++;B.ans=null;B.ok=null;B.opt=null;draw()}
+function nxt(){B.i++;B.ans=null;B.ok=null;B.opt=null;if(B.kind=='boss'){B.qt0=Date.now();B.dl=B.qt0+B.sec*1000}draw()}
 function adv(ms){var t=++B.tk;setTimeout(function(){if(B&&B.tk===t&&B.ans!=null&&!B.fin&&(B.kind=='boss'||B.ok))nxt()},ms)}
 function ansr(ok){var c=B.q[B.i],a=c.a;tick();B.ok=ok;
 if(B.kind=='col'){
  if(!ok)B.res[a.k]=0;else{B.res[a.k]=1;if(c.last){S.c[a.k]=1;S.xp+=10;B.gain+=10}else{S.z[a.k]=1;S.xp+=5;B.gain+=5}B.got.push(a)}
  award();save();draw();return}
-if(Date.now()>=B.dl){endBoss(false,'time');draw();return}
-B.done++;if(!ok)B.wr++;
+if(Date.now()>=B.dl){B.act+=B.sec*1000;endBoss(false,'time');draw();return}
+B.leftA=Math.max(0,(B.dl-Date.now())/1000);B.act+=Date.now()-B.qt0;B.done++;if(!ok)B.wr++;
 if(!ok&&B.wr>=B.lim){endBoss(false,'wrong',a);save();draw();return}
 if(B.done>=B.n)endBoss(true);
-B.pauseAt=Date.now();save();draw()}
+save();draw()}
 
 /* ================= CHẾ ĐỘ 1 · THU THẬP ================= */
 function startCol(si){var o=stations(nd)[si];if(!o)return;abort();
@@ -3839,22 +3863,22 @@ return o+'</div>'}
 function colEnd(){var ss=stations(B.l),o=ss[B.si],n=B.got.length,can=o&&canBoss(o),all=o&&colN(o)>=o.a.length;
 var li=B.words.map(function(a){var y=B.res[a.k];return'<li><span class="'+(y?'y':'n')+'">'+(y?'✔':'✘')+'</span><b class="jp">'+esc(a.w)+'</b><span>'+esc(a.r)+' · '+esc(a.m)+'</span></li>'}).join('');
 return'<div class="kg-panel" style="text-align:center"><div class="kg-big" style="color:var(--accent)">収集完了</div><p>Đạt <b>'+n+' / '+B.words.length+'</b> từ trong lượt này'+(B.gain?' · +'+B.gain+' XP':'')+'</p><p class="kg-sub" style="text-align:center">Chủ đề này: '+colN(o)+' / '+o.a.length+' từ</p><ul class="kg-wl">'+li+'</ul>'
-+(can?'<p><b>Boss đã mở!</b> Bạn có '+fmt(bossSec(o.a.length))+' để vượt qua '+o.a.length+' câu.</p><button class="kg-btn" data-act="boss" data-s="'+B.si+'">挑戦 Thách đấu Boss</button>':'')
++(can?'<p><b>Boss đã mở!</b> Mỗi câu có '+SEC_PER_Q+' giây — hết giờ ở bất kỳ câu nào là thua. Vượt qua '+o.a.length+' câu để nhận ấn.</p><button class="kg-btn" data-act="boss" data-s="'+B.si+'">挑戦 Thách đấu Boss</button>':'')
 +(all?'':'<button class="kg-btn'+(can?' ghost':'')+'" data-act="col" data-s="'+B.si+'">Thu thập tiếp</button>')
 +'<button class="kg-btn ghost" data-act="menu">Về chặng</button></div>'}
 
 /* ================= CHẾ ĐỘ 2 · THÁCH ĐẤU BOSS (đồng hồ) ================= */
 function startBoss(si){var o=stations(nd)[si];if(!o||!canBoss(o))return;abort();
-var sec=bossSec(o.a.length),q=o.a.slice().sort(rnd).map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}});
-var me={kind:'boss',l:nd,si:si,t:o.t,pool:o.a,q:q,n:o.a.length,lim:wrongLim(o.a.length),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:sec,dl:Date.now()+sec*1000,fin:0,over:null,gain:0};
+var q=o.a.slice().sort(rnd).map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}});
+var me={kind:'boss',l:nd,si:si,t:o.t,pool:o.a,q:q,n:o.a.length,lim:wrongLim(o.a.length),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0};
 runBoss(me)}
 function runBoss(me){me.tid=setInterval(function(){if(B!==me||me.fin){clearInterval(me.tid);return}
-if(me.pauseAt)return;var left=(me.dl-Date.now())/1000;if(left<=0){endBoss(false);draw();return}
+if(me.ans!=null)return;var left=(me.dl-Date.now())/1000;if(left<=0){me.act+=me.sec*1000;endBoss(false,'time');draw();return}
 var a=document.getElementById('kgTm'),b=document.getElementById('kgTb'),w=document.getElementById('kgTmw');
 if(a)a.textContent=fmt(left);if(b)b.style.width=(left/me.sec*100)+'%';if(w)w.classList.toggle('low',left<me.sec*.2)},250);
 B=me}
 function endBoss(win,why,wa){if(B.fin)return;B.fin=1;clearInterval(B.tid);B.over=win?'win':(why||'time');B.wa=wa||null;
-B.el=Math.min(B.sec,Math.max(1,Math.round((Date.now()-B.t0-(B.paused||0))/1000)));
+B.el=Math.max(1,Math.round(B.act/1000)); /* tổng thời gian trả lời (cộng dồn từng câu) */
 if(win){var was=cleared(B.l),key=B.t.id+'|'+B.l;B.first=!got(B.t,B.l);S.st[key]=1;
  B.pool.forEach(function(a){S.c[a.k]=1;S.z[a.k]=1}); /* vượt Boss = full ấn + coi như đã thu thập đủ từ */
  if(B.first){B.gain=B.l=='fin'?200:50;S.xp+=B.gain}
@@ -3862,12 +3886,12 @@ if(win){var was=cleared(B.l),key=B.t.id+'|'+B.l;B.first=!got(B.t,B.l);S.st[key]=
  var R=recs(),old=R[key];B.prev=old||null;
  if(!old||B.el<old.sec){R[key]={sec:B.el,n:B.n,name:who(),id:(window.FUSOU_USER&&window.FUSOU_USER.id)||'',date:new Date().toLocaleDateString('sv-SE')};B.rec=old?'beat':'first';try{localStorage.setItem(RK_KEY,JSON.stringify(R))}catch(e){}}
  B.newClear=!was&&cleared(B.l);award();save();head()}}
-function playBoss(){if(!B.fin&&!B.pauseAt&&Date.now()>=B.dl)endBoss(false);if(B.fin)return bossEnd();
-var left=Math.max(0,(B.dl-(B.pauseAt||Date.now()))/1000),pct=left/B.sec*100,c=B.q[B.i];
+function playBoss(){if(!B.fin&&B.ans==null&&Date.now()>=B.dl){B.act+=B.sec*1000;endBoss(false,'time')}if(B.fin)return bossEnd();
+var left=B.ans!=null?(B.leftA||0):Math.max(0,(B.dl-Date.now())/1000),pct=left/B.sec*100,c=B.q[B.i];
 return'<div class="kg-bh"><span class="kg-bn">'+(B.l=='fin'?'九尾':LV[B.l][0])+' '+esc(B.t.title)+'</span><div class="kg-tmw'+(pct<20?' low':'')+'" id="kgTmw"><b id="kgTm">'+fmt(left)+'</b></div></div>'
 +'<div class="kg-tbar"><i id="kgTb" style="width:'+pct+'%"></i></div><div class="kg-bs">Câu <b>'+(B.ans!=null?B.done:B.done+1)+'</b> / '+B.n+' · sai '+B.wr+' / '+B.lim+' ('+(B.lim==1?'sai 1 câu là thua':'sai '+B.lim+' câu là thua')+')</div>'
-+'<div class="kg-panel'+(B.ok===false?' kg-shake':'')+'">'+mcq(c)+(B.ans!=null&&!B.fin?fbBox(c.a,B.opt&&B.opt[B.ans])+'<button class="kg-btn" data-act="next" style="margin-top:12px">次へ → <small>hoặc nhấn Space · đồng hồ đang tạm dừng</small></button>':'')+'</div>'}
-function timeBox(){var h='<div class="kg-tbx"><span>⏱ Hoàn thành trong <strong>'+fmt(B.el)+'</strong> / '+fmt(B.sec)+' · trung bình <strong>'+avg(B.el,B.n)+'</strong> giây/câu<br>';
++'<div class="kg-panel'+(B.ok===false?' kg-shake':'')+'">'+mcq(c)+(B.ans!=null&&!B.fin?fbBox(c.a,B.opt&&B.opt[B.ans])+'<button class="kg-btn" data-act="next" style="margin-top:12px">次へ → <small>hoặc nhấn Space · câu sau có lại '+SEC_PER_Q+' giây</small></button>':'')+'</div>'}
+function timeBox(){var h='<div class="kg-tbx"><span>⏱ Tổng thời gian trả lời <strong>'+fmt(B.el)+'</strong> · trung bình <strong>'+avg(B.act/1000,B.n)+'</strong> giây/câu<br>';
 if(B.rec=='first')h+='🏆 <strong>Kỷ lục mới!</strong> '+esc(who())+' mở kỷ lục chủ đề này.';
 else if(B.rec=='beat')h+='🏆 <strong>Phá kỷ lục!</strong> '+esc(who())+' phá '+fmt(B.prev.sec)+' ('+avg(B.prev.sec,B.prev.n||B.n)+' giây/câu) của '+esc(B.prev.name)+'.';
 else{var r=recGet(B.t,B.l);h+=(r?recTxt(r,B.n):'')+(B.pbNew?'<br>⭐ Kỷ lục cá nhân mới!':'')}
@@ -3879,7 +3903,7 @@ if(B.over=='win'){
   +(l=='n1'&&endOpen()?'<button class="kg-btn" data-nd="end">終章 Đọc đoạn kết →</button>':'')+'<button class="kg-btn'+(l=='n1'&&endOpen()?' ghost':'')+'" data-act="map">Tiếp tục hành trình →</button></div>'}
  else o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:var(--accent)">勝利 · '+(B.first?'Nhận ấn chủ đề':'Vượt qua')+'</div><div class="kg-sealbox big got">'+seal(ch(t),l)+'</div><p><b>'+esc(t.title)+'</b> · '+l.toUpperCase()+(B.first?' · +'+B.gain+' XP':' · (đã có ấn từ trước)')+'</p>'+timeBox()+'<p class="kg-sub" style="text-align:center">Toàn bộ '+B.n+' từ của chủ đề đã vào sổ từ vựng.</p><p>Ấn của chặng này: <b>'+g+' / '+ss.length+'</b>'+(g<ss.length?' — còn '+(ss.length-g)+' chủ đề nữa để qua chặng.':'')+'</p><button class="kg-btn" data-act="menu">Về chặng</button></div>'}
 else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-big" style="color:var(--accent)">'+(B.over=='wrong'?'失敗 · Bị loại':'時間切れ · Hết giờ')+'</div>'
- +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> / '+B.n+' câu — sai 1 câu là thua, dừng ở câu '+B.done+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Còn <b>'+(B.n-B.done)+'</b> / '+B.n+' câu chưa làm.</p>')+'<p>Thời gian: '+fmt(B.el)+' / '+fmt(B.sec)+'</p><p>'+esc(b.lose)+'</p><button class="kg-btn" data-act="boss" data-s="'+B.si+'">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về chặng</button></div>';
+ +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> / '+B.n+' câu — sai 1 câu là thua, dừng ở câu '+B.done+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Hết '+B.sec+' giây ở câu <b>'+(B.done+1)+'</b> / '+B.n+' mà chưa trả lời.</p>')+'<p>Thời gian trả lời: '+fmt(B.el)+' · trung bình '+avg(B.act/1000,B.done+(B.over=='time'?1:0))+' giây/câu</p><p>'+esc(b.lose)+'</p><button class="kg-btn" data-act="boss" data-s="'+B.si+'">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về chặng</button></div>';
 return o}
 /* ================= MÀN HUỶ DIỆT · 四字熟語 + ことわざ + 慣用句 ================= */
 function stImg(l){var f=STAMP_F[l];if(!f)return'';return'<img class="kg-stimg" src="'+STAMP_DIR+f+'.png" alt="" data-l="'+l+'" data-t="0" onerror="window.__kgStErr(this)">'}
@@ -3897,8 +3921,8 @@ gs.forEach(function(f,i){var q=base+(i==gs.length-1?extra:0),p=f.a.slice().sort(
 if(out.length<N){var rest=[];gs.forEach(function(f){f.a.forEach(function(a){if(!used[a.k])rest.push(a)})});rest.sort(rnd).slice(0,N-out.length).forEach(function(a){out.push(a)})}
 return out.sort(rnd)}
 function finSeal(){return stImg('fin')}
-function startFin(){if(!finTotal())return;abort();var pool=finPick(),n=pool.length,sec=bossSec(n);
-runBoss({kind:'boss',l:'fin',si:0,t:{id:'fin',title:'Cửu Vĩ Hồ'},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:sec,dl:Date.now()+sec*1000,fin:0,over:null,gain:0})}
+function startFin(){if(!finTotal())return;abort();var pool=finPick(),n=pool.length;
+runBoss({kind:'boss',l:'fin',si:0,t:{id:'fin',title:'Cửu Vĩ Hồ'},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
 /* câu chuyện 九尾の狐 — dùng chung cho mọi tài khoản (Airi, Ryosuke…), tự gọi tên người chơi */
 function kfin(){var u=window.FUSOU_USER,nm=(u&&u.name)||'lữ khách',k=/airi/i.test(nm)?'a':/ryosuke/i.test(nm)?'r':'';
 var tail=k=='a'?'Giữa ngọn lửa xanh, ngươi thấy mình đang mỉm cười — như người vừa nhớ ra mình đã đi xa đến đâu.':k=='r'?'Ngươi chỉ gật đầu, rất khẽ, như người đã đi đủ xa để không cần phải nói gì thêm.':'Gió đỉnh núi thổi qua, và lần đầu tiên nó nghe như một lời chào.';
@@ -3910,15 +3934,15 @@ var o=back()+'<div class="kg-ch" style="--c:var(--accent)"><div class="kg-ch-hea
 o+='<div class="kg-story">'+paras(f.setup||['Cửu Vĩ Hồ là màn thử thách dành cho những ai muốn thử sức — không cần qua chặng nào trước, ai cũng có thể khiêu chiến bất cứ lúc nào. Ngồi trên cả quỷ và rồng là vị vua phán xét, và ông không hỏi bạn đã học tới đâu.','Ai dám thách thức uy quyền của ông sẽ phải vượt 100 cụm từ — tứ tự thành ngữ, tục ngữ, quán dụng ngữ — mà không được sai một câu. Phần thưởng là vô giá: danh hiệu 九尾調伏, duy ngã độc tôn.'])+'</div>';
 if(g&&f.resolve)o+='<div class="kg-story kg-story2">'+paras(f.resolve)+'</div>';
 o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:var(--accent)"><div class="kg-sx-seal">'+(g?'<div class="kg-sealbox got">'+finSeal()+'</div>':'<div class="kg-ghost"><span>九尾</span><small>妖</small></div>')+'</div>'
-+'<div class="kg-sx-main"><b>'+n+' câu · '+fmt(sec)+'</b><small>Bốc ngẫu nhiên ~33% mỗi chủ đề · sai 1 câu là thua'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
-+'<div class="kg-sx-act"><button class="kg-btn" data-act="fin"'+(tot?'':' disabled')+'>'+(g?'再決闘 Quyết đấu lại':'決闘 Quyết đấu')+'<small>'+n+' câu · '+fmt(sec)+'</small></button></div></div>';
++'<div class="kg-sx-main"><b>'+n+' câu · '+SEC_PER_Q+' giây/câu</b><small>Bốc ngẫu nhiên ~33% mỗi chủ đề · sai 1 câu là thua'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
++'<div class="kg-sx-act"><button class="kg-btn" data-act="fin"'+(tot?'':' disabled')+'>'+(g?'再決闘 Quyết đấu lại':'決闘 Quyết đấu')+'<small>'+n+' câu · '+SEC_PER_Q+' giây/câu</small></button></div></div>';
 o+='<h3 class="kg-h kg-qh">Nguồn đề</h3><ul class="kg-wl">'+FIN.map(function(x){return'<li><span class="'+(x.a.length?'y':'n')+'">'+(x.a.length?'✔':'✘')+'</span><b class="jp">'+esc(x.c.n)+'</b><span>'+(x.a.length?x.a.length+' từ trong kho · bốc ~'+Math.round(n/Math.max(1,FIN.filter(function(y){return y.a.length}).length))+' câu':'chưa tìm thấy chủ đề này trong dữ liệu')+'</span></li>'}).join('')+'</ul>';
 if(!tot)o+='<p class="kg-sub">Không tìm thấy chủ đề 四字熟語 / ことわざ / 慣用句 trong dữ liệu — kiểm tra tên chủ đề (FIN_CFG).</p>';
 return o+'</div>'}
 function finEnd(){var o;
 if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:var(--accent)">九尾調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">Cửu vĩ điều phục · Cửu Vĩ Hồ đã khuất phục</p><div class="kg-sealbox big got">'+finSeal()+'</div><p><b>Danh hiệu vô giá</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()+'<div class="kg-story kg-story2" style="text-align:left">'+paras(kfin().resolve)+'</div>'+'<button class="kg-btn" data-act="menu">Về Cửu Vĩ Hồ</button><button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
 else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-big" style="color:var(--accent)">'+(B.over=='wrong'?'失敗 · Bị loại':'時間切れ · Hết giờ')+'</div>'
- +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Còn <b>'+(B.n-B.done)+'</b> / '+B.n+' câu chưa làm.</p>')+'<p>Thời gian: '+fmt(B.el)+' / '+fmt(B.sec)+'</p><p>Cánh cổng vẫn đóng. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="fin">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về Cửu Vĩ Hồ</button></div>';
+ +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Hết '+B.sec+' giây ở câu <b>'+(B.done+1)+'</b> / '+B.n+' mà chưa trả lời.</p>')+'<p>Thời gian trả lời: '+fmt(B.el)+' · trung bình '+avg(B.act/1000,B.done+(B.over=='time'?1:0))+' giây/câu</p><p>Cánh cổng vẫn đóng. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="fin">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về Cửu Vĩ Hồ</button></div>';
 return o}
 /* ================= 白澤 · BẠCH TRẠCH — hán tự: On · Kun · Hán Việt (Tháp 10 tầng + Luyện tập) ================= */
 var HK_SEC=10,     /* giây cho mỗi câu của Tháp */
