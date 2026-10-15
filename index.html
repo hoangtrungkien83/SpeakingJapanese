@@ -1343,35 +1343,6 @@
     .sh-cpu{ font-size:calc(36px*var(--fs,1)); }
   }
 
-  /* ===== しりとり: chế độ chơi — nền mờ hơn ~1/2, chữ & ô nhập to + nổi bật ===== */
-  body.game-on .bg-layer.on{ opacity:calc(var(--bg-art-opacity)*.5) !important; }
-  html[data-theme="dark"] body.game-on .bg-layer.fill.on{ opacity:.31 !important; }
-  #gamePanel .sh-stage{ width:min(820px,100%); }
-  #gamePanel .sh-rec{ font-size:calc(18px*var(--fs,1)); font-weight:600; color:var(--ink); }
-  #gamePanel .sh-rec b{ font-size:calc(42px*var(--fs,1)); }
-  #gamePanel .sh-cpu{ min-height:calc(120px*var(--fs,1)); margin-bottom:16px; font-size:calc(76px*var(--fs,1)); font-weight:800; letter-spacing:.12em; color:var(--ink); }
-  #gamePanel .sh-cpu ruby rt{ font-size:.34em; font-weight:600; color:var(--ink); }
-  #gamePanel .sh-guide{ margin:0 0 16px 6px; font-size:calc(23px*var(--fs,1)); font-weight:600; color:var(--ink); }
-  #gamePanel .sh-guide b{ font-size:1.3em; color:var(--accent); }
-  #gamePanel .sh-in{ padding:26px 28px 26px 84px; font-size:calc(32px*var(--fs,1)); font-weight:600; letter-spacing:.04em; border-width:2.5px; border-radius:22px; background-size:36px; background-position:26px center; }
-  #gamePanel .sh-in::placeholder{ font-size:.62em; font-weight:500; color:var(--ink-soft); }
-  #gamePanel .sh-mean{ min-height:calc(110px*var(--fs,1)); margin:24px 6px 0; }
-  #gamePanel .sh-mean .w{ font-size:calc(40px*var(--fs,1)); font-weight:800; color:var(--ink); }
-  #gamePanel .sh-mean .m{ margin-top:8px; font-size:calc(24px*var(--fs,1)); font-weight:500; color:var(--ink); line-height:1.6; }
-  #gamePanel .sh-mean .why{ margin-top:10px; font-size:calc(22px*var(--fs,1)); font-weight:700; }
-  #gamePanel .sh-over{ margin-top:20px; }
-  #gamePanel .sh-over h3{ font-size:calc(46px*var(--fs,1)); }
-  #gamePanel .sh-over p{ font-size:calc(22px*var(--fs,1)); color:var(--ink); }
-  #gamePanel .sh-go{ width:min(380px,100%); padding:24px 16px; font-size:calc(32px*var(--fs,1)); }
-  @media (max-width:900px){
-    #gamePanel .sh-cpu{ font-size:calc(54px*var(--fs,1)); min-height:calc(90px*var(--fs,1)); }
-    #gamePanel .sh-in{ padding:20px 18px 20px 64px; font-size:calc(26px*var(--fs,1)); background-size:30px; background-position:18px center; }
-    #gamePanel .sh-guide{ font-size:calc(19px*var(--fs,1)); }
-    #gamePanel .sh-mean .w{ font-size:calc(32px*var(--fs,1)); }
-    #gamePanel .sh-mean .m{ font-size:calc(20px*var(--fs,1)); }
-    #gamePanel .sh-over h3{ font-size:calc(36px*var(--fs,1)); }
-  }
-
   /* ===== Header gọn: hoa (không viền) + tên app cùng hàng, thanh kéo thu gọn, ô tìm kiếm ===== */
   .side header{
     display:block !important; padding:0 !important; margin:0 !important; background:none !important;
@@ -3256,7 +3227,7 @@ document.addEventListener('click', (e) => {
   var VOCAB=[], vByRead={}, vByWord={};
   TOPICS.forEach(function(t){ (t.vocab||[]).forEach(function(v){
     var r=toHira((v.reading||'').trim()); if(!HIRA.test(r)||r.length<2) return;
-    var e={r:r,w:v.word,m:v.meaning,h:v.hanviet,lv:(v.level||'').toLowerCase()};
+    var e={r:r,w:v.word,m:v.meaning,h:v.hanviet,lv:(v.level||'').toLowerCase(),p:String(v.pos||'')};
     VOCAB.push(e); (vByRead[r]=vByRead[r]||[]).push(e); if(v.word) vByWord[v.word]=e;
   }); });
 
@@ -3338,7 +3309,7 @@ document.addEventListener('click', (e) => {
    '<div class="sh-stage">'+
      '<div class="sh-cpu" id="gCpu" aria-live="polite"></div>'+
      '<p class="sh-guide" id="gGuide"></p>'+
-     '<form id="gForm" autocomplete="off"><input type="text" class="sh-in" id="gInput" placeholder="単語を入力… (例: さくら / sakura)" autocomplete="off" autocapitalize="off" spellcheck="false" disabled></form>'+
+     '<form id="gForm" autocomplete="off"><input type="text" class="sh-in" id="gInput" placeholder="sakura → さくら　　SAKURA → サクラ" autocomplete="off" autocapitalize="off" spellcheck="false" disabled></form>'+
      '<div class="sh-mean" id="gMean" aria-live="polite"></div>'+
      '<div class="sh-over" id="gOver" hidden></div>'+
      '<button type="button" class="sh-go" id="gStart"><span>スタート</span></button>'+
@@ -3358,10 +3329,10 @@ document.addEventListener('click', (e) => {
     nav.querySelectorAll('.side-item').forEach(function(b){ b.classList.remove('active'); });
     var ctrl=nav.querySelector('.side-ctrl'); if(ctrl) ctrl.style.display='none';
     try{ currentTopic=null; }catch(e){}
-    panel.classList.add('show'); gbtn.classList.add('active'); document.body.classList.add('game-on');
+    panel.classList.add('show'); gbtn.classList.add('active');
     document.body.classList.remove('side-open'); window.scrollTo({top:0});
   }
-  function closeGame(){ panel.classList.remove('show'); gbtn.classList.remove('active'); document.body.classList.remove('game-on'); }
+  function closeGame(){ panel.classList.remove('show'); gbtn.classList.remove('active'); }
   gbtn.addEventListener('click',openGame);
   if(homeBtn) homeBtn.addEventListener('click',closeGame);
   var origSel=selectTopic;
@@ -3384,17 +3355,44 @@ document.addEventListener('click', (e) => {
     var vi='', han='';
     if(info&&info.kind==='v'){ vi=(info.e.m||'').trim(); han=(info.e.h||'').trim(); }
     var main=vi;
-    if(!main&&DICT[r]!==undefined) main=String(DICT[r]).trim();
+    if(!main&&DICT[r]!==undefined) main=dictMean(r);
     var out=main?esc(main):'';
     if(han&&han!==vi) out+=out?' <i>· '+esc(han)+'</i>':'<i>'+esc(han)+'</i>';
     return out;
   }
+  /* ---------- loại từ: chỉ danh từ (n) mới được dùng ----------
+     Nguồn loại từ, theo thứ tự: trường "pos" của từ vựng trong TOPICS → loại từ trong dict.js.
+     dict.js nhận 3 dạng:  "reading":"nghĩa"  |  "reading":["nghĩa","n"]  |  "reading":{"m":"nghĩa","p":"n"}
+     Nhiều loại từ viết cách nhau bằng dấu phẩy, ví dụ "n,vs" (danh từ + する). Chỉ cần có "n" là được dùng.
+     NOUN_STRICT=false: từ CHƯA gắn loại từ vẫn được dùng (chỉ loại từ đã gắn không phải n).
+     Khi đã gắn đủ dữ liệu → đổi thành true: từ chưa gắn loại từ cũng bị loại. */
+  var NOUN_STRICT=false;
+  function dictMean(r){ var x=DICT[r]; if(x==null) return ''; if(Array.isArray(x)) return String(x[0]==null?'':x[0]).trim(); if(typeof x==='object') return String(x.m||x.meaning||'').trim(); return String(x).trim(); }
+  function dictPos(r){ var x=DICT[r]; if(x==null) return ''; if(Array.isArray(x)) return x[1]==null?'':String(x[1]); if(typeof x==='object') return String(x.p||x.pos||''); return ''; }
+  function posTags(p){ return String(p||'').toLowerCase().split(/[,;\/|\s]+/).filter(Boolean); }
+  function tagIsNoun(t){ return t==='n'||t==='noun'||t==='名詞'||t==='danhtu'||t==='danh từ'; }
+  /* Một cách đọc kana có thể ứng với nhiều từ (同音異義語: 暗い = 位 = くらい).
+     - Người chơi gõ KANJI của từ vựng → xét đúng loại từ của từ đó.
+     - Gõ kana → chỉ cần MỘT từ trùng cách đọc là danh từ (hoặc chưa gắn loại từ khi NOUN_STRICT=false) là được dùng. */
+  function isNoun(r,e){
+    if(e){ var t0=posTags(e.p); if(t0.length) return t0.some(tagIsNoun); }
+    var cands=[posTags(dictPos(r))];
+    (vByRead[r]||[]).forEach(function(x){ cands.push(posTags(x.p)); });
+    return cands.some(function(t){ return t.length?t.some(tagIsNoun):!NOUN_STRICT; });
+  }
+  /* thông tin để HIỂN THỊ: bỏ qua từ vựng đã gắn loại từ không phải danh từ (vd 暗い) khi từ được dùng thực chất là 位 trong dict.js */
+  function dispInfo(r){
+    var usable=(vByRead[r]||[]).filter(function(e){ var t=posTags(e.p); return !t.length||t.some(tagIsNoun); });
+    if(usable.length) return {kind:'v',e:usable[0]};
+    if(DICT[r]!==undefined) return {kind:'d',en:DICT[r]};
+    return null;
+  }
   function wordHtml(r,info){
-    var e=info&&info.kind==='v'?info.e:(vByRead[r]?vByRead[r][0]:null);
+    var e=info&&info.kind==='v'?info.e:(info&&info.kind==='d'?null:(vByRead[r]?vByRead[r][0]:null));
     if(e&&e.w&&e.w!==r) return '<ruby>'+esc(e.w)+'<rt>'+esc(r)+'</rt></ruby>';
     return esc(r.slice(0,-1))+'<span class="hl">'+esc(r.slice(-1))+'</span>';
   }
-  function showCpu(r){ cpuEl.innerHTML=wordHtml(r,lookup(r)); }
+  function showCpu(r){ cpuEl.innerHTML=wordHtml(r,dispInfo(r)); }
   /* nghĩa của từ người chơi vừa nhập — hiện cả khi đúng lẫn khi sai */
   function showMean(r,info,cls,why){
     var m=meaningOf(r,info);
@@ -3407,8 +3405,8 @@ document.addEventListener('click', (e) => {
   var idx=null;
   function buildIdx(){
     var v={}, d={};
-    VOCAB.forEach(function(e){ if(DICT[e.r]===undefined) return; (v[e.r[0]]=v[e.r[0]]||[]).push(e.r); }); /* có nghĩa tiếng Việt, ưu tiên */
-    Object.keys(DICT).forEach(function(r){ if(r.length<2||!HIRA.test(r)) return; (d[r[0]]=d[r[0]]||[]).push(r); });
+    VOCAB.forEach(function(e){ if(DICT[e.r]===undefined||!isNoun(e.r,e)) return; (v[e.r[0]]=v[e.r[0]]||[]).push(e.r); }); /* có nghĩa tiếng Việt, ưu tiên */
+    Object.keys(DICT).forEach(function(r){ if(r.length<2||!HIRA.test(r)||!isNoun(r)) return; (d[r[0]]=d[r[0]]||[]).push(r); });
     idx={v:v,d:d};
   }
   function okWord(r){ return r.length>=2 && endKana(r)!=='ん' && !S.used.has(r); }
@@ -3461,16 +3459,34 @@ document.addEventListener('click', (e) => {
     var r, info=null;
     if(vByWord[raw]){ r=vByWord[raw].r; info={kind:'v',e:vByWord[raw]}; }
     else r=toHira(toKana(raw,true));
+    var kanjiE=info?info.e:null;
+    if(!info) info=dispInfo(r);
     if(!HIRA.test(r)){ msg('ひらがな・カタカナ・ローマ字で入力してください。'); shake(); return; }
     if(r.length<2){ msg('単語は2文字以上必要です。'); shake(); return; }
     var why='';
     if(r[0]!==S.need) why='「'+esc(S.need)+'」で始まっていません。';
     else if(S.used.has(r)) why='この単語はもう使われています。';
-    else if(DICT[r]===undefined) why='辞書にある名詞ではありません。';
+    else if(DICT[r]===undefined) why='辞書にありません。';
+    else if(!isNoun(r,kanjiE)) why='名詞ではありません（形容詞・動詞など）。';
     else if(endKana(r)==='ん') why='「ん」で終わっています。';
     if(why){ showMean(r,info,'bad',why); end(false,''); return; }
     accept(r,info);
   }
+  /* gõ romaji → tự đổi thành ひらがな ngay trong ô; gõ CHỮ HOA (Shift/CapsLock) → カタカナ. Khi chấm điểm カタカナ = ひらがな */
+  var toKata=function(x){ return x.replace(/[ぁ-ゖ]/g,function(c){ return String.fromCharCode(c.charCodeAt(0)+0x60); }); };
+  function liveKana(x){
+    return x.replace(/[A-Za-z\-]+/g,function(run){
+      var k=toKana(run.toLowerCase(),false), up=/[A-Z]/.test(run)&&!/[a-z]/.test(run);
+      return up?toKata(k):k;
+    });
+  }
+  inp.addEventListener('input',function(e){
+    if(e.isComposing) return; /* đang dùng IME tiếng Nhật: không can thiệp */
+    var v=inp.value; if(!/[A-Za-z\-]/.test(v)) return;
+    var pos=inp.selectionStart==null?v.length:inp.selectionStart;
+    var left=liveKana(v.slice(0,pos)), nv=left+v.slice(pos);
+    if(nv!==v){ inp.value=nv; try{ inp.setSelectionRange(left.length,left.length); }catch(_){} }
+  });
   $('#gForm').addEventListener('submit',submit);
   goBtn.addEventListener('click',function(){
     goBtn.disabled=true;
