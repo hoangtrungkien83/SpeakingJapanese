@@ -41,7 +41,7 @@ window.FUSOU_STORY["Airi"]={
     {
       "q": "Còn có một bóng áo choàng đen vừa ghé bến đêm qua, rồi cũng sẽ vượt cùng một biển cả. Danh hắn là Ryosuke — kẻ không tên, kẻ bất cần đời. Hắn cũng đang đi tìm một thứ đã mất. Nếu con đóng đủ năm dấu son, tấm màn che quanh hắn sẽ mỏng đi… đủ để con thoáng thấy bóng dáng thật của kẻ ấy. »"
     },
-    "Airi dong thuyền gỗ thông vượt đường cá voi. Giữa cơn bão, một con quạ ba chân đáp xuống mũi thuyền — Yatagarasu, chim dẫn đường của thần Nhật, họ hàng xa của Huginn và Muninn. Nàng giống Hermóðr năm xưa phi ngựa xuống Hel để xin trả Baldr — nhưng nàng chọn nụ cười thay cho ngọn thương. Và ở cuối đường, nàng sẽ phải làm điều Ame-no-Uzume từng làm: khiến cả trời đất bật cười."
+    "Airi đóng thuyền gỗ thông vượt đường cá voi. Giữa cơn bão, một con quạ ba chân đáp xuống mũi thuyền — Yatagarasu, chim dẫn đường của thần Nhật, họ hàng xa của Huginn và Muninn. Nàng giống Hermóðr năm xưa phi ngựa xuống Hel để xin trả Baldr — nhưng nàng chọn nụ cười thay cho ngọn thương. Và ở cuối đường, nàng sẽ phải làm điều Ame-no-Uzume từng làm: khiến cả trời đất bật cười."
   ],
   "bosses": {
     "n5": {
@@ -169,27 +169,27 @@ window.FUSOU_STORY["Airi"]={
         "title": "Bà chủ trọ nghe lén",
         "place": "Quán trọ lưng chừng núi",
         "setup": [
-          "Ban ngày, bà chủ quán là một người đàn bà dịu dàng, rót trà không đổ một giọt. Ban đêm, cổ bà dài ra như sợi thừng, luồn qua vách giấy nghe người ngủ nói mớ. Đó là Rokurokubi — kẻ đã 首を長くして待つ suốt hai trăm năm, vươn cổ chờ một vị khách chịu kể chuyện cho mình nghe, thay vì phải đi nghe lén chuyện của người khác.",
-          "Người ta sợ bà vì bà hay 首を突っ込む vào chuyện thiên hạ. Nhưng ít ai hỏi vì sao bà thích nghe lén đến thế."
+          "Ban ngày bà chủ quán rót trà không đổ một giọt; ban đêm cổ bà dài ra như sợi thừng, luồn qua vách giấy nghe người ngủ nói mớ. Đó là Rokurokubi, kẻ đã chờ hai trăm năm một vị khách chịu kể chuyện cho mình nghe.",
+          "Chuyện nào bà nghe lén cũng đã có kết cục, chẳng còn gì để mong. Bà chỉ cho trọ kẻ nào kể được một chuyện khiến bà không nỡ ngủ."
         ],
         "resolve": [
-          "Airi xin trọ, rót trà cho bà trước, rồi kể chuyện bằng ba giọng — tiếng buôn đường xa, tiếng chim, tiếng gió qua kẽ đá. Cổ bà vươn qua vách giấy, nghe chăm chú đến mức thắt lại thành nút.",
-          "« Chuyện này… ta chưa nghe bao giờ, » bà thì thầm, vừa nghe vừa 首を傾げる. Airi cười, nhẹ nhàng gỡ nút cho bà từng vòng một. Đêm ấy là đêm đầu tiên sau hai trăm năm bà không nghe lén ai — vì có người chịu kể cho bà nghe. Bà đóng dấu lên trang giấy vỏ bạch dương."
+          "Airi rót trà cho bà trước, rồi kể bằng ba giọng — tiếng lái buôn, tiếng chim, tiếng gió qua kẽ đá. Đến đoạn gay cấn nhất, nàng ngừng, nâng chén: « Đoạn sau, để khi ta quay lại. » Cổ bà thắt thành nút vì tiếc.",
+          "Hai trăm năm bà chỉ biết chờ trong vô vọng; đêm ấy lần đầu bà biết chờ trong mong đợi. Nàng gỡ nút cho bà, và bà đóng dấu."
         ],
-        "moral": "Kẻ hay nghe lén chỉ cần có người chịu kể cho mình nghe."
+        "moral": "Chờ đợi chỉ nặng khi không ai hẹn; có lời hẹn, chờ cũng ngọt."
       },
       "jorogumo": {
         "title": "Người gảy đàn bên thác",
         "place": "Thác nước trong sương",
         "setup": [
-          "Nơi nước đổ xuống đá, một người đàn bà áo lụa ngồi gảy đàn biwa. Mỗi dây đàn là một sợi tơ; ai nghe quá lâu sẽ thấy mình đã ngồi giữa mạng từ lúc nào. Đó là Jorōgumo — nhện hóa mỹ nhân.",
-          "Nàng tin rằng chỉ có 因果応報 là công bằng: ai làm gì thì nhận nấy. Nàng đã giăng đủ tứ tự thành ngữ để bọc kín cả một con thác — 一期一会, 以心伝心, 七転八起 — nhưng chưa ai từng dừng lại để khen tấm lưới của nàng đẹp."
+          "Nơi nước đổ xuống đá, một người đàn bà áo lụa gảy đàn biwa, mỗi dây là một sợi tơ. Đó là Jorōgumo — nhện hóa mỹ nhân, dệt như ba nàng Norn dệt vận người. Ai nghe lâu sẽ thấy mình đã ngồi giữa mạng.",
+          "Nàng hỏi mỗi kẻ một câu: « Tơ của ta đẹp ở đâu? » Kẻ khen chung chung bị tơ siết, vì lời khen ấy chẳng nhìn vào đâu cả."
         ],
         "resolve": [
-          "Airi không chạy, cũng không cố cắt tơ. Nàng ngồi xuống, nghe hết bản đàn, rồi vỗ tay thật lớn: « Tấm lưới đẹp nhất ta từng thấy! » Nàng nhện sững sờ — trăm năm nay chỉ có kẻ run rẩy hay kẻ chém xé, chưa ai khen.",
-          "Airi giảng cho nàng nghe ba thành ngữ bốn chữ, mỗi câu một nụ cười. Nàng nhện ngồi nghe, quên cả giăng tơ. Cuối buổi, nàng dệt những sợi tơ ấy thành một dải lụa rồi đóng dấu lên trang giấy, như người tặng quà thay vì bắt mồi."
+          "Airi nghe hết bản đàn, rồi chỉ vào một nút thắt rất nhỏ nơi góc lưới: « Chỗ này nàng dệt chậm hơn mọi chỗ khác, như người vừa nhớ ra điều gì. » Nàng nhện sững lại: nút ấy dệt trong đêm nàng nhớ về một người, chưa ai từng thấy.",
+          "Tơ quanh cổ Airi tự nới ra. Nàng nhện tháo nút, dệt thành một dải lụa rồi đóng dấu, như người tặng quà thay vì bắt mồi."
         ],
-        "moral": "Một tấm lưới đẹp nhất khi dùng để dệt, không phải để bẫy."
+        "moral": "Lời khen đúng chỗ là lời của kẻ đã thật sự nhìn."
       },
       "aoandon": {
         "title": "Ngọn đèn thứ một trăm",
@@ -209,11 +209,11 @@ window.FUSOU_STORY["Airi"]={
         "place": "Cổng đền đổ nát dưới mưa",
         "setup": [
           "Một chiếc ô giấy bị bỏ lại sau trăm năm đã thành tsukumogami — một mắt, một chân, cái lưỡi dài thè ra. Đó là Karakasa-obake: chẳng hại ai, chỉ thích nhảy ra dọa rồi chờ người ta bật cười.",
-          "Nó thuộc rất nhiều tục ngữ vì cơn mưa nào nó cũng từng che qua — 雨降って地固まる, 笑う門には福来る, 石の上にも三年 — nhưng không ai còn cười cùng nó."
+          "Cơn mưa nào nó cũng từng che qua, nên nó thuộc nhiều lời xưa — nhưng không ai còn cười cùng nó."
         ],
         "resolve": [
           "Nó nhảy lên, thè lưỡi sát mặt Airi. Nàng không giật mình. Nàng thè lưỡi lại. Chiếc ô sững sờ — rồi hai bên thi xem ai thè dài hơn, cho tới khi cả hai cùng cười sặc sụa giữa cơn mưa.",
-          "« 笑う門には福来る, » Airi nói. « Cười thì phúc tới. » Chiếc ô gật đầu thật mạnh, rung cả cán. Nó trao dấu, rồi nhảy lò cò theo nàng thêm một đoạn dốc, như đứa trẻ vừa tìm lại được bạn chơi."
+          "« Nhà nào có tiếng cười, phúc sẽ tìm đến, » Airi nói. Chiếc ô gật đầu thật mạnh, rung cả cán. Nó trao dấu, rồi nhảy lò cò theo nàng thêm một đoạn dốc, như đứa trẻ vừa tìm lại được bạn chơi."
         ],
         "moral": "Cười trước, mưa sau — nơi nào có tiếng cười, nơi đó phúc tìm đến."
       }
@@ -223,25 +223,21 @@ window.FUSOU_STORY["Airi"]={
     "title": "Kẻ biết tên của vạn vật",
     "place": "Tháp mười tầng trong mây",
     "setup": [
-      "Bạch Trạch — thần thú đầu người mình rồng, sáu mắt, biết tên của mọi loài yêu quái và mọi con chữ trên đời. Người xưa kể ông từng đọc cho Hoàng Đế nghe mười một nghìn năm trăm hai mươi cái tên, không sót một.",
-      "Airi vốn nói được nhiều thứ tiếng, nhưng nàng hiểu: một chữ Hán không chỉ là một âm, mà là một cánh cửa với nhiều chiếc chìa. Ông chờ ở đỉnh tháp để xem ai biết dùng đủ chìa."
+      "Tương truyền Bạch Trạch mình rồng, mặt người, sáu mắt, thuộc tên mười một nghìn năm trăm loài yêu quái. Như Mímir bên giếng dưới rễ cây thế giới, ông biết hết mọi điều, mà kẻ lên tháp chỉ hỏi tên người khác. Ông chỉ cho qua kẻ hỏi được điều chưa ai hỏi."
     ],
     "resolve": [
-      "Mỗi tầng nàng đọc một chữ bằng ba giọng — On, Kun và âm Hán Việt, thứ tiếng nàng học được từ một lái buôn phương Nam — như đổi ba chiếc chìa cho cùng một ổ khóa. Qua tầng thứ mười, nàng dừng trước thần thú, hơi thở còn dồn, nụ cười vẫn còn.",
-      "« Ngươi đọc cùng một chữ bằng ba tiếng mà không lẫn, » Bạch Trạch nói. « Đã lâu lắm ta mới nghe ai làm được vậy. » Ông đặt dấu lên cuốn sổ vỏ bạch dương, rồi hỏi nhỏ: « Còn bóng áo choàng đen ngoài biển… ngươi định nói gì với hắn? » Airi chỉ cười: « Hẹn gặp lại. »"
+      "Airi leo đủ mười tầng, chẳng hỏi tên ai. Đến đỉnh, nàng cúi chào: « Ông muốn người đời gọi ông là gì? » Bạch Trạch lặng đi: biết tên muôn loài mà chưa ai hỏi tên mình. « Cứ gọi là bạn cũ. » Ông đặt dấu, hỏi khẽ: « Bóng áo đen ngoài biển, ngươi nhắn gì? » « Hẹn gặp lại. »"
     ],
-    "moral": "Một chữ, ba tiếng đọc — người biết nhiều tiếng thì không bao giờ lạc đường."
+    "moral": "Kẻ biết tên muôn loài cũng muốn có người hỏi tên mình."
   },
   "yuki": {
     "title": "Người đàn bà chưa từng bật cười",
     "place": "Sân tuyết sau tháp mười tầng",
     "setup": [
-      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
-      "Airi nhớ phương Bắc cũng có một người như thế: Skaði, nữ thần núi tuyết, gả cho thần biển rồi bỏ đi vì không ngủ nổi giữa tiếng hải âu, trong khi chồng nàng chẳng chịu nổi tiếng sói hú. Hai kẻ yêu nhau mà không chung nổi một thứ tiếng động. Yukionna cũng đứng yên trong mùa đông của mình: từ khi bình minh trở lại, tuyết Fusō tan từng ngày, và bà không biết mình còn lại gì khi mùa đông qua đi."
+      "Tương truyền Yukionna đi qua tuyết chẳng để lại dấu chân; từng tha một chàng trẻ, chỉ dặn đừng kể ai. Chàng thất hứa, bà thôi tin lời hứa. Như Skaði bỏ biển vì tiếng hải âu, bà chỉ nghe được tiếng của tuyết. Ai muốn qua sân phải nói bằng thứ tiếng ấy — không lời người, không lời hứa."
     ],
     "resolve": [
-      "Airi bước vào sân khi mái tháp đang nhỏ giọt. Yukionna ngồi bất động, hơi thở trắng như sương. Airi không hỏi, không giảng. Nghe tuyết rơi, nàng hạ từng ngón tay xuống nhẹ như tuyết; nghe gió, nàng xoay một vòng cho tà áo vút lên; nghe bước chân nặng, nàng nhún ba bước như Ame-no-Uzume trên nền tuyết. Yatagarasu đậu trên mái, kêu một tiếng đáp lại.",
-      "Yukionna không cười — băng không biết cười. Nhưng Airi chỉ vào vũng nước dưới mái hiên: « Tuyết tan thành nước, nước lên thành mây, mây lại thành tuyết. Tan không phải là mất, chỉ là đổi cách kêu thôi! » Nắng lọt qua mây, cả sân tuyết sáng bừng. Lần đầu sau rất nhiều mùa đông, bà ngẩng mặt để ánh sáng chạm vào má mà không né. Một tiếng cười rất nhỏ thoát ra, rồi hai, rồi ba, như băng vỡ thành ngàn mảnh, mỗi mảnh một tiếng. Bà đặt lên cuốn sổ một dấu son: một bông tuyết không tan."
+      "Airi chẳng hứa gì. Nàng đáp bằng tiếng đã học dọc đường: gió luồn kẽ đá, tuyết rơi trên mái, cả tiếng hải âu — để gió biển và tuyết núi hòa một khúc. Yukionna lần đầu nghe tiếng kẻ thù cũ mà chẳng thấy chói tai. « Tuyết tan thành nước, nước lên thành mây, mây lại thành tuyết. Tan chẳng phải mất, chỉ đổi tiếng kêu. » Bà bật cười như băng vỡ."
     ],
     "moral": "Tan đi không phải là hết — chỉ là đổi cách kêu."
   },
@@ -249,7 +245,7 @@ window.FUSOU_STORY["Airi"]={
     "resolve": [
       "Ngoài câu chuyện, Ryosuke gửi đến bạn lời nhắn:",
       {
-        "q": "Airi là một nữ sứ giả xinh đẹp và thông minh, khí chất của em đã gây ấn tượng mạnh cho anh. Anh nghĩ rằng, em sẽ toả sáng rất đẹp trong cuộc đời của mình. Ai cũng có quyền được sống cuộc đời của riêng mình, khoẻ mạnh, hạnh phúc, và ngập tràn yêu thương, Ryosuke luôn luôn ủng hộ em. Chúc em tất cả. Nếu khi em đọc được lời nhắn này mà mình đã không còn giữ liên lạc, thì số của anh vẫn ở đây nhaaa: 0362182134 :))). Best wish for U."
+        "q": "Airi là một nữ sứ giả xinh đẹp và thông minh, khí chất của em đã gây ấn tượng mạnh cho anh. Anh nghĩ rằng, em sẽ toả sáng rất đẹp trong cuộc đời của mình. Ai cũng có quyền được sống cuộc đời của riêng mình, khoẻ mạnh, hạnh phúc, và ngập tràn yêu thương, Ryosuke luôn luôn ủng hộ em. Chúc em tất cả. Nếu khi em đọc được lời nhắn này mà mình đã không còn giữ liên lạc, thì số của anh vẫn ở đây, phòng khi em cần: 0362182134 :))). Best wish for U."
       }
     ]
   }

@@ -229,29 +229,25 @@ window.FUSOU_STORY["Client"]={
     }
   },
   "hak": {
-    "title": "Kẻ biết mọi tên — trừ một",
+    "title": "Kẻ chờ câu hỏi kế tiếp",
     "place": "Tháp mười tầng trong mây",
     "setup": [
-      "Bạch Trạch — thần thú đầu người mình rồng, sáu mắt, biết tên của mọi loài yêu quái và mọi con chữ trên đời. Người xưa kể ông từng đọc cho Hoàng Đế nghe mười một nghìn năm trăm hai mươi cái tên, không sót một.",
-      "Ông ngồi trên đỉnh tháp mười tầng và chờ những kẻ đến hỏi tên của một thứ gì đó. Hôm nay, ông chờ một kẻ khác: kẻ mà trong cuốn sổ của ông chỉ có một cái tên chung, chưa có cái tên riêng."
+      "Tương truyền Bạch Trạch mình rồng, mặt người, sáu mắt, thuộc tên mười một nghìn năm trăm loài yêu quái. Như ba nàng Norn bên giếng Urðr, ông chỉ nhận một câu hỏi mỗi tầng; hỏi trùng hay hỏi vội thì tầng kế khóa. Chưa ai qua quá tầng ba, vì ai cũng hỏi điều mình đã định mà chẳng nghe câu đáp."
     ],
     "resolve": [
-      "Tabito leo từng tầng, đọc từng chữ bằng ba giọng — On, Kun và âm Hán Việt, thứ giọng quê nhà của Tabito — như đổi ba chiếc chìa cho cùng một ổ khóa. Khi tới đỉnh, hơi thở vẫn đều.",
-      "« Ta tìm mãi trong sổ, chỉ thấy cái tên Tabito — nó nằm đó cho vạn kẻ đi đường, » Bạch Trạch nói. « Ngươi có tên riêng chưa? » « Chưa ạ, » Tabito đáp. Ông gật đầu: « Ta biết tên của mọi thứ, nhưng có những cái tên chỉ chủ nhân mới viết được. Ta sẽ không đặt hộ. » Ông đặt dấu lên đèn lồng, rồi khẽ nói thêm: « Gần đây có hai kẻ leo qua đây. Một kẻ đọc ba giọng và cười. Một kẻ im lặng suốt. Cả hai đều rời đi mà không để ta đọc hộ điều họ cần. Ngươi cũng vậy. Ta thấy… cũng là một cách đúng. »"
+      "Tabito hỏi một câu nhỏ ở tầng một, nghe đáp xong mới nghĩ câu tầng hai, rồi câu tầng ba mọc ra từ lời đáp ấy. Mười câu nối nhau như mười bậc thang. Đến đỉnh, Bạch Trạch cười khẽ: « Ta đáp suốt ngàn năm, lần đầu có kẻ nghe ta đáp. » Ông đặt dấu lên đèn lồng."
     ],
-    "moral": "Có những cái tên chỉ chính ta mới viết được."
+    "moral": "Câu hỏi hay là câu mọc ra từ câu trả lời trước."
   },
   "yuki": {
-    "title": "Người giữ tiếng của những điều chưa có chữ",
+    "title": "Người giữ tiếng của những điều chưa có tên",
     "place": "Sân tuyết sau tháp mười tầng",
     "setup": [
-      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
-      "Bà cũng chỉ mang một cái tên chung — “người đàn bà của tuyết” — như Tabito mang cái tên chung của mọi lữ khách. Chiếc đèn lồng của Tabito vẫn trắng, như một sân tuyết chưa ai bước lên. Bà ngồi giữa sân chờ một kẻ biết rằng giữa trang giấy trắng và một con chữ, còn có một thứ ở giữa: tiếng."
+      "Tương truyền Yukionna đi qua tuyết chẳng để lại dấu chân; từng tha một chàng trẻ, chỉ dặn đừng kể ai. Chàng thất hứa, bà thôi tin lời hứa. Như Skaði bỏ biển vì tiếng hải âu, bà chỉ tin kẻ biết nghe điều chưa có tên. Bà đặt trước mỗi người một âm chưa ai gọi được; kẻ vội đặt cho nó cái tên thì thua."
     ],
     "resolve": [
-      "Tabito không hỏi tên, không hỏi nghĩa. Tabito đặt đèn xuống mép tuyết, ngồi xuống, và nghe thật chậm, như đã nghe năm kẻ giữ đường nói hết câu của họ. Bà thở ra một làn sương, tuyết bắt đầu rơi. Bà chạm gót xuống nền, tuyết kêu lạo xạo dưới chân. Bà không giải thích. Tabito chỉ gật, rồi đáp bằng những gì đã mang theo suốt dọc đường: tiếng gõ cửa của Tanuki, tiếng nước vỗ mạn đò, tiếng chuông gió, tiếng ngập ngừng của kẻ vừa tìm được câu thật, tiếng nặng của thân rồng — và giữa năm tiếng ấy, một khoảng lặng.",
-      "Bà nghe hết. Tuyết trên vai bà rơi xuống, lần đầu tiên sau rất lâu. « Ta chỉ có cái tên chung, » bà nói, giọng mỏng như băng đầu mùa. « Ngươi cũng vậy. Nhưng ngươi gọi được những điều chưa ai đặt tên — chỉ bằng cách nghe cho đúng. » Bà chỉ xuống sân: một hàng dấu ấm, tròn, quanh nó tuyết tan thành vũng nhỏ còn vương tiếng cười; một hàng dấu sâu, đều, của kẻ vừa học lại cách bước cho nặng. « Hai kẻ đi trước ngươi, mỗi người để lại một thứ tiếng. Còn ngươi? » Tabito nâng đèn lên. Ánh sáng trong đó khẽ ngân như hơi ấm đầu tiên nở giữa sân tuyết; dưới đáy đèn, con hồ ly bé xíu đang ngủ trở mình, thều thào một tiếng. Bà đặt dấu — một bông tuyết không tan — lên góc đèn, và để nguyên mặt giấy trắng."
+      "Giữa sân tuyết, bà thở ra một âm lạ, như bông tuyết đậu trên lòng bàn tay còn ấm. Tabito không đặt tên, chỉ ngồi nghe rồi đáp: « Giống tiếng kẻ đang nín lời, chưa biết nên giữ hay nên nói. » Bà sững lại — đúng là đêm bà tha chàng trai năm xưa. Tabito nâng đèn; ánh sáng ngân khẽ như hơi ấm đầu tiên giữa sân tuyết. Bà đặt dấu lên góc đèn."
     ],
-    "moral": "Có những điều chưa có chữ vẫn đã có tiếng."
+    "moral": "Điều chưa có tên vẫn có tiếng, và vẫn có người nghe."
   }
 };

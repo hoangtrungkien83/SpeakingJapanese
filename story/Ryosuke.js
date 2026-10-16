@@ -201,14 +201,14 @@ window.FUSOU_STORY["Ryosuke"]={
         "title": "Chiếc ô bị bỏ quên",
         "place": "Cổng đền đổ nát dưới mưa",
         "setup": [
-          "Một chiếc ô giấy bị bỏ lại sau trăm năm đã thành tsukumogami — một mắt, một chân, cái lưỡi dài thè ra. Đó là Karakasa-obake. Nó không hại ai, chỉ thích nhảy ra dọa rồi chờ người ta bật cười.",
-          "Cơn mưa nào nó cũng từng che qua, nên nó thuộc nhiều lời xưa. Và đã trăm năm, hiếm có ai đáp lại nó."
+          "Một chiếc ô giấy bị bỏ lại trăm năm đã thành yêu — một mắt, một chân, cái lưỡi dài thè ra. Đó là Karakasa-obake. Nó chỉ đòi một điều: kẻ nào qua cổng đền dưới mưa phải chịu để nó che.",
+          "Kẻ nhát thì chạy, kẻ cứng đầu thì từ chối. Trăm năm nay chưa ai chịu đứng dưới nó."
         ],
         "resolve": [
-          "Nó nhảy lên, thè lưỡi sát mặt hắn — dù vừa được cười một lần cách đây không lâu, trăm năm lặng im vẫn nặng hơn một lần cười. Hắn không giật mình. Hắn chỉ nhìn chiếc ô cũ, rồi đáp bằng đúng một câu — câu mà nó đã tự nhủ với mình suốt trăm năm mưa: sau cơn mưa, đất sẽ cứng lại.",
-          "Chiếc ô sững lại. Rồi nó xếp mình thật nhẹ, đặt dấu xuống nền đá. Ryosuke dựng nó vào mái hiên khô ráo và bước đi, không ngoái lại — lần đầu có kẻ che mưa cho nó thay vì nó che cho kẻ khác."
+          "Mưa trút xuống. Ryosuke, kẻ suốt ba mùa đông chưa từng che đầu, dừng trước cổng. Chiếc ô thè lưỡi, nhảy lò cò; hắn vẫn đứng yên. Rồi hắn bước vào dưới tán giấy, lần đầu để một thứ khác gánh mưa thay mình. Chiếc ô đứng im đến run, sợ làm vỡ khoảnh khắc ấy.",
+          "Khi mưa tạnh, hắn dựng nó vào mái hiên khô, và nó đặt dấu xuống nền đá."
         ],
-        "moral": "Lời xưa còn ở lại lâu hơn người nói ra nó."
+        "moral": "Nhận một chỗ che mưa cũng là một cách trả ơn."
       }
     }
   },
@@ -216,25 +216,21 @@ window.FUSOU_STORY["Ryosuke"]={
     "title": "Kẻ biết tên của vạn vật",
     "place": "Tháp mười tầng trong mây",
     "setup": [
-      "Bạch Trạch — thần thú đầu người mình rồng, sáu mắt, biết tên của mọi loài yêu quái và mọi con chữ trên đời. Người xưa kể ông từng đọc cho Hoàng Đế nghe mười một nghìn năm trăm hai mươi cái tên, không sót một.",
-      "Ông ngồi trên đỉnh tháp mười tầng và chờ những kẻ muốn hỏi tên của một thứ gì đó. Người đến thì nhiều, nhưng người biết mình thực sự muốn hỏi gì thì ít."
+      "Tương truyền Bạch Trạch mình rồng, mặt người, sáu mắt, thuộc tên mười một nghìn năm trăm loài yêu quái. Như kẻ áo đen từng đổi một con mắt bên giếng Mímir, ai lên tháp cũng phải trả giá: chỉ mang xuống được một điều — nghĩa tên mình, hoặc lời của kẻ khác."
     ],
     "resolve": [
-      "Hắn leo hết mười tầng mà không nói một lời, đọc từng chữ bằng cả ba giọng — On, Kun và cả âm Hán Việt của phương Nam xa — rồi dừng lại trước mặt thần thú.",
-      "« Ta biết tên của mọi thứ, » Bạch Trạch nói. « Rồng chỉ đọc cho ngươi nghe âm của cái tên ngươi đã đánh mất. Ta đọc được cả nghĩa của nó. Ngươi muốn nghe không? » Ryosuke nhìn ông rất lâu. « Để đó. » Thần thú gật đầu, đặt dấu vào tay hắn. « Trước ngươi có một thiếu nữ leo qua đây, đọc cùng những chữ ấy và cười. Nàng nhờ ta nhắn lại hai chữ: hẹn gặp lại. » Hắn không đáp. Chiếc lông quạ trên vai hắn khẽ rung."
+      "Ryosuke leo đủ mười tầng, lặng thinh. « Rồng chỉ trả ngươi âm của tên đã mất, » Bạch Trạch nói. « Ta đọc được cả nghĩa. Chọn đi. » Hắn nhìn rất lâu: « Lời của kẻ kia. » Ông gật, đặt dấu vào tay hắn: « Thiếu nữ đi trước nhắn hai chữ: hẹn gặp lại. » Lông quạ trên vai hắn khẽ rung, như Hugin và Munin thì thầm."
     ],
-    "moral": "Có những cái tên chỉ cần mang theo, không cần giải nghĩa."
+    "moral": "Cái tên có thể mang theo mà chưa cần hiểu; lời của người khác thì phải nghe ngay."
   },
   "yuki": {
     "title": "Kẻ đi qua tuyết không để lại dấu",
     "place": "Sân tuyết sau tháp mười tầng",
     "setup": [
-      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
-      "Bà nhận ra hắn từ xa, không bằng mắt mà bằng tai: hắn cũng đi qua tuyết không để lại dấu, và cũng là kẻ chưa từng thất hứa vì chưa từng hứa với ai. Bà không dặn hắn đừng kể gì; hắn cũng chẳng định kể. Bà chỉ muốn biết, giữa im lặng, hắn có biết còn một thứ tiếng nữa không."
+      "Tương truyền Yukionna đi qua tuyết chẳng để lại dấu chân; từng tha một chàng trẻ, chỉ dặn đừng kể ai. Chàng thất hứa, bà thôi tin lời hứa. Skaði nơi Bắc quốc cũng bỏ biển vì tiếng hải âu. Bà chỉ hỏi mỗi kẻ một câu, và chỉ tin kẻ dám đáp bằng điều trong ngực — như hắn, chưa từng thất hứa vì chưa từng hứa."
     ],
     "resolve": [
-      "Hắn bước vào sân không nói một lời. Bà cũng im. Hai bên đứng cách nhau mười bước giữa tuyết đang rơi, lâu đến mức mép áo choàng đen kết một lớp băng mỏng. Cuối cùng bà hỏi: « Ngươi nghe thấy gì? » Hắn nhìn tuyết rơi, đáp đúng một chữ: « Tuyết. » Bà khẽ run. Vạn kẻ đã đáp bà bằng những lời dài; hắn là kẻ đầu tiên đáp bằng tiếng của im lặng.",
-      "« Còn trong ngươi? » Hắn im thật lâu. « Một chỗ trống. » Bà gật. « Người ta gọi nó là vực. Ta gọi nó là một chỗ vừa mở ra, vừa đủ để thứ gì đó bước vào. » Bà đặt đầu ngón tay lạnh lên ngực hắn và nghe: chỉ một tiếng, như viên sỏi rơi xuống đáy giếng đã lâu không có nước. Hắn quay đi. Tuyết dưới gót hắn kêu một tiếng, rồi hai, rồi ba, rồi đều — lần đầu tiên bước chân hắn có tiếng. Bà đặt dấu vào tay hắn, rồi chỉ vào con quạ đen trên vai. Con quạ ngập ngừng, rồi kêu thật to — lần đầu không im bặt."
+      "« Ngươi nghe thấy gì? » « Tuyết. » « Còn trong ngươi? » « Một chỗ trống. » Bà áp tay lên ngực hắn, nghe một tiếng như sỏi rơi đáy giếng khô. « Người đời gọi là vực; ta gọi là chỗ vừa mở ra. » Hắn quay đi, tuyết dưới gót kêu lên — lần đầu bước chân hắn có tiếng."
     ],
     "moral": "Chỗ trống đã có tên thì không còn là vực."
   },
