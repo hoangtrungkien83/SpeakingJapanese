@@ -3958,7 +3958,7 @@ var KJ=['一','二','三','四','五'],ORD=['đầu tiên','thứ hai','thứ ba
 var ALL=[],TP=[],S,view='map',nd=null,zt=0,sel=null,B=null,mapMsg='';
 
 /* ---------- trạng thái & lưu (riêng từng người dùng) ---------- */
-function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};return x}
+function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};x.yz=x.yz||{};return x}
 function fresh(){return norm({})}
 function loadS(){var x=null;try{x=JSON.parse(localStorage.getItem(K))}catch(e){}
 if(!(x&&x.w)&&K!==K0){try{if(!localStorage.getItem('fusou_game_migrated')){var o=JSON.parse(localStorage.getItem(K0));if(o&&o.w){x=o;localStorage.setItem('fusou_game_migrated',K);localStorage.setItem(K,JSON.stringify(o))}}}catch(e){}}
@@ -4003,14 +4003,14 @@ var YK_N=100;       /* số câu tối đa của mỗi màn quyết đấu tiể
 /* 終章 + phần thưởng Cửu Vĩ Hồ mở khi đủ ấn của cả 5 cấp N5→N1. Tiểu yêu quái và Bạch Trạch chỉ là màn thử thách tuỳ chọn, KHÔNG ảnh hưởng điều kiện này. */
 var STAMP_DIR='img/game/'; /* thư mục ảnh dấu ấn (png) — nếu thiếu sẽ thử img/ui/ rồi dấu SVG */
 var IMG_DIR='img/game/'; /* ảnh quái thú hiện trên bản đồ / trang chặng: <tên>1.jpg */
-var IMG_F={n5:'tanuki1',n4:'kappa1',n3:'tengu1',n2:'oni1',n1:'ryu1',end:'kitsune1',yok:'rokurokubi',rokurokubi:'rokurokubi',jorogumo:'jorogumo',aoandon:'aoandon',karakasaobake:'karakasaobake',hak:'hakutaku1'};
+var IMG_F={n5:'tanuki1',n4:'kappa1',n3:'tengu1',n2:'oni1',n1:'ryu1',end:'kitsune1',yok:'rokurokubi',rokurokubi:'rokurokubi',jorogumo:'jorogumo',aoandon:'aoandon',karakasaobake:'karakasaobake',hak:'hakutaku1',yukionna:'yukionna'};
 /* tiêu điểm cắt tròn trên bản đồ: [x%, y%, phóng to] */
-var IMG_FOC={n5:[78,24,1.9],n4:[36,12,1.7],n3:[50,42,1.7],n2:[48,26,1.6],n1:[16,12,1.6],end:[82,58,2.6],yok:[50,22,1.5],hak:[58,56,1.8]};
-var IMG_CAP={n5:'狸 · Tanuki',n4:'河童 · Kappa',n3:'天狗 · Tengu',n2:'鬼 · Oni',n1:'龍 · Rồng',end:'九尾の狐 · Cửu Vĩ Hồ',yok:'四妖 · Tiểu yêu quái',rokurokubi:'ろくろ首 · Rokurokubi',jorogumo:'女郎蜘蛛 · Jorōgumo',aoandon:'あおあんどん · Ao-andon',karakasaobake:'からかさお化け · Karakasa-obake',hak:'白澤 · Bạch Trạch'};
+var IMG_FOC={n5:[78,24,1.9],n4:[36,12,1.7],n3:[50,42,1.7],n2:[48,26,1.6],n1:[16,12,1.6],end:[82,58,2.6],yok:[50,22,1.5],hak:[58,56,1.8],yukionna:[50,24,1.6]};
+var IMG_CAP={n5:'狸 · Tanuki',n4:'河童 · Kappa',n3:'天狗 · Tengu',n2:'鬼 · Oni',n1:'龍 · Rồng',end:'九尾の狐 · Cửu Vĩ Hồ',yok:'四妖 · Tiểu yêu quái',rokurokubi:'ろくろ首 · Rokurokubi',jorogumo:'女郎蜘蛛 · Jorōgumo',aoandon:'あおあんどん · Ao-andon',karakasaobake:'からかさお化け · Karakasa-obake',hak:'白澤 · Bạch Trạch',yukionna:'雪女 · Yuki-onna'};
 var STAMP_F={n5:'tanuki',n4:'kappa',n3:'tengu',n2:'oni',n1:'ryu',end:'kitsune',hak:'hakutaku'}; /* tên file theo từng chặng */
 var FIN_LOCK=false;  /* false: Cửu Vĩ Hồ luôn mở sẵn, ai cũng có thể khiêu chiến bất cứ lúc nào · true: phải qua đủ N5–N1 mới mở */
 /* mỗi tiểu yêu quái lấy đề từ 1 chủ đề (khớp theo tên chủ đề trong dữ liệu). Chủ đề không tìm thấy -> bốc đề từ cả 3 chủ đề còn lại */
-var FIN_CFG=[{re:/慣用句/,id:'rokurokubi',n:'慣用句'},{re:/四字熟語/,id:'jorogumo',n:'四字熟語'},{re:/漢文|古い漢字|古文/,id:'aoandon',n:'漢文 · 古い漢字'},{re:/ことわざ|諺/,id:'karakasaobake',n:'ことわざ'}];
+var FIN_CFG=[{re:/慣用句/,id:'rokurokubi',n:'慣用句'},{re:/四字熟語/,id:'jorogumo',n:'四字熟語'},{re:/漢文|古い漢字|古文/,id:'aoandon',n:'漢文 · 古い漢字'},{re:/ことわざ|諺/,id:'karakasaobake',n:'ことわざ'},{re:/副詞|オノマトペ/,id:'yukionna',n:'副詞'}];
 var FIN=[];
 var WRONG_MAX=1; /* số câu sai tối đa cho phép + 1: =1 nghĩa là sai 1 câu là thua, bị loại ngay */
 function wrongLim(n){return WRONG_MAX}
@@ -4063,19 +4063,20 @@ pg:ss.length?'ấn '+g+' / '+ss.length+' · từ '+cn+' / '+tn:'Chưa có từ v
 a.push({id:'end',k:'終',n:'Cửu Vĩ Hồ',t:'Phần thưởng cuối hành trình',p:'',c:'var(--accent)',st:endOpen()?'open':'lock',lab:'終章 · Phần thưởng',pg:endOpen()?'Hồ ly sẽ đi cùng bạn':'Cần đủ 5 ấn N5 → N1'});
 a.push({id:'yok',k:'四妖',n:'Tiểu yêu quái',t:'慣用句 · 四字熟語 · 漢文 · ことわざ',p:'',c:'#7A5CD1',st:ykAll()?'done':'open',lab:'任意 · Quyết đấu',pg:'Đã khuất phục '+ykN()+' / 4 · bấm để chọn'});
 a.push({id:'hak',k:'白澤',n:'Bạch Trạch',t:'漢字 · On · Kun · Hán Việt',p:'',c:HK_COL,st:S.st['hak|hak']?'done':'open',lab:'任意 · Thử thách',pg:'Tháp '+HK_WIN+' tầng · thuộc '+hkMastN()+' / '+KJD.length+' chữ'});
+a.push({id:'yukionna',k:'雪',n:'Yuki-onna',t:'副詞 · Trạng từ',p:'',c:'#5B9BC4',st:ykGot('yukionna')?'done':'open',lab:'任意 · Bão tuyết',pg:'Băng tan '+yuMelt()+' / '+yuAll().length+' từ · '+YU_LIVES+' mạng'});
 return a}
 function pacts(){return LS.map(function(l){var g=lvDone(l);return'<div class="kg-pact-i"><div class="kg-sealbox'+(g?' got':'')+'">'+(g?lvSeal(l):ghost(LV[l][0],l))+'</div><b>'+esc(bossInfo(l).name)+'</b></div>'}).join('')}
 function mapv(){var a=nodes(),s=STY(),n=7,cu=-1,nd5=LS.filter(lvDone).length;
 a.slice(0,n).forEach(function(x,i){if(cu<0&&x.st=='open')cu=i});
 /* vị trí (x%, y%) trên ảnh map.jpg: 7 điểm lộ trình lần lượt nằm trên các đảo, 2 điểm cuối (四妖, 白澤) nằm trên đảo thử thách bên phải */
-var P=[[22,22],[52,11],[76,12],[60,32],[41,47],[26,73],[70,72],[63,46],[85,57]];
+var P=[[22,22],[52,11],[76,12],[60,32],[41,47],[26,73],[70,72],[63,46],[85,57],[19,39]];
 var o=(mapMsg?'<div class="kg-note">'+esc(mapMsg)+'</div>':'');mapMsg='';
 o+='<div class="kg-mp-head"><h2>地図 · '+esc(s&&s.title||'Hành trình tới Fusō')+'</h2><p>'+esc(s&&s.tagline||(s?'':'Tài khoản này chưa có file cốt truyện — vẫn chơi bình thường. Xem story/_template.js.'))+'</p><div class="kg-mp-prog"><span>五つの誓い</span><i><s style="width:'+nd5*20+'%"></s></i><b>'+nd5+' / 5</b></div></div>';
 o+='<div class="kg-map kg-route"><svg class="kg-mp-path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">';
 var seg=function(i,j){var x0=P[i][0],y0=P[i][1],x1=P[j][0],y1=P[j][1],m=(y0+y1)/2;return'M'+x0+' '+y0+' C'+x0+' '+m+' '+x1+' '+m+' '+x1+' '+y1};
 for(var i=0;i<n-1;i++)o+='<path class="cs" d="'+seg(i,i+1)+'"/>';
 for(var i=0;i<n-1;i++)o+='<path d="'+seg(i,i+1)+'"'+(a[i].st=='done'?' class="on"':'')+'/>';
-o+='<path class="ch" d="M'+P[7][0]+' '+P[7][1]+' Q'+(P[7][0]+10)+' '+(P[7][1]+9)+' '+P[8][0]+' '+P[8][1]+'"/></svg>';
+o+='<path class="ch" d="M'+P[7][0]+' '+P[7][1]+' Q'+(P[7][0]+10)+' '+(P[7][1]+9)+' '+P[8][0]+' '+P[8][1]+'"/><path class="ch" d="M'+P[4][0]+' '+P[4][1]+' Q'+((P[4][0]+P[9][0])/2)+' '+(P[4][1]+9)+' '+P[9][0]+' '+P[9][1]+'"/></svg>';
 a.forEach(function(x,i){var ch=i>=n;
 o+='<button class="kg-pt '+x.st+(ch?' ch':'')+(i==cu?' cur':'')+(x.lv?'':' sp')+(x.k.length>1?' kl2':'')+'" data-nd="'+x.id+'" style="left:'+P[i][0]+'%;top:'+P[i][1]+'%;--c:'+(x.lv?LC[x.lv]:(x.c||'var(--ink)'))+'">'
 +'<span class="kg-mp-med"><b>'+esc(x.k)+'</b>'+medImg(x)+(x.st=='done'?'<i class="kg-mp-ok">印</i>':x.st=='lock'?'<i class="kg-mp-lk">鎖</i>':'')+'</span>'
@@ -4084,7 +4085,7 @@ o+='<button class="kg-pt '+x.st+(ch?' ch':'')+(i==cu?' cur':'')+(x.lv?'':' sp')+
 o+='<div class="kg-rt-leg"><span><i class="a"></i>Lộ trình chính</span><span><i class="b"></i>Đảo thử thách · tuỳ chọn</span></div>';
 return o+'</div>'}
 function medImg(x){var l=x.lv||x.id,f=IMG_F[l],c=IMG_FOC[l]||[50,30,1.5];if(!f)return'';return'<span class="kg-mp-phw"><img class="kg-mp-ph" src="'+IMG_DIR+f+'.jpg" alt="" loading="lazy" style="object-position:'+c[0]+'% '+c[1]+'%;transform-origin:'+c[0]+'% '+c[1]+'%;transform:scale('+c[2]+')" onerror="this.parentNode.remove()"></span>'}
-function openNode(id){if(/^yk:/.test(id)){abort();nd=id;mapMsg='';draw();gtop();focusPic();return}var a=nodes(),x=a.filter(function(n){return n.id==id})[0];if(!x)return;
+function openNode(id){if(id=='yukionna')id='yk:yukionna';if(/^yk:/.test(id)){abort();nd=id;mapMsg='';draw();gtop();focusPic();return}var a=nodes(),x=a.filter(function(n){return n.id==id})[0];if(!x)return;
 if(x.st=='lock'){var pl=LS[LS.indexOf(id)-1];mapMsg=id=='end'?'Hãy nhận đủ ấn của 5 chặng N5 → N1 để gặp Cửu Vĩ Hồ ở cuối hành trình.':'Hãy qua chặng '+bossInfo(pl).name+' ('+pl.toUpperCase()+') trước.';draw();return}
 abort();nd=id;mapMsg='';if(LV[id]){S.lv=id;save()}draw();gtop();focusPic();if(id=='end')fmWatch()}
 /* mở chặng → tự lướt để ảnh quái thú + lời giới thiệu nằm giữa màn hình */
@@ -4222,7 +4223,7 @@ B=me}
 function endBoss(win,why,wa){if(B.fin)return;B.fin=1;clearInterval(B.tid);B.over=win?'win':(why||'time');B.wa=wa||null;
 B.el=Math.max(1,Math.round(B.act/1000)); /* tổng thời gian trả lời (cộng dồn từng câu) */
 if(win){var was=cleared(B.l),key=B.t.id+'|'+B.l;B.first=!got(B.t,B.l);S.st[key]=1;
- B.pool.forEach(function(a){S.c[a.k]=1;S.z[a.k]=1}); /* vượt Boss = full ấn + coi như đã thu thập đủ từ */
+ B.pool.forEach(function(a){if(B.yid=='yukionna')S.yz[a.k]=1;else{S.c[a.k]=1;S.z[a.k]=1}}); /* vượt Boss = full ấn + coi như đã thu thập đủ từ */
  if(B.first){B.gain=B.l=='yk'?100:50;S.xp+=B.gain}
  if(!S.pb[key]||B.el<S.pb[key]){B.pbNew=!!S.pb[key];S.pb[key]=B.el}
  var R=recs(),old=R[key];B.prev=old||null;
@@ -4263,6 +4264,13 @@ var YK=[
 {id:'aoandon',ja:'あおあんどん',vi:'Ao-andon',topic:'漢文 · 古い漢字',k:'灯',c:'#2E7FA6'},
 {id:'karakasaobake',ja:'からかさお化け',vi:'Karakasa-obake',topic:'ことわざ · Tục ngữ',k:'傘',c:'#C08A22'}];
 var YKM={};YK.forEach(function(q){YKM[q.id]=q});
+YKM.yukionna={id:'yukionna',ja:'雪女',vi:'Yuki-onna',topic:'副詞 · Trạng từ',k:'雪',c:'#5B9BC4'}; /* không nằm trong YK → không tính vào 4 tiểu yêu quái */
+var YU_LIVES=2,YU_N=100; /* Yuki-onna: 3 mạng, mỗi lượt 100 từ bốc từ cả kho 副詞 (~80% từ chưa tan băng + ~20% ôn lại) */
+function yuAll(){return ykOwn('yukionna')||[]}
+function yuMelt(){return yuAll().filter(function(x){return S.yz[x.k]}).length}
+function yuPool(){var a=yuAll().slice().sort(rnd),f=a.filter(function(x){return!S.yz[x.k]}),d=a.filter(function(x){return S.yz[x.k]}),
+nd2=Math.min(d.length,Math.round(YU_N*.2)),nf=Math.min(f.length,YU_N-nd2),p=f.slice(0,nf).concat(d.slice(0,nd2));
+if(p.length<YU_N)p=p.concat(f.slice(nf).concat(d.slice(nd2)).slice(0,YU_N-p.length));return p.sort(rnd)}
 function ykIm(base,exts,cls,k,g){return'<img class="'+cls+'" src="'+base+'.'+exts[0]+'" alt="" loading="lazy" data-b="'+base+'" data-e="'+exts.join(',')+'" data-t="0" data-k="'+k+'" data-g="'+esc(g||'')+'" onerror="window.__kgYk(this)">'}
 window.__kgYk=function(im){var e=im.dataset.e.split(','),t=+im.dataset.t+1;if(t<e.length){im.dataset.t=t;im.src=im.dataset.b+'.'+e[t];return}im.onerror=null;
 if(im.dataset.k=='tile'){im.outerHTML='<div class="kg-yk-fb">'+im.dataset.g+'</div>';return}
@@ -4275,11 +4283,11 @@ function ykN(){return YK.filter(function(q){return S.st[q.id+'|yk']}).length}
 function ykAll(){return ykN()==YK.length}
 function ykGot(id){return !!S.st[id+'|yk']}
 function ykOwn(id){var f=FIN.filter(function(x){return x.c.id==id})[0];return f&&f.a.length?f.a:null}
-function ykPool(id){var p=ykOwn(id);if(p)return p;var seen={};p=[];FIN.forEach(function(x){x.a.forEach(function(a){if(!seen[a.k]){seen[a.k]=1;p.push(a)}})});return p}
+function ykPool(id){var p=ykOwn(id);if(p)return p;if(id=='yukionna')return[];var seen={};p=[];FIN.forEach(function(x){x.a.forEach(function(a){if(!seen[a.k]){seen[a.k]=1;p.push(a)}})});return p}
 function finSeal(){return stImg('end')}
-function startYk(id){var q=YKM[id];if(!q)return;var pool=ykPool(id).slice().sort(rnd).slice(0,YK_N),n=pool.length;if(!n)return;abort();
-runBoss({kind:'boss',l:'yk',yid:id,ykk:q.k,si:0,t:{id:id,title:q.ja},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
-function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};return{y:y,m:(y.monsters||{})[id]||{}}}
+function startYk(id){var q=YKM[id];if(!q)return;var pool=id=='yukionna'?yuPool():ykPool(id).slice().sort(rnd).slice(0,YK_N),n=pool.length;if(!n)return;abort();
+runBoss({kind:'boss',l:'yk',yid:id,ykk:q.k,si:0,t:{id:id,title:q.ja},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:id=='yukionna'?YU_LIVES:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
+function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};if(id=='yukionna')return{y:y,m:(s&&(s.yuki||s.yukionna))||{}};return{y:y,m:(y.monsters||{})[id]||{}}}
 function ykStamp(q,g){return g?ykIm(IMG_DIR+q.id+'1',['png','jpg','webp','jpeg'],'kg-stimg','st',q.k):'<div class="kg-ghost"><span>'+esc(q.k)+'</span><small>妖</small></div>'}
 function ykTile(q){var g=ykGot(q.id);
 return'<button type="button" class="kg-yk-m kg-yk-tile kg-yk-imgtile'+(g?' got':'')+'" data-nd="yk:'+q.id+'" style="--c:'+q.c+'" aria-label="'+esc(q.ja+' · '+q.vi)+'"><figure class="kg-yk-pic">'+ykIm(IMG_DIR+q.id,['jpg','png','webp','jpeg'],'kg-yk-img','tile',q.ja)+'</figure></button>'}
@@ -4290,26 +4298,26 @@ if(y.intro)o+='<div class="kg-story">'+paras(y.intro)+'</div>';
 o+='<h3 class="kg-h kg-qh">Bốn yêu quái <small style="font-weight:700;color:var(--ink-soft);font-size:calc(13px*var(--fs,1))">Đã khuất phục '+ykN()+' / '+YK.length+'</small></h3><div class="kg-yk-grid">'+YK.map(ykTile).join('')+'</div>';
 return o+'</div>'}
 function ykChapter(id){var q=YKM[id];if(!q)return yokChapter();var st=ykStory(id),m=st.m,g=ykGot(id),n=Math.min(YK_N,ykPool(id).length),own=!!ykOwn(id),r=recGet({id:id},'yk'),pb=S.pb[id+'|yk'];
-var o='<button class="kg-btn ghost kg-back" data-nd="yok">← 四妖 Về Tiểu yêu quái</button><button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'
-+'<div class="kg-ch" style="--c:'+q.c+'"><div class="kg-ch-head"><div class="kg-mk"><b>'+q.k+'</b></div><div><small>四妖 · '+esc(q.vi)+'</small><h2>'+esc(q.ja)+'</h2>'+(m.title?'<p class="kg-ch-ti">'+esc(m.title)+'</p>':'')+(m.place?'<span class="kg-mp-pl">'+esc(m.place)+'</span>':'')+'</div></div>'+picOf(id);
+var o=(id=='yukionna'?'':'<button class="kg-btn ghost kg-back" data-nd="yok">← 四妖 Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'
++'<div class="kg-ch" style="--c:'+q.c+'"><div class="kg-ch-head"><div class="kg-mk"><b>'+q.k+'</b></div><div><small>'+(id=='yukionna'?'任意 · Thử thách · ':'四妖 · ')+esc(q.vi)+'</small><h2>'+esc(q.ja)+'</h2>'+(m.title?'<p class="kg-ch-ti">'+esc(m.title)+'</p>':'')+(m.place?'<span class="kg-mp-pl">'+esc(m.place)+'</span>':'')+'</div></div>'+picOf(id);
 if(m.setup)o+='<div class="kg-story">'+paras(m.setup)+'</div>';
 if(g){if(m.resolve)o+='<div class="kg-story kg-story2">'+paras(m.resolve)+'</div>';if(m.moral)o+='<div class="kg-pact"><b>誓</b><span>'+esc(m.moral)+'</span></div>'}
 else if(m.resolve)o+='<p class="kg-tease">… Chuyện gì xảy ra tiếp theo? Khuất phục '+esc(q.ja)+' trong quyết đấu để biết.</p>';
 o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:'+q.c+'"><div class="kg-sx-seal">'+ykStamp(q,g)+'</div>'
-+'<div class="kg-sx-main"><b>'+esc(q.topic)+'</b><small>'+n+' câu · '+SEC_PER_Q+' giây/câu · sai 1 câu là thua'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(own?'Đề lấy từ chủ đề '+esc(q.topic.split(' · ')[0]):'Chưa thấy chủ đề '+esc(q.topic.split(' · ')[0])+' trong dữ liệu — tạm bốc đề từ các chủ đề thành ngữ khác')+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
++'<div class="kg-sx-main"><b>'+esc(q.topic)+'</b><small>'+n+' câu · '+SEC_PER_Q+' giây/câu · '+(id=='yukionna'?YU_LIVES+' mạng':'sai 1 câu là thua')+(g?' · ✔ đã khuất phục':'')+'</small>'+(id=='yukionna'&&own?'<small>❄ Băng tan <b>'+yuMelt()+' / '+yuAll().length+'</b> từ · mỗi lượt bốc '+YU_N+' từ, ưu tiên từ chưa tan băng</small>':'')+'<small>'+(own?'Đề lấy từ chủ đề '+esc(q.topic.split(' · ')[0]):'Chưa thấy chủ đề '+esc(q.topic.split(' · ')[0])+' trong dữ liệu'+(id=='yukionna'?'':' — tạm bốc đề từ các chủ đề thành ngữ khác'))+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
 +'<div class="kg-sx-act"><button class="kg-btn" data-act="yk" data-y="'+id+'"'+(n?'':' disabled')+'>'+(g?'再決闘 Quyết đấu lại':'決闘 Quyết đấu')+'<small>'+n+' câu · '+SEC_PER_Q+' giây/câu</small></button></div></div>';
 return o+'</div>'}
 function ykEnd(){var id=B.yid,q=YKM[id]||{ja:'',k:'妖'},m=ykStory(id).m,o;
-if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:'+q.c+'">'+esc(q.ja)+' 調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">Tiểu yêu quái đã khuất phục</p><div class="kg-sealbox big got">'+ykStamp(q,true)+'</div><p><b>Dấu 妖 · '+esc(q.vi)+'</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()
+if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:'+q.c+'">'+esc(q.ja)+' 調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">'+(id=='yukionna'?'Yuki-onna đã khuất phục':'Tiểu yêu quái đã khuất phục')+'</p><div class="kg-sealbox big got">'+ykStamp(q,true)+'</div><p><b>Dấu '+(id=='yukionna'?'雪':'妖')+' · '+esc(q.vi)+'</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()
 +((m.resolve||m.moral)?'<div class="kg-story kg-story2" style="text-align:left">'+paras(m.resolve)+'</div>'+(m.moral?'<div class="kg-pact"><b>誓</b><span>'+esc(m.moral)+'</span></div>':''):'')
-+'<button class="kg-btn" data-act="menu">Về '+esc(q.ja)+'</button><button class="kg-btn ghost" data-nd="yok">Về Tiểu yêu quái</button><button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
++'<button class="kg-btn" data-act="menu">Về '+esc(q.ja)+'</button>'+(id=='yukionna'?'':'<button class="kg-btn ghost" data-nd="yok">Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
 else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-big" style="color:var(--accent)">'+(B.over=='wrong'?'失敗 · Bị loại':'時間切れ · Hết giờ')+'</div>'
  +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Hết '+B.sec+' giây ở câu <b>'+(B.done+1)+'</b> / '+B.n+' mà chưa trả lời.</p>')+'<p>Thời gian trả lời: '+fmt(B.el)+' · trung bình '+avg(B.act/1000,B.done+(B.over=='time'?1:0))+' giây/câu</p><p>'+esc(q.ja)+' vẫn đang chờ. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="yk" data-y="'+id+'">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về '+esc(q.ja)+'</button></div>';
 return o}
 /* ================= 白澤 · BẠCH TRẠCH — hán tự: On · Kun · Hán Việt (Tháp 10 tầng + Luyện tập) ================= */
 var HK_SEC=10,     /* giây cho mỗi câu của Tháp */
 HK_FLOOR=10,   /* số chữ đúng để qua một tầng */
-HK_LIVES=3,        /* số mạng tối đa của Tháp (qua tầng được hồi 1 mạng) */
+HK_LIVES=2,        /* số mạng tối đa của Tháp (qua tầng được hồi 1 mạng) */
 HK_WIN=10,         /* qua tầng này = khuất phục Bạch Trạch, nhận ấn cuối */
 HK_COL='#2F8F83';
 var KJD=[],KJM={},HKW={},HKON={};
@@ -4442,7 +4450,7 @@ function hakChapter(){var g=!!S.st['hak|hak'],r=recGet({id:'hak'},'hak'),m=hkMas
 var ac=function(k){var s=hs[k];return s&&s[1]?Math.round(s[0]/s[1]*100)+'%':'–'};
 var o=back()+'<div class="kg-ch" style="--c:'+HK_COL+'"><div class="kg-ch-head"><div class="kg-mk k2"><b>白澤</b></div><div><small>任意 · Thử thách</small><h2>Bạch Trạch</h2><p class="kg-ch-ti">'+esc(hst.title||'漢字 · On · Kun · Hán Việt')+'</p>'+(hst.place?'<span class="kg-mp-pl">'+esc(hst.place)+'</span>':'')+'</div></div>'+picOf('hak');
 if(hst.setup)o+='<div class="kg-story">'+paras(hst.setup)+'</div>';
-o+='<div class="kg-story"><p>Bạch Trạch — thần thú mình rồng đầu người, biết tên của mọi yêu quái và mọi con chữ trên đời. Đây là màn thử thách tuỳ chọn: muốn nhận ấn của ông, bạn phải leo hết '+HK_WIN+' tầng tháp của ông.</p><p>Tầng thấp chỉ có chữ N5–N4. Mỗi câu chỉ có '+HK_SEC+' giây (đồng hồ tạm dừng khi bạn xem lại đáp án). Càng lên cao chữ càng khó: đáp án nhiễu càng gần giống, từ tầng 7 có tới 6 lựa chọn, và có cả câu đảo chiều — cho âm đọc, chọn đúng mặt chữ. Qua mỗi tầng được hồi 1 mạng.</p></div>';
+o+='<div class="kg-story"><p>Đây là màn thử thách tuỳ chọn: muốn nhận ấn của ông, bạn phải leo hết '+HK_WIN+' tầng tháp của ông.</p><p>Tầng thấp chỉ có chữ N5–N4. Mỗi câu chỉ có '+HK_SEC+' giây (đồng hồ tạm dừng khi bạn xem lại đáp án). Càng lên cao chữ càng khó: đáp án nhiễu càng gần giống, từ tầng 7 có tới 6 lựa chọn, và có cả câu đảo chiều — cho âm đọc, chọn đúng mặt chữ. Qua mỗi tầng được hồi 1 mạng.</p></div>';
 o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:'+HK_COL+'"><div class="kg-sx-seal">'+(g?'<div class="kg-sealbox got">'+hkSeal()+'</div>':'<div class="kg-ghost"><span>白澤</span><small>瑞</small></div>')+'</div>'
 +'<div class="kg-sx-main"><b>Tháp '+HK_WIN+' tầng · '+HK_LIVES+' mạng</b><small>Mỗi tầng '+HK_FLOOR+' chữ · On, Kun, Hán Việt xen kẽ · từ N5 lên N1'+(g?' · ✔ đã khuất phục':'')+'</small><small>'+(S.hkb?'Tầng cao nhất: '+S.hkb:'Chưa leo tháp')+' · '+(r?recTxt(r,r.n):'🏆 Chưa có kỷ lục')+'</small></div>'
 +'<div class="kg-sx-act"><button class="kg-btn" data-act="hakt">挑戦 Leo tháp<small>'+HK_LIVES+' mạng · '+HK_SEC+' giây / câu</small></button></div></div>';
@@ -4548,6 +4556,61 @@ else if(d.act=='imp'){try{var x=JSON.parse(document.getElementById('kgTa').value
 else if(d.act=='rst'){if(confirm('Xóa hết tiến độ?')){S=fresh();save();draw()}}};
 })();
 
+</script>
+
+<style id="kg-nextbar-css">
+/* Thanh 次へ cố định ở đáy — chỉ điện thoại / màn cảm ứng */
+.kg-nextbar{display:none}
+.kg-bh,.kg-hud,.kg-panel{scroll-margin-top:10px}
+@media (max-width:820px),(pointer:coarse){
+  html.kg-nb-js .kg-btn[data-act="next"],html.kg-nb-js .kg-btn[data-act="hnext"]{display:none!important}
+  .kg-nextbar{position:fixed;left:0;right:0;bottom:0;z-index:9000;display:block;
+    padding:14px 14px calc(10px + env(safe-area-inset-bottom,0px));
+    background:linear-gradient(to bottom,rgba(0,0,0,0),var(--bg-card,#f3ead7) 38%);
+    transform:translateY(110%);transition:transform .18s ease;pointer-events:none}
+  .kg-nextbar.show{transform:none}
+  .kg-nextbar button{pointer-events:none;width:100%;min-height:54px;font-size:calc(18px*var(--fs,1));font-weight:800;letter-spacing:.06em;
+    border:2px solid var(--accent,#b08d4c);border-radius:4px;background:var(--bg-card,#f3ead7);color:var(--ink,#2a1d0e);
+    box-shadow:3px 3px 0 var(--accent,#b08d4c);cursor:pointer;font-family:inherit}
+  .kg-nextbar.arm.show button{pointer-events:auto}
+  .kg-nextbar button:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--accent,#b08d4c)}
+  body.kg-nb-on{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))!important}
+}
+</style>
+
+<script id="kg-nextbar-js">
+(function(){
+  var mq=window.matchMedia('(max-width:820px),(pointer:coarse)'),bar,btn,armT,shown=false,raf=0;
+  function find(){return document.querySelector('.kg-btn[data-act="next"],.kg-btn[data-act="hnext"]')}
+  function label(b){var c=b.cloneNode(true),sm=c.querySelectorAll('small');for(var i=0;i<sm.length;i++)sm[i].remove();return c.textContent.trim()||'次へ →'}
+  /* sau khi qua câu: cuộn về đầu câu hỏi mới (đồng hồ + câu hỏi); scrollIntoView đúng với mọi vùng cuộn */
+  function toQuestion(){
+    var go=function(){var t=document.querySelector('.kg-bh,.kg-hud,.kg-panel');if(!t)return;
+      var r=t.getBoundingClientRect();
+      if(r.top<0||r.top>window.innerHeight*.25){try{t.scrollIntoView({block:'start',behavior:'smooth'})}catch(e){t.scrollIntoView(true)}}};
+    setTimeout(function(){requestAnimationFrame(go)},30);setTimeout(go,260); /* chạy lại phòng khi giao diện dựng chậm */
+  }
+  function build(){
+    bar=document.createElement('div');bar.className='kg-nextbar';bar.setAttribute('aria-live','polite');
+    btn=document.createElement('button');btn.type='button';bar.appendChild(btn);document.body.appendChild(bar);
+    btn.addEventListener('click',function(){var b=find();if(b){b.click();toQuestion()}});
+    document.documentElement.classList.add('kg-nb-js');
+  }
+  function sync(){
+    raf=0;if(!bar)build();
+    var b=mq.matches?find():null;
+    if(b){
+      btn.textContent=label(b);
+      if(!shown){shown=true;bar.classList.remove('arm');clearTimeout(armT);
+        bar.classList.add('show');document.body.classList.add('kg-nb-on');
+        armT=setTimeout(function(){bar.classList.add('arm')},400)} /* chờ 400ms để không lỡ chạm đúp */
+    }else if(shown){shown=false;clearTimeout(armT);bar.classList.remove('show','arm');document.body.classList.remove('kg-nb-on')}
+  }
+  function qs(){if(!raf)raf=requestAnimationFrame(sync)}
+  new MutationObserver(qs).observe(document.body,{childList:true,subtree:true});
+  if(mq.addEventListener)mq.addEventListener('change',qs);
+  document.addEventListener('DOMContentLoaded',qs);qs();
+})();
 </script>
 </body>
 </html>

@@ -21,6 +21,8 @@
                      {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
                      thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
    hak             : (tuỳ chọn) truyện Bạch Trạch
+   yuki            : (tuỳ chọn) truyện Yukionna 雪女 — đại diện 副詞・擬音語・擬声語・擬態語 (cùng cấu trúc với hak:
+                     title, place, setup, resolve, moral)
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
 window.FUSOU_STORY["Airi"]={
@@ -230,11 +232,24 @@ window.FUSOU_STORY["Airi"]={
     ],
     "moral": "Một chữ, ba tiếng đọc — người biết nhiều tiếng thì không bao giờ lạc đường."
   },
+  "yuki": {
+    "title": "Người đàn bà chưa từng bật cười",
+    "place": "Sân tuyết sau tháp mười tầng",
+    "setup": [
+      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
+      "Airi nhớ phương Bắc cũng có một người như thế: Skaði, nữ thần núi tuyết, gả cho thần biển rồi bỏ đi vì không ngủ nổi giữa tiếng hải âu, trong khi chồng nàng chẳng chịu nổi tiếng sói hú. Hai kẻ yêu nhau mà không chung nổi một thứ tiếng động. Yukionna cũng đứng yên trong mùa đông của mình: từ khi bình minh trở lại, tuyết Fusō tan từng ngày, và bà không biết mình còn lại gì khi mùa đông qua đi."
+    ],
+    "resolve": [
+      "Airi bước vào sân khi mái tháp đang nhỏ giọt. Yukionna ngồi bất động, hơi thở trắng như sương. Airi không hỏi, không giảng. Nghe tuyết rơi, nàng hạ từng ngón tay xuống nhẹ như tuyết; nghe gió, nàng xoay một vòng cho tà áo vút lên; nghe bước chân nặng, nàng nhún ba bước như Ame-no-Uzume trên nền tuyết. Yatagarasu đậu trên mái, kêu một tiếng đáp lại.",
+      "Yukionna không cười — băng không biết cười. Nhưng Airi chỉ vào vũng nước dưới mái hiên: « Tuyết tan thành nước, nước lên thành mây, mây lại thành tuyết. Tan không phải là mất, chỉ là đổi cách kêu thôi! » Nắng lọt qua mây, cả sân tuyết sáng bừng. Lần đầu sau rất nhiều mùa đông, bà ngẩng mặt để ánh sáng chạm vào má mà không né. Một tiếng cười rất nhỏ thoát ra, rồi hai, rồi ba, như băng vỡ thành ngàn mảnh, mỗi mảnh một tiếng. Bà đặt lên cuốn sổ một dấu son: một bông tuyết không tan."
+    ],
+    "moral": "Tan đi không phải là hết — chỉ là đổi cách kêu."
+  },
   "finale": {
     "resolve": [
       "Ngoài câu chuyện, Ryosuke gửi đến bạn lời nhắn:",
       {
-        "q": "Airi là một nữ sứ giả xinh đẹp và thông minh, khí chất của em đã gây ấn tượng mạnh cho anh. Anh nghĩ rằng, em sẽ toả sáng rất đẹp trong cuộc đời của mình. Ai cũng có quyền được sống cuộc đời của riêng mình, khoẻ mạnh, hạnh phúc, và ngập tràn yêu thương, Ryosuke luôn luôn ủng hộ em. Chúc em tất cả. Nếu khi em đọc được lời nhắn này mà mình đã không còn giữ liên lạc, thì số của anh vẫn ở đây, phòng khi em cần: 0362182134 :))). Best wish for U."
+        "q": "Airi là một nữ sứ giả xinh đẹp và thông minh, khí chất của em đã gây ấn tượng mạnh cho anh. Anh nghĩ rằng, em sẽ toả sáng rất đẹp trong cuộc đời của mình. Ai cũng có quyền được sống cuộc đời của riêng mình, khoẻ mạnh, hạnh phúc, và ngập tràn yêu thương, Ryosuke luôn luôn ủng hộ em. Chúc em tất cả. Nếu khi em đọc được lời nhắn này mà mình đã không còn giữ liên lạc, thì số của anh vẫn ở đây nhaaa: 0362182134 :))). Best wish for U."
       }
     ]
   }

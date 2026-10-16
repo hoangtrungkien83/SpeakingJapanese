@@ -21,6 +21,8 @@
                      {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
                      thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
    hak             : (tuỳ chọn) truyện Bạch Trạch
+   yuki            : (tuỳ chọn) truyện Yukionna 雪女 — đại diện 副詞・擬音語・擬声語・擬態語 (cùng cấu trúc với hak:
+                     title, place, setup, resolve, moral)
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
 window.FUSOU_STORY["Ryosuke"]={
@@ -160,12 +162,12 @@ window.FUSOU_STORY["Ryosuke"]={
         "title": "Bà chủ trọ nghe lén",
         "place": "Quán trọ lưng chừng núi",
         "setup": [
-          "Ban ngày, bà chủ quán trọ là một người đàn bà dịu dàng, rót trà không đổ một giọt. Ban đêm, cổ bà dài ra như sợi thừng, luồn qua vách giấy, quấn quanh những kẻ đang ngủ để nghe xem họ nói mớ điều gì. Đó là Rokurokubi — kẻ đã 首を長くして待つ, vươn cổ chờ suốt hai trăm năm một vị khách chịu nói thật.",
-          "Bà không đòi tiền trọ. Bà chỉ đòi những lời mà người ta giấu kỹ nhất, nhất là kẻ nào đang 首が回らない — nợ nần đến mức quay đầu cũng không nổi."
+          "Ban ngày, bà chủ quán trọ là người đàn bà dịu dàng, rót trà không đổ một giọt. Ban đêm, cổ bà dài ra như sợi thừng, luồn qua vách giấy, quấn quanh những kẻ đang ngủ để nghe xem họ nói mớ điều gì. Đó là Rokurokubi — kẻ đã vươn cổ chờ suốt hai trăm năm một vị khách chịu nói thật.",
+          "Bà không đòi tiền trọ. Bà chỉ đòi những lời người ta giấu kỹ nhất, nhất là kẻ nào nợ nần đến mức quay đầu cũng không nổi."
         ],
         "resolve": [
           "Đêm ấy cổ bà trườn qua vách, quấn ba vòng quanh Ryosuke. Bà áp tai vào ngực hắn và chẳng nghe thấy gì: không lời nói mớ, không tiếng thở dài, chỉ nhịp tim đều như người đã trả hết mọi món nợ — hoặc chưa từng vay.",
-          "« Ngươi mơ gì? » bà hỏi. « Không mơ. » Cổ bà tự co về, vì chẳng có điều giấu nào để mà 首を突っ込む. Bà đặt dấu lên chiếu, và nói thêm một câu mà hắn không đáp: « Người không giấu gì cũng lạc đường như kẻ giấu quá nhiều. »"
+          "« Ngươi mơ gì? » bà hỏi. « Không mơ. » Cổ bà tự co về, vì chẳng có điều giấu nào để thò vào. Bà đặt dấu lên chiếu, và nói thêm một câu mà hắn không đáp: « Người không giấu gì cũng lạc đường như kẻ giấu quá nhiều. »"
         ],
         "moral": "Kẻ không có gì để giấu thì không ai nghe lén nổi — nhưng cũng chẳng ai nghe thấy hắn."
       },
@@ -174,10 +176,10 @@ window.FUSOU_STORY["Ryosuke"]={
         "place": "Thác nước trong sương",
         "setup": [
           "Nơi nước đổ xuống đá, một người đàn bà áo lụa ngồi gảy đàn biwa. Mỗi dây đàn là một sợi tơ. Ai nghe lâu quá sẽ nhận ra mình đã ngồi giữa mạng từ lúc nào. Đó là Jorōgumo — nhện hóa mỹ nhân.",
-          "Nàng không giết ai bằng nanh. Nàng giết bằng 因果応報 — sợi tơ mảnh nối việc ngươi đã làm với điều ngươi sắp nhận. Nàng đã dệt đủ tứ tự thành ngữ để bọc kín cả một con thác: 自業自得, 一網打尽, 七転八起…"
+          "Nàng không giết ai bằng nanh. Nàng giết bằng nhân quả — sợi tơ mảnh nối việc ngươi đã làm với điều ngươi sắp nhận. Gieo gì gặt nấy, và cả con thác là một tấm lưới không ai thoát."
         ],
         "resolve": [
-          "Tơ quấn lên áo choàng đen nhưng gần như không bám được: hắn chẳng còn việc nào dang dở để sợi tơ nối vào — trừ đúng một việc. Sợi tơ ấy mảnh như tóc, bám vào gáy hắn và chỉ về phía đáy hồ đen. Nàng gảy hết bản đàn. Kẻ nghe vẫn ngồi nguyên, không nhúc nhích, không tránh, không kháng cự.",
+          "Tơ quấn lên áo choàng đen nhưng gần như không bám được: hắn chẳng còn việc nào dang dở để sợi tơ nối vào — trừ đúng một việc. Sợi tơ ấy mảnh như tóc, bám vào gáy hắn và chỉ về phía đáy hồ đen. Nàng gảy hết bản đàn. Kẻ nghe vẫn ngồi nguyên, không tránh, không kháng cự.",
           "« Ngươi không sợ nhân quả sao? » « Nhân quả đã ăn gần hết phần của ta. Còn lại một sợi — để ta tự kéo. » Nàng nhìn hắn rất lâu, rồi buông đàn. Tơ trên thác lặng lẽ rụng xuống, chỉ để lại sợi mảnh dẫn đường, và dấu son nằm lại giữa những sợi còn run."
         ],
         "moral": "Chỉ kẻ còn muốn điều gì mới bị mắc tơ — và đôi khi sợi tơ ấy chính là con đường."
@@ -200,10 +202,10 @@ window.FUSOU_STORY["Ryosuke"]={
         "place": "Cổng đền đổ nát dưới mưa",
         "setup": [
           "Một chiếc ô giấy bị bỏ lại sau trăm năm đã thành tsukumogami — một mắt, một chân, cái lưỡi dài thè ra. Đó là Karakasa-obake. Nó không hại ai, chỉ thích nhảy ra dọa rồi chờ người ta bật cười.",
-          "Nó thuộc rất nhiều tục ngữ, vì cơn mưa nào nó cũng từng che qua: 雨降って地固まる, 備えあれば憂いなし, 石の上にも三年… Và đã trăm năm, hiếm có ai đáp lại nó."
+          "Cơn mưa nào nó cũng từng che qua, nên nó thuộc nhiều lời xưa. Và đã trăm năm, hiếm có ai đáp lại nó."
         ],
         "resolve": [
-          "Nó nhảy lên, thè lưỡi sát mặt hắn — dù vừa được cười một lần cách đây không lâu, trăm năm lặng im vẫn nặng hơn một lần cười. Hắn không giật mình. Hắn chỉ nhìn chiếc ô cũ, rồi đáp bằng đúng một câu tục ngữ — câu mà nó đã tự nhủ với mình suốt trăm năm mưa.",
+          "Nó nhảy lên, thè lưỡi sát mặt hắn — dù vừa được cười một lần cách đây không lâu, trăm năm lặng im vẫn nặng hơn một lần cười. Hắn không giật mình. Hắn chỉ nhìn chiếc ô cũ, rồi đáp bằng đúng một câu — câu mà nó đã tự nhủ với mình suốt trăm năm mưa: sau cơn mưa, đất sẽ cứng lại.",
           "Chiếc ô sững lại. Rồi nó xếp mình thật nhẹ, đặt dấu xuống nền đá. Ryosuke dựng nó vào mái hiên khô ráo và bước đi, không ngoái lại — lần đầu có kẻ che mưa cho nó thay vì nó che cho kẻ khác."
         ],
         "moral": "Lời xưa còn ở lại lâu hơn người nói ra nó."
@@ -222,6 +224,19 @@ window.FUSOU_STORY["Ryosuke"]={
       "« Ta biết tên của mọi thứ, » Bạch Trạch nói. « Rồng chỉ đọc cho ngươi nghe âm của cái tên ngươi đã đánh mất. Ta đọc được cả nghĩa của nó. Ngươi muốn nghe không? » Ryosuke nhìn ông rất lâu. « Để đó. » Thần thú gật đầu, đặt dấu vào tay hắn. « Trước ngươi có một thiếu nữ leo qua đây, đọc cùng những chữ ấy và cười. Nàng nhờ ta nhắn lại hai chữ: hẹn gặp lại. » Hắn không đáp. Chiếc lông quạ trên vai hắn khẽ rung."
     ],
     "moral": "Có những cái tên chỉ cần mang theo, không cần giải nghĩa."
+  },
+  "yuki": {
+    "title": "Kẻ đi qua tuyết không để lại dấu",
+    "place": "Sân tuyết sau tháp mười tầng",
+    "setup": [
+      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
+      "Bà nhận ra hắn từ xa, không bằng mắt mà bằng tai: hắn cũng đi qua tuyết không để lại dấu, và cũng là kẻ chưa từng thất hứa vì chưa từng hứa với ai. Bà không dặn hắn đừng kể gì; hắn cũng chẳng định kể. Bà chỉ muốn biết, giữa im lặng, hắn có biết còn một thứ tiếng nữa không."
+    ],
+    "resolve": [
+      "Hắn bước vào sân không nói một lời. Bà cũng im. Hai bên đứng cách nhau mười bước giữa tuyết đang rơi, lâu đến mức mép áo choàng đen kết một lớp băng mỏng. Cuối cùng bà hỏi: « Ngươi nghe thấy gì? » Hắn nhìn tuyết rơi, đáp đúng một chữ: « Tuyết. » Bà khẽ run. Vạn kẻ đã đáp bà bằng những lời dài; hắn là kẻ đầu tiên đáp bằng tiếng của im lặng.",
+      "« Còn trong ngươi? » Hắn im thật lâu. « Một chỗ trống. » Bà gật. « Người ta gọi nó là vực. Ta gọi nó là một chỗ vừa mở ra, vừa đủ để thứ gì đó bước vào. » Bà đặt đầu ngón tay lạnh lên ngực hắn và nghe: chỉ một tiếng, như viên sỏi rơi xuống đáy giếng đã lâu không có nước. Hắn quay đi. Tuyết dưới gót hắn kêu một tiếng, rồi hai, rồi ba, rồi đều — lần đầu tiên bước chân hắn có tiếng. Bà đặt dấu vào tay hắn, rồi chỉ vào con quạ đen trên vai. Con quạ ngập ngừng, rồi kêu thật to — lần đầu không im bặt."
+    ],
+    "moral": "Chỗ trống đã có tên thì không còn là vực."
   },
   "finale": {
     "resolve": [

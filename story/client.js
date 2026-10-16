@@ -21,6 +21,8 @@
                      {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
                      thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
    hak             : (tuỳ chọn) truyện Bạch Trạch
+   yuki            : (tuỳ chọn) truyện Yukionna 雪女 — đại diện 副詞・擬音語・擬声語・擬態語 (cùng cấu trúc với hak:
+                     title, place, setup, resolve, moral)
    ---------------------------------------------------------------------
    Ghi chú: tên chung của khách trong truyện là "Tabito" (旅人 = lữ khách).
    Muốn đổi, chỉ cần tìm/thay "Tabito" trong file này.
@@ -176,14 +178,14 @@ window.FUSOU_STORY["Client"]={
         "title": "Người ngóng thuyền về",
         "place": "Chòi gác đầu bến",
         "setup": [
-          "Mỗi đêm, cổ của bà gác bến dài ra như sợi dây neo, vươn qua mặt nước tối để đếm những cánh buồm không bao giờ về. Đó là Rokurokubi — kẻ 首を長くして待つ, vươn cổ chờ suốt mùa này sang mùa khác.",
+          "Mỗi đêm, cổ của bà gác bến dài ra như sợi dây neo, vươn qua mặt nước tối để đếm những cánh buồm không bao giờ về. Đó là Rokurokubi — kẻ vươn cổ chờ suốt mùa này sang mùa khác.",
           "Bà không hỏi ai đi, không hỏi ai ở. Bà chỉ đếm — và đêm nào cũng đếm thiếu một chiếc."
         ],
         "resolve": [
-          "Tabito ngồi xuống cạnh bà, không nói gì về thuyền. Chỉ đợi tới khi cổ bà vươn dài hết cỡ, rồi nói khẽ, hướng ra bóng tối: « ただいま. » Bà sững lại.",
-          "« Thuyền nào cũng cần một người đáp ‘おかえり’, » Tabito nói. Bà há miệng, nói thử một lần, rồi hai lần. Cổ bà từ từ co về, vì bà không còn phải vươn đi tìm — chỉ cần ngồi yên đợi tiếng gọi quay về. Bà đóng dấu lên góc ô cửa chòi, rồi mỉm cười lần đầu sau rất nhiều đêm."
+          "Tabito ngồi xuống cạnh bà, không nói gì về thuyền. Chỉ đợi tới khi cổ bà vươn dài hết cỡ, rồi nói khẽ, hướng ra bóng tối: « Tôi về rồi. » Bà sững lại.",
+          "« Thuyền nào cũng cần một người đáp ‘mừng về nhà’, » Tabito nói. Bà há miệng, nói thử một lần, rồi hai lần. Cổ bà từ từ co về, vì bà không còn phải vươn đi tìm — chỉ cần ngồi yên đợi tiếng gọi quay về. Bà đóng dấu lên góc ô cửa chòi, rồi mỉm cười lần đầu sau rất nhiều đêm."
         ],
-        "moral": "‘ただいま’ cần một người đáp ‘おかえり’ để thành một chuyến đi trọn vẹn."
+        "moral": "Lời ‘tôi về rồi’ cần một người đáp ‘mừng về nhà’ để chuyến đi trọn vẹn."
       },
       "jorogumo": {
         "title": "Người dệt bản đồ",
@@ -216,10 +218,10 @@ window.FUSOU_STORY["Client"]={
         "place": "Mái hiên chờ mưa cuối bến",
         "setup": [
           "Chiếc ô giấy bị bỏ lại sau trăm năm đã thành tsukumogami — một mắt, một chân, cái lưỡi dài thè ra. Đó là Karakasa-obake. Nó đứng ở cuối bến để che mưa cho những kẻ lạ, dù hiếm có ai dừng lại.",
-          "Nó thuộc nhiều tục ngữ, vì cơn mưa nào cũng từng dạy nó một điều. Nhưng từ khi cầu nứt, không còn ai qua đây để nghe."
+          "Cơn mưa nào cũng từng dạy nó một điều. Nhưng từ khi cầu nứt, không còn ai qua đây để nghe."
         ],
         "resolve": [
-          "Mưa lất phất. Chiếc ô nhảy ra, thè lưỡi, chờ Tabito giật mình. Tabito không giật mình; chỉ mỉm cười và nói: « 旅は道連れ、世は情け. » Đường xa có bạn thì ngắn lại, đời có tình thì ấm lên.",
+          "Mưa lất phất. Chiếc ô nhảy ra, thè lưỡi, chờ Tabito giật mình. Tabito không giật mình; chỉ mỉm cười và nói: « Đường xa có bạn thì ngắn lại, đời có tình thì ấm lên. »",
           "Chiếc ô đứng sững, rồi xếp mình, nhảy lò cò lại gần, đặt dấu xuống nền đá. Nó đi cùng Tabito thêm một đoạn dốc, cán ô rung nhẹ như người vừa tìm được một người bạn đồng hành."
         ],
         "moral": "Đường xa có bạn đồng hành thì ngắn lại."
@@ -238,5 +240,18 @@ window.FUSOU_STORY["Client"]={
       "« Ta tìm mãi trong sổ, chỉ thấy cái tên Tabito — nó nằm đó cho vạn kẻ đi đường, » Bạch Trạch nói. « Ngươi có tên riêng chưa? » « Chưa ạ, » Tabito đáp. Ông gật đầu: « Ta biết tên của mọi thứ, nhưng có những cái tên chỉ chủ nhân mới viết được. Ta sẽ không đặt hộ. » Ông đặt dấu lên đèn lồng, rồi khẽ nói thêm: « Gần đây có hai kẻ leo qua đây. Một kẻ đọc ba giọng và cười. Một kẻ im lặng suốt. Cả hai đều rời đi mà không để ta đọc hộ điều họ cần. Ngươi cũng vậy. Ta thấy… cũng là một cách đúng. »"
     ],
     "moral": "Có những cái tên chỉ chính ta mới viết được."
+  },
+  "yuki": {
+    "title": "Người giữ tiếng của những điều chưa có chữ",
+    "place": "Sân tuyết sau tháp mười tầng",
+    "setup": [
+      "Yukionna — người đàn bà của tuyết. Người xưa kể bà đi qua tuyết mà không để lại dấu chân, và từng tha mạng một chàng trai trẻ với đúng một điều kiện: đừng kể cho ai nghe đêm ấy. Chàng đã kể. Từ đó bà chỉ cất lời khi tuyết dày đủ để lời không vang. Nếu Bạch Trạch biết tên của vạn vật, thì bà biết tiếng của chúng: tuyết rơi nghe thế nào, gió luồn kẽ đá ra sao, bước chân nặng hay nhẹ, và cả những điều không tiếng mà vẫn có dáng.",
+      "Bà cũng chỉ mang một cái tên chung — “người đàn bà của tuyết” — như Tabito mang cái tên chung của mọi lữ khách. Chiếc đèn lồng của Tabito vẫn trắng, như một sân tuyết chưa ai bước lên. Bà ngồi giữa sân chờ một kẻ biết rằng giữa trang giấy trắng và một con chữ, còn có một thứ ở giữa: tiếng."
+    ],
+    "resolve": [
+      "Tabito không hỏi tên, không hỏi nghĩa. Tabito đặt đèn xuống mép tuyết, ngồi xuống, và nghe thật chậm, như đã nghe năm kẻ giữ đường nói hết câu của họ. Bà thở ra một làn sương, tuyết bắt đầu rơi. Bà chạm gót xuống nền, tuyết kêu lạo xạo dưới chân. Bà không giải thích. Tabito chỉ gật, rồi đáp bằng những gì đã mang theo suốt dọc đường: tiếng gõ cửa của Tanuki, tiếng nước vỗ mạn đò, tiếng chuông gió, tiếng ngập ngừng của kẻ vừa tìm được câu thật, tiếng nặng của thân rồng — và giữa năm tiếng ấy, một khoảng lặng.",
+      "Bà nghe hết. Tuyết trên vai bà rơi xuống, lần đầu tiên sau rất lâu. « Ta chỉ có cái tên chung, » bà nói, giọng mỏng như băng đầu mùa. « Ngươi cũng vậy. Nhưng ngươi gọi được những điều chưa ai đặt tên — chỉ bằng cách nghe cho đúng. » Bà chỉ xuống sân: một hàng dấu ấm, tròn, quanh nó tuyết tan thành vũng nhỏ còn vương tiếng cười; một hàng dấu sâu, đều, của kẻ vừa học lại cách bước cho nặng. « Hai kẻ đi trước ngươi, mỗi người để lại một thứ tiếng. Còn ngươi? » Tabito nâng đèn lên. Ánh sáng trong đó khẽ ngân như hơi ấm đầu tiên nở giữa sân tuyết; dưới đáy đèn, con hồ ly bé xíu đang ngủ trở mình, thều thào một tiếng. Bà đặt dấu — một bông tuyết không tan — lên góc đèn, và để nguyên mặt giấy trắng."
+    ],
+    "moral": "Có những điều chưa có chữ vẫn đã có tiếng."
   }
 };
