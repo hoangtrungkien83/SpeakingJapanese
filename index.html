@@ -2271,6 +2271,7 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
       <button class="lg-go" type="button" id="lgStart">はじめる →</button>
     </div>
   </div>
+  <div class="lg-opa" id="lgOpaBox"><label for="lgOpa">◐ Ảnh nền</label><input type="range" id="lgOpa" min="0" max="100" step="5" value="50" aria-label="Độ mờ ảnh nền đăng nhập"><output id="lgOpaV" for="lgOpa">50%</output></div>
 </div>
 
 <script>
@@ -3958,7 +3959,7 @@ var KJ=['一','二','三','四','五'],ORD=['đầu tiên','thứ hai','thứ ba
 var ALL=[],TP=[],S,view='map',nd=null,zt=0,sel=null,B=null,mapMsg='';
 
 /* ---------- trạng thái & lưu (riêng từng người dùng) ---------- */
-function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};x.yz=x.yz||{};return x}
+function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};x.nz=x.nz||x.yz||{};x.np=x.np||{};x.nc=x.nc||'all';if(x.st&&x.st['yukionna|yk']&&!x.st['nue|yk'])x.st['nue|yk']=x.st['yukionna|yk'];return x}
 function fresh(){return norm({})}
 function loadS(){var x=null;try{x=JSON.parse(localStorage.getItem(K))}catch(e){}
 if(!(x&&x.w)&&K!==K0){try{if(!localStorage.getItem('fusou_game_migrated')){var o=JSON.parse(localStorage.getItem(K0));if(o&&o.w){x=o;localStorage.setItem('fusou_game_migrated',K);localStorage.setItem(K,JSON.stringify(o))}}}catch(e){}}
@@ -4003,14 +4004,14 @@ var YK_N=100;       /* số câu tối đa của mỗi màn quyết đấu tiể
 /* 終章 + phần thưởng Cửu Vĩ Hồ mở khi đủ ấn của cả 5 cấp N5→N1. Tiểu yêu quái và Bạch Trạch chỉ là màn thử thách tuỳ chọn, KHÔNG ảnh hưởng điều kiện này. */
 var STAMP_DIR='img/game/'; /* thư mục ảnh dấu ấn (png) — nếu thiếu sẽ thử img/ui/ rồi dấu SVG */
 var IMG_DIR='img/game/'; /* ảnh quái thú hiện trên bản đồ / trang chặng: <tên>1.jpg */
-var IMG_F={n5:'tanuki1',n4:'kappa1',n3:'tengu1',n2:'oni1',n1:'ryu1',end:'kitsune1',yok:'rokurokubi',rokurokubi:'rokurokubi',jorogumo:'jorogumo',aoandon:'aoandon',karakasaobake:'karakasaobake',hak:'hakutaku1',yukionna:'yukionna'};
+var IMG_F={n5:'tanuki1',n4:'kappa1',n3:'tengu1',n2:'oni1',n1:'ryu1',end:'kitsune1',yok:'rokurokubi',rokurokubi:'rokurokubi',jorogumo:'jorogumo',aoandon:'aoandon',karakasaobake:'karakasaobake',hak:'hakutaku1',nue:'nue'};
 /* tiêu điểm cắt tròn trên bản đồ: [x%, y%, phóng to] */
-var IMG_FOC={n5:[78,24,1.9],n4:[36,12,1.7],n3:[50,42,1.7],n2:[48,26,1.6],n1:[16,12,1.6],end:[82,58,2.6],yok:[50,22,1.5],hak:[58,56,1.8],yukionna:[50,24,1.6]};
-var IMG_CAP={n5:'狸 · Tanuki',n4:'河童 · Kappa',n3:'天狗 · Tengu',n2:'鬼 · Oni',n1:'龍 · Rồng',end:'九尾の狐 · Cửu Vĩ Hồ',yok:'四妖 · Tiểu yêu quái',rokurokubi:'ろくろ首 · Rokurokubi',jorogumo:'女郎蜘蛛 · Jorōgumo',aoandon:'あおあんどん · Ao-andon',karakasaobake:'からかさお化け · Karakasa-obake',hak:'白澤 · Bạch Trạch',yukionna:'雪女 · Yuki-onna'};
+var IMG_FOC={n5:[78,24,1.9],n4:[36,12,1.7],n3:[50,42,1.7],n2:[48,26,1.6],n1:[16,12,1.6],end:[82,58,2.6],yok:[50,22,1.5],hak:[58,56,1.8],nue:[50,24,1.6]};
+var IMG_CAP={n5:'狸 · Tanuki',n4:'河童 · Kappa',n3:'天狗 · Tengu',n2:'鬼 · Oni',n1:'龍 · Rồng',end:'九尾の狐 · Cửu Vĩ Hồ',yok:'四妖 · Tiểu yêu quái',rokurokubi:'ろくろ首 · Rokurokubi',jorogumo:'女郎蜘蛛 · Jorōgumo',aoandon:'あおあんどん · Ao-andon',karakasaobake:'からかさお化け · Karakasa-obake',hak:'白澤 · Bạch Trạch',nue:'鵺 · Nue'};
 var STAMP_F={n5:'tanuki',n4:'kappa',n3:'tengu',n2:'oni',n1:'ryu',end:'kitsune',hak:'hakutaku'}; /* tên file theo từng chặng */
 var FIN_LOCK=false;  /* false: Cửu Vĩ Hồ luôn mở sẵn, ai cũng có thể khiêu chiến bất cứ lúc nào · true: phải qua đủ N5–N1 mới mở */
 /* mỗi tiểu yêu quái lấy đề từ 1 chủ đề (khớp theo tên chủ đề trong dữ liệu). Chủ đề không tìm thấy -> bốc đề từ cả 3 chủ đề còn lại */
-var FIN_CFG=[{re:/慣用句/,id:'rokurokubi',n:'慣用句'},{re:/四字熟語/,id:'jorogumo',n:'四字熟語'},{re:/漢文|古い漢字|古文/,id:'aoandon',n:'漢文 · 古い漢字'},{re:/ことわざ|諺/,id:'karakasaobake',n:'ことわざ'},{re:/副詞|オノマトペ/,id:'yukionna',n:'副詞'}];
+var FIN_CFG=[{re:/慣用句/,id:'rokurokubi',n:'慣用句'},{re:/四字熟語/,id:'jorogumo',n:'四字熟語'},{re:/漢文|古い漢字|古文/,id:'aoandon',n:'漢文 · 古い漢字'},{re:/ことわざ|諺/,id:'karakasaobake',n:'ことわざ'},{re:/副詞|オノマトペ/,id:'nue',n:'副詞'}];
 var FIN=[];
 var WRONG_MAX=1; /* số câu sai tối đa cho phép + 1: =1 nghĩa là sai 1 câu là thua, bị loại ngay */
 function wrongLim(n){return WRONG_MAX}
@@ -4063,7 +4064,7 @@ pg:ss.length?'ấn '+g+' / '+ss.length+' · từ '+cn+' / '+tn:'Chưa có từ v
 a.push({id:'end',k:'終',n:'Cửu Vĩ Hồ',t:'Phần thưởng cuối hành trình',p:'',c:'var(--accent)',st:endOpen()?'open':'lock',lab:'終章 · Phần thưởng',pg:endOpen()?'Hồ ly sẽ đi cùng bạn':'Cần đủ 5 ấn N5 → N1'});
 a.push({id:'yok',k:'四妖',n:'Tiểu yêu quái',t:'慣用句 · 四字熟語 · 漢文 · ことわざ',p:'',c:'#7A5CD1',st:ykAll()?'done':'open',lab:'任意 · Quyết đấu',pg:'Đã khuất phục '+ykN()+' / 4 · bấm để chọn'});
 a.push({id:'hak',k:'白澤',n:'Bạch Trạch',t:'漢字 · On · Kun · Hán Việt',p:'',c:HK_COL,st:S.st['hak|hak']?'done':'open',lab:'任意 · Thử thách',pg:'Tháp '+HK_WIN+' tầng · thuộc '+hkMastN()+' / '+KJD.length+' chữ'});
-a.push({id:'yukionna',k:'雪',n:'Yuki-onna',t:'副詞 · Trạng từ',p:'',c:'#5B9BC4',st:ykGot('yukionna')?'done':'open',lab:'任意 · Bão tuyết',pg:'Băng tan '+yuMelt()+' / '+yuAll().length+' từ · '+YU_LIVES+' mạng'});
+a.push({id:'nue',k:'鵺',n:'Nue',t:'副詞 · Trạng từ',p:'',c:'#6A5F9E',st:ykGot('nue')?'done':'open',lab:'任意 · Thử thách',pg:'Đã thuộc '+nueMelt()+' / '+nueAll().length+' từ · '+NUE_LIVES+' mạng'});
 return a}
 function pacts(){return LS.map(function(l){var g=lvDone(l);return'<div class="kg-pact-i"><div class="kg-sealbox'+(g?' got':'')+'">'+(g?lvSeal(l):ghost(LV[l][0],l))+'</div><b>'+esc(bossInfo(l).name)+'</b></div>'}).join('')}
 function mapv(){var a=nodes(),s=STY(),n=7,cu=-1,nd5=LS.filter(lvDone).length;
@@ -4078,14 +4079,14 @@ for(var i=0;i<n-1;i++)o+='<path class="cs" d="'+seg(i,i+1)+'"/>';
 for(var i=0;i<n-1;i++)o+='<path d="'+seg(i,i+1)+'"'+(a[i].st=='done'?' class="on"':'')+'/>';
 o+='<path class="ch" d="M'+P[7][0]+' '+P[7][1]+' Q'+(P[7][0]+10)+' '+(P[7][1]+9)+' '+P[8][0]+' '+P[8][1]+'"/><path class="ch" d="M'+P[4][0]+' '+P[4][1]+' Q'+((P[4][0]+P[9][0])/2)+' '+(P[4][1]+9)+' '+P[9][0]+' '+P[9][1]+'"/></svg>';
 a.forEach(function(x,i){var ch=i>=n;
-o+='<button class="kg-pt '+x.st+(ch?' ch':'')+(i==cu?' cur':'')+(x.lv?'':' sp')+(x.k.length>1?' kl2':'')+'" data-nd="'+x.id+'" style="left:'+P[i][0]+'%;top:'+P[i][1]+'%;--c:'+(x.lv?LC[x.lv]:(x.c||'var(--ink)'))+'">'
+o+='<button class="kg-pt '+x.st+(ch?' ch':'')+(i==cu?' cur':'')+(x.lv?'':' sp')+(x.k.length>1?' kl2':'')+'" data-nd="'+x.id+'"'+(ch&&x.pg?' title="'+esc(x.pg)+'"':'')+' style="left:'+P[i][0]+'%;top:'+P[i][1]+'%;--c:'+(x.lv?LC[x.lv]:(x.c||'var(--ink)'))+'">'
 +'<span class="kg-mp-med"><b>'+esc(x.k)+'</b>'+medImg(x)+(x.st=='done'?'<i class="kg-mp-ok">印</i>':x.st=='lock'?'<i class="kg-mp-lk">鎖</i>':'')+'</span>'
 +'<span class="kg-mp-lab"><small>'+esc(x.lab)+'</small>'+(i==cu?'<span class="kg-here">▶ Đang ở đây</span>':'')+'<strong>'+esc(x.n)+'</strong>'
 +(x.pg?'<span class="kg-mp-pg">'+esc(x.pg)+'</span>':'')+'</span></button>'});
-o+='<div class="kg-rt-leg"><span><i class="a"></i>Lộ trình chính</span><span><i class="b"></i>Đảo thử thách · tuỳ chọn</span></div>';
+o+='<div class="kg-rt-leg"><span><i class="a"></i>Lộ trình chính</span><span><i class="b"></i>Phụ bản · tuỳ chọn</span></div>';
 return o+'</div>'}
 function medImg(x){var l=x.lv||x.id,f=IMG_F[l],c=IMG_FOC[l]||[50,30,1.5];if(!f)return'';return'<span class="kg-mp-phw"><img class="kg-mp-ph" src="'+IMG_DIR+f+'.jpg" alt="" loading="lazy" style="object-position:'+c[0]+'% '+c[1]+'%;transform-origin:'+c[0]+'% '+c[1]+'%;transform:scale('+c[2]+')" onerror="this.parentNode.remove()"></span>'}
-function openNode(id){if(id=='yukionna')id='yk:yukionna';if(/^yk:/.test(id)){abort();nd=id;mapMsg='';draw();gtop();focusPic();return}var a=nodes(),x=a.filter(function(n){return n.id==id})[0];if(!x)return;
+function openNode(id){if(id=='nue')id='yk:nue';if(/^yk:/.test(id)){abort();nd=id;mapMsg='';draw();gtop();focusPic();return}var a=nodes(),x=a.filter(function(n){return n.id==id})[0];if(!x)return;
 if(x.st=='lock'){var pl=LS[LS.indexOf(id)-1];mapMsg=id=='end'?'Hãy nhận đủ ấn của 5 chặng N5 → N1 để gặp Cửu Vĩ Hồ ở cuối hành trình.':'Hãy qua chặng '+bossInfo(pl).name+' ('+pl.toUpperCase()+') trước.';draw();return}
 abort();nd=id;mapMsg='';if(LV[id]){S.lv=id;save()}draw();gtop();focusPic();if(id=='end')fmWatch()}
 /* mở chặng → tự lướt để ảnh quái thú + lời giới thiệu nằm giữa màn hình */
@@ -4146,8 +4147,8 @@ return back()+'<div class="kg-ch" style="--c:var(--accent)"><div class="kg-ch-he
 +'<div class="kg-story">'+paras(k.setup)+'</div><div class="kg-story kg-story2">'+paras(k.resolve)+'</div>'
 +(k.moral?'<div class="kg-pact"><b>誓</b><span>'+esc(k.moral)+'</span></div>':'')
 +'<div class="kg-sealrow"><div class="kg-sealbox got">'+finSeal()+'</div><div><b>九尾同行</b><small>Cửu Vĩ Hồ đã chọn đi cùng bạn</small></div></div>'
-+'<div class="kg-pact"><b>狐</b><span>Hành trình chính khép lại ở đây. Nhưng ngoài kia vẫn còn hai thử thách tuỳ chọn: bốn tiểu yêu quái giữ bốn kho lời cũ, và Bạch Trạch đang chờ ở đỉnh tháp — ai dám thử sức thì cứ tới.</span></div>'
-+(S.fm&&fmHas()?'<button class="kg-btn ghost" data-act="fm">💌 Đọc lại lời nhắn</button>':'')+'<button class="kg-btn" data-nd="yok">四妖 Gặp các tiểu yêu quái →</button><button class="kg-btn" data-nd="hak">白澤 Thách thức Bạch Trạch →</button>'+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>'}
++'<div class="kg-pact"><b>狐</b><span>Hành trình chính khép lại ở đây. Nhưng ngoài kia vẫn còn ba thử thách tuỳ chọn: bốn tiểu yêu quái giữ bốn kho lời cũ, Bạch Trạch đang chờ ở đỉnh tháp, và Nue ẩn mình giữa cả một rừng trạng từ — ai dám thử sức thì cứ tới.</span></div>'
++(S.fm&&fmHas()?'<button class="kg-btn ghost" data-act="fm">💌 Đọc lại lời nhắn</button>':'')+'<button class="kg-btn" data-nd="yok">四妖 Gặp các tiểu yêu quái →</button><button class="kg-btn" data-nd="hak">白澤 Thách thức Bạch Trạch →</button><button class="kg-btn" data-nd="nue">鵺 Đối mặt Nue →</button>'+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>'}
 
 /* ================= LƯỢT CHƠI: câu hỏi ================= */
 function hasCz(a){return!!a.e&&a.e.indexOf(a.w)>=0}
@@ -4223,7 +4224,7 @@ B=me}
 function endBoss(win,why,wa){if(B.fin)return;B.fin=1;clearInterval(B.tid);B.over=win?'win':(why||'time');B.wa=wa||null;
 B.el=Math.max(1,Math.round(B.act/1000)); /* tổng thời gian trả lời (cộng dồn từng câu) */
 if(win){var was=cleared(B.l),key=B.t.id+'|'+B.l;B.first=!got(B.t,B.l);S.st[key]=1;
- B.pool.forEach(function(a){if(B.yid=='yukionna')S.yz[a.k]=1;else{S.c[a.k]=1;S.z[a.k]=1}}); /* vượt Boss = full ấn + coi như đã thu thập đủ từ */
+ B.pool.forEach(function(a){if(B.yid=='nue')S.nz[a.k]=1;else{S.c[a.k]=1;S.z[a.k]=1}}); /* vượt Boss = full ấn + coi như đã thu thập đủ từ */
  if(B.first){B.gain=B.l=='yk'?100:50;S.xp+=B.gain}
  if(!S.pb[key]||B.el<S.pb[key]){B.pbNew=!!S.pb[key];S.pb[key]=B.el}
  var R=recs(),old=R[key];B.prev=old||null;
@@ -4264,13 +4265,61 @@ var YK=[
 {id:'aoandon',ja:'あおあんどん',vi:'Ao-andon',topic:'漢文 · 古い漢字',k:'灯',c:'#2E7FA6'},
 {id:'karakasaobake',ja:'からかさお化け',vi:'Karakasa-obake',topic:'ことわざ · Tục ngữ',k:'傘',c:'#C08A22'}];
 var YKM={};YK.forEach(function(q){YKM[q.id]=q});
-YKM.yukionna={id:'yukionna',ja:'雪女',vi:'Yuki-onna',topic:'副詞 · Trạng từ',k:'雪',c:'#5B9BC4'}; /* không nằm trong YK → không tính vào 4 tiểu yêu quái */
-var YU_LIVES=2,YU_N=100; /* Yuki-onna: 3 mạng, mỗi lượt 100 từ bốc từ cả kho 副詞 (~80% từ chưa tan băng + ~20% ôn lại) */
-function yuAll(){return ykOwn('yukionna')||[]}
-function yuMelt(){return yuAll().filter(function(x){return S.yz[x.k]}).length}
-function yuPool(){var a=yuAll().slice().sort(rnd),f=a.filter(function(x){return!S.yz[x.k]}),d=a.filter(function(x){return S.yz[x.k]}),
-nd2=Math.min(d.length,Math.round(YU_N*.2)),nf=Math.min(f.length,YU_N-nd2),p=f.slice(0,nf).concat(d.slice(0,nd2));
-if(p.length<YU_N)p=p.concat(f.slice(nf).concat(d.slice(nd2)).slice(0,YU_N-p.length));return p.sort(rnd)}
+YKM.nue={id:'nue',ja:'鵺',vi:'Nue',topic:'副詞 · Trạng từ',k:'鵺',c:'#6A5F9E'}; /* không nằm trong YK → không tính vào 4 tiểu yêu quái */
+var NUE_LIVES=2,NUE_N=100; /* Nue: 3 mạng, mỗi lượt 100 từ bốc từ cả kho 副詞 (~80% từ chưa thuộc + ~20% ôn lại) */
+function nueAll(){return ykOwn('nue')||[]}
+function nueShuin(){var q=YKM.nue,g=ykGot('nue'),r=recGet({id:'nue'},'yk');
+return '<h3 class="kg-h kg-lh" style="--c:'+q.c+'"><span>鵺</span>任意 · Nue<small>'+nueMelt()+' / '+nueAll().length+' từ</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(g?' got':'')+'">'+ykStamp(q,g)+'</div><b>'+esc(q.ja)+'</b><div class="kg-sub" style="margin:4px 0 0">'+esc(q.topic)+(g?' · ✔':'')+'</div><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">'+(r?recTxt(r,r.n||NUE_N):'🏆 Chưa có kỷ lục')+'</div></div></div>'}
+function nupCats(){var seen={},ks=[];nueAll().forEach(function(x){if(!seen[x.l]){seen[x.l]=1;ks.push(x.l)}});
+var def=(typeof ADV_CATS!=='undefined'&&ADV_CATS)||[],ix=function(k){var i=def.findIndex(function(d){return d.key==k});return i<0?99:i};
+ks.sort(function(a,b){return ix(a)-ix(b)||(a<b?-1:a>b?1:0)});
+return ks.map(function(k){var d=def.filter(function(x){return x.key==k})[0];return{k:k,tag:d?d.tag:(k?k.toUpperCase():'–'),name:d?d.name:(k||'Khác')}})}
+function nupIsCat(c){return c!='all'&&c!='weak'}
+function nupShort(t){t=String(t);return t.length>14?t.slice(0,13)+'…':t}
+function nupLab(c){if(c=='all')return'Hỗn hợp';if(c=='weak')return'Từ yếu';var d=nupCats().filter(function(x){return x.k==c})[0];return d?d.tag+' · '+nupShort(d.name):c}
+function nupWeak(a){var e=S.np[a.k];return !!(e&&e.w>0&&e.s<2)}
+function nupScope(c){var a=nueAll();return nupIsCat(c)?a.filter(function(x){return x.l==c}):c=='weak'?a.filter(nupWeak):a}
+function nupW(a){var e=S.np[a.k];if(!e)return S.nz[a.k]?.5:2;if(e.s>=2||S.nz[a.k])return .3;return 1+Math.min(4,e.w||0)}
+function nupMake(a){return{a:a,d:Math.random()<.5?'f':'b',z:hasCz(a)&&Math.random()<.45}}
+function nupPick(){var i=B.i,k;
+for(k=0;k<B.rq.length;k++)if(B.rq[k].due<=i){var it=B.rq.splice(k,1)[0];B.recent.push(it.a.k);return nupMake(it.a)}
+if(!B.words.length)return null;
+var pl=B.words.filter(function(a){return B.recent.indexOf(a.k)<0});if(!pl.length)pl=B.words;
+var tot=0;pl.forEach(function(a){tot+=nupW(a)});var r=Math.random()*tot,a=pl[pl.length-1];
+for(k=0;k<pl.length;k++){r-=nupW(pl[k]);if(r<=0){a=pl[k];break}}
+B.recent.push(a.k);while(B.recent.length>Math.min(6,B.words.length-1))B.recent.shift();
+return nupMake(a)}
+function nupStart(c){var w=nupScope(c);if(!w.length)return;abort();
+B={kind:'nup',cat:c,words:w,pool:nupIsCat(c)?w:nueAll(),i:0,right:0,wrong:0,rq:[],recent:[],miss:{},ans:null,ok:null,opt:null,fin:0,over:null,t0:Date.now(),q:null};B.q=nupPick()}
+function nupAns(j){var a=B.q.a,ok=B.opt[j].k==a.k,e=S.np[a.k]||(S.np[a.k]={s:0,w:0});tick();B.ans=j;B.ok=ok;
+if(ok){B.right++;e.s++;if(e.s>=2)S.nz[a.k]=1} /* đúng 2 lần liên tiếp = đã thuộc */
+else{B.wrong++;e.s=0;e.w++;B.miss[a.k]=a;if(B.rq.length<12)B.rq.push({a:a,due:B.i+3+Math.floor(Math.random()*3)})}
+save()}
+function nupNext(){B.i++;B.ans=null;B.ok=null;B.opt=null;B.q=nupPick();if(!B.q){B.fin=1;B.over='done'}}
+function nupKey(e){if(!B||B.kind!='nup'||B.fin||e.ctrlKey||e.metaKey||e.altKey||/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName))return false;
+if(B.ans==null&&/^[1-4]$/.test(e.key)&&B.opt&&B.opt[+e.key-1]){e.preventDefault();nupAns(+e.key-1);draw();return true}
+if((e.key===' '||e.key==='Enter')&&B.ans!=null&&e.target.tagName!=='BUTTON'){e.preventDefault();nupNext();draw();gtop();return true}
+return false}
+function playNup(){if(B.over)return nupEnd();var n=B.right+B.wrong;
+var o='<div class="kg-hud"><span>練習 · '+esc(nupLab(B.cat))+'</span><div class="kg-hp"><i style="width:'+(n?B.right/n*100:0)+'%"></i></div><span>'+B.right+' / '+n+' đúng</span></div>'
++'<div class="kg-panel'+(B.ok===false?' kg-shake':'')+'">'+(B.q.z?clz(B.q):mcq(B.q));
+if(B.ans!=null)o+=fbBox(B.q.a,B.opt&&B.opt[B.ans])+'<button class="kg-btn" data-act="next" style="margin-top:12px">次へ → <small>hoặc nhấn Space</small></button>';
+return o+'</div><button class="kg-btn ghost" data-act="nend" style="margin-top:8px">Kết thúc buổi luyện</button>'}
+function nupEnd(){var n=B.right+B.wrong,pc=n?Math.round(B.right/n*100):0,ms=Object.keys(B.miss).map(function(k){return B.miss[k]});
+var o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:#6A5F9E">練習 Kết thúc buổi luyện</div><p><b>'+B.right+' / '+n+'</b> đúng ('+pc+'%) · '+esc(nupLab(B.cat))+'</p><p class="kg-sub" style="text-align:center">Đã thuộc <b>'+nueMelt()+' / '+nueAll().length+'</b> từ (đúng 2 lần liên tiếp).</p>';
+if(ms.length)o+='<div class="kg-fb" style="text-align:left"><div class="kg-fb-h bad">Từ cần ôn thêm ('+ms.length+')</div><ul class="kg-fb-ol">'+ms.slice(0,30).map(function(x){var r=(x.r&&x.r!==x.w)?x.r:'';return'<li><b class="jp">'+esc(x.w)+'</b>'+(r?' <span class="kg-rd">'+esc(r)+'</span>':'')+' — '+esc(x.m)+'</li>'}).join('')+'</ul></div>';
+return o+(ms.length?'<button class="kg-btn" data-act="nup" data-c="weak">Luyện lại từ yếu</button>':'')+'<button class="kg-btn'+(ms.length?' ghost':'')+'" data-act="nup" data-c="'+B.cat+'">Luyện tiếp</button><button class="kg-btn ghost" data-nd="nue">Về Nue</button></div>'}
+function nuePrac(){var all=nueAll(),cats=nupCats(),c=S.nc;
+if(nupIsCat(c)&&!cats.some(function(x){return x.k==c}))c=S.nc='all';
+var seg='<div class="hk-seg">'+[['all','Hỗn hợp','']].concat(cats.map(function(x){return[x.k,x.tag+' · '+nupShort(x.name),x.name]})).concat([['weak','Từ yếu ('+all.filter(nupWeak).length+')','']]).map(function(x){return'<button class="'+(c==x[0]?'on':'')+'" data-nc="'+esc(x[0])+'"'+(x[2]?' title="'+esc(x[2])+'"':'')+'>'+esc(x[1])+'</button>'}).join('')+'</div>',
+cnt=nupScope(c).length,pr=cats.map(function(d){var l=all.filter(function(x){return x.l==d.k});return esc(d.tag)+' '+l.filter(function(x){return S.nz[x.k]}).length+'/'+l.length}).join(' · ');
+return'<h3 class="kg-h kg-qh">練習 Luyện tập</h3><p class="kg-sub">Không giới hạn mạng, không đồng hồ. Câu sai quay lại sau vài câu, từ hay sai được ưu tiên. Đúng 2 lần liên tiếp thì tính là đã thuộc.</p>'+seg
++'<button class="kg-btn" data-act="nup" data-c="'+esc(c)+'"'+(cnt?'':' disabled')+'>練習 Bắt đầu luyện<small>'+cnt+' từ phù hợp</small></button>'
++'<p class="kg-sub">Đã thuộc theo loại · '+pr+'</p>'}
+function nueMelt(){return nueAll().filter(function(x){return S.nz[x.k]}).length}
+function nuePool(){var a=nueAll().slice().sort(rnd),f=a.filter(function(x){return!S.nz[x.k]}),d=a.filter(function(x){return S.nz[x.k]}),
+nd2=Math.min(d.length,Math.round(NUE_N*.2)),nf=Math.min(f.length,NUE_N-nd2),p=f.slice(0,nf).concat(d.slice(0,nd2));
+if(p.length<NUE_N)p=p.concat(f.slice(nf).concat(d.slice(nd2)).slice(0,NUE_N-p.length));return p.sort(rnd)}
 function ykIm(base,exts,cls,k,g){return'<img class="'+cls+'" src="'+base+'.'+exts[0]+'" alt="" loading="lazy" data-b="'+base+'" data-e="'+exts.join(',')+'" data-t="0" data-k="'+k+'" data-g="'+esc(g||'')+'" onerror="window.__kgYk(this)">'}
 window.__kgYk=function(im){var e=im.dataset.e.split(','),t=+im.dataset.t+1;if(t<e.length){im.dataset.t=t;im.src=im.dataset.b+'.'+e[t];return}im.onerror=null;
 if(im.dataset.k=='tile'){im.outerHTML='<div class="kg-yk-fb">'+im.dataset.g+'</div>';return}
@@ -4283,11 +4332,11 @@ function ykN(){return YK.filter(function(q){return S.st[q.id+'|yk']}).length}
 function ykAll(){return ykN()==YK.length}
 function ykGot(id){return !!S.st[id+'|yk']}
 function ykOwn(id){var f=FIN.filter(function(x){return x.c.id==id})[0];return f&&f.a.length?f.a:null}
-function ykPool(id){var p=ykOwn(id);if(p)return p;if(id=='yukionna')return[];var seen={};p=[];FIN.forEach(function(x){x.a.forEach(function(a){if(!seen[a.k]){seen[a.k]=1;p.push(a)}})});return p}
+function ykPool(id){var p=ykOwn(id);if(p)return p;if(id=='nue')return[];var seen={};p=[];FIN.forEach(function(x){x.a.forEach(function(a){if(!seen[a.k]){seen[a.k]=1;p.push(a)}})});return p}
 function finSeal(){return stImg('end')}
-function startYk(id){var q=YKM[id];if(!q)return;var pool=id=='yukionna'?yuPool():ykPool(id).slice().sort(rnd).slice(0,YK_N),n=pool.length;if(!n)return;abort();
-runBoss({kind:'boss',l:'yk',yid:id,ykk:q.k,si:0,t:{id:id,title:q.ja},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:id=='yukionna'?YU_LIVES:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
-function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};if(id=='yukionna')return{y:y,m:(s&&(s.yuki||s.yukionna))||{}};return{y:y,m:(y.monsters||{})[id]||{}}}
+function startYk(id){var q=YKM[id];if(!q)return;var pool=id=='nue'?nuePool():ykPool(id).slice().sort(rnd).slice(0,YK_N),n=pool.length;if(!n)return;abort();
+runBoss({kind:'boss',l:'yk',yid:id,ykk:q.k,si:0,t:{id:id,title:q.ja},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:id=='nue'?NUE_LIVES:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
+function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};if(id=='nue')return{y:y,m:(s&&(s.nue||s.yuki||s.yukionna))||{}};return{y:y,m:(y.monsters||{})[id]||{}}}
 function ykStamp(q,g){return g?ykIm(IMG_DIR+q.id+'1',['png','jpg','webp','jpeg'],'kg-stimg','st',q.k):'<div class="kg-ghost"><span>'+esc(q.k)+'</span><small>妖</small></div>'}
 function ykTile(q){var g=ykGot(q.id);
 return'<button type="button" class="kg-yk-m kg-yk-tile kg-yk-imgtile'+(g?' got':'')+'" data-nd="yk:'+q.id+'" style="--c:'+q.c+'" aria-label="'+esc(q.ja+' · '+q.vi)+'"><figure class="kg-yk-pic">'+ykIm(IMG_DIR+q.id,['jpg','png','webp','jpeg'],'kg-yk-img','tile',q.ja)+'</figure></button>'}
@@ -4298,19 +4347,20 @@ if(y.intro)o+='<div class="kg-story">'+paras(y.intro)+'</div>';
 o+='<h3 class="kg-h kg-qh">Bốn yêu quái <small style="font-weight:700;color:var(--ink-soft);font-size:calc(13px*var(--fs,1))">Đã khuất phục '+ykN()+' / '+YK.length+'</small></h3><div class="kg-yk-grid">'+YK.map(ykTile).join('')+'</div>';
 return o+'</div>'}
 function ykChapter(id){var q=YKM[id];if(!q)return yokChapter();var st=ykStory(id),m=st.m,g=ykGot(id),n=Math.min(YK_N,ykPool(id).length),own=!!ykOwn(id),r=recGet({id:id},'yk'),pb=S.pb[id+'|yk'];
-var o=(id=='yukionna'?'':'<button class="kg-btn ghost kg-back" data-nd="yok">← 四妖 Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'
-+'<div class="kg-ch" style="--c:'+q.c+'"><div class="kg-ch-head"><div class="kg-mk"><b>'+q.k+'</b></div><div><small>'+(id=='yukionna'?'任意 · Thử thách · ':'四妖 · ')+esc(q.vi)+'</small><h2>'+esc(q.ja)+'</h2>'+(m.title?'<p class="kg-ch-ti">'+esc(m.title)+'</p>':'')+(m.place?'<span class="kg-mp-pl">'+esc(m.place)+'</span>':'')+'</div></div>'+picOf(id);
+var o=(id=='nue'?'':'<button class="kg-btn ghost kg-back" data-nd="yok">← 四妖 Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost kg-back" data-act="map">← 地図 Về bản đồ</button>'
++'<div class="kg-ch" style="--c:'+q.c+'"><div class="kg-ch-head"><div class="kg-mk"><b>'+q.k+'</b></div><div><small>'+(id=='nue'?'任意 · Thử thách · ':'四妖 · ')+esc(q.vi)+'</small><h2>'+esc(q.ja)+'</h2>'+(m.title?'<p class="kg-ch-ti">'+esc(m.title)+'</p>':'')+(m.place?'<span class="kg-mp-pl">'+esc(m.place)+'</span>':'')+'</div></div>'+picOf(id);
 if(m.setup)o+='<div class="kg-story">'+paras(m.setup)+'</div>';
 if(g){if(m.resolve)o+='<div class="kg-story kg-story2">'+paras(m.resolve)+'</div>';if(m.moral)o+='<div class="kg-pact"><b>誓</b><span>'+esc(m.moral)+'</span></div>'}
 else if(m.resolve)o+='<p class="kg-tease">… Chuyện gì xảy ra tiếp theo? Khuất phục '+esc(q.ja)+' trong quyết đấu để biết.</p>';
 o+='<div class="kg-sx'+(g?' got':'')+'" style="--c:'+q.c+'"><div class="kg-sx-seal">'+ykStamp(q,g)+'</div>'
-+'<div class="kg-sx-main"><b>'+esc(q.topic)+'</b><small>'+n+' câu · '+SEC_PER_Q+' giây/câu · '+(id=='yukionna'?YU_LIVES+' mạng':'sai 1 câu là thua')+(g?' · ✔ đã khuất phục':'')+'</small>'+(id=='yukionna'&&own?'<small>❄ Băng tan <b>'+yuMelt()+' / '+yuAll().length+'</b> từ · mỗi lượt bốc '+YU_N+' từ, ưu tiên từ chưa tan băng</small>':'')+'<small>'+(own?'Đề lấy từ chủ đề '+esc(q.topic.split(' · ')[0]):'Chưa thấy chủ đề '+esc(q.topic.split(' · ')[0])+' trong dữ liệu'+(id=='yukionna'?'':' — tạm bốc đề từ các chủ đề thành ngữ khác'))+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
++'<div class="kg-sx-main"><b>'+esc(q.topic)+'</b><small>'+n+' câu · '+SEC_PER_Q+' giây/câu · '+(id=='nue'?NUE_LIVES+' mạng':'sai 1 câu là thua')+(g?' · ✔ đã khuất phục':'')+'</small>'+(id=='nue'&&own?'<small>✔ Đã thuộc <b>'+nueMelt()+' / '+nueAll().length+'</b> từ · mỗi lượt bốc '+NUE_N+' từ, ưu tiên từ chưa thuộc</small>':'')+'<small>'+(own?'Đề lấy từ chủ đề '+esc(q.topic.split(' · ')[0]):'Chưa thấy chủ đề '+esc(q.topic.split(' · ')[0])+' trong dữ liệu'+(id=='nue'?'':' — tạm bốc đề từ các chủ đề thành ngữ khác'))+'</small><small>'+(r?recTxt(r,n):'🏆 Chưa có kỷ lục')+(pb?' · của bạn '+fmt(pb):'')+'</small></div>'
 +'<div class="kg-sx-act"><button class="kg-btn" data-act="yk" data-y="'+id+'"'+(n?'':' disabled')+'>'+(g?'再決闘 Quyết đấu lại':'決闘 Quyết đấu')+'<small>'+n+' câu · '+SEC_PER_Q+' giây/câu</small></button></div></div>';
+if(id=='nue'&&own)o+=nuePrac();
 return o+'</div>'}
 function ykEnd(){var id=B.yid,q=YKM[id]||{ja:'',k:'妖'},m=ykStory(id).m,o;
-if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:'+q.c+'">'+esc(q.ja)+' 調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">'+(id=='yukionna'?'Yuki-onna đã khuất phục':'Tiểu yêu quái đã khuất phục')+'</p><div class="kg-sealbox big got">'+ykStamp(q,true)+'</div><p><b>Dấu '+(id=='yukionna'?'雪':'妖')+' · '+esc(q.vi)+'</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()
+if(B.over=='win')o='<div class="kg-panel kg-win" style="text-align:center"><div class="kg-big" style="color:'+q.c+'">'+esc(q.ja)+' 調伏</div><p class="kg-sub" style="text-align:center;margin-top:0">'+(id=='nue'?'Nue đã khuất phục':'Tiểu yêu quái đã khuất phục')+'</p><div class="kg-sealbox big got">'+ykStamp(q,true)+'</div><p><b>Dấu '+(id=='nue'?'鵺':'妖')+' · '+esc(q.vi)+'</b>'+(B.first?' · +'+B.gain+' XP':' · (đã khuất phục từ trước)')+'</p>'+timeBox()
 +((m.resolve||m.moral)?'<div class="kg-story kg-story2" style="text-align:left">'+paras(m.resolve)+'</div>'+(m.moral?'<div class="kg-pact"><b>誓</b><span>'+esc(m.moral)+'</span></div>':''):'')
-+'<button class="kg-btn" data-act="menu">Về '+esc(q.ja)+'</button>'+(id=='yukionna'?'':'<button class="kg-btn ghost" data-nd="yok">Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
++'<button class="kg-btn" data-act="menu">Về '+esc(q.ja)+'</button>'+(id=='nue'?'':'<button class="kg-btn ghost" data-nd="yok">Về Tiểu yêu quái</button>')+'<button class="kg-btn ghost" data-act="map">Về bản đồ</button></div>';
 else o='<div class="kg-panel kg-lose" style="text-align:center"><div class="kg-big" style="color:var(--accent)">'+(B.over=='wrong'?'失敗 · Bị loại':'時間切れ · Hết giờ')+'</div>'
  +(B.over=='wrong'?'<p>Sai <b>'+B.wr+'</b> câu — dừng ở câu '+B.done+' / '+B.n+'.</p>'+(B.wa?fbBox(B.wa,B.opt&&B.ans!=null?B.opt[B.ans]:null):''):'<p>Hết '+B.sec+' giây ở câu <b>'+(B.done+1)+'</b> / '+B.n+' mà chưa trả lời.</p>')+'<p>Thời gian trả lời: '+fmt(B.el)+' · trung bình '+avg(B.act/1000,B.done+(B.over=='time'?1:0))+' giây/câu</p><p>'+esc(q.ja)+' vẫn đang chờ. Ôn lại rồi thử lần nữa — đề sẽ được bốc lại.</p><button class="kg-btn" data-act="yk" data-y="'+id+'">もう一度 Thử lại</button><button class="kg-btn ghost" data-act="menu">Về '+esc(q.ja)+'</button></div>';
 return o}
@@ -4464,7 +4514,7 @@ o+='<h3 class="kg-h kg-qh">練習 Luyện tập</h3><p class="kg-sub">Không gi�
 return o}
 function hkShuin(){var g=!!S.st['hak|hak'];return'<h3 class="kg-h kg-lh" style="--c:'+HK_COL+'"><span>白澤</span>任意 · Tháp Bạch Trạch<small>'+(g?'✔':'chưa')+'</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(g?' got':'')+'">'+(g?hkSeal():'<div class="kg-ghost"><span>白澤</span><small>瑞</small></div>')+'</div><b>漢字 · On · Kun · Hán Việt</b><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">Tầng cao nhất '+(S.hkb||0)+' · thuộc '+hkMastN()+' / '+KJD.length+' chữ</div></div></div>'}
 
-function play(){return B.kind=='col'?playCol():B.kind=='hak'?playHak():playBoss()}
+function play(){return B.kind=='col'?playCol():B.kind=='hak'?playHak():B.kind=='nup'?playNup():playBoss()}
 
 /* ================= TAB 2 · SỔ ẤN ================= */
 function shuin(){var o='<h2 class="kg-h">朱印 · Sổ ấn</h2><p class="kg-sub">Mỗi chủ đề thách đấu thành công cho một ấn. Đủ ấn của một cấp là qua chặng và nhận dấu son.</p><div class="kg-pacts">'+pacts()+'</div>';
@@ -4473,7 +4523,7 @@ o+='<h3 class="kg-h kg-lh" style="--c:'+LC[l]+'"><span>'+LV[l][0]+'</span>'+l.to
 +ss.map(function(x){var gt=got(x.t,l);return'<div class="kg-book"><div class="kg-sealbox'+(gt?' got':'')+'">'+(gt?seal(ch(x.t),l):ghost(ch(x.t),l))+'</div><b>'+esc(x.t.title)+'</b><div class="kg-sub" style="margin:4px 0 0">'+colN(x)+' / '+x.a.length+' từ'+(gt?' · ✔':'')+'</div><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">'+recLine(x.t,l,x.a.length)+'</div></div>'}).join('')+'</div>'});
 var fg=endOpen()||!!S.st['fin|fin'];o+='<h3 class="kg-h kg-lh" style="--c:var(--accent)"><span>九尾</span>終章 · Cửu Vĩ Hồ đồng hành<small>'+(fg?'✔':'chưa')+'</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(fg?' got':'')+'">'+(fg?finSeal():'<div class="kg-ghost"><span>九尾</span><small>妖</small></div>')+'</div><b>Phần thưởng cuối hành trình</b><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">'+(fg?'Hồ ly đã đi cùng bạn':'Nhận đủ 5 ấn N5 → N1 để gặp')+'</div></div></div>';
 o+='<h3 class="kg-h kg-lh" style="--c:#7A5CD1"><span>四妖</span>任意 · Tiểu yêu quái<small>'+ykN()+' / '+YK.length+'</small></h3><div class="kg-stamps">'+YK.map(function(q){var g=ykGot(q.id),r=recGet({id:q.id},'yk');return'<div class="kg-book"><div class="kg-sealbox'+(g?' got':'')+'">'+ykStamp(q,g)+'</div><b>'+esc(q.ja)+'</b><div class="kg-sub" style="margin:4px 0 0">'+esc(q.topic)+(g?' · ✔':'')+'</div><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">'+(r?recTxt(r,r.n||YK_N):'🏆 Chưa có kỷ lục')+'</div></div>'}).join('')+'</div>';
-o+=hkShuin();return o+'<h3 class="kg-h kg-lh" style="--c:var(--ink)">称号 · Huy hiệu</h3><div class="kg-badges">'+BG.map(function(b){return'<span class="kg-bd'+(S.b[b[0]]?' on':'')+'">'+b[1]+' · '+b[2]+'</span>'}).join('')+'</div>'}
+o+=hkShuin()+nueShuin();return o+'<h3 class="kg-h kg-lh" style="--c:var(--ink)">称号 · Huy hiệu</h3><div class="kg-badges">'+BG.map(function(b){return'<span class="kg-bd'+(S.b[b[0]]?' on':'')+'">'+b[1]+' · '+b[2]+'</span>'}).join('')+'</div>'}
 
 /* ================= TAB 3 · TỪ VỰNG (đã thu thập) ================= */
 function none(){return'<p class="kg-sub">Chưa có từ vựng cấp '+S.lv.toUpperCase()+'.</p>'}
@@ -4524,6 +4574,7 @@ document.getElementById('kgClose').onclick=close;
 document.getElementById('kgPlayX').onclick=leave;
 document.addEventListener('keydown',function(e){if(!root.classList.contains('on'))return;if(e.key==='Escape'){if(B)leave();else close()}
 else if(hakKey(e)){}
+else if(nupKey(e)){}
 else if(B&&(B.kind=='col'||B.kind=='boss')&&!B.fin&&B.ans==null&&B.opt&&B.q[B.i]&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&/^[1-4]$/.test(e.key)&&B.opt[+e.key-1]&&!/^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)){e.preventDefault();B.ans=+e.key-1;ansr(B.opt[B.ans].k==B.q[B.i].a.k)}
 else if((e.key===' '||e.key==='Enter')&&B&&(B.kind=='col'||B.kind=='boss')&&!B.fin&&B.ans!=null&&e.target.tagName!=='BUTTON'){e.preventDefault();nxt()}});
 document.getElementById('kgNav').onclick=function(e){var b=e.target.closest('button');if(!b)return;
@@ -4540,6 +4591,11 @@ else if(d.act=='hnext'){hakNext();draw();gtop()}
 else if(d.act=='hend'){if(B&&B.kind=='hak'){hkEnd('done');draw();gtop()}}
 else if(d.act=='hcont'){if(B&&B.kind=='hak'&&B.over=='win'){B.over=null;hkQ();draw();gtop()}}
 else if(d.o!=null&&B&&B.kind=='hak'){hakAns(+d.o);draw()}
+else if(d.nc){S.nc=d.nc;save();draw()}
+else if(d.act=='nup'){nupStart(d.c);draw();gtop()}
+else if(d.act=='nend'){if(B&&B.kind=='nup'&&!B.fin){B.fin=1;B.over='done';draw();gtop()}}
+else if(d.act=='next'&&B&&B.kind=='nup'){if(B.ans!=null&&!B.fin){nupNext();draw();gtop()}}
+else if(d.o!=null&&B&&B.kind=='nup'){if(!B.fin&&B.ans==null){nupAns(+d.o);draw()}}
 else if(d.zoom){zoomPic(d.zoom)}
 else if(d.act=='map'){if(B&&B.kind=='boss'&&B.newClear){var ni=LS.indexOf(B.l)+1;mapMsg=ni<5?'Chặng mới đã mở: '+bossInfo(LS[ni]).name+' ('+LS[ni].toUpperCase()+')':'Năm dấu son đã đủ — 終章 đã mở. Cửu Vĩ Hồ đang chờ ở cuối hành trình!'}abort();nd=null;draw();gtop()}
 else if(d.act=='pro'){S.pro=1;save();abort();nd=null;draw();gtop()}
@@ -4591,6 +4647,57 @@ else if(d.act=='rst'){if(confirm('Xóa hết tiến độ?')){S=fresh();save();d
   document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest(SEL);if(b&&mq.matches)toQuestion()},true);
   new MutationObserver(qs).observe(document.body,{childList:true,subtree:true});
   document.addEventListener('DOMContentLoaded',qs);qs();
+})();
+</script>
+<style id="kg-side-css">
+/* Phụ bản (nút .ch) nhẹ hơn lộ trình chính: nhỏ, 1 viền mảnh, hơi nhạt, nhãn gọn; chạm/di chuột thì sáng lên */
+.kg-route .kg-pt.ch,.kg-route .kg-pt.ch .kg-mp-med{width:50px;height:50px}
+.kg-route .kg-pt.ch .kg-mp-med{box-shadow:0 0 0 2px var(--bg-card,#f3ead7),0 0 0 3.5px var(--c),1px 2px 4px rgba(30,18,6,.3);
+  filter:saturate(.6);opacity:.9;transition:filter .15s,opacity .15s,transform .15s}
+.kg-route .kg-pt.ch .kg-mp-med b{font-size:calc(17px*var(--fs,1))}
+.kg-route .kg-pt.ch:hover .kg-mp-med,.kg-route .kg-pt.ch:focus-visible .kg-mp-med,.kg-route .kg-pt.ch.cur .kg-mp-med{filter:none;opacity:1;transform:scale(1.12)}
+.kg-route .kg-pt.ch .kg-mp-lab{top:calc(100% + 9px);padding:2px 8px 3px;box-shadow:none;border:1px dashed color-mix(in srgb,var(--ink,#2a1d0e) 38%,transparent);
+  background:color-mix(in srgb,var(--bg-card,#f3ead7) 82%,transparent);opacity:.9}
+.kg-route .kg-pt.ch .kg-mp-lab small{font-size:calc(9.5px*var(--fs,1));padding:0 5px}
+.kg-route .kg-pt.ch .kg-mp-lab strong{font-size:calc(13px*var(--fs,1));margin-top:2px}
+.kg-route .kg-pt.ch .kg-mp-pg{display:none}
+.kg-route .kg-pt.ch:hover .kg-mp-lab,.kg-route .kg-pt.ch:focus-visible .kg-mp-lab{opacity:1;border-style:solid}
+.kg-route .kg-pt.ch.lock .kg-mp-med{filter:grayscale(1);opacity:.65}
+.kg-route .kg-mp-path path.ch{stroke:var(--ink-faint,#8a7a62);stroke-width:2.5;stroke-dasharray:1 8;opacity:.6}
+.kg-rt-leg i.b{width:9px;height:9px;border:2px solid var(--ink-faint,#8a7a62);box-shadow:none;border-radius:50%;margin:0 3px;opacity:.8}
+@media (max-width:820px){
+  .kg-route .kg-pt.ch,.kg-route .kg-pt.ch .kg-mp-med{width:32px;height:32px}
+  .kg-route .kg-pt.ch .kg-mp-med b{font-size:calc(12px*var(--fs,1))}
+  .kg-route .kg-pt.ch .kg-mp-lab{top:calc(100% + 6px);padding:1px 5px 2px}
+  .kg-route .kg-pt.ch .kg-mp-lab small{display:none}
+  .kg-route .kg-pt.ch .kg-mp-lab strong{font-size:calc(11px*var(--fs,1));margin-top:0}
+}
+</style>
+<style id="lg-opa-css">
+/* thanh chỉnh độ rõ ảnh nền ở màn đăng nhập (giao diện sáng) */
+.lg{--lg-k:min(1,calc((1 - var(--lg-art,.5))*2))} /* 1 = như cũ (≤50%), giảm về 0 khi kéo tới 100% */
+.lg .lg-stage img{opacity:var(--lg-art,.5);inset:calc(-12px*var(--lg-k));width:calc(100% + 24px*var(--lg-k));height:calc(100% + 24px*var(--lg-k));filter:blur(calc(3px*var(--lg-k)))}
+.lg .lg-stage::after,.lg::before{opacity:var(--lg-k)}
+/* 100% = ảnh gốc: không mờ, không lớp phủ/họa tiết, không phóng to, vừa khít màn hình */
+html.lg-art-full .lg .lg-stage img{inset:0;width:100%;height:100%;filter:none;opacity:1}
+html.lg-art-full .lg .lg-stage::after,html.lg-art-full .lg::before{display:none}
+.lg-opa{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:5;
+  display:flex;align-items:center;gap:10px;padding:6px 14px;max-width:calc(100% - 28px);
+  background:color-mix(in srgb,var(--bg-card,#f3ead7) 78%,transparent);border:1px dashed color-mix(in srgb,var(--ink,#2a1d0e) 35%,transparent);
+  border-radius:999px;font-size:12px;font-weight:700;color:var(--ink-soft,var(--ink,#2a1d0e));opacity:.75;transition:opacity .15s}
+.lg-opa:hover,.lg-opa:focus-within{opacity:1}
+.lg-opa label{white-space:nowrap;letter-spacing:.04em}
+.lg-opa input{width:clamp(110px,34vw,170px);accent-color:var(--accent,#c0392b);cursor:pointer;margin:0}
+.lg-opa output{min-width:3ch;text-align:right;font-variant-numeric:tabular-nums}
+:root[data-theme="dark"] .lg-opa{display:none}
+</style>
+<script id="lg-opa-js">
+(function(){
+  var K='fusou_login_art',r=document.getElementById('lgOpa'),o=document.getElementById('lgOpaV');if(!r)return;
+  function ap(v){v=Math.max(0,Math.min(100,v));r.value=v;o.textContent=v+'%';document.documentElement.style.setProperty('--lg-art',v/100);document.documentElement.classList.toggle('lg-art-full',v>=100)}
+  var v=50;try{var t=localStorage.getItem(K);if(t!==null&&t!=='')v=+t}catch(e){}
+  ap(isNaN(v)?50:v);
+  r.addEventListener('input',function(){ap(+r.value);try{localStorage.setItem(K,r.value)}catch(e){}});
 })();
 </script>
 </body>
