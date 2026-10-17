@@ -2271,7 +2271,6 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
       <button class="lg-go" type="button" id="lgStart">はじめる →</button>
     </div>
   </div>
-  <div class="lg-opa" id="lgOpaBox"><label for="lgOpa">◐ Ảnh nền</label><input type="range" id="lgOpa" min="0" max="100" step="5" value="100" aria-label="Độ mờ ảnh nền đăng nhập"><output id="lgOpaV" for="lgOpa">100%</output></div>
 </div>
 
 <script>
@@ -4270,13 +4269,16 @@ var NUE_LIVES=2,NUE_N=100; /* Nue: 3 mạng, mỗi lượt 100 từ bốc từ c
 function nueAll(){return ykOwn('nue')||[]}
 function nueShuin(){var q=YKM.nue,g=ykGot('nue'),r=recGet({id:'nue'},'yk');
 return '<h3 class="kg-h kg-lh" style="--c:'+q.c+'"><span>鵺</span>任意 · Nue<small>'+nueMelt()+' / '+nueAll().length+' từ</small></h3><div class="kg-stamps"><div class="kg-book"><div class="kg-sealbox'+(g?' got':'')+'">'+ykStamp(q,g)+'</div><b>'+esc(q.ja)+'</b><div class="kg-sub" style="margin:4px 0 0">'+esc(q.topic)+(g?' · ✔':'')+'</div><div class="kg-sub" style="margin:2px 0 0;font-size:calc(12px*var(--fs,1))">'+(r?recTxt(r,r.n||NUE_N):'🏆 Chưa có kỷ lục')+'</div></div></div>'}
+/* tên ngắn bằng tiếng Nhật cho từng loại 副詞 (hiện trên nút luyện tập); tip = giải thích tiếng Việt khi rê chuột */
+var NUP_NAME={a1:'と／に副詞',b1:'オノマトペ',c1:'陳述副詞',d1:'程度・時間・頻度',e1:'意見・推量・接続'};
+var NUP_TIP={a1:'Trạng từ dạng と／に (gốc Hán, văn viết)',b1:'Từ tượng thanh, tượng hình khẩu ngữ (擬音語・擬態語)',c1:'Phó từ đi cặp với cấu trúc cố định (～ない, ～ようだ, ～ても…)',d1:'Phó từ chỉ mức độ, thời gian, tần suất',e1:'Phó từ chỉ ý kiến, suy đoán, nối ý'};
 function nupCats(){var seen={},ks=[];nueAll().forEach(function(x){if(!seen[x.l]){seen[x.l]=1;ks.push(x.l)}});
 var def=(typeof ADV_CATS!=='undefined'&&ADV_CATS)||[],ix=function(k){var i=def.findIndex(function(d){return d.key==k});return i<0?99:i};
 ks.sort(function(a,b){return ix(a)-ix(b)||(a<b?-1:a>b?1:0)});
-return ks.map(function(k){var d=def.filter(function(x){return x.key==k})[0];return{k:k,tag:d?d.tag:(k?k.toUpperCase():'–'),name:d?d.name:(k||'Khác')}})}
+return ks.map(function(k){var d=def.filter(function(x){return x.key==k})[0];return{k:k,name:NUP_NAME[k]||(d?d.name:(k||'Khác')),tip:NUP_TIP[k]||(d?d.name:'')}})}
 function nupIsCat(c){return c!='all'&&c!='weak'}
 function nupShort(t){t=String(t);return t.length>14?t.slice(0,13)+'…':t}
-function nupLab(c){if(c=='all')return'Hỗn hợp';if(c=='weak')return'Từ yếu';var d=nupCats().filter(function(x){return x.k==c})[0];return d?d.tag+' · '+nupShort(d.name):c}
+function nupLab(c){if(c=='all')return'Hỗn hợp';if(c=='weak')return'Từ yếu';var d=nupCats().filter(function(x){return x.k==c})[0];return d?d.name:c}
 function nupWeak(a){var e=S.np[a.k];return !!(e&&e.w>0&&e.s<2)}
 function nupScope(c){var a=nueAll();return nupIsCat(c)?a.filter(function(x){return x.l==c}):c=='weak'?a.filter(nupWeak):a}
 function nupW(a){var e=S.np[a.k];if(!e)return S.nz[a.k]?.5:2;if(e.s>=2||S.nz[a.k])return .3;return 1+Math.min(4,e.w||0)}
@@ -4311,9 +4313,10 @@ if(ms.length)o+='<div class="kg-fb" style="text-align:left"><div class="kg-fb-h 
 return o+(ms.length?'<button class="kg-btn" data-act="nup" data-c="weak">Luyện lại từ yếu</button>':'')+'<button class="kg-btn'+(ms.length?' ghost':'')+'" data-act="nup" data-c="'+B.cat+'">Luyện tiếp</button><button class="kg-btn ghost" data-nd="nue">Về Nue</button></div>'}
 function nuePrac(){var all=nueAll(),cats=nupCats(),c=S.nc;
 if(nupIsCat(c)&&!cats.some(function(x){return x.k==c}))c=S.nc='all';
-var seg='<div class="hk-seg">'+[['all','Hỗn hợp','']].concat(cats.map(function(x){return[x.k,x.tag+' · '+nupShort(x.name),x.name]})).concat([['weak','Từ yếu ('+all.filter(nupWeak).length+')','']]).map(function(x){return'<button class="'+(c==x[0]?'on':'')+'" data-nc="'+esc(x[0])+'"'+(x[2]?' title="'+esc(x[2])+'"':'')+'>'+esc(x[1])+'</button>'}).join('')+'</div>',
-cnt=nupScope(c).length,pr=cats.map(function(d){var l=all.filter(function(x){return x.l==d.k});return esc(d.tag)+' '+l.filter(function(x){return S.nz[x.k]}).length+'/'+l.length}).join(' · ');
+var seg='<div class="hk-seg">'+[['all','Hỗn hợp','']].concat(cats.map(function(x){return[x.k,x.name,x.tip]})).concat([['weak','Từ yếu ('+all.filter(nupWeak).length+')','']]).map(function(x){return'<button class="'+(c==x[0]?'on':'')+'" data-nc="'+esc(x[0])+'"'+(x[2]?' title="'+esc(x[2])+'"':'')+'>'+esc(x[1])+'</button>'}).join('')+'</div>',
+cnt=nupScope(c).length,pr=cats.map(function(d){var l=all.filter(function(x){return x.l==d.k});return esc(d.name)+' '+l.filter(function(x){return S.nz[x.k]}).length+'/'+l.length}).join(' · ');
 return'<h3 class="kg-h kg-qh">練習 Luyện tập</h3><p class="kg-sub">Không giới hạn mạng, không đồng hồ. Câu sai quay lại sau vài câu, từ hay sai được ưu tiên. Đúng 2 lần liên tiếp thì tính là đã thuộc.</p>'+seg
++'<p class="kg-sub nup-tip" style="margin:8px 0 10px"><b>'+esc(c=='all'?'Hỗn hợp':c=='weak'?'Từ yếu':nupLab(c))+'</b> — '+esc(c=='all'?'Trộn tất cả các loại phó từ.':c=='weak'?'Chỉ những từ bạn từng trả lời sai và chưa đúng 2 lần liên tiếp.':(NUP_TIP[c]||''))+'</p>'
 +'<button class="kg-btn" data-act="nup" data-c="'+esc(c)+'"'+(cnt?'':' disabled')+'>練習 Bắt đầu luyện<small>'+cnt+' từ phù hợp</small></button>'
 +'<p class="kg-sub">Đã thuộc theo loại · '+pr+'</p>'}
 function nueMelt(){return nueAll().filter(function(x){return S.nz[x.k]}).length}
@@ -4678,38 +4681,15 @@ else if(d.act=='rst'){if(confirm('Xóa hết tiến độ?')){S=fresh();save();d
   .kg-route .kg-pt.ch .kg-mp-lab strong{font-size:calc(11px*var(--fs,1));margin-top:0}
 }
 </style>
-<style id="lg-opa-css">
-/* thanh chỉnh độ rõ ảnh nền ở màn đăng nhập (giao diện sáng) */
-.lg{--lg-k:min(1,calc((1 - var(--lg-art,1))*2))} /* 1 = như cũ (≤50%), giảm về 0 khi kéo tới 100% */
-.lg .lg-stage img{opacity:var(--lg-art,1);inset:calc(-12px*var(--lg-k));width:calc(100% + 24px*var(--lg-k));height:calc(100% + 24px*var(--lg-k));filter:blur(calc(3px*var(--lg-k)))}
-.lg .lg-stage::after,.lg::before{opacity:var(--lg-k)}
-/* 100% = ảnh gốc: không mờ, không lớp phủ/họa tiết, không phóng to, vừa khít màn hình */
-html.lg-art-full .lg .lg-stage img{inset:0;width:100%;height:100%;filter:none;opacity:1}
-html.lg-art-full .lg .lg-stage::after,html.lg-art-full .lg::before{display:none}
-.lg-opa{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:5;
-  display:flex;align-items:center;gap:10px;padding:6px 14px;max-width:calc(100% - 28px);
-  background:color-mix(in srgb,var(--bg-card,#f3ead7) 78%,transparent);border:1px dashed color-mix(in srgb,var(--ink,#2a1d0e) 35%,transparent);
-  border-radius:999px;font-size:12px;font-weight:700;color:var(--ink-soft,var(--ink,#2a1d0e));opacity:.75;transition:opacity .15s}
-.lg-opa:hover,.lg-opa:focus-within{opacity:1}
-.lg-opa label{white-space:nowrap;letter-spacing:.04em}
-.lg-opa input{width:clamp(110px,34vw,170px);accent-color:var(--accent,#c0392b);cursor:pointer;margin:0}
-.lg-opa output{min-width:3ch;text-align:right;font-variant-numeric:tabular-nums}
-:root[data-theme="dark"] .lg-opa{display:none}
-
-/* chữ trên ảnh nền: đậm hơn + viền sáng quanh chữ để luôn nổi dù ảnh rõ nét */
+<style id="lg-sharp-css">
+/* ảnh nền đăng nhập luôn nét: không mờ, không lớp phủ, không phóng to, vừa khít màn hình */
+.lg .lg-stage img{inset:0;width:100%;height:100%;filter:none;opacity:1}
+.lg .lg-stage::after,.lg::before{display:none}
+/* chữ trên ảnh nền: đậm hơn + viền sáng quanh chữ để luôn nổi */
 .lg .lg-brand h1,.lg .lg-brand p{color:var(--ink,#2a1d0e);
   text-shadow:0 0 2px var(--bg,#f3ead7),0 0 5px var(--bg,#f3ead7),0 0 10px var(--bg,#f3ead7),0 0 18px var(--bg,#f3ead7),0 1px 1px var(--bg,#f3ead7)}
 .lg .lg-brand p{font-weight:800;padding:3px 18px;border-radius:999px;background:color-mix(in srgb,var(--bg,#f3ead7) 50%,transparent)}
 .lg .lg-brand p::before,.lg .lg-brand p::after{height:2px;background:var(--ink,#2a1d0e);opacity:.75}
 </style>
-<script id="lg-opa-js">
-(function(){
-  var K='fusou_login_art2',r=document.getElementById('lgOpa'),o=document.getElementById('lgOpaV');if(!r)return;
-  function ap(v){v=Math.max(0,Math.min(100,v));r.value=v;o.textContent=v+'%';document.documentElement.style.setProperty('--lg-art',v/100);document.documentElement.classList.toggle('lg-art-full',v>=100)}
-  var v=100;try{var t=localStorage.getItem(K);if(t!==null&&t!=='')v=+t}catch(e){}
-  ap(isNaN(v)?100:v);
-  r.addEventListener('input',function(){ap(+r.value);try{localStorage.setItem(K,r.value)}catch(e){}});
-})();
-</script>
 </body>
 </html>
