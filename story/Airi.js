@@ -21,7 +21,7 @@
                      {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
                      thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
    hak             : (tuỳ chọn) truyện Bạch Trạch
-   yuki            : (tuỳ chọn) truyện Yukionna 雪女 — đại diện 副詞・擬音語・擬声語・擬態語 (cùng cấu trúc với hak:
+   nue             : (tuỳ chọn) truyện Nue — quái chimera (mình khỉ, thân tanuki, chân hổ, đuôi rắn; kêu như chim hét) (cùng cấu trúc với hak:
                      title, place, setup, resolve, moral)
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
@@ -230,16 +230,16 @@ window.FUSOU_STORY["Airi"]={
     ],
     "moral": "Kẻ biết tên muôn loài cũng muốn có người hỏi tên mình."
   },
-  "yuki": {
-    "title": "Người đàn bà chưa từng bật cười",
-    "place": "Sân tuyết sau tháp mười tầng",
+  "nue": {
+    "title": "Kẻ bị gọi là điềm gở",
+    "place": "Mái điện cổ dưới mây đen",
     "setup": [
-      "Tương truyền Yukionna đi qua tuyết chẳng để lại dấu chân; từng tha một chàng trẻ, chỉ dặn đừng kể ai. Chàng thất hứa, bà thôi tin lời hứa. Như Skaði bỏ biển vì tiếng hải âu, bà chỉ nghe được tiếng của tuyết. Ai muốn qua sân phải nói bằng thứ tiếng ấy — không lời người, không lời hứa."
+      "Tương truyền Nue mình khỉ, thân tanuki, chân hổ, đuôi rắn; đêm đêm nó kêu như chim hét trên mái điện cổ, người nghe bảo là điềm gở. Chưa ai gọi trọn tên nó: thấy phần nào gọi phần ấy rồi giương cung, như Chimera bị Bellerophon bắn từ trời. Nó chỉ cho qua kẻ nào đáp được cả bốn tiếng của nó mà không mang cung."
     ],
     "resolve": [
-      "Airi chẳng hứa gì. Nàng đáp bằng tiếng đã học dọc đường: gió luồn kẽ đá, tuyết rơi trên mái, cả tiếng hải âu — để gió biển và tuyết núi hòa một khúc. Yukionna lần đầu nghe tiếng kẻ thù cũ mà chẳng thấy chói tai. « Tuyết tan thành nước, nước lên thành mây, mây lại thành tuyết. Tan chẳng phải mất, chỉ đổi tiếng kêu. » Bà bật cười như băng vỡ."
+      "Airi, sứ giả của ánh sáng, không mang cung. Nàng đáp tiếng khỉ bằng tiếng khỉ, nhịp tanuki bằng nhịp vỗ bụng, tiếng hổ bằng một tiếng gầm trầm, tiếng rắn bằng một hơi dài — rồi gom bốn tiếng thành một khúc, đúng như tiếng chim hét. Nue chưa từng nghe trọn tiếng mình; tiếng điềm gở hóa thành tiếng hót, và nó đặt dấu."
     ],
-    "moral": "Tan đi không phải là hết — chỉ là đổi cách kêu."
+    "moral": "Kẻ bị gọi là điềm gở có khi chỉ là kẻ chưa ai nghe đủ bốn tiếng."
   },
   "finale": {
     "resolve": [

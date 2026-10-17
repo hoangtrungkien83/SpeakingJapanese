@@ -1,60 +1,66 @@
 /* =====================================================================
    story/TênMới.js — CỐT TRUYỆN CỦA NHÂN VẬT "TênMới"
-   Tên file = tên người dùng (đúng hoa/thường) trong USERS của index.html.
-   Web tự nạp file này sau khi đăng nhập; game 朱印帖 > 地図 sẽ hiển thị.
+   Tên file = tên đăng nhập (web tự quét: có file là gõ tên đó vào được ngay).
+   Dòng window.FUSOU_STORY["..."] bên dưới phải trùng tên file (đúng hoa/thường).
    ---------------------------------------------------------------------
    QUY TẮC VĂN PHONG (thần thoại) — đọc trước khi viết
    1. Phép thử: xoá hết chữ Nhật mà đoạn văn vẫn đọc ra thần thoại. Nếu không, viết lại.
-   2. Trong intro / setup / resolve / moral / ending: KHÔNG dùng kana, kanji, thành ngữ hay
-      từ vựng tiếng Nhật. Chỉ dùng tên riêng viết romaji (Tanuki, Yukionna, Ame-no-Uzume…).
-      Chủ đề học (N5→N1, trạng từ, thành ngữ, từ tượng thanh…) chỉ nằm ở duel / train và
-      trong game; trong truyện chỉ ẩn dụ bằng tính cách và hành động.
-   3. Mỗi boss / yêu quái = một nỗi niềm (nó muốn gì) + một hành động hoá giải (nhân vật làm gì).
-      Mỗi nhân vật nên thắng bằng cách khác nhau, và nên để lại / trả giá một điều gì đó.
-      Đừng để nhân vật thắng chỉ nhờ "khí chất" lặp lại ở mọi chặng.
-   4. Nhân vật không giảng bài. Không giải thích thuật ngữ trong lời kể.
-   5. Độ dài: setup 1–2 đoạn, resolve 1–2 đoạn, mỗi đoạn tối đa khoảng 4 câu; moral đúng 1 câu.
-   6. Liên tuyến: Rồng, Bạch Trạch, Cửu Vĩ Hồ, Yukionna là MỘT nhân vật duy nhất xuyên mọi tuyến.
-      Boss khác là "một cá thể của loài". Nhắc người đi trước tối đa 1 câu mỗi chặng.
-   7. Không đưa thông tin cá nhân (số điện thoại, địa chỉ…) vào file — ai mở trang cũng đọc được.
+   2. Trong intro / setup / resolve / moral / ending: KHÔNG dùng kana, kanji, thành ngữ hay từ vựng
+      tiếng Nhật. Chỉ dùng tên riêng viết romaji (Tanuki, Nue, Ame-no-Uzume…). Chủ đề học (N5→N1,
+      thành ngữ, từ tượng thanh…) chỉ nằm ở duel / train và trong game. (greet / sub là lời chào ở
+      màn đăng nhập nên được dùng tiếng Nhật.)
+   3. Mỗi boss / yêu quái = một nỗi niềm (nó muốn gì) + một LUẬT THỬ THÁCH + lời giải bằng THẾ MẠNH
+      riêng của nhân vật. Thế mạnh của nhân vật là chìa giải; mỗi chặng bao một khía cạnh khác nhau,
+      không lặp cùng một cách thắng. Nên để nhân vật trả giá hoặc nhận lấy một điều gì đó.
+   4. Nhân vật không giảng bài, không giải thích thuật ngữ trong lời kể.
+   5. Độ dài: boss khoảng 140 chữ cả setup + resolve; hak / nue khoảng 130 chữ; moral đúng 1 câu.
+   6. Giọng cổ ("Tương truyền…") cho hak / nue; nối thần thoại châu Âu bằng một vế ngắn "như…".
+   7. Liên tuyến: Rồng, Bạch Trạch, Cửu Vĩ Hồ, Nue là MỘT nhân vật duy nhất xuyên mọi tuyến. Boss khác
+      là "một cá thể của loài". Nhắc người đi trước tối đa 1 câu mỗi chặng.
+   8. Không đưa thông tin cá nhân (số điện thoại, địa chỉ…) vào file — ai mở trang cũng đọc được.
    ---------------------------------------------------------------------
-   NỖI NIỀM GỐC GỢI Ý (đổi cách hoá giải theo nhân vật của bạn)
+   NỖI NIỀM GỐC GỢI Ý (đổi luật thử thách và cách hoá giải theo nhân vật của bạn)
      Tanuki : muốn lừa mà cũng muốn được tin      Kappa  : muốn được đối đãi tử tế
      Tengu  : muốn được tôn trọng, không chỉ sợ   Oni    : muốn có chỗ đứng, bị mọi nhà xua đuổi
      Rồng   : giữ cánh cửa / giữ danh, chờ được hiểu
      Rokurokubi : muốn có người kể chuyện cho mình nghe   Jorogumo : muốn có người khen tấm lưới
      Aoandon    : muốn kể trọn câu chuyện thứ một trăm    Karakasaobake : muốn có người cười cùng
-     Bạch Trạch : biết tên vạn vật                        Yukionna : biết tiếng của vạn vật
-        (truyền thuyết gốc: tha mạng với điều kiện im lặng, kẻ kia thất hứa → bà không tin lời hứa;
-         hợp với Skaði — nữ thần núi tuyết không chung nổi tiếng động với thần biển)
+     Bạch Trạch : biết tên vạn vật, mà chưa ai hỏi tên ông
+     Nue : muốn được gọi trọn tên, muốn có người hỏi tiếng kêu của mình là điềm gở hay lời gọi.
+        Gốc truyền thuyết: mình khỉ, thân tanuki, chân hổ, đuôi rắn; kêu như chim hét trên mái điện
+        cổ; bị Minamoto no Yorimasa bắn rồi thả trôi trên thuyền rỗng. Mối nối: Chimera xứ Lycia bị
+        Bellerophon bắn từ trời. Luật gợi ý: "Ta là gì?" / "đáp đủ bốn tiếng" / "kêu để báo điềm hay
+        để gọi ai?" — chọn luật hợp với thế mạnh nhân vật.
    ---------------------------------------------------------------------
-   title    : tiêu đề nhánh truyện (hiện đầu bản đồ)
-   tagline  : câu dẫn ngắn dưới tiêu đề
-   intro    : chương mở đầu 序章. Mỗi phần tử là 1 đoạn; {q:"..."} = đoạn trích dẫn
-   bosses   : 5 chặng n5 → n1. Mỗi chặng:
-       name   tên boss                 title  danh hiệu (hiện to trên bản đồ)
-       place  địa điểm (dòng nhỏ)      setup  đoạn dẫn — luôn hiện
-       resolve  diễn biến sau khi thắng (CHỈ hiện khi đã đóng dấu, tránh lộ truyện)
-       moral    câu chốt "thỏa ước" (cũng chỉ hiện khi đã đóng dấu, có thể để "")
-       duel   [tên thử thách Boss có đồng hồ, mô tả]   train [tên mục thu thập từ, mô tả]
-       lose   câu hiện khi thua
-   ending   : đoạn kết 終章, mở khi đủ 5 dấu son (mảng đoạn văn)
-   finale   : (tuỳ chọn) màn Quyết đấu Diêm Ma sau N1 — setup (lời dẫn), resolve (lời kết khi thắng).
-              Bỏ trống "name" và "setup" để dùng mặc định.
-   yokai    : (tuỳ chọn) 四妖 — thẻ lớn 4 yêu quái hiện ra khi bấm vào ảnh Cửu Vĩ Hồ.
-       title, tagline, intro (mảng đoạn như intro ở trên)
-       monsters: { rokurokubi | jorogumo | aoandon | karakasaobake : { title, place, setup, resolve, moral } }
-       setup luôn hiện; resolve + moral CHỈ hiện sau khi đã khuất phục Cửu Vĩ Hồ.
-       Ảnh:  img/game/<id>.jpg   Dấu: img/game/<id>1.png   (id = tên bên trên)
-   hak      : (tuỳ chọn) truyện Bạch Trạch — title, place, setup, resolve (hiện khi đã có ấn), moral
-   yuki     : (tuỳ chọn) truyện Yukionna — cùng cấu trúc với hak.
-              Chủ đề trạng từ / từ tượng thanh / tượng hình CHỈ nằm ở game; trong truyện chỉ viết về
-              "tiếng của vạn vật" và nỗi đau của bà, không nêu thuật ngữ, không liệt kê từ.
+   title / tagline : tiêu đề + câu dẫn nhánh truyện (hiện đầu bản đồ)
+   greet / sub     : (tuỳ chọn) lời chào + lời nhắn ở màn đăng nhập, {name} = tên
+   img             : (tuỳ chọn) tên file ảnh con dấu khác mặc định img/ui/<Tên>.jpg
+   share           : (tuỳ chọn) dùng chung cả cốt truyện của người khác, ví dụ "share":"Airi"
+   intro           : chương mở đầu 序章. Mỗi phần tử là 1 đoạn; {q:"..."} = đoạn trích dẫn
+   bosses          : 5 chặng n5 → n1, mỗi chặng:
+       name, title, place, setup (luôn hiện)
+       resolve, moral (CHỈ hiện khi đã đóng dấu)
+       duel [tên, mô tả]   train [tên, mô tả]   lose (câu khi thua)
+   ending          : đoạn kết 終章, mở khi đủ 5 dấu son
+   kyubi           : PHẦN THƯỞNG 九尾の狐 Cửu Vĩ Hồ ở cuối hành trình (hiện ngay sau ending)
+       title, place, setup (gặp hồ ly), resolve (hồ ly đồng hành cùng bạn), moral
+   finale          : (tuỳ chọn) LỜI NHẮN cuối — sau khi thắng N1 và đọc hết phần thưởng Cửu Vĩ Hồ, lời nhắn hiện
+                     giữa màn hình, chạy từng chữ (bấm để bỏ qua). resolve: mảng đoạn văn, {q:"..."} = trích dẫn.
+                     Chỉ hiện 1 lần, sau đó có nút đọc lại.
+   yokai           : 四妖 Tiểu yêu quái — title, tagline, intro, monsters{rokurokubi|jorogumo|aoandon|karakasaobake:
+                     {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
+                     thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
+   hak             : (tuỳ chọn) truyện Bạch Trạch — title, place, setup, resolve, moral
+   nue             : (tuỳ chọn) truyện Nue (thay cho Yukionna cũ) — cùng cấu trúc với hak:
+                     title, place, setup, resolve, moral.
+                     Game cần đọc story.nue (trước đây là story.yuki).
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
 window.FUSOU_STORY["TênMới"]={
   "title": "TênMới · Danh hiệu",
   "tagline": "Một câu dẫn ngắn…",
+  "greet": "Lời chào {name} ~",
+  "sub": "ようこそ、TênMới さん。今日も一緒に頑張ろう！",
   "intro": [
     "Đoạn mở đầu thứ nhất…",
     {
@@ -67,8 +73,8 @@ window.FUSOU_STORY["TênMới"]={
       "name": "Tanuki",
       "title": "Danh hiệu boss",
       "place": "Địa điểm",
-      "setup": "Boss là ai, muốn gì, đang canh giữ điều gì…",
-      "resolve": "Nhân vật làm gì để hoá giải nỗi niềm của boss; có trả giá hay để lại gì không…",
+      "setup": "Boss là ai, muốn gì, luật thử thách của nó…",
+      "resolve": "Thế mạnh của nhân vật hoá giải luật ấy ra sao; có trả giá hay để lại gì không…",
       "moral": "Câu chốt thỏa ước.",
       "duel": [
         "Tên thử thách chính",
@@ -84,8 +90,8 @@ window.FUSOU_STORY["TênMới"]={
       "name": "Kappa",
       "title": "Danh hiệu boss",
       "place": "Địa điểm",
-      "setup": "Boss là ai, muốn gì, đang canh giữ điều gì…",
-      "resolve": "Nhân vật làm gì để hoá giải nỗi niềm của boss; có trả giá hay để lại gì không…",
+      "setup": "Boss là ai, muốn gì, luật thử thách của nó…",
+      "resolve": "Thế mạnh của nhân vật hoá giải luật ấy ra sao; có trả giá hay để lại gì không…",
       "moral": "Câu chốt thỏa ước.",
       "duel": [
         "Tên thử thách chính",
@@ -101,8 +107,8 @@ window.FUSOU_STORY["TênMới"]={
       "name": "Tengu",
       "title": "Danh hiệu boss",
       "place": "Địa điểm",
-      "setup": "Boss là ai, muốn gì, đang canh giữ điều gì…",
-      "resolve": "Nhân vật làm gì để hoá giải nỗi niềm của boss; có trả giá hay để lại gì không…",
+      "setup": "Boss là ai, muốn gì, luật thử thách của nó…",
+      "resolve": "Thế mạnh của nhân vật hoá giải luật ấy ra sao; có trả giá hay để lại gì không…",
       "moral": "Câu chốt thỏa ước.",
       "duel": [
         "Tên thử thách chính",
@@ -118,8 +124,8 @@ window.FUSOU_STORY["TênMới"]={
       "name": "Oni",
       "title": "Danh hiệu boss",
       "place": "Địa điểm",
-      "setup": "Boss là ai, muốn gì, đang canh giữ điều gì…",
-      "resolve": "Nhân vật làm gì để hoá giải nỗi niềm của boss; có trả giá hay để lại gì không…",
+      "setup": "Boss là ai, muốn gì, luật thử thách của nó…",
+      "resolve": "Thế mạnh của nhân vật hoá giải luật ấy ra sao; có trả giá hay để lại gì không…",
       "moral": "Câu chốt thỏa ước.",
       "duel": [
         "Tên thử thách chính",
@@ -135,8 +141,8 @@ window.FUSOU_STORY["TênMới"]={
       "name": "Rồng",
       "title": "Danh hiệu boss",
       "place": "Địa điểm",
-      "setup": "Boss là ai, muốn gì, đang canh giữ điều gì…",
-      "resolve": "Nhân vật làm gì để hoá giải nỗi niềm của boss; có trả giá hay để lại gì không…",
+      "setup": "Boss là ai, muốn gì, luật thử thách của nó…",
+      "resolve": "Thế mạnh của nhân vật hoá giải luật ấy ra sao; có trả giá hay để lại gì không…",
       "moral": "Câu chốt thỏa ước.",
       "duel": [
         "Tên thử thách chính",
@@ -149,37 +155,105 @@ window.FUSOU_STORY["TênMới"]={
       "lose": "Câu hiện khi thua, rồi nhắc ôn lại."
     }
   },
+  "ending": [
+    "Đoạn kết khi đủ 5 dấu son…"
+  ],
+  "kyubi": {
+    "title": "Hồ ly chín đuôi · Danh hiệu",
+    "place": "Đỉnh núi cuối cùng của Fusō",
+    "setup": [
+      "Gặp hồ ly — luôn hiện…"
+    ],
+    "resolve": [
+      "Hồ ly đồng hành cùng bạn…"
+    ],
+    "moral": "Câu chốt."
+  },
   "yokai": {
     "title": "Tiêu đề thẻ 四妖",
     "tagline": "Câu dẫn ngắn dưới tiêu đề thẻ…",
-    "intro": ["Đoạn mở đầu của thẻ…", {"q": "« Một đoạn trích dẫn… »"}],
+    "intro": [
+      "Đoạn mở đầu của thẻ…",
+      {
+        "q": "« Một đoạn trích dẫn… »"
+      }
+    ],
     "monsters": {
-      "rokurokubi":    {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["Yêu quái là ai, muốn gì — luôn hiện…"], "resolve": ["Nhân vật hoá giải ra sao — chỉ hiện sau khi khuất phục Cửu Vĩ Hồ…"], "moral": "Câu chốt."},
-      "jorogumo":      {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""},
-      "aoandon":       {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""},
-      "karakasaobake": {"title": "Danh hiệu", "place": "Địa điểm", "setup": ["…"], "resolve": ["…"], "moral": ""}
+      "rokurokubi": {
+        "title": "Danh hiệu",
+        "place": "Địa điểm",
+        "setup": [
+          "Yêu quái là ai, muốn gì, luật thử thách — luôn hiện…"
+        ],
+        "resolve": [
+          "Thế mạnh nhân vật hoá giải ra sao — chỉ hiện sau khi thắng quyết đấu chính yêu quái đó…"
+        ],
+        "moral": "Câu chốt."
+      },
+      "jorogumo": {
+        "title": "Danh hiệu",
+        "place": "Địa điểm",
+        "setup": [
+          "Yêu quái là ai, muốn gì, luật thử thách — luôn hiện…"
+        ],
+        "resolve": [
+          "Thế mạnh nhân vật hoá giải ra sao — chỉ hiện sau khi thắng quyết đấu chính yêu quái đó…"
+        ],
+        "moral": "Câu chốt."
+      },
+      "aoandon": {
+        "title": "Danh hiệu",
+        "place": "Địa điểm",
+        "setup": [
+          "Yêu quái là ai, muốn gì, luật thử thách — luôn hiện…"
+        ],
+        "resolve": [
+          "Thế mạnh nhân vật hoá giải ra sao — chỉ hiện sau khi thắng quyết đấu chính yêu quái đó…"
+        ],
+        "moral": "Câu chốt."
+      },
+      "karakasaobake": {
+        "title": "Danh hiệu",
+        "place": "Địa điểm",
+        "setup": [
+          "Yêu quái là ai, muốn gì, luật thử thách — luôn hiện…"
+        ],
+        "resolve": [
+          "Thế mạnh nhân vật hoá giải ra sao — chỉ hiện sau khi thắng quyết đấu chính yêu quái đó…"
+        ],
+        "moral": "Câu chốt."
+      }
     }
   },
   "hak": {
     "title": "Danh hiệu Bạch Trạch",
-    "place": "Địa điểm",
-    "setup": ["Đoạn dẫn — luôn hiện…"],
-    "resolve": ["Diễn biến — hiện khi đã nhận ấn Bạch Trạch…"],
+    "place": "Tháp mười tầng trong mây",
+    "setup": [
+      "Tương truyền… luật thử thách của Bạch Trạch, đặt theo thế mạnh nhân vật — luôn hiện…"
+    ],
+    "resolve": [
+      "Nhân vật hoá giải ra sao — hiện khi đã nhận ấn Bạch Trạch…"
+    ],
     "moral": "Câu chốt."
   },
-  "yuki": {
-    "title": "Danh hiệu Yukionna",
-    "place": "Sân tuyết sau tháp mười tầng",
-    "setup": ["Truyền thuyết Yukionna (lời hứa im lặng bị phá) — luôn hiện…", "Vì sao bà chờ chính nhân vật này — nối với nỗi đau của bà, không nêu thuật ngữ…"],
-    "resolve": ["Diễn biến — hiện khi đã nhận ấn Yukionna…"],
+  "nue": {
+    "title": "Danh hiệu Nue",
+    "place": "Mái điện cổ dưới mây đen",
+    "setup": [
+      "Tương truyền Nue (mình khỉ, thân tanuki, chân hổ, đuôi rắn; tiếng kêu bị coi là điềm gở) + luật thử thách đặt theo thế mạnh nhân vật — luôn hiện…"
+    ],
+    "resolve": [
+      "Nhân vật hoá giải ra sao — hiện khi đã nhận ấn Nue…"
+    ],
     "moral": "Câu chốt."
   },
-  "ending": [
-    "Đoạn kết khi đủ 5 dấu son…"
-  ],
   "finale": {
-    "setup": ["(Tuỳ chọn) Lời dẫn trước màn Quyết đấu Diêm Ma. Bỏ trống để dùng câu mặc định."],
-    "resolve": ["Lời kết hiện sau khi thắng Diêm Ma (màn tuỳ chọn sau N1). Không ghi thông tin cá nhân."]
+    "resolve": [
+      "Lời nhắn cuối — hiện giữa màn hình sau phần thưởng Cửu Vĩ Hồ. Không ghi thông tin cá nhân.",
+      {
+        "q": "« Một đoạn trích dẫn… »"
+      }
+    ]
   }
 };
-/* Dùng: copy file này, đổi tên thành <TênNgườiDùng>.js, đổi "TênMới" ở dòng window.FUSOU_STORY[...] cho khớp. */
+/* Dùng: copy file này, đổi tên thành <TênĐăngNhập>.js, đổi "TênMới" ở dòng window.FUSOU_STORY[...] cho khớp. */

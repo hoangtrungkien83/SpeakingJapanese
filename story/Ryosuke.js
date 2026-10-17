@@ -21,7 +21,7 @@
                      {title,place,setup,resolve,moral}}  — setup luôn hiện; resolve+moral hiện sau khi
                      thắng quyết đấu CHÍNH yêu quái đó.  Ảnh: img/game/<id>.jpg  Dấu: img/game/<id>1.png
    hak             : (tuỳ chọn) truyện Bạch Trạch
-   yuki            : (tuỳ chọn) truyện Yukionna 雪女 — đại diện 副詞・擬音語・擬声語・擬態語 (cùng cấu trúc với hak:
+   nue             : (tuỳ chọn) truyện Nue — quái chimera (mình khỉ, thân tanuki, chân hổ, đuôi rắn; kêu như chim hét) (cùng cấu trúc với hak:
                      title, place, setup, resolve, moral)
    ===================================================================== */
 window.FUSOU_STORY=window.FUSOU_STORY||{};
@@ -223,16 +223,16 @@ window.FUSOU_STORY["Ryosuke"]={
     ],
     "moral": "Cái tên có thể mang theo mà chưa cần hiểu; lời của người khác thì phải nghe ngay."
   },
-  "yuki": {
-    "title": "Kẻ đi qua tuyết không để lại dấu",
-    "place": "Sân tuyết sau tháp mười tầng",
+  "nue": {
+    "title": "Kẻ không ai gọi trọn tên",
+    "place": "Mái điện cổ dưới mây đen",
     "setup": [
-      "Tương truyền Yukionna đi qua tuyết chẳng để lại dấu chân; từng tha một chàng trẻ, chỉ dặn đừng kể ai. Chàng thất hứa, bà thôi tin lời hứa. Skaði nơi Bắc quốc cũng bỏ biển vì tiếng hải âu. Bà chỉ hỏi mỗi kẻ một câu, và chỉ tin kẻ dám đáp bằng điều trong ngực — như hắn, chưa từng thất hứa vì chưa từng hứa."
+      "Tương truyền Nue mình khỉ, thân tanuki, chân hổ, đuôi rắn; đêm đêm nó kêu như chim hét trên mái điện cổ, người nghe bảo là điềm gở. Chưa ai gọi trọn tên nó: thấy phần nào gọi phần ấy rồi giương cung, như Chimera bị Bellerophon bắn từ trời. Nó hỏi mỗi kẻ một câu: « Ta là gì? » Kẻ nào vội chọn một phần để gọi coi như đã giương cung."
     ],
     "resolve": [
-      "« Ngươi nghe thấy gì? » « Tuyết. » « Còn trong ngươi? » « Một chỗ trống. » Bà áp tay lên ngực hắn, nghe một tiếng như sỏi rơi đáy giếng khô. « Người đời gọi là vực; ta gọi là chỗ vừa mở ra. » Hắn quay đi, tuyết dưới gót kêu lên — lần đầu bước chân hắn có tiếng."
+      "Ryosuke nhìn nó rất lâu — khỉ, tanuki, hổ, rắn — mà không chọn phần nào. « Ta cũng mang một cái tên không phải của ta, » hắn nói, « vẫn đi được tới đây. » Nue im bặt: ngàn năm nay người ta ép nó thành một thứ cho gọn, lần đầu có kẻ để nó nguyên là nhiều thứ. Đuôi rắn quấn nhẹ cổ tay hắn rồi buông, và nó đặt dấu."
     ],
-    "moral": "Chỗ trống đã có tên thì không còn là vực."
+    "moral": "Có những kẻ chẳng cần chọn một hình dạng để được ở lại."
   },
   "finale": {
     "resolve": [
