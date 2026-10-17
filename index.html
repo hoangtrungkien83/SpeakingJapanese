@@ -2271,7 +2271,7 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
       <button class="lg-go" type="button" id="lgStart">はじめる →</button>
     </div>
   </div>
-  <div class="lg-opa" id="lgOpaBox"><label for="lgOpa">◐ Ảnh nền</label><input type="range" id="lgOpa" min="0" max="100" step="5" value="50" aria-label="Độ mờ ảnh nền đăng nhập"><output id="lgOpaV" for="lgOpa">50%</output></div>
+  <div class="lg-opa" id="lgOpaBox"><label for="lgOpa">◐ Ảnh nền</label><input type="range" id="lgOpa" min="0" max="100" step="5" value="100" aria-label="Độ mờ ảnh nền đăng nhập"><output id="lgOpaV" for="lgOpa">100%</output></div>
 </div>
 
 <script>
@@ -3959,7 +3959,7 @@ var KJ=['一','二','三','四','五'],ORD=['đầu tiên','thứ hai','thứ ba
 var ALL=[],TP=[],S,view='map',nd=null,zt=0,sel=null,B=null,mapMsg='';
 
 /* ---------- trạng thái & lưu (riêng từng người dùng) ---------- */
-function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};x.nz=x.nz||x.yz||{};x.np=x.np||{};x.nc=x.nc||'all';if(x.st&&x.st['yukionna|yk']&&!x.st['nue|yk'])x.st['nue|yk']=x.st['yukionna|yk'];return x}
+function norm(x){x=x||{};x.w=x.w||{};x.c=x.c||{};x.z=x.z||{};x.pb=x.pb||{};x.st=x.st||{};x.b=x.b||{};x.xp=x.xp||0;x.k=x.k||0;x.d=x.d||'';x.pro=x.pro||0;x.lv=LV[x.lv]?x.lv:'n5';x.hk=x.hk||{};x.hs=x.hs||{};x.hkn=x.hkn||0;x.hkb=x.hkb||0;x.hkc=x.hkc||{k:'mix',l:'all'};x.nz=x.nz||{};x.np=x.np||{};x.nc=x.nc||'all';return x}
 function fresh(){return norm({})}
 function loadS(){var x=null;try{x=JSON.parse(localStorage.getItem(K))}catch(e){}
 if(!(x&&x.w)&&K!==K0){try{if(!localStorage.getItem('fusou_game_migrated')){var o=JSON.parse(localStorage.getItem(K0));if(o&&o.w){x=o;localStorage.setItem('fusou_game_migrated',K);localStorage.setItem(K,JSON.stringify(o))}}}catch(e){}}
@@ -4336,7 +4336,12 @@ function ykPool(id){var p=ykOwn(id);if(p)return p;if(id=='nue')return[];var seen
 function finSeal(){return stImg('end')}
 function startYk(id){var q=YKM[id];if(!q)return;var pool=id=='nue'?nuePool():ykPool(id).slice().sort(rnd).slice(0,YK_N),n=pool.length;if(!n)return;abort();
 runBoss({kind:'boss',l:'yk',yid:id,ykk:q.k,si:0,t:{id:id,title:q.ja},pool:pool,q:pool.map(function(a){return{a:a,d:Math.random()<.5?'f':'b'}}),n:n,lim:id=='nue'?NUE_LIVES:wrongLim(n),t0:Date.now(),done:0,wr:0,i:0,ans:null,ok:null,opt:null,tk:0,sec:SEC_PER_Q,dl:Date.now()+SEC_PER_Q*1000,qt0:Date.now(),act:0,leftA:0,fin:0,over:null,gain:0})}
-function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};if(id=='nue')return{y:y,m:(s&&(s.nue||s.yuki||s.yukionna))||{}};return{y:y,m:(y.monsters||{})[id]||{}}}
+/* tìm khối truyện của Nue: khóa nue / 鵺 (không phân biệt hoa thường), hoặc yokai.monsters.nue; bỏ qua khối rỗng */
+function nueStory(s,y){var c=[],k,ok=function(b){return b&&typeof b=='object'&&(b.title||b.setup||b.resolve||b.moral||b.place)};
+if(s)for(k in s){if(/^(nue|鵺)$/i.test(String(k).trim()))c.push(s[k])}
+if(y){c.push(y.nue);if(y.monsters)c.push(y.monsters.nue)}
+for(var i=0;i<c.length;i++)if(ok(c[i]))return c[i];return{}}
+function ykStory(id){var s=STY(),y=(s&&s.yokai)||{};if(id=='nue')return{y:y,m:nueStory(s,y)};return{y:y,m:(y.monsters||{})[id]||{}}}
 function ykStamp(q,g){return g?ykIm(IMG_DIR+q.id+'1',['png','jpg','webp','jpeg'],'kg-stimg','st',q.k):'<div class="kg-ghost"><span>'+esc(q.k)+'</span><small>妖</small></div>'}
 function ykTile(q){var g=ykGot(q.id);
 return'<button type="button" class="kg-yk-m kg-yk-tile kg-yk-imgtile'+(g?' got':'')+'" data-nd="yk:'+q.id+'" style="--c:'+q.c+'" aria-label="'+esc(q.ja+' · '+q.vi)+'"><figure class="kg-yk-pic">'+ykIm(IMG_DIR+q.id,['jpg','png','webp','jpeg'],'kg-yk-img','tile',q.ja)+'</figure></button>'}
@@ -4675,8 +4680,8 @@ else if(d.act=='rst'){if(confirm('Xóa hết tiến độ?')){S=fresh();save();d
 </style>
 <style id="lg-opa-css">
 /* thanh chỉnh độ rõ ảnh nền ở màn đăng nhập (giao diện sáng) */
-.lg{--lg-k:min(1,calc((1 - var(--lg-art,.5))*2))} /* 1 = như cũ (≤50%), giảm về 0 khi kéo tới 100% */
-.lg .lg-stage img{opacity:var(--lg-art,.5);inset:calc(-12px*var(--lg-k));width:calc(100% + 24px*var(--lg-k));height:calc(100% + 24px*var(--lg-k));filter:blur(calc(3px*var(--lg-k)))}
+.lg{--lg-k:min(1,calc((1 - var(--lg-art,1))*2))} /* 1 = như cũ (≤50%), giảm về 0 khi kéo tới 100% */
+.lg .lg-stage img{opacity:var(--lg-art,1);inset:calc(-12px*var(--lg-k));width:calc(100% + 24px*var(--lg-k));height:calc(100% + 24px*var(--lg-k));filter:blur(calc(3px*var(--lg-k)))}
 .lg .lg-stage::after,.lg::before{opacity:var(--lg-k)}
 /* 100% = ảnh gốc: không mờ, không lớp phủ/họa tiết, không phóng to, vừa khít màn hình */
 html.lg-art-full .lg .lg-stage img{inset:0;width:100%;height:100%;filter:none;opacity:1}
@@ -4690,13 +4695,19 @@ html.lg-art-full .lg .lg-stage::after,html.lg-art-full .lg::before{display:none}
 .lg-opa input{width:clamp(110px,34vw,170px);accent-color:var(--accent,#c0392b);cursor:pointer;margin:0}
 .lg-opa output{min-width:3ch;text-align:right;font-variant-numeric:tabular-nums}
 :root[data-theme="dark"] .lg-opa{display:none}
+
+/* chữ trên ảnh nền: đậm hơn + viền sáng quanh chữ để luôn nổi dù ảnh rõ nét */
+.lg .lg-brand h1,.lg .lg-brand p{color:var(--ink,#2a1d0e);
+  text-shadow:0 0 2px var(--bg,#f3ead7),0 0 5px var(--bg,#f3ead7),0 0 10px var(--bg,#f3ead7),0 0 18px var(--bg,#f3ead7),0 1px 1px var(--bg,#f3ead7)}
+.lg .lg-brand p{font-weight:800;padding:3px 18px;border-radius:999px;background:color-mix(in srgb,var(--bg,#f3ead7) 50%,transparent)}
+.lg .lg-brand p::before,.lg .lg-brand p::after{height:2px;background:var(--ink,#2a1d0e);opacity:.75}
 </style>
 <script id="lg-opa-js">
 (function(){
-  var K='fusou_login_art',r=document.getElementById('lgOpa'),o=document.getElementById('lgOpaV');if(!r)return;
+  var K='fusou_login_art2',r=document.getElementById('lgOpa'),o=document.getElementById('lgOpaV');if(!r)return;
   function ap(v){v=Math.max(0,Math.min(100,v));r.value=v;o.textContent=v+'%';document.documentElement.style.setProperty('--lg-art',v/100);document.documentElement.classList.toggle('lg-art-full',v>=100)}
-  var v=50;try{var t=localStorage.getItem(K);if(t!==null&&t!=='')v=+t}catch(e){}
-  ap(isNaN(v)?50:v);
+  var v=100;try{var t=localStorage.getItem(K);if(t!==null&&t!=='')v=+t}catch(e){}
+  ap(isNaN(v)?100:v);
   r.addEventListener('input',function(){ap(+r.value);try{localStorage.setItem(K,r.value)}catch(e){}});
 })();
 </script>
