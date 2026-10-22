@@ -11,11 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Yuji+Syuku&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 <style>
   :root{ --fs:1;
-    --bg: #E1D4BF;
-    --bg-card: #E8DFCF;
-    --bg-subtle: #E4D9C6;
+    --bg: #F7F1E8;
+    --bg-card: #FFFCF7;
+    --bg-subtle: #FFFCF7;
     --ink: #2E2B26;
     --ink-soft: #6F6A5E;
     --ink-faint: #9C9689;
@@ -1561,7 +1563,7 @@
   @media (max-width:640px){ .kj-grid{ grid-template-columns:repeat(3,1fr); } .kj-bar{ flex-wrap:wrap; } }
 
 /* ===== 朱印帖 restyle: washi / sumi / vermilion ===== */
-:root{--bg:#E1D4BF;--bg-card:#E8DFCF;--bg-subtle:#E4D9C6;--ink:#1F1B16;--ink-soft:#645B4D;--ink-faint:#877C6C;--accent:#B83A2B;--accent-dark:#8F2A1E;--accent-soft:#F3E0D2;--accent-soft-2:#EBD0BC;--border:#CBBEA9;--border-soft:#D6C8B3;--btn-border:#1F1B16;--radius-lg:4px;--radius-md:3px;--radius-sm:2px;--shadow-card:3px 3px 0 #CBBEA9;--shadow-modal:8px 8px 0 rgba(31,27,22,.28);--kg-gold:#A8812C;--kg-ok:#3F7A55}
+:root{--bg:#F7F1E8;--bg-card:#FFFCF7;--bg-subtle:#FFFCF7;--ink:#1F1B16;--ink-soft:#645B4D;--ink-faint:#877C6C;--accent:#B83A2B;--accent-dark:#8F2A1E;--accent-soft:#F3E0D2;--accent-soft-2:#EBD0BC;--border:#CBBEA9;--border-soft:#D6C8B3;--btn-border:#1F1B16;--radius-lg:4px;--radius-md:3px;--radius-sm:2px;--shadow-card:3px 3px 0 #CBBEA9;--shadow-modal:8px 8px 0 rgba(31,27,22,.28);--kg-gold:#A8812C;--kg-ok:#3F7A55}
 :root[data-theme="dark"]{--bg:#171310;--bg-card:#211C17;--bg-subtle:#1C1813;--card-top:#251F1A;--ink:#D8CEB9;--ink-soft:#9A8F79;--ink-faint:#7A705E;--accent:#C24A38;--accent-dark:#E0A090;--accent-soft:#33211C;--accent-soft-2:#42291F;--border:#342C24;--border-soft:#2A231D;--btn-border:#6A5F4F;--edge:#6A5F4F;--sidebg:#1B1612;--shadow-card:3px 3px 0 #0C0A08;--shadow-modal:8px 8px 0 rgba(0,0,0,.5);--kg-gold:#B8963F;--kg-ok:#5FA37B;--gold:#B08D52;--gold-hi:#D8CEB9}
 :root[data-theme="dark"][data-contrast="mid"]{--bg:#1A1613;--bg-card:#241F19;--bg-subtle:#1F1A16;--card-top:#29231D;--ink:#E4DAC6;--ink-soft:#A89D86;--ink-faint:#867C69;--accent:#D0523F;--accent-dark:#EBA797;--accent-soft:#382420;--accent-soft-2:#472C23;--border:#3A3128;--border-soft:#2E2720;--btn-border:#857A66;--edge:#857A66;--sidebg:#1E1914;--shadow-card:3px 3px 0 #0E0C0A;--shadow-modal:8px 8px 0 rgba(0,0,0,.55);--kg-gold:#C6A144;--kg-ok:#68AB84;--gold:#BE9855;--gold-hi:#E4DAC6}
 :root[data-theme="dark"][data-contrast="hi"]{--bg:#1B1713;--bg-card:#26211B;--bg-subtle:#211C17;--card-top:#2B251E;--ink:#F0E7D4;--ink-soft:#B3A78F;--ink-faint:#8A7F6B;--accent:#E0604A;--accent-dark:#F4A596;--accent-soft:#3A2520;--accent-soft-2:#4A2D26;--border:#3E352B;--border-soft:#2F2820;--btn-border:#A39579;--edge:#A39579;--sidebg:#1F1A15;--shadow-card:3px 3px 0 #0F0D0B;--shadow-modal:8px 8px 0 rgba(0,0,0,.55);--kg-gold:#D2A94B;--kg-ok:#6DB58A;--gold:#C8A15A;--gold-hi:#F0E7D4}
@@ -2228,7 +2230,7 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
 </style>
 <style id="lg-art-css">
 /* ===== Đăng nhập: bản sáng dùng cùng bố cục căn giữa như bản tối.
-   img/ui/login.png chỉ làm nền, được làm mờ nhẹ + nhạt bớt để form nổi lên ===== */
+   img/ui/login.jpg chỉ làm nền, được làm mờ nhẹ + nhạt bớt để form nổi lên ===== */
 .lg{background:var(--bg)}
 .lg::after{display:none}
 .lg-stage{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;user-select:none}
@@ -2237,7 +2239,7 @@ html[data-user="ryosuke"][data-theme]{ --accent:#2E7FA6; }
 .lg-stage::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,var(--bg) 0%,color-mix(in srgb,var(--bg) 55%,transparent) 45%,transparent 80%)}
 .lg-card{position:relative;z-index:1}
 /* ---- Chế độ tối: không dùng ảnh sáng ---- */
-/* ---- Chế độ tối: dùng ảnh img/ui/login1.* (tự dò đuôi png/webp/jpg...); chế độ sáng dùng img/ui/login.png ---- */
+/* ---- Chế độ tối: dùng ảnh img/ui/login1.* (tự dò đuôi png/webp/jpg...); chế độ sáng dùng img/ui/login.jpg ---- */
 .lg-stage img.lg-d,.lg-stage img:not([src]){display:none}
 :root[data-theme="dark"] .lg-stage img.lg-l{display:none}
 :root[data-theme="dark"] .lg-stage img.lg-d[src]{display:block}
@@ -2469,6 +2471,92 @@ html.kg-ico-on .kg-open .kb-seal{
   box-shadow:0 0 0 1.5px rgba(var(--kg-glow-rgb,60,175,255),.9),0 0 10px rgba(var(--kg-glow-rgb,60,175,255),.6)}
 html.kg-ico-on .kg-open:hover .kb-seal{transform:scale(1.07)}
 html.kg-ico-on .kg-open{padding-left:5px}
+
+/* theme switch (sáng/tối) nằm cuối thanh cuộn, sau cỡ chữ */
+#ctlPanel>.tsw{order:5;padding:8px!important;border:1px solid var(--edge,#3b2a17)!important;border-radius:5px!important;background:color-mix(in srgb,var(--ink,#222) 5%,var(--bg-card,#fff))!important;box-shadow:none!important}
+#ctlPanel>.tsw::before{content:"外観 · GIAO DIỆN";display:block;width:100%;margin:0 0 7px;padding-bottom:5px;border-bottom:1.5px solid var(--ash,#D4AF37);font:700 calc(10.5px*var(--fs,1))/1 'Noto Sans JP',Inter,sans-serif!important;letter-spacing:.12em;color:var(--ash,#b8932b);text-transform:none}
+html[lang="ja"] #ctlPanel>.tsw::before{content:"外観"}
+html[lang="vi"] #ctlPanel>.tsw::before{content:"GIAO DIỆN"}
+html[lang="en"] #ctlPanel>.tsw::before{content:"APPEARANCE"}
+#ctlPanel .theme-switch{display:flex!important;flex-direction:column;gap:5px;width:100%;margin:0;padding:4px;border-radius:5px!important}
+#ctlPanel .theme-opt{width:100%;justify-content:flex-start;padding:6px 8px;border-radius:4px!important;font-family:'EB Garamond','Shippori Mincho','Noto Sans JP',serif;font-size:calc(16px*var(--fs,1));white-space:nowrap}
+
+/* ===== Bộ 3 font tiếng Nhật: tiêu đề = Yuji Mai (thư pháp) · từ vựng = Shippori Mincho (sách cổ) · câu ví dụ = Klee One (viết tay) ===== */
+.brand-text h1,.side .brand-text h1,.side header .brand-text h1,.welcome h2,.topic-header h2,.picker-head h2,.tc-title{
+  font-family:'EB Garamond','Yuji Mai','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important;
+  font-weight:400!important}
+.item-card .jp,.item-card.grammar .jp,.modal-headword,.compare-word,.compare-jp{
+  font-family:'EB Garamond','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important}
+.example-jp,.compare-example .example-jp{
+  font-family:'EB Garamond','Klee One','UD Digi Kyokasho N-R','HGKyokashotai','Shippori Mincho','Yu Mincho',serif!important}
+/* Riêng tên app 扶桑言葉磨 = Ma Shan Zheng (ký tự nào font không có sẽ tự rơi về Yuji Mai) */
+.brand-text h1,.side .brand-text h1,.side header .brand-text h1{
+  font-family:'Ma Shan Zheng','Yuji Mai','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important;
+  font-weight:400!important}
+
+/* ===== Áp bộ font cho TOÀN BỘ giao diện (đăng nhập · chọn chủ đề · game 朱印帖 · ôn tập · luyện nói · tìm kiếm) ===== */
+/* 1) Tên app ở màn đăng nhập = Ma Shan Zheng (giống thanh bên) */
+.lg-brand h1,#lgTitle{
+  font-family:'Ma Shan Zheng','Yuji Mai','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important;font-weight:400!important}
+/* 2) Mọi tiêu đề = Yuji Mai (chỉ có một độ đậm nên đặt nét thường) */
+body h2,body h3,body h4,.lg-greet,.tc-title,.dp-hero-k,.kg-title b,.kg-nav button b,.kg-h,.kg-mp-head h2,.kg-ch-head h2,.dp-head h2,.welcome h2,.kj-bar h2{
+  font-family:'EB Garamond','Yuji Mai','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important;font-weight:400!important}
+/* 3) Từ vựng / chữ Hán chính = Shippori Mincho */
+.item-card .jp,.item-card.grammar .jp,.modal-headword,.compare-word,.compare-jp,.kj-k,.rq-main,.kg-big,.kg-sx-main,.kg-fb-w,.srch-w,.srch-main,.tc-jp,.hk-kc b,.sh-k,.hk-ex .jp{
+  font-family:'EB Garamond','Shippori Mincho','Hiragino Mincho ProN','Yu Mincho',serif!important}
+/* 4) Câu ví dụ = Klee One (cả trong game) */
+.example-jp,.compare-example .example-jp,.kg-ex{
+  font-family:'EB Garamond','Klee One','UD Digi Kyokasho N-R','HGKyokashotai','Shippori Mincho','Yu Mincho',serif!important}
+
+/* ===== Hologram thẻ (chế độ sáng): chuyển màu #F7F1E8 → #FFFCF7, rê chuột thì ánh sáng trượt qua ===== */
+:root:not([data-theme="dark"]) :is(.item-card,.item-card.lv,.item-card.advanced,.topic-card:not(.sel),.dp-mode,.dp-tier,.dp-setcard,.compare-item){
+  background:linear-gradient(135deg,#F7F1E8 0%,#FFFCF7 100%)!important;
+  background-size:170% 170%!important;background-position:0% 0%!important;
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background-position .8s ease!important}
+:root:not([data-theme="dark"]) :is(.item-card,.item-card.lv,.item-card.advanced,.topic-card:not(.sel),.dp-mode,.dp-tier,.dp-setcard,.compare-item):hover{
+  background-position:100% 100%!important}
+/* Cửa sổ chi tiết (chế độ sáng): nền sau chữ = #F7F1E8; các ô bên trong (ví dụ, chip Hán Việt, ghi chú) giữ #FFFCF7 */
+:root:not([data-theme="dark"]) .modal{background:#F7F1E8!important}
+/* Thẻ chữ Hán (chế độ sáng): trước khi lật = #F7F1E8; sau khi lật/phóng to = #FFFCF7 giữ gradient xanh lục theo cấp độ */
+:root:not([data-theme="dark"]) .kj-c:not(.zoom) .kj-bk{background:#F7F1E8}
+:root:not([data-theme="dark"]) .kj-c.zoom{background:#FFFCF7}
+:root:not([data-theme="dark"]) .kj-c.zoom .kj-bk{background:linear-gradient(180deg,color-mix(in srgb,var(--lv,var(--accent)) 8%,#FFFCF7) 0%,#FFFCF7 78%)}
+
+/* ===== Thanh cuộn điều khiển: sắp xếp lại theo mức quan trọng / tần suất dùng =====
+   1 復習 (to nhất, nút chính) → 2 外観 sáng/tối → 3 背景 → 4 文字サイズ → 5 言語 (đặt một lần) */
+#ctlPanel{width:calc(212px*var(--fs,1))}
+#ctlPanel>.rv-bar{order:1}#ctlPanel>.tsw{order:2}#ctlPanel>.bgsw{order:3}#ctlPanel>.fsw{order:4}#ctlPanel>.lsw{order:5}
+/* 1) Ôn tập: nút 復習 lớn, tô màu nhấn; nút トピック nhỏ hơn, một dòng */
+#ctlPanel>.rv-bar{gap:8px}
+#ctlPanel>.rv-bar button[data-rv="open"]{flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:16px 10px;border-radius:6px;background:var(--accent)!important;border-color:var(--accent)!important}
+#ctlPanel>.rv-bar button[data-rv="open"] b{font-size:calc(26px*var(--fs,1));font-weight:600;letter-spacing:.14em;text-indent:.14em;color:#fff!important}
+#ctlPanel>.rv-bar button[data-rv="open"] small{font-size:calc(13px*var(--fs,1));font-weight:600;color:rgba(255,255,255,.9)!important}
+#ctlPanel>.rv-bar button[data-rv="open"]:hover{background:var(--accent-dark)!important;border-color:var(--accent-dark)!important}
+#ctlPanel>.rv-bar button[data-rv="topics"]{padding:7px 10px;white-space:nowrap}
+#ctlPanel>.rv-bar button[data-rv="topics"] b{font-size:calc(14px*var(--fs,1));letter-spacing:.02em;white-space:nowrap}
+#ctlPanel>.rv-bar button[data-rv="topics"] small{font-size:calc(11px*var(--fs,1));white-space:nowrap}
+/* 2) Sáng/Tối: hai nút cạnh nhau, ảnh trên chữ dưới */
+#ctlPanel .theme-switch{flex-direction:row;gap:6px}
+#ctlPanel .theme-opt{flex:1 1 0;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px 4px;min-width:0;font-size:calc(13px*var(--fs,1))}
+#ctlPanel .theme-opt .theme-ico{width:34px;height:34px}
+/* 3-5) Nền / Cỡ chữ / Ngôn ngữ: gọn hơn vì ít dùng */
+#ctlPanel .bgsw button{padding:7px 0}
+#ctlPanel .fsw>button{height:30px}
+#ctlPanel .lsw-cur{padding:6px 10px}
+
+/* ===== Thanh cuộn lên/xuống khi màn hình thấp; danh sách ngôn ngữ mở ngay trong thanh (không tràn ra ngoài màn hình) ===== */
+#ctlPanel{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--border,#bbb) transparent}
+#ctlPanel>*{flex:0 0 auto}
+#ctlPanel::-webkit-scrollbar{width:6px}
+#ctlPanel::-webkit-scrollbar-thumb{background:var(--border,#bbb);border-radius:6px}
+/* Danh sách ngôn ngữ: sổ sang TRÁI thanh, mọc LÊN TRÊN từ nút ngôn ngữ (đưa ra ngoài thanh để không bị cắt khi thanh cuộn) */
+.lsw-fly.fl-out{position:fixed;z-index:10020;top:auto!important;left:auto!important;min-width:calc(140px*var(--fs,1));padding:4px;display:flex;flex-direction:column;gap:2px;overflow-y:auto;
+  background:var(--bg-card,#fff);border:1px solid var(--ash,#9a9a9a);border-radius:5px;box-shadow:0 0 12px 1px rgba(var(--ash-rgb,150,150,150),.45),3px 3px 0 var(--edge,#3b2a17);animation:lswInL .18s ease-out}
+.lsw-fly.fl-out[hidden]{display:none!important}
+.lsw-fly.fl-out button{display:block;width:100%;padding:9px 14px;border:0;border-radius:3px;background:none;text-align:left;white-space:nowrap;cursor:pointer;
+  font-family:'EB Garamond','Shippori Mincho',serif;font-size:calc(16px*var(--fs,1));font-weight:550;color:var(--ink-soft)}
+.lsw-fly.fl-out button:hover:not(.on){background:rgba(var(--ash-rgb,150,150,150),.2)}
+.lsw-fly.fl-out button.on{background:var(--accent,#c0392b);color:#fff}
 </style>
 <script>
 /* dò img/ui/game.<đuôi> (png/webp/jpg/...) rồi bật ảnh cho mọi nút .kg-open */
@@ -2630,7 +2718,7 @@ html:root{--kg-ico-zoom:150%}
 
 <!-- ===================== ĐĂNG NHẬP THEO TÊN: bắt đầu ===================== -->
 <div class="lg" id="loginGate" role="dialog" aria-modal="true" aria-labelledby="lgTitle" data-stage="form">
-  <div class="lg-stage" aria-hidden="true"><img class="lg-l" src="img/ui/login.png" alt=""><img class="lg-d" alt=""></div>
+  <div class="lg-stage" aria-hidden="true"><img class="lg-l" src="img/ui/login.jpg" alt=""><img class="lg-d" alt=""></div>
   <script>
   /* ảnh màn hình login chế độ tối: img/ui/login1.<đuôi> — thử lần lượt các đuôi phổ biến, thiếu file thì để trống */
   (function(){var el=document.querySelector('.lg-stage img.lg-d'),E=['png','webp','jpg','jpeg','avif','gif'],i=0;
@@ -3268,6 +3356,12 @@ function adopt(){var n=0;['rvBar','bgsw','fsw'].forEach(function(i){var e=docume
   document.addEventListener('keydown',function(e){if(e.key==='Escape')open(false)});
   document.getElementById('ctlTog').addEventListener('click',function(){open(false)});
   on();document.addEventListener('fusou:lang',on)})();
+(function(){var T=document.querySelector('.theme-switch');if(!T)return;
+  var D=document.createElement('div');D.className='tsw';D.id='tsw';D.setAttribute('data-no-i18n','');D.appendChild(T);P.appendChild(D);
+  var X={ja:['ライト','ダーク'],vi:['Sáng','Tối'],en:['Light','Dark']};
+  function lab(){var l=(window.FUSOU_I18N&&FUSOU_I18N.lang)||'ja';if(!X[l])l='ja';
+    [].forEach.call(T.querySelectorAll('.theme-opt'),function(b,i){var t=b.lastChild;if(t&&t.nodeType===3)t.nodeValue=' '+X[l][i]})}
+  lab();document.addEventListener('fusou:lang',lab);window.addEventListener('load',lab)})();
 adopt();var mo=new MutationObserver(function(){if(adopt()===3)mo.disconnect()});mo.observe(document.body,{childList:true});
 set(v==='1',false);b.addEventListener('click',function(){set(!h.classList.contains('ctl-open'),true)});})();
 </script>
@@ -3973,7 +4067,7 @@ document.addEventListener('click', (e) => {
   const side=document.createElement('aside'); side.className='side'; side.id='side';
   const nav=document.createElement('nav'); nav.className='side-nav';
   const foot=document.createElement('div'); foot.className='side-foot';
-  foot.appendChild(document.querySelector('.theme-switch'));
+  /* theme-switch đã chuyển vào thanh cuộn #ctlPanel */
   side.append(header,nav,foot); wrap.insertBefore(side,wrap.firstChild);
   const welcome=document.createElement('div'); welcome.className='welcome';
   welcome.innerHTML='<h2>トピックを選んで始めよう</h2><p>左のリストからトピックを選ぶと、ここに語彙と文法が表示されます。</p>';
@@ -5363,8 +5457,8 @@ var sf=document.querySelector('.side-foot');if(sf){var sb=document.createElement
 var ct=document.createElement('div');ct.className='kg-contrast';ct.innerHTML='<button type="button" class="ct-dot" aria-label="コントラスト" title="コントラスト"></button><div class="ct-body"><span>コントラスト</span><button type="button" data-c="soft">やさしい</button><button type="button" data-c="mid">ふつう</button><button type="button" data-c="hi">くっきり</button></div>';document.body.appendChild(ct);
 var setC=function(c){document.documentElement.setAttribute('data-contrast',c);try{localStorage.setItem('fusou_contrast',c)}catch(e){}Array.prototype.forEach.call(ct.querySelectorAll('.ct-body button'),function(b){b.classList.toggle('on',b.dataset.c===c)})};
 var ctT=0,ctOpen=function(){ct.classList.add('open');ctRe();ctPos()},ctClose=function(){clearTimeout(ctT);ct.classList.remove('open')},ctRe=function(){clearTimeout(ctT);ctT=setTimeout(ctClose,10000)};
-var tsw=document.querySelector('.theme-switch');
-var ctPos=function(){var r=(tsw||sf).getBoundingClientRect(),vw=window.innerWidth;ct.classList.toggle('away',r.width===0||r.right<=8||r.left>=vw);var w=ct.classList.contains('open')?(ct.querySelector('.ct-body').offsetWidth+30):22,l=r.right+10;if(l+w>vw-8)l=Math.max(8,vw-w-8);ct.style.setProperty('--ct-l',l+'px')};
+var tsw=null;
+var ctPos=function(){var r=(tsw||sf).getBoundingClientRect(),vw=window.innerWidth;ct.classList.toggle('away',r.width===0||r.right<=8||r.left>=vw);var w=ct.classList.contains('open')?(ct.querySelector('.ct-body').offsetWidth+30):22,l=r.right-8;if(l+w>vw-8)l=Math.max(8,vw-w-8);ct.style.setProperty('--ct-l',l+'px')};
 ct.onclick=function(e){var b=e.target.closest('button');if(!b)return;if(b.classList.contains('ct-dot')){ct.classList.contains('open')?ctClose():ctOpen();return}setC(b.dataset.c);ctRe()};
 ct.addEventListener('mouseenter',function(){clearTimeout(ctT)});ct.addEventListener('mouseleave',function(){if(ct.classList.contains('open'))ctRe()});
 window.addEventListener('resize',ctPos);
@@ -6589,6 +6683,18 @@ function __X(v,j,e){var l=window.FUSOU_I18N?FUSOU_I18N.lang:'ja';return l==='vi'
     pre.onload=next; pre.src=shutSrc;
   }
 })();
+</script>
+<script>
+/* danh sách ngôn ngữ: đưa ra ngoài thanh, đặt bên trái thanh, đáy thẳng hàng nút ngôn ngữ, mọc lên trên, luôn nằm trong màn hình */
+(function(){var P=document.getElementById('ctlPanel'),cur=P&&P.querySelector('.lsw-cur'),fl=P&&P.querySelector('.lsw-fly');if(!fl||!cur)return;
+  fl.classList.add('fl-out');fl.setAttribute('data-no-i18n','');document.body.appendChild(fl);
+  function place(){if(fl.hidden)return;var r=cur.getBoundingClientRect(),q=P.getBoundingClientRect(),vh=window.innerHeight;
+    fl.style.right=(window.innerWidth-q.left+8)+'px';
+    fl.style.bottom=Math.max(8,vh-r.bottom)+'px';
+    fl.style.maxHeight=Math.max(120,r.bottom-8)+'px'}
+  cur.addEventListener('click',function(){setTimeout(place,0)});
+  window.addEventListener('resize',place);P.addEventListener('scroll',place);
+  new MutationObserver(place).observe(fl,{attributes:true,attributeFilter:['hidden']})})();
 </script>
 </body>
 </html>
